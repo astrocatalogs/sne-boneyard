@@ -1,7 +1,7 @@
 {
-	"AT2016blf":{
+	"AT2016pa":{
 		"schema":"https://github.com/astrocatalogs/sne/blob/07f1aa00c396ea7c98a76b8de18028285b2e7b14/OSC-JSON-format.md",
-		"name":"AT2016blf",
+		"name":"AT2016pa",
 		"sources":[
 			{
 				"name":"Transient Name Server",
@@ -9,11 +9,9 @@
 				"alias":"1"
 			},
 			{
-				"name":"ATel 8888",
-				"url":"http://www.astronomerstelegram.org/?read=8888",
-				"bibcode":"2016ATel.8888....1N",
-				"alias":"2",
-				"reference":"Nicholls et al. (2016)"
+				"name":"Pan-STARRS 3Pi",
+				"url":"http://star.pst.qub.ac.uk/ps1threepi/psdb/public/",
+				"alias":"2"
 			},
 			{
 				"name":"Latest Supernovae",
@@ -38,97 +36,108 @@
 		],
 		"alias":[
 			{
-				"value":"AT2016blf",
+				"value":"AT2016pa",
 				"source":"1,2,3"
 			},
 			{
-				"value":"ASASSN-16do",
+				"value":"PS16qi",
 				"source":"1,2,3"
 			}
 		],
 		"claimedtype":[
 			{
-				"value":"CV",
+				"value":"mover",
 				"source":"2,3"
 			}
 		],
 		"dec":[
 			{
-				"value":"-32:59:49.62",
+				"value":"+30:22:13.16",
 				"source":"1",
 				"unit":"degrees"
 			},
 			{
-				"value":"-32:59:49.6",
+				"value":"+30:22:13.2",
+				"source":"2,3",
+				"unit":"degrees"
+			},
+			{
+				"value":"+30:22:13.3",
 				"source":"2,3",
 				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2016/03/30.12",
+				"value":"2016/01/16.245208",
 				"source":"1"
 			}
 		],
 		"discoverer":[
 			{
-				"value":"ASAS-SN",
+				"value":"Pan-STARRS1",
 				"source":"1"
 			},
 			{
-				"value":"All Sky Automated Survey for SuperNovae (ASAS-SN)",
+				"value":"PS1",
 				"source":"2,3"
 			}
 		],
 		"ebv":[
 			{
-				"value":"0.0902",
-				"error":"0.002",
+				"value":"0.4014",
+				"error":"0.0268",
 				"source":"4,5",
 				"derived":true
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"16.1",
+				"value":"19.11",
 				"source":"1,4",
 				"derived":true
 			}
 		],
 		"maxband":[
 			{
-				"value":"V",
+				"value":"r",
 				"source":"1,4",
 				"derived":true
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2016/03/30",
+				"value":"2016/01/16",
 				"source":"1,4",
 				"derived":true
 			}
 		],
 		"ra":[
 			{
-				"value":"06:34:12.72",
+				"value":"04:22:02.18",
 				"source":"1,2,3",
 				"unit":"hours"
 			}
 		],
 		"photometry":[
 			{
-				"time":"57475.5",
+				"time":"57402.5",
 				"u_time":"MJD",
-				"magnitude":"16.0",
+				"magnitude":"19.0",
 				"source":"2,3"
 			},
 			{
-				"time":"57477.12",
+				"time":"57402.5",
 				"u_time":"MJD",
-				"band":"V",
-				"magnitude":"16.1",
-				"survey":"ASAS-SN",
+				"magnitude":"19.1",
+				"source":"2,3"
+			},
+			{
+				"time":"57403.245208333334",
+				"u_time":"MJD",
+				"band":"r",
+				"magnitude":"19.1077",
+				"survey":"Pan-STARRS1",
 				"source":"1"
 			}
 		]
