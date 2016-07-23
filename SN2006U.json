@@ -1,108 +1,108 @@
 {
 	"SN2006U":{
-		"schema":"https://github.com/astrocatalogs/sne/blob/07f1aa00c396ea7c98a76b8de18028285b2e7b14/OSC-JSON-format.md",
+		"schema":"https://github.com/astrocatalogs/astrocats/blob/aaf96e3b3fbcf703610b756295a7120ec1ecc3f7/OSC-JSON-format.md",
 		"name":"SN2006U",
 		"sources":[
 			{
+				"name":"2011ApJ...737..103S",
+				"bibcode":"2011ApJ...737..103S",
+				"reference":"Schlafly & Finkbeiner (2011)",
+				"alias":"1"
+			},
+			{
 				"name":"2006IAUC.8670....2G",
 				"bibcode":"2006IAUC.8670....2G",
-				"alias":"1",
-				"reference":"Green (2006)"
+				"reference":"Green (2006)",
+				"alias":"2"
 			},
 			{
 				"name":"IAUC 8667",
-				"url":"http://www.cbat.eps.harvard.edu/iauc/08600/08667.html#Item1",
 				"bibcode":"2006IAUC.8667....2N",
-				"alias":"2",
-				"reference":"Navasardyan et al. (2006)"
+				"reference":"Navasardyan et al. (2006)",
+				"url":"http://www.cbat.eps.harvard.edu/iauc/08600/08667.html#Item1",
+				"alias":"3"
 			},
 			{
 				"name":"Latest Supernovae",
+				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3",
-				"secondary":true
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
-				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"4",
+				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
-				"reference":"Guillochon, Parrent, & Margutti (2016)"
-			},
-			{
-				"name":"2011ApJ...737..103S",
-				"bibcode":"2011ApJ...737..103S",
-				"alias":"5",
-				"reference":"Schlafly & Finkbeiner (2011)"
+				"url":"https://sne.space",
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2006U",
-				"source":"1,2,3"
+				"source":"2,3,4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"AGN",
-				"source":"1,2,3"
+				"source":"2,3,4"
 			}
 		],
 		"dec":[
 			{
 				"value":"+23:20:35.1",
-				"source":"2,3",
-				"unit":"degrees"
+				"u_value":"degrees",
+				"source":"3,4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2006/02/03",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"LOSS",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"ebv":[
 			{
 				"value":"0.022",
-				"error":"0.0008",
-				"source":"4,5",
-				"derived":true
+				"derived":true,
+				"e_value":"0.0008",
+				"source":"1,5"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"18.8",
-				"source":"2,3,4",
-				"derived":true
+				"derived":true,
+				"source":"3,4,5"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2006/02/02",
-				"source":"2,3,4",
-				"derived":true
+				"derived":true,
+				"source":"3,4,5"
 			}
 		],
 		"ra":[
 			{
 				"value":"09:53:45.38",
-				"source":"2,3",
-				"unit":"hours"
+				"u_value":"hours",
+				"source":"3,4"
 			}
 		],
 		"photometry":[
 			{
 				"time":"53768.5",
-				"u_time":"MJD",
 				"magnitude":"18.8",
-				"source":"2,3"
+				"u_time":"MJD",
+				"source":"3,4"
 			}
 		]
 	}

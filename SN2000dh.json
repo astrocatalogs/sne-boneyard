@@ -1,79 +1,79 @@
 {
 	"SN2000dh":{
-		"schema":"https://github.com/astrocatalogs/sne/blob/07f1aa00c396ea7c98a76b8de18028285b2e7b14/OSC-JSON-format.md",
+		"schema":"https://github.com/astrocatalogs/astrocats/blob/aaf96e3b3fbcf703610b756295a7120ec1ecc3f7/OSC-JSON-format.md",
 		"name":"SN2000dh",
 		"sources":[
 			{
-				"name":"2000IAUC.7483....4F",
-				"bibcode":"2000IAUC.7483....4F",
-				"alias":"1",
-				"reference":"Filippenko & Li (2000)"
+				"name":"2011ApJ...737..103S",
+				"bibcode":"2011ApJ...737..103S",
+				"reference":"Schlafly & Finkbeiner (2011)",
+				"alias":"1"
 			},
 			{
-				"name":"Transient Name Server",
-				"url":"https://wis-tns.weizmann.ac.il",
+				"name":"2000IAUC.7483....4F",
+				"bibcode":"2000IAUC.7483....4F",
+				"reference":"Filippenko & Li (2000)",
 				"alias":"2"
 			},
 			{
-				"name":"The Open Supernova Catalog",
-				"url":"https://sne.space",
-				"bibcode":"2016arXiv160501054G",
-				"alias":"3",
-				"secondary":true,
-				"reference":"Guillochon, Parrent, & Margutti (2016)"
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"3"
 			},
 			{
-				"name":"2011ApJ...737..103S",
-				"bibcode":"2011ApJ...737..103S",
-				"alias":"4",
-				"reference":"Schlafly & Finkbeiner (2011)"
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2016arXiv160501054G",
+				"reference":"Guillochon, Parrent, & Margutti (2016)",
+				"secondary":true,
+				"url":"https://sne.space",
+				"alias":"4"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2000dh",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Star",
-				"source":"1"
+				"source":"2"
 			}
 		],
 		"dec":[
 			{
 				"value":"+04:30:05.40",
-				"source":"2",
-				"unit":"degrees"
+				"u_value":"degrees",
+				"source":"3"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2000",
-				"source":"3",
-				"derived":true
+				"derived":true,
+				"source":"4"
 			}
 		],
 		"ebv":[
 			{
 				"value":"0.0237",
-				"error":"0.0015",
-				"source":"3,4",
-				"derived":true
+				"derived":true,
+				"e_value":"0.0015",
+				"source":"1,4"
 			}
 		],
 		"host":[
 			{
 				"value":"IC 5374",
-				"source":"2"
+				"source":"3"
 			}
 		],
 		"ra":[
 			{
 				"value":"00:01:03.94",
-				"source":"2",
-				"unit":"hours"
+				"u_value":"hours",
+				"source":"3"
 			}
 		]
 	}

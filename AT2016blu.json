@@ -1,169 +1,168 @@
 {
 	"AT2016blu":{
-		"schema":"https://github.com/astrocatalogs/sne/blob/07f1aa00c396ea7c98a76b8de18028285b2e7b14/OSC-JSON-format.md",
+		"schema":"https://github.com/astrocatalogs/astrocats/blob/aaf96e3b3fbcf703610b756295a7120ec1ecc3f7/OSC-JSON-format.md",
 		"name":"AT2016blu",
 		"sources":[
 			{
-				"name":"Transient Name Server",
-				"url":"https://wis-tns.weizmann.ac.il",
+				"name":"2015arXiv150201589P",
+				"bibcode":"2015arXiv150201589P",
+				"reference":"Planck Collaboration et al. (2015)",
 				"alias":"1"
 			},
 			{
 				"name":"CBET 2976",
-				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/002900/CBET002976.txt",
 				"bibcode":"2012CBET.2976....3V",
-				"alias":"2",
-				"reference":"Vinko et al. (2012)"
-			},
-			{
-				"name":"Latest Supernovae",
-				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3",
-				"secondary":true
-			},
-			{
-				"name":"The Open Supernova Catalog",
-				"url":"https://sne.space",
-				"bibcode":"2016arXiv160501054G",
-				"alias":"4",
-				"secondary":true,
-				"reference":"Guillochon, Parrent, & Margutti (2016)"
+				"reference":"Vinko et al. (2012)",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/002900/CBET002976.txt",
+				"alias":"2"
 			},
 			{
 				"name":"2011ApJ...737..103S",
 				"bibcode":"2011ApJ...737..103S",
-				"alias":"5",
-				"reference":"Schlafly & Finkbeiner (2011)"
+				"reference":"Schlafly & Finkbeiner (2011)",
+				"alias":"3"
 			},
 			{
-				"name":"2015arXiv150201589P",
-				"bibcode":"2015arXiv150201589P",
-				"alias":"6",
-				"reference":"Planck Collaboration et al. (2015)"
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"4"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"5"
+			},
+			{
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2016arXiv160501054G",
+				"reference":"Guillochon, Parrent, & Margutti (2016)",
+				"secondary":true,
+				"url":"https://sne.space",
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"AT2016blu",
-				"source":"1,2,3"
+				"source":"2,4,5"
 			},
 			{
 				"value":"PSN J12355230+2755559",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"LBV",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"comovingdist":[
 			{
 				"value":"10",
-				"source":"2,3,4,6",
-				"unit":"Mpc",
-				"derived":true
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,5,6"
 			}
 		],
 		"dec":[
 			{
 				"value":"+27:55:55.80",
-				"source":"1",
-				"unit":"degrees"
+				"u_value":"degrees",
+				"source":"4"
 			},
 			{
 				"value":"+27:55:55.9",
-				"source":"2,3",
-				"unit":"degrees"
+				"u_value":"degrees",
+				"source":"2,5"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2016/04/05.98",
-				"source":"1"
+				"source":"4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"LOSS",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"ebv":[
 			{
 				"value":"0.0151",
-				"error":"0.0001",
-				"source":"4,5",
-				"derived":true
+				"derived":true,
+				"e_value":"0.0001",
+				"source":"3,6"
 			}
 		],
 		"host":[
 			{
 				"value":"NGC 4559C / IC 3550",
-				"source":"1"
+				"source":"4"
 			},
 			{
 				"value":"NGC 4559",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"10",
-				"source":"2,3,4,6",
-				"unit":"Mpc",
-				"derived":true
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,5,6"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-10",
-				"source":"2,3,4,6",
-				"derived":true
+				"derived":true,
+				"source":"1,2,5,6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16.7",
-				"source":"2,3,4",
-				"derived":true
+				"derived":true,
+				"source":"2,5,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2012/01/10",
-				"source":"2,3,4",
-				"derived":true
+				"derived":true,
+				"source":"2,5,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"12:35:52.30",
-				"source":"1,2,3",
-				"unit":"hours"
+				"u_value":"hours",
+				"source":"2,4,5"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.003",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"velocity":[
 			{
 				"value":"900",
-				"source":"2,3,4",
-				"unit":"km/s",
-				"derived":true
+				"u_value":"km/s",
+				"source":"6"
 			}
 		],
 		"photometry":[
 			{
 				"time":"55936.5",
-				"u_time":"MJD",
 				"magnitude":"16.7",
-				"source":"2,3"
+				"u_time":"MJD",
+				"source":"2,5"
 			}
 		]
 	}
