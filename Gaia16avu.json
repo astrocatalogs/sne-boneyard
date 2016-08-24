@@ -16,8 +16,14 @@
 			},
 			{
 				"name":"Gaia Photometric Science Alerts",
-				"url":"http://gsaweb.ast.cam.ac.uk/alerts/alertsindex",
+				"url":"http://gaia.ac.uk/selected-gaia-science-alerts",
 				"alias":"3"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -25,7 +31,7 @@
 				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"WISeREP",
@@ -33,23 +39,23 @@
 				"reference":"Yaron & Gal-Yam (2012)",
 				"secondary":true,
 				"url":"http://wiserep.weizmann.ac.il/",
-				"alias":"5"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia16avu",
-				"source":"2"
+				"source":"2,3,4"
 			},
 			{
 				"value":"AT2016ehs",
-				"source":"2,3,5"
+				"source":"2,3,4,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"3"
+				"source":"3,4"
 			}
 		],
 		"dec":[
@@ -57,6 +63,11 @@
 				"value":"-30:02:25.50",
 				"u_value":"degrees",
 				"source":"2"
+			},
+			{
+				"value":"-30:02:25.51",
+				"u_value":"degrees",
+				"source":"3,4"
 			},
 			{
 				"value":"-30:02:25.44",
@@ -74,6 +85,10 @@
 			{
 				"value":"GaiaAlerts",
 				"source":"2"
+			},
+			{
+				"value":"Gaia Photometric Science Alerts programme",
+				"source":"3,4"
 			}
 		],
 		"ebv":[
@@ -81,28 +96,28 @@
 				"value":"0.0717",
 				"derived":true,
 				"e_value":"0.0055",
-				"source":"1,4"
+				"source":"1,5"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16.96",
 				"derived":true,
-				"source":"3,4"
+				"source":"3,5"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"3,4"
+				"source":"3,5"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2016/07/18",
 				"derived":true,
-				"source":"3,4"
+				"source":"3,5"
 			}
 		],
 		"ra":[
@@ -110,6 +125,11 @@
 				"value":"02:39:59.00",
 				"u_value":"hours",
 				"source":"2"
+			},
+			{
+				"value":"02:39:58.994",
+				"u_value":"hours",
+				"source":"3,4"
 			},
 			{
 				"value":"02:39:58.992",
@@ -120,10 +140,16 @@
 		"redshift":[
 			{
 				"value":"0",
-				"source":"5"
+				"source":"6"
 			}
 		],
 		"photometry":[
+			{
+				"time":"57586.5",
+				"magnitude":"17.1",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
 			{
 				"time":"57587.89399305556",
 				"band":"G",
@@ -4226,7 +4252,7 @@
 						"8.54561e-17"
 					]
 				],
-				"source":"5"
+				"source":"6"
 			}
 		]
 	}
