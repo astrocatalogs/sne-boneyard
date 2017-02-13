@@ -17,10 +17,15 @@
 				"alias":"2"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"3"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -28,42 +33,42 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"ASASSN-16do",
-				"source":"1,3"
+				"source":"1,4"
 			},
 			{
 				"value":"AT2016blf",
-				"source":"1,3"
+				"source":"1,3,4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"1,3"
+				"source":"1,4"
 			}
 		],
 		"dec":[
 			{
 				"value":"-32:59:49.6",
 				"u_value":"degrees",
-				"source":"1,3"
+				"source":"1,4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2016/03/30.120",
-				"source":"3"
+				"source":"4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ASAS-SN",
-				"source":"1,3"
+				"source":"1,4"
 			}
 		],
 		"ebv":[
@@ -71,50 +76,92 @@
 				"value":"0.0902",
 				"derived":true,
 				"e_value":"0.002",
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"16",
+				"value":"16.1",
 				"derived":true,
-				"source":"1,3,4"
+				"source":"3,5"
+			}
+		],
+		"maxband":[
+			{
+				"value":"V",
+				"derived":true,
+				"source":"3,5"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2016/03/28",
+				"value":"2016/03/30",
 				"derived":true,
-				"source":"1,3,4"
+				"source":"3,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"16",
+				"value":"16.1",
 				"derived":true,
-				"source":"1,3,4"
+				"source":"3,5"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"V",
+				"derived":true,
+				"source":"3,5"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2016/03/28",
+				"value":"2016/03/30",
 				"derived":true,
-				"source":"1,3,4"
+				"source":"3,5"
 			}
 		],
 		"ra":[
 			{
 				"value":"06:34:12.72",
 				"u_value":"hours",
-				"source":"1,3"
+				"source":"1,4"
 			}
 		],
 		"photometry":[
 			{
-				"time":"57475.5",
-				"magnitude":"16.0",
+				"time":"57470.14",
+				"band":"V",
+				"instrument":"Cassius",
+				"magnitude":"17.1",
+				"observer":"ASASSN",
+				"system":"Vega",
+				"telescope":"ASASSN-2",
 				"u_time":"MJD",
-				"source":"1,3"
+				"upperlimit":true,
+				"source":"3"
+			},
+			{
+				"time":"57471.06",
+				"band":"V",
+				"instrument":"Cassius",
+				"magnitude":"16.4",
+				"observer":"ASASSN",
+				"system":"Vega",
+				"telescope":"ASASSN-2",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"57477.12",
+				"band":"V",
+				"instrument":"Cassius",
+				"magnitude":"16.1",
+				"observer":"ASASSN",
+				"system":"Vega",
+				"telescope":"ASASSN-2",
+				"u_time":"MJD",
+				"source":"3"
 			}
 		]
 	}
