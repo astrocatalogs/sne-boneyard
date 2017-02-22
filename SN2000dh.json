@@ -16,15 +16,22 @@
 				"alias":"2"
 			},
 			{
+				"name":"IAUC 7482",
+				"bibcode":"2000IAUC.7482....3L",
+				"reference":"Lehky (2000)",
+				"url":"http://www.cbat.eps.harvard.edu/iauc/07400/07482.html#Item1",
+				"alias":"3"
+			},
+			{
 				"name":"Transient Name Server",
 				"url":"https://wis-tns.weizmann.ac.il/",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -32,41 +39,43 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2000dh",
-				"source":"2,3,4"
+				"source":"2,3,4,5"
 			}
 		],
 		"claimedtype":[
 			{
-				"value":"Star",
-				"source":"2"
-			},
-			{
 				"value":"Mira",
-				"source":"4"
+				"source":"3,5"
 			}
 		],
 		"dec":[
 			{
 				"value":"+04:30:05.40",
 				"u_value":"degrees",
-				"source":"3"
+				"source":"4"
 			},
 			{
 				"value":"+04:30:05.4",
 				"u_value":"degrees",
-				"source":"4"
+				"source":"3,5"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2000/08/24.22",
-				"source":"4"
+				"value":"2000/08/24",
+				"source":"3,5"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"Tim Puckett et al.",
+				"source":"3,5"
 			}
 		],
 		"ebv":[
@@ -74,20 +83,56 @@
 				"value":"0.0237",
 				"derived":true,
 				"e_value":"0.0015",
-				"source":"1,5"
+				"source":"1,6"
 			}
 		],
 		"host":[
 			{
 				"value":"IC 5374",
-				"source":"3,4"
+				"source":"3,4,5"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"19.4",
+				"derived":true,
+				"source":"3,5,6"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2000/08/24",
+				"derived":true,
+				"source":"3,5,6"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"19.4",
+				"derived":true,
+				"source":"3,5,6"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2000/08/24",
+				"derived":true,
+				"source":"3,5,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"00:01:03.94",
 				"u_value":"hours",
-				"source":"3,4"
+				"source":"3,4,5"
+			}
+		],
+		"photometry":[
+			{
+				"time":"51780.0",
+				"magnitude":"19.4",
+				"u_time":"MJD",
+				"source":"3,5"
 			}
 		]
 	}

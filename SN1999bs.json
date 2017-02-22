@@ -1,7 +1,7 @@
 {
-	"Gaia16bil":{
+	"SN1999bs":{
 		"schema":"https://github.com/astrocatalogs/supernovae/blob/a0bc0b9/SCHEMA.md",
-		"name":"Gaia16bil",
+		"name":"SN1999bs",
 		"sources":[
 			{
 				"name":"2011ApJ...737..103S",
@@ -10,20 +10,27 @@
 				"alias":"1"
 			},
 			{
+				"name":"IAUC 7141",
+				"bibcode":"1999IAUC.7141....3S",
+				"reference":"Schaefer & Roscherr (1999)",
+				"url":"http://www.cbat.eps.harvard.edu/iauc/07100/07141.html#Item2",
+				"alias":"2"
+			},
+			{
 				"name":"Transient Name Server",
 				"url":"https://wis-tns.weizmann.ac.il/",
-				"alias":"2"
+				"alias":"3"
 			},
 			{
 				"name":"Gaia Photometric Science Alerts",
 				"url":"http://gaia.ac.uk/selected-gaia-science-alerts",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -31,169 +38,159 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
-				"value":"Gaia16bil",
-				"source":"2,3,4"
+				"value":"SN1999bs",
+				"source":"2,3,4,5"
 			},
 			{
-				"value":"AT2016giu",
-				"source":"2,3,4"
+				"value":"Gaia16azz",
+				"source":"2,3,4,5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"3,4"
-			},
-			{
-				"value":"Candidate",
-				"source":"3"
+				"source":"2,4,5"
 			}
 		],
 		"dec":[
 			{
-				"value":"-21:33:53.53",
-				"u_value":"degrees",
-				"source":"2"
-			},
-			{
-				"value":"-21:33:53.54",
-				"u_value":"degrees",
-				"source":"3,4"
-			},
-			{
-				"value":"-21:33:53.64",
+				"value":"+07:00:49.61",
 				"u_value":"degrees",
 				"source":"3"
+			},
+			{
+				"value":"+07:00:49.6",
+				"u_value":"degrees",
+				"source":"2,5"
+			},
+			{
+				"value":"+07:00:49.39",
+				"u_value":"degrees",
+				"source":"4,5"
+			},
+			{
+				"value":"+07:00:49.392",
+				"u_value":"degrees",
+				"source":"4"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2016/09/17.695995",
-				"source":"2"
+				"value":"1999/04/12",
+				"source":"2,5"
 			}
 		],
 		"discoverer":[
 			{
-				"value":"GaiaAlerts",
-				"source":"2"
+				"value":"BAO Supernova Survey",
+				"source":"2,5"
 			},
 			{
 				"value":"Gaia",
-				"source":"3,4"
+				"source":"4,5"
 			}
 		],
 		"ebv":[
 			{
-				"value":"0.0271",
+				"value":"0.1677",
 				"derived":true,
-				"e_value":"0.0009",
-				"source":"1,5"
+				"e_value":"0.0033",
+				"source":"1,6"
+			}
+		],
+		"host":[
+			{
+				"value":"UGC 11093",
+				"source":"2,3,5"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"18.14",
+				"value":"16.4",
 				"derived":true,
-				"source":"3,5"
-			}
-		],
-		"maxband":[
-			{
-				"value":"G",
-				"derived":true,
-				"source":"3,5"
+				"source":"2,5,6"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2016/09/17",
+				"value":"1999/04/12",
 				"derived":true,
-				"source":"3,5"
+				"source":"2,5,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"18.14",
+				"value":"17.42",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,6"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,6"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2016/09/17",
+				"value":"2016/08/10",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,6"
 			}
 		],
 		"ra":[
 			{
-				"value":"04:19:04.55",
+				"value":"18:01:48.75",
 				"u_value":"hours",
-				"source":"2"
+				"source":"2,3,5"
 			},
 			{
-				"value":"04:19:04.549",
+				"value":"18:01:48.758",
 				"u_value":"hours",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
-				"value":"04:19:04.56",
+				"value":"18:01:48.72",
 				"u_value":"hours",
-				"source":"3"
+				"source":"4"
 			}
 		],
 		"photometry":[
 			{
-				"time":"57617.2019907",
-				"band":"G",
-				"instrument":"Gaia-photometric",
-				"magnitude":"21.5",
-				"observer":"Robot",
-				"telescope":"Gaia",
+				"time":"51280.0",
+				"magnitude":"16.4",
 				"u_time":"MJD",
-				"upperlimit":true,
-				"source":"2"
+				"source":"2,5"
 			},
 			{
-				"time":"57648.1959954",
-				"band":"G",
-				"e_magnitude":"0.2",
-				"instrument":"Gaia-photometric",
-				"magnitude":"18.2",
-				"observer":"Robot",
-				"telescope":"Gaia",
+				"time":"57609.5",
+				"magnitude":"17.7",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"4,5"
 			},
 			{
-				"time":"57648.697",
+				"time":"57610.517",
 				"band":"G",
 				"e_magnitude":"0.0",
-				"magnitude":"18.2",
+				"magnitude":"17.73",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"3"
+				"source":"4"
 			},
 			{
-				"time":"57648.874",
+				"time":"57610.591",
 				"band":"G",
 				"e_magnitude":"0.0",
-				"magnitude":"18.14",
+				"magnitude":"17.42",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"3"
+				"source":"4"
 			}
 		]
 	}

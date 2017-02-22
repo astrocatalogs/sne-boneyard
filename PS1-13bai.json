@@ -10,10 +10,15 @@
 				"alias":"1"
 			},
 			{
+				"name":"Pan-STARRS 3Pi",
+				"url":"http://star.pst.qub.ac.uk/ps1threepi/psdb/public/?page=7",
+				"alias":"2"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2"
+				"alias":"3"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -21,32 +26,38 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"4"
 			}
 		],
 		"alias":[
 			{
 				"value":"PS1-13bai",
-				"source":"2"
+				"source":"2,3"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"2"
+				"source":"2,3"
 			}
 		],
 		"dec":[
 			{
 				"value":"+16:30:51.8",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"2,3"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2013/09/03.813",
-				"source":"2"
+				"value":"2013/09/03",
+				"source":"2,3"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"PS1",
+				"source":"2,3"
 			}
 		],
 		"ebv":[
@@ -54,14 +65,50 @@
 				"value":"0.1045",
 				"derived":true,
 				"e_value":"0.0039",
-				"source":"1,3"
+				"source":"1,4"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"18.4",
+				"derived":true,
+				"source":"2,3,4"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2013/09/03",
+				"derived":true,
+				"source":"2,3,4"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"18.4",
+				"derived":true,
+				"source":"2,3,4"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2013/09/03",
+				"derived":true,
+				"source":"2,3,4"
 			}
 		],
 		"ra":[
 			{
 				"value":"21:09:54.14",
 				"u_value":"hours",
-				"source":"2"
+				"source":"2,3"
+			}
+		],
+		"photometry":[
+			{
+				"time":"56538.0",
+				"magnitude":"18.4",
+				"u_time":"MJD",
+				"source":"2,3"
 			}
 		]
 	}

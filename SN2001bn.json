@@ -22,15 +22,22 @@
 				"alias":"3"
 			},
 			{
+				"name":"IAUC 7624",
+				"bibcode":"2001IAUC.7624....2V",
+				"reference":"Vicente et al. (2001)",
+				"url":"http://www.cbat.eps.harvard.edu/iauc/07600/07624.html#Item2",
+				"alias":"4"
+			},
+			{
 				"name":"Transient Name Server",
 				"url":"https://wis-tns.weizmann.ac.il/",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"5"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -38,7 +45,7 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"6"
+				"alias":"7"
 			},
 			{
 				"name":"SIMBAD astronomical database",
@@ -46,46 +53,52 @@
 				"reference":"Wenger et al. (2000)",
 				"secondary":true,
 				"url":"http://simbad.u-strasbg.fr/",
-				"alias":"7"
+				"alias":"8"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2001bn",
-				"source":"2,4,5,7"
+				"source":"2,4,5,6,8"
 			},
 			{
 				"value":"CSS:143039.3-020600",
-				"source":"7"
+				"source":"8"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Star",
-				"source":"2,5"
+				"source":"2,4,6"
 			}
 		],
 		"dec":[
 			{
 				"value":"-02:06:01.4",
 				"u_value":"degrees",
-				"source":"3,7"
+				"source":"3,8"
 			},
 			{
 				"value":"-02:06:00.61",
 				"u_value":"degrees",
-				"source":"4"
+				"source":"5"
 			},
 			{
 				"value":"-02:06:00.6",
 				"u_value":"degrees",
-				"source":"5"
+				"source":"4,6"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2001/03/25",
-				"source":"5"
+				"source":"4,6"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"Palomar-Quest",
+				"source":"4,6"
 			}
 		],
 		"ebv":[
@@ -93,19 +106,55 @@
 				"value":"0.0393",
 				"derived":true,
 				"e_value":"0.0011",
-				"source":"1,6"
+				"source":"1,7"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"19.4",
+				"derived":true,
+				"source":"4,6,7"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2001/03/25",
+				"derived":true,
+				"source":"4,6,7"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"19.4",
+				"derived":true,
+				"source":"4,6,7"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2001/03/25",
+				"derived":true,
+				"source":"4,6,7"
 			}
 		],
 		"ra":[
 			{
 				"value":"14:30:39.41",
 				"u_value":"hours",
-				"source":"3,7"
+				"source":"3,8"
 			},
 			{
 				"value":"14:30:39.53",
 				"u_value":"hours",
-				"source":"4,5"
+				"source":"4,5,6"
+			}
+		],
+		"photometry":[
+			{
+				"time":"51993.0",
+				"magnitude":"19.4",
+				"u_time":"MJD",
+				"source":"4,6"
 			}
 		]
 	}
