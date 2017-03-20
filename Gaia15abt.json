@@ -15,10 +15,21 @@
 				"alias":"2"
 			},
 			{
+				"name":"CPCS Alert 25806",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=25806",
+				"alias":"3"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"4"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -26,47 +37,47 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia15abt",
-				"source":"2,3"
+				"source":"2,4,5"
 			},
 			{
 				"value":"CSS141223:122149-035808",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Blazar",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"dec":[
 			{
 				"value":"-03:58:08.6",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"value":"-03:58:08.616",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"2,4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2015/01/26",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Gaia",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"ebv":[
@@ -74,61 +85,61 @@
 				"value":"0.0503",
 				"derived":true,
 				"e_value":"0.0025",
-				"source":"1,4"
+				"source":"1,6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"17.2",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2015/05/13",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"17.2",
+				"value":"19.71",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"g",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2015/05/13",
+				"value":"2015/03/04",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"12:21:49.10",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"value":"12:21:49.2",
 				"u_value":"hours",
-				"source":"2"
+				"source":"2,4"
 			}
 		],
 		"photometry":[
@@ -212,6 +223,24 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"2"
+			},
+			{
+				"time":"57085.2677",
+				"band":"g",
+				"e_magnitude":"0.074",
+				"magnitude":"19.7108",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57085.2677",
+				"band":"r",
+				"e_magnitude":"0.0401",
+				"magnitude":"19.0816",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"3,4"
 			},
 			{
 				"time":"57154.723",

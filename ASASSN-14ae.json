@@ -22,10 +22,21 @@
 				"alias":"3"
 			},
 			{
+				"name":"CPCS Alert 25463",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=25463",
+				"alias":"4"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"5"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -33,7 +44,7 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"7"
 			},
 			{
 				"name":"SIMBAD astronomical database",
@@ -41,19 +52,19 @@
 				"reference":"Wenger et al. (2000)",
 				"secondary":true,
 				"url":"http://simbad.u-strasbg.fr/",
-				"alias":"6"
+				"alias":"8"
 			}
 		],
 		"alias":[
 			{
 				"value":"ASASSN-14ae",
-				"source":"2,4,6"
+				"source":"2,5,6,8"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"TDE",
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"comovingdist":[
@@ -61,31 +72,36 @@
 				"value":"191",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4,5"
+				"source":"1,2,6,7"
 			}
 		],
 		"dec":[
 			{
 				"value":"+34:05:52.4",
 				"u_value":"degrees",
-				"source":"2,6"
+				"source":"2,8"
 			},
 			{
 				"value":"+34:05:52.7",
 				"u_value":"degrees",
-				"source":"2,4"
+				"source":"2,6"
+			},
+			{
+				"value":"+34:05:52.8",
+				"u_value":"degrees",
+				"source":"5"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2014/01/25",
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ASAS-SN",
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"ebv":[
@@ -93,7 +109,7 @@
 				"value":"0.0155",
 				"derived":true,
 				"e_value":"0.0007",
-				"source":"3,5"
+				"source":"3,7"
 			}
 		],
 		"lumdist":[
@@ -101,74 +117,93 @@
 				"value":"199.3",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4,5"
+				"source":"1,2,6,7"
 			}
 		],
 		"maxabsmag":[
 			{
-				"value":"-19.45",
+				"value":"-20.85",
 				"derived":true,
-				"source":"1,2,4,5"
+				"source":"1,2,6,7"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"17",
+				"value":"15.6",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"4,5,7"
+			}
+		],
+		"maxband":[
+			{
+				"value":"i",
+				"derived":true,
+				"source":"4,5,7"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2014/01/25",
+				"value":"2014/04/04",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualabsmag":[
 			{
-				"value":"-19.5",
+				"value":"-19.93",
 				"derived":true,
-				"source":"1,2,4,5"
+				"source":"1,2,6,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"17",
+				"value":"16.57",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"4,5,7"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2014/01/25",
+				"value":"2014/01/30",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"4,5,7"
 			}
 		],
 		"ra":[
 			{
 				"value":"11:08:40.11",
 				"u_value":"hours",
-				"source":"2,6"
+				"source":"2,8"
 			},
 			{
 				"value":"11:08:39.96",
 				"u_value":"hours",
-				"source":"2,4"
+				"source":"2,6"
+			},
+			{
+				"value":"11:08:39.84",
+				"u_value":"hours",
+				"source":"5"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.0436",
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"velocity":[
 			{
 				"value":"12800",
 				"u_value":"km/s",
-				"source":"5"
+				"source":"7"
 			}
 		],
 		"photometry":[
@@ -176,13 +211,2082 @@
 				"time":"56681.5",
 				"magnitude":"17.0",
 				"u_time":"MJD",
-				"source":"2,4"
+				"source":"2,6"
 			},
 			{
 				"time":"56682.0",
 				"magnitude":"17.0",
 				"u_time":"MJD",
-				"source":"2,4"
+				"source":"2,6"
+			},
+			{
+				"time":"56684.1203",
+				"band":"r",
+				"e_magnitude":"0.2324",
+				"magnitude":"16.0361",
+				"observatory":"SkyCamZ Liverpool Ia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56684.2092",
+				"band":"r",
+				"e_magnitude":"0.0457",
+				"magnitude":"15.8624",
+				"observatory":"SkyCamZ Liverpool Ia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56687.8925",
+				"band":"g",
+				"e_magnitude":"0.0145",
+				"magnitude":"16.6021",
+				"observatory":"Irek Khamitov T100",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56687.8944",
+				"band":"g",
+				"e_magnitude":"0.0141",
+				"magnitude":"16.5743",
+				"observatory":"Irek Khamitov T100",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56687.8956",
+				"band":"g",
+				"e_magnitude":"0.0128",
+				"magnitude":"16.6036",
+				"observatory":"Irek Khamitov T100",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56687.9064",
+				"band":"r",
+				"e_magnitude":"0.0107",
+				"magnitude":"16.3556",
+				"observatory":"Irek Khamitov T100",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56687.9077",
+				"band":"r",
+				"e_magnitude":"0.0113",
+				"magnitude":"16.3613",
+				"observatory":"Irek Khamitov T100",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56687.909",
+				"band":"r",
+				"e_magnitude":"0.0093",
+				"magnitude":"16.3612",
+				"observatory":"Irek Khamitov T100",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56687.9103",
+				"band":"i",
+				"e_magnitude":"0.0118",
+				"magnitude":"16.2087",
+				"observatory":"Irek Khamitov T100",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56687.9116",
+				"band":"i",
+				"e_magnitude":"0.0114",
+				"magnitude":"16.2213",
+				"observatory":"Irek Khamitov T100",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56687.9128",
+				"band":"i",
+				"e_magnitude":"0.012",
+				"magnitude":"16.2617",
+				"observatory":"Irek Khamitov T100",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56687.9146",
+				"band":"z",
+				"e_magnitude":"0.0321",
+				"magnitude":"16.147",
+				"observatory":"Irek Khamitov T100",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56687.9159",
+				"band":"z",
+				"e_magnitude":"0.0342",
+				"magnitude":"16.1448",
+				"observatory":"Irek Khamitov T100",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56687.9171",
+				"band":"z",
+				"e_magnitude":"0.0348",
+				"magnitude":"16.1111",
+				"observatory":"Irek Khamitov T100",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56688.8692",
+				"band":"g",
+				"e_magnitude":"0.0078",
+				"magnitude":"16.5854",
+				"observatory":"Irek Khamitov T100",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56688.8705",
+				"band":"g",
+				"e_magnitude":"0.0079",
+				"magnitude":"16.6033",
+				"observatory":"Irek Khamitov T100",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56688.8718",
+				"band":"g",
+				"e_magnitude":"0.0074",
+				"magnitude":"16.5791",
+				"observatory":"Irek Khamitov T100",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56688.8738",
+				"band":"r",
+				"e_magnitude":"0.0091",
+				"magnitude":"16.3631",
+				"observatory":"Irek Khamitov T100",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56688.8751",
+				"band":"r",
+				"e_magnitude":"0.0091",
+				"magnitude":"16.358",
+				"observatory":"Irek Khamitov T100",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56688.8764",
+				"band":"r",
+				"e_magnitude":"0.0088",
+				"magnitude":"16.3563",
+				"observatory":"Irek Khamitov T100",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56688.8832",
+				"band":"i",
+				"e_magnitude":"0.0119",
+				"magnitude":"16.2433",
+				"observatory":"Irek Khamitov T100",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56688.8845",
+				"band":"i",
+				"e_magnitude":"0.0116",
+				"magnitude":"16.2245",
+				"observatory":"Irek Khamitov T100",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56688.8858",
+				"band":"i",
+				"e_magnitude":"0.0112",
+				"magnitude":"16.2335",
+				"observatory":"Irek Khamitov T100",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56688.8886",
+				"band":"z",
+				"e_magnitude":"0.0305",
+				"magnitude":"16.2477",
+				"observatory":"Irek Khamitov T100",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56688.8899",
+				"band":"z",
+				"e_magnitude":"0.0289",
+				"magnitude":"16.2545",
+				"observatory":"Irek Khamitov T100",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56688.8912",
+				"band":"z",
+				"e_magnitude":"0.0299",
+				"magnitude":"16.0998",
+				"observatory":"Irek Khamitov T100",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56692.1287",
+				"band":"I",
+				"e_magnitude":"0.045",
+				"magnitude":"16.1705",
+				"observatory":"Ostrowik 0.6m. Micha",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56692.1795",
+				"band":"V",
+				"e_magnitude":"0.027",
+				"magnitude":"16.611",
+				"observatory":"Ostrowik 0.6m. Micha",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56693.0749",
+				"band":"B",
+				"e_magnitude":"0.092",
+				"magnitude":"16.673",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56693.0932",
+				"band":"B",
+				"e_magnitude":"0.063",
+				"magnitude":"16.8063",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56693.1125",
+				"band":"B",
+				"e_magnitude":"0.056",
+				"magnitude":"16.8385",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56693.123",
+				"band":"B",
+				"e_magnitude":"0.058",
+				"magnitude":"16.8465",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56693.1298",
+				"band":"I",
+				"e_magnitude":"0.045",
+				"magnitude":"16.1705",
+				"observatory":"Ostrowik 0.6m. Micha",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56693.1318",
+				"band":"R",
+				"e_magnitude":"0.021",
+				"magnitude":"16.3768",
+				"observatory":"Ostrowik 0.6m. Micha",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56693.1331",
+				"band":"B",
+				"e_magnitude":"0.059",
+				"magnitude":"16.6426",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56694.0035",
+				"band":"r",
+				"e_magnitude":"0.072",
+				"magnitude":"15.9435",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56694.0279",
+				"band":"i",
+				"e_magnitude":"0.112",
+				"magnitude":"16.3798",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56694.0318",
+				"band":"r",
+				"e_magnitude":"0.071",
+				"magnitude":"16.3967",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56694.0357",
+				"band":"V",
+				"e_magnitude":"0.091",
+				"magnitude":"16.5469",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56694.04",
+				"band":"B",
+				"e_magnitude":"0.173",
+				"magnitude":"17.1828",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56694.0454",
+				"band":"i",
+				"e_magnitude":"0.077",
+				"magnitude":"16.1189",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56694.05",
+				"band":"r",
+				"e_magnitude":"0.068",
+				"magnitude":"16.3629",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56694.054",
+				"band":"V",
+				"e_magnitude":"0.082",
+				"magnitude":"16.4399",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56694.0581",
+				"band":"B",
+				"e_magnitude":"0.125",
+				"magnitude":"16.8724",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56694.0634",
+				"band":"i",
+				"e_magnitude":"0.09",
+				"magnitude":"16.3889",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56694.0679",
+				"band":"r",
+				"e_magnitude":"0.057",
+				"magnitude":"16.3139",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56694.0719",
+				"band":"V",
+				"e_magnitude":"0.074",
+				"magnitude":"16.3749",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56694.0762",
+				"band":"B",
+				"e_magnitude":"0.11",
+				"magnitude":"16.801",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56695.0627",
+				"band":"r",
+				"e_magnitude":"0.167",
+				"magnitude":"16.188",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56695.8642",
+				"band":"i",
+				"e_magnitude":"0.136",
+				"magnitude":"15.9289",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56695.8695",
+				"band":"i",
+				"e_magnitude":"0.146",
+				"magnitude":"16.1761",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56695.874",
+				"band":"i",
+				"e_magnitude":"0.102",
+				"magnitude":"16.0419",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56701.0347",
+				"band":"V",
+				"e_magnitude":"0.0294",
+				"magnitude":"16.5942",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56701.0355",
+				"band":"V",
+				"e_magnitude":"0.0262",
+				"magnitude":"16.572",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56701.0361",
+				"band":"V",
+				"e_magnitude":"0.0256",
+				"magnitude":"16.5398",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56701.8901",
+				"band":"V",
+				"e_magnitude":"0.742",
+				"magnitude":"16.7209",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56706.1472",
+				"band":"I",
+				"e_magnitude":"0.03",
+				"magnitude":"16.1164",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56708.9083",
+				"band":"r",
+				"e_magnitude":"0.258",
+				"magnitude":"16.8334",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56708.912",
+				"band":"i",
+				"e_magnitude":"0.288",
+				"magnitude":"16.477",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56708.9317",
+				"band":"r",
+				"e_magnitude":"0.288",
+				"magnitude":"16.708",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56708.9876",
+				"band":"I",
+				"e_magnitude":"0.024",
+				"magnitude":"16.1372",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56709.0019",
+				"band":"B",
+				"e_magnitude":"0.035",
+				"magnitude":"17.1268",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56709.0103",
+				"band":"V",
+				"e_magnitude":"0.033",
+				"magnitude":"16.7162",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56709.0217",
+				"band":"R",
+				"e_magnitude":"0.026",
+				"magnitude":"16.5758",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56709.0543",
+				"band":"I",
+				"e_magnitude":"0.026",
+				"magnitude":"16.1063",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56709.0684",
+				"band":"B",
+				"e_magnitude":"0.046",
+				"magnitude":"17.0843",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56709.0768",
+				"band":"V",
+				"e_magnitude":"0.041",
+				"magnitude":"16.8364",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56709.0851",
+				"band":"R",
+				"e_magnitude":"0.026",
+				"magnitude":"16.5879",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56709.126",
+				"band":"I",
+				"e_magnitude":"0.032",
+				"magnitude":"16.1893",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56709.1508",
+				"band":"V",
+				"e_magnitude":"0.049",
+				"magnitude":"16.8983",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56709.1585",
+				"band":"R",
+				"e_magnitude":"0.03",
+				"magnitude":"16.5724",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56709.9082",
+				"band":"i",
+				"e_magnitude":"0.138",
+				"magnitude":"16.4178",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56709.912",
+				"band":"r",
+				"e_magnitude":"0.121",
+				"magnitude":"16.6022",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56709.9194",
+				"band":"B",
+				"e_magnitude":"0.226",
+				"magnitude":"16.9444",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56710.7992",
+				"band":"i",
+				"e_magnitude":"0.059",
+				"magnitude":"15.8242",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56710.803",
+				"band":"r",
+				"e_magnitude":"0.052",
+				"magnitude":"16.2817",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56710.8072",
+				"band":"V",
+				"e_magnitude":"0.098",
+				"magnitude":"16.4217",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56710.8112",
+				"band":"B",
+				"e_magnitude":"0.196",
+				"magnitude":"17.3033",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56710.8413",
+				"band":"i",
+				"e_magnitude":"0.061",
+				"magnitude":"16.1555",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56710.8452",
+				"band":"r",
+				"e_magnitude":"0.051",
+				"magnitude":"16.4162",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56710.849",
+				"band":"V",
+				"e_magnitude":"0.07",
+				"magnitude":"16.5545",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56710.8528",
+				"band":"B",
+				"e_magnitude":"0.101",
+				"magnitude":"16.7768",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56710.8798",
+				"band":"i",
+				"e_magnitude":"0.068",
+				"magnitude":"16.2505",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56710.8836",
+				"band":"r",
+				"e_magnitude":"0.052",
+				"magnitude":"16.385",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56710.8874",
+				"band":"V",
+				"e_magnitude":"0.097",
+				"magnitude":"16.566",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56710.8912",
+				"band":"B",
+				"e_magnitude":"0.167",
+				"magnitude":"17.0674",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56710.9186",
+				"band":"i",
+				"e_magnitude":"0.105",
+				"magnitude":"16.1686",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56710.9227",
+				"band":"r",
+				"e_magnitude":"0.073",
+				"magnitude":"16.4314",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56710.9265",
+				"band":"V",
+				"e_magnitude":"0.09",
+				"magnitude":"16.4655",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56710.9303",
+				"band":"B",
+				"e_magnitude":"0.12",
+				"magnitude":"16.7469",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56710.9592",
+				"band":"i",
+				"e_magnitude":"0.095",
+				"magnitude":"16.3087",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56710.9633",
+				"band":"r",
+				"e_magnitude":"0.075",
+				"magnitude":"16.5852",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56710.9671",
+				"band":"V",
+				"e_magnitude":"0.09",
+				"magnitude":"16.5237",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56710.9709",
+				"band":"B",
+				"e_magnitude":"0.169",
+				"magnitude":"17.0608",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56710.9995",
+				"band":"i",
+				"e_magnitude":"0.09",
+				"magnitude":"16.3702",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.0036",
+				"band":"r",
+				"e_magnitude":"0.067",
+				"magnitude":"16.4993",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.0112",
+				"band":"B",
+				"e_magnitude":"0.136",
+				"magnitude":"16.9114",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.0405",
+				"band":"i",
+				"e_magnitude":"0.118",
+				"magnitude":"16.4205",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.0443",
+				"band":"r",
+				"e_magnitude":"0.085",
+				"magnitude":"16.6389",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.0481",
+				"band":"V",
+				"e_magnitude":"0.109",
+				"magnitude":"16.7745",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.0801",
+				"band":"i",
+				"e_magnitude":"0.101",
+				"magnitude":"16.2958",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.0842",
+				"band":"r",
+				"e_magnitude":"0.09",
+				"magnitude":"16.6215",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.088",
+				"band":"V",
+				"e_magnitude":"0.129",
+				"magnitude":"16.749",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.0918",
+				"band":"B",
+				"e_magnitude":"0.187",
+				"magnitude":"17.0862",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.1202",
+				"band":"i",
+				"e_magnitude":"0.107",
+				"magnitude":"16.3226",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.1242",
+				"band":"r",
+				"e_magnitude":"0.1",
+				"magnitude":"16.647",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.1281",
+				"band":"V",
+				"e_magnitude":"0.115",
+				"magnitude":"16.6873",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.1319",
+				"band":"B",
+				"e_magnitude":"0.327",
+				"magnitude":"17.4921",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.1601",
+				"band":"i",
+				"e_magnitude":"0.181",
+				"magnitude":"16.5638",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.1642",
+				"band":"r",
+				"e_magnitude":"0.105",
+				"magnitude":"16.5418",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.168",
+				"band":"V",
+				"e_magnitude":"0.098",
+				"magnitude":"16.3269",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.1717",
+				"band":"B",
+				"e_magnitude":"0.167",
+				"magnitude":"16.7661",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.2006",
+				"band":"i",
+				"e_magnitude":"0.184",
+				"magnitude":"16.4739",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.2047",
+				"band":"r",
+				"e_magnitude":"0.148",
+				"magnitude":"16.5244",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.2084",
+				"band":"V",
+				"e_magnitude":"0.175",
+				"magnitude":"16.5822",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.2122",
+				"band":"B",
+				"e_magnitude":"0.211",
+				"magnitude":"16.6661",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.8626",
+				"band":"r",
+				"e_magnitude":"0.052",
+				"magnitude":"16.5885",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.8663",
+				"band":"i",
+				"e_magnitude":"0.068",
+				"magnitude":"16.4635",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.8701",
+				"band":"V",
+				"e_magnitude":"0.074",
+				"magnitude":"16.8129",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.8739",
+				"band":"B",
+				"e_magnitude":"0.213",
+				"magnitude":"17.4999",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.8934",
+				"band":"r",
+				"e_magnitude":"0.069",
+				"magnitude":"16.2429",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.8971",
+				"band":"i",
+				"e_magnitude":"0.087",
+				"magnitude":"16.1445",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.9009",
+				"band":"V",
+				"e_magnitude":"0.103",
+				"magnitude":"16.4319",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56711.9047",
+				"band":"B",
+				"e_magnitude":"0.172",
+				"magnitude":"16.6744",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56712.054",
+				"band":"V",
+				"e_magnitude":"0.013",
+				"magnitude":"16.7556",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56712.0548",
+				"band":"V",
+				"e_magnitude":"0.0135",
+				"magnitude":"16.7624",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56712.0554",
+				"band":"V",
+				"e_magnitude":"0.012",
+				"magnitude":"16.7444",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56714.8147",
+				"band":"I",
+				"e_magnitude":"0.03",
+				"magnitude":"16.1835",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56714.8233",
+				"band":"R",
+				"e_magnitude":"0.037",
+				"magnitude":"16.5991",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56714.835",
+				"band":"V",
+				"e_magnitude":"0.043",
+				"magnitude":"16.9656",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56714.8613",
+				"band":"I",
+				"e_magnitude":"0.027",
+				"magnitude":"16.1646",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56714.8697",
+				"band":"R",
+				"e_magnitude":"0.031",
+				"magnitude":"16.6616",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56714.8985",
+				"band":"B",
+				"e_magnitude":"0.071",
+				"magnitude":"17.3807",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56714.9871",
+				"band":"i",
+				"e_magnitude":"0.059",
+				"magnitude":"16.3184",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56714.991",
+				"band":"r",
+				"e_magnitude":"0.049",
+				"magnitude":"16.5284",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56714.9948",
+				"band":"V",
+				"e_magnitude":"0.061",
+				"magnitude":"16.6627",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56714.9986",
+				"band":"B",
+				"e_magnitude":"0.107",
+				"magnitude":"17.115",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56715.0082",
+				"band":"i",
+				"e_magnitude":"0.062",
+				"magnitude":"16.342",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56715.0121",
+				"band":"r",
+				"e_magnitude":"0.046",
+				"magnitude":"16.6531",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56715.0159",
+				"band":"V",
+				"e_magnitude":"0.062",
+				"magnitude":"16.8681",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56715.0197",
+				"band":"B",
+				"e_magnitude":"0.124",
+				"magnitude":"17.2342",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56715.0243",
+				"band":"B2pg",
+				"magnitude":"17.1116",
+				"observatory":"Goran Damljanovic, A",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56715.0274",
+				"band":"B2pg",
+				"e_magnitude":"0.027",
+				"magnitude":"17.481",
+				"observatory":"Goran Damljanovic, A",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56715.0293",
+				"band":"i",
+				"e_magnitude":"0.061",
+				"magnitude":"16.3124",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56715.0304",
+				"band":"B2pg",
+				"e_magnitude":"0.0243",
+				"magnitude":"17.46",
+				"observatory":"Goran Damljanovic, A",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56715.0334",
+				"band":"r",
+				"e_magnitude":"0.044",
+				"magnitude":"16.4998",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56715.0335",
+				"band":"V",
+				"e_magnitude":"0.0143",
+				"magnitude":"17.3229",
+				"observatory":"Goran Damljanovic, A",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56715.0358",
+				"band":"V",
+				"e_magnitude":"0.0131",
+				"magnitude":"17.3925",
+				"observatory":"Goran Damljanovic, A",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56715.0372",
+				"band":"V",
+				"e_magnitude":"0.057",
+				"magnitude":"16.5907",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56715.0382",
+				"band":"V",
+				"e_magnitude":"0.0155",
+				"magnitude":"17.1438",
+				"observatory":"Goran Damljanovic, A",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56715.0406",
+				"band":"r",
+				"e_magnitude":"0.0111",
+				"magnitude":"17.2383",
+				"observatory":"Goran Damljanovic, A",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56715.041",
+				"band":"B",
+				"e_magnitude":"0.092",
+				"magnitude":"17.0106",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56715.0429",
+				"band":"r",
+				"e_magnitude":"0.0113",
+				"magnitude":"17.1842",
+				"observatory":"Goran Damljanovic, A",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56715.0453",
+				"band":"r",
+				"e_magnitude":"0.0116",
+				"magnitude":"17.2451",
+				"observatory":"Goran Damljanovic, A",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56715.0477",
+				"band":"i",
+				"e_magnitude":"0.0161",
+				"magnitude":"17.1179",
+				"observatory":"Goran Damljanovic, A",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56715.05",
+				"band":"i",
+				"e_magnitude":"0.0179",
+				"magnitude":"17.1073",
+				"observatory":"Goran Damljanovic, A",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56715.0523",
+				"band":"i",
+				"e_magnitude":"0.0157",
+				"magnitude":"17.1156",
+				"observatory":"Goran Damljanovic, A",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56715.0581",
+				"band":"i",
+				"e_magnitude":"0.073",
+				"magnitude":"16.3794",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56715.0621",
+				"band":"r",
+				"e_magnitude":"0.074",
+				"magnitude":"16.7636",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56715.0659",
+				"band":"V",
+				"e_magnitude":"0.098",
+				"magnitude":"16.8252",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56715.0926",
+				"band":"i",
+				"e_magnitude":"0.11",
+				"magnitude":"16.4377",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56715.0964",
+				"band":"r",
+				"e_magnitude":"0.078",
+				"magnitude":"16.6169",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56719.0347",
+				"band":"V",
+				"e_magnitude":"0.0122",
+				"magnitude":"16.8478",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56719.0354",
+				"band":"V",
+				"e_magnitude":"0.0112",
+				"magnitude":"16.8758",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56719.0368",
+				"band":"V",
+				"e_magnitude":"0.0137",
+				"magnitude":"16.8643",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56719.0375",
+				"band":"V",
+				"e_magnitude":"0.0126",
+				"magnitude":"16.8731",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56719.9818",
+				"band":"r",
+				"e_magnitude":"0.075",
+				"magnitude":"16.5738",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56719.9892",
+				"band":"B",
+				"e_magnitude":"0.259",
+				"magnitude":"17.0485",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56725.7891",
+				"band":"V",
+				"e_magnitude":"0.029",
+				"magnitude":"16.9431",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56725.7896",
+				"band":"V",
+				"e_magnitude":"0.0268",
+				"magnitude":"16.9162",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56725.7905",
+				"band":"V",
+				"e_magnitude":"0.028",
+				"magnitude":"16.9306",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56725.791",
+				"band":"V",
+				"e_magnitude":"0.028",
+				"magnitude":"16.9414",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56725.8185",
+				"band":"I",
+				"e_magnitude":"0.041",
+				"magnitude":"16.303",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56728.8709",
+				"band":"i",
+				"e_magnitude":"0.0258",
+				"magnitude":"16.6383",
+				"observatory":"Werner Zeilinger, 1.",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56735.9803",
+				"band":"V",
+				"e_magnitude":"0.0555",
+				"magnitude":"16.977",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56735.9809",
+				"band":"V",
+				"e_magnitude":"0.0491",
+				"magnitude":"17.0016",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56735.9817",
+				"band":"V",
+				"e_magnitude":"0.0508",
+				"magnitude":"16.9044",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56735.9822",
+				"band":"V",
+				"e_magnitude":"0.0441",
+				"magnitude":"16.8908",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56738.8263",
+				"band":"I",
+				"e_magnitude":"0.029",
+				"magnitude":"16.2992",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56738.8384",
+				"band":"R",
+				"e_magnitude":"0.034",
+				"magnitude":"16.935",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56738.8711",
+				"band":"I",
+				"e_magnitude":"0.035",
+				"magnitude":"16.3236",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56744.1019",
+				"band":"i",
+				"e_magnitude":"0.119",
+				"magnitude":"16.4347",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56744.1095",
+				"band":"r",
+				"e_magnitude":"0.166",
+				"magnitude":"17.09",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56744.1323",
+				"band":"i",
+				"e_magnitude":"0.163",
+				"magnitude":"16.5517",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56744.1399",
+				"band":"r",
+				"e_magnitude":"0.152",
+				"magnitude":"16.8158",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56744.1546",
+				"band":"B",
+				"e_magnitude":"0.464",
+				"magnitude":"17.8077",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56745.8597",
+				"band":"g",
+				"e_magnitude":"0.0035",
+				"magnitude":"17.3455",
+				"observatory":"Mercator, Lovro Pala",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56745.8597",
+				"band":"r",
+				"e_magnitude":"0.0037",
+				"magnitude":"16.7392",
+				"observatory":"Mercator, Lovro Pala",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56749.8697",
+				"band":"I",
+				"e_magnitude":"0.065",
+				"magnitude":"16.6259",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56749.882",
+				"band":"R",
+				"e_magnitude":"0.067",
+				"magnitude":"16.9195",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56749.9025",
+				"band":"V",
+				"e_magnitude":"0.107",
+				"magnitude":"17.289",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56750.1275",
+				"band":"g",
+				"e_magnitude":"0.0026",
+				"magnitude":"17.3361",
+				"observatory":"Mercator, Lovro Pala",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56750.1275",
+				"band":"r",
+				"e_magnitude":"0.0028",
+				"magnitude":"16.7946",
+				"observatory":"Mercator, Lovro Pala",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56750.1275",
+				"band":"u",
+				"e_magnitude":"0.0214",
+				"magnitude":"18.5058",
+				"observatory":"Mercator, Lovro Pala",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56751.838",
+				"band":"i",
+				"e_magnitude":"0.042",
+				"magnitude":"15.6015",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56751.8453",
+				"band":"i",
+				"e_magnitude":"0.065",
+				"magnitude":"15.9778",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56751.8561",
+				"band":"r",
+				"e_magnitude":"0.105",
+				"magnitude":"16.9093",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56751.8634",
+				"band":"r",
+				"e_magnitude":"0.12",
+				"magnitude":"17.0347",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56751.8819",
+				"band":"V",
+				"e_magnitude":"0.114",
+				"magnitude":"16.8634",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56751.9",
+				"band":"B",
+				"e_magnitude":"0.737",
+				"magnitude":"18.3494",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56752.893",
+				"band":"V",
+				"e_magnitude":"0.078",
+				"magnitude":"16.9745",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56752.9003",
+				"band":"V",
+				"e_magnitude":"0.087",
+				"magnitude":"17.047",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56752.9179",
+				"band":"I",
+				"e_magnitude":"0.03",
+				"magnitude":"16.4753",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56752.9197",
+				"band":"B",
+				"e_magnitude":"0.225",
+				"magnitude":"17.81",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56752.9301",
+				"band":"R",
+				"e_magnitude":"0.036",
+				"magnitude":"17.0211",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56752.9486",
+				"band":"V",
+				"e_magnitude":"0.044",
+				"magnitude":"17.3269",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56752.9638",
+				"band":"V",
+				"e_magnitude":"0.042",
+				"magnitude":"17.3572",
+				"observatory":"Krzysztof Ulaczyk, O",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56754.8951",
+				"band":"r",
+				"e_magnitude":"0.227",
+				"magnitude":"16.9479",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56754.9334",
+				"band":"B",
+				"e_magnitude":"0.476",
+				"magnitude":"17.7114",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56754.9463",
+				"band":"V",
+				"e_magnitude":"0.0317",
+				"magnitude":"17.1973",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56754.9468",
+				"band":"V",
+				"e_magnitude":"0.0278",
+				"magnitude":"17.1273",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56754.9477",
+				"band":"V",
+				"e_magnitude":"0.0278",
+				"magnitude":"17.1785",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56754.9483",
+				"band":"V",
+				"e_magnitude":"0.0284",
+				"magnitude":"17.1809",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56763.8741",
+				"band":"I",
+				"e_magnitude":"0.034",
+				"magnitude":"16.4759",
+				"observatory":"Ostrowik 0.6m. Micha",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56763.8902",
+				"band":"R",
+				"e_magnitude":"0.042",
+				"magnitude":"16.9888",
+				"observatory":"Ostrowik 0.6m. Micha",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56763.9",
+				"band":"I",
+				"e_magnitude":"0.034",
+				"magnitude":"16.4337",
+				"observatory":"Ostrowik 0.6m. Micha",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56763.9072",
+				"band":"V",
+				"e_magnitude":"0.046",
+				"magnitude":"17.4018",
+				"observatory":"Ostrowik 0.6m. Micha",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56763.9331",
+				"band":"R",
+				"e_magnitude":"0.035",
+				"magnitude":"17.0493",
+				"observatory":"Ostrowik 0.6m. Micha",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56770.9056",
+				"band":"V",
+				"e_magnitude":"0.0204",
+				"magnitude":"17.1838",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56770.9062",
+				"band":"V",
+				"e_magnitude":"0.0219",
+				"magnitude":"17.2915",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56770.9071",
+				"band":"V",
+				"e_magnitude":"0.0228",
+				"magnitude":"17.2732",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56770.9076",
+				"band":"V",
+				"e_magnitude":"0.0202",
+				"magnitude":"17.2412",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56776.83",
+				"band":"R",
+				"e_magnitude":"0.05",
+				"magnitude":"17.0725",
+				"observatory":"Ostrowik 0.6m. Micha",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56776.8416",
+				"band":"I",
+				"e_magnitude":"0.043",
+				"magnitude":"16.4833",
+				"observatory":"Ostrowik 0.6m. Micha",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56782.9015",
+				"band":"V",
+				"e_magnitude":"0.0252",
+				"magnitude":"17.1998",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56782.902",
+				"band":"V",
+				"e_magnitude":"0.0263",
+				"magnitude":"17.2891",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56782.9029",
+				"band":"V",
+				"e_magnitude":"0.0263",
+				"magnitude":"17.2673",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56782.9034",
+				"band":"V",
+				"e_magnitude":"0.0253",
+				"magnitude":"17.3097",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56795.8672",
+				"band":"V",
+				"e_magnitude":"0.0305",
+				"magnitude":"17.2395",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56795.8678",
+				"band":"V",
+				"e_magnitude":"0.0267",
+				"magnitude":"17.215",
+				"observatory":"Montarrenti Observat",
+				"u_time":"MJD",
+				"source":"4,5"
 			}
 		]
 	}

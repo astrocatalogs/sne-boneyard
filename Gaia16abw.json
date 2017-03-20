@@ -20,10 +20,21 @@
 				"alias":"3"
 			},
 			{
+				"name":"CPCS Alert 26205",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=26205",
+				"alias":"4"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"5"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -31,23 +42,23 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia16abw",
-				"source":"2,3,4"
+				"source":"2,3,5,6"
 			},
 			{
 				"value":"AT2016dpf",
-				"source":"2,3,4"
+				"source":"2,3,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"QSO",
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"dec":[
@@ -59,12 +70,12 @@
 			{
 				"value":"+60:51:07.3",
 				"u_value":"degrees",
-				"source":"3,4"
+				"source":"3,6"
 			},
 			{
 				"value":"+60:51:07.2",
 				"u_value":"degrees",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"discoverdate":[
@@ -80,7 +91,7 @@
 			},
 			{
 				"value":"Gaia",
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"ebv":[
@@ -88,49 +99,49 @@
 				"value":"0.0081",
 				"derived":true,
 				"e_value":"0.0008",
-				"source":"1,5"
+				"source":"1,7"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"14.82",
+				"value":"14.81",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxband":[
 			{
-				"value":"G",
+				"value":"i",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2016/06/23",
+				"value":"2016/04/25",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"14.82",
+				"value":"15.82",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"B",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2016/06/23",
+				"value":"2016/04/25",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"ra":[
@@ -142,12 +153,12 @@
 			{
 				"value":"10:33:51.43",
 				"u_value":"hours",
-				"source":"3,4"
+				"source":"3,6"
 			},
 			{
 				"value":"10:33:51.36",
 				"u_value":"hours",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"photometry":[
@@ -462,6 +473,384 @@
 				"source":"3"
 			},
 			{
+				"time":"57464.9143",
+				"band":"i",
+				"e_magnitude":"0.0064",
+				"magnitude":"15.1065",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9173",
+				"band":"B",
+				"e_magnitude":"0.0096",
+				"magnitude":"16.1056",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9193",
+				"band":"B",
+				"e_magnitude":"0.0104",
+				"magnitude":"16.224",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9213",
+				"band":"B",
+				"e_magnitude":"0.009",
+				"magnitude":"16.1559",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9232",
+				"band":"V",
+				"e_magnitude":"0.0084",
+				"magnitude":"15.6174",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9249",
+				"band":"V",
+				"e_magnitude":"0.0074",
+				"magnitude":"15.5558",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9266",
+				"band":"V",
+				"e_magnitude":"0.0071",
+				"magnitude":"15.5153",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9283",
+				"band":"r",
+				"e_magnitude":"0.0057",
+				"magnitude":"15.4144",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.93",
+				"band":"r",
+				"e_magnitude":"0.0057",
+				"magnitude":"15.4504",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9316",
+				"band":"r",
+				"e_magnitude":"0.0061",
+				"magnitude":"15.3407",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9334",
+				"band":"i",
+				"e_magnitude":"0.006",
+				"magnitude":"15.0002",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.935",
+				"band":"i",
+				"e_magnitude":"0.0058",
+				"magnitude":"15.0166",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9367",
+				"band":"i",
+				"e_magnitude":"0.007",
+				"magnitude":"15.1007",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9406",
+				"band":"B",
+				"e_magnitude":"0.0112",
+				"magnitude":"16.018",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9426",
+				"band":"B",
+				"e_magnitude":"0.0099",
+				"magnitude":"16.0671",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9447",
+				"band":"B",
+				"e_magnitude":"0.011",
+				"magnitude":"15.9948",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9466",
+				"band":"V",
+				"e_magnitude":"0.0086",
+				"magnitude":"15.4971",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9482",
+				"band":"V",
+				"e_magnitude":"0.0081",
+				"magnitude":"15.5772",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9499",
+				"band":"V",
+				"e_magnitude":"0.0093",
+				"magnitude":"15.6002",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9516",
+				"band":"r",
+				"e_magnitude":"0.0063",
+				"magnitude":"15.3138",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9533",
+				"band":"r",
+				"e_magnitude":"0.006",
+				"magnitude":"15.374",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.955",
+				"band":"r",
+				"e_magnitude":"0.006",
+				"magnitude":"15.4267",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9567",
+				"band":"i",
+				"e_magnitude":"0.0083",
+				"magnitude":"15.0786",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9584",
+				"band":"i",
+				"e_magnitude":"0.0071",
+				"magnitude":"15.0657",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.96",
+				"band":"i",
+				"e_magnitude":"0.0078",
+				"magnitude":"15.1389",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9634",
+				"band":"i",
+				"e_magnitude":"0.0073",
+				"magnitude":"15.1258",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9654",
+				"band":"i",
+				"e_magnitude":"0.0073",
+				"magnitude":"15.1265",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9674",
+				"band":"i",
+				"e_magnitude":"0.0062",
+				"magnitude":"15.0965",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9694",
+				"band":"i",
+				"e_magnitude":"0.0053",
+				"magnitude":"15.0332",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9714",
+				"band":"i",
+				"e_magnitude":"0.0052",
+				"magnitude":"15.0751",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9844",
+				"band":"B",
+				"e_magnitude":"0.0096",
+				"magnitude":"16.0711",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9864",
+				"band":"B",
+				"e_magnitude":"0.0097",
+				"magnitude":"16.1594",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9885",
+				"band":"B",
+				"e_magnitude":"0.0107",
+				"magnitude":"16.1965",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9904",
+				"band":"V",
+				"e_magnitude":"0.0082",
+				"magnitude":"15.5535",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.992",
+				"band":"V",
+				"e_magnitude":"0.0079",
+				"magnitude":"15.511",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9937",
+				"band":"V",
+				"e_magnitude":"0.0077",
+				"magnitude":"15.4684",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9954",
+				"band":"r",
+				"e_magnitude":"0.0054",
+				"magnitude":"15.4073",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9971",
+				"band":"r",
+				"e_magnitude":"0.006",
+				"magnitude":"15.3826",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57464.9988",
+				"band":"r",
+				"e_magnitude":"0.006",
+				"magnitude":"15.4029",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57465.0005",
+				"band":"i",
+				"e_magnitude":"0.0061",
+				"magnitude":"14.9976",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57465.0021",
+				"band":"i",
+				"e_magnitude":"0.0064",
+				"magnitude":"14.9975",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57465.0038",
+				"band":"i",
+				"e_magnitude":"0.0066",
+				"magnitude":"14.9744",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
 				"time":"57467.660",
 				"band":"G",
 				"e_magnitude":"0.0",
@@ -471,6 +860,393 @@
 				"source":"3"
 			},
 			{
+				"time":"57474.8488",
+				"band":"B",
+				"e_magnitude":"0.0076",
+				"magnitude":"16.1211",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57474.8509",
+				"band":"B",
+				"e_magnitude":"0.0071",
+				"magnitude":"16.1679",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57474.8529",
+				"band":"V",
+				"e_magnitude":"0.0063",
+				"magnitude":"15.4972",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57474.8546",
+				"band":"V",
+				"e_magnitude":"0.0061",
+				"magnitude":"15.5012",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57474.8562",
+				"band":"V",
+				"e_magnitude":"0.006",
+				"magnitude":"15.5127",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57474.8582",
+				"band":"r",
+				"e_magnitude":"0.0052",
+				"magnitude":"15.3586",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57474.8599",
+				"band":"r",
+				"e_magnitude":"0.0056",
+				"magnitude":"15.367",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57474.8616",
+				"band":"r",
+				"e_magnitude":"0.0052",
+				"magnitude":"15.397",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57474.8635",
+				"band":"V",
+				"e_magnitude":"0.0073",
+				"magnitude":"15.5209",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57474.8652",
+				"band":"V",
+				"e_magnitude":"0.0072",
+				"magnitude":"15.5318",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57474.8669",
+				"band":"V",
+				"e_magnitude":"0.0074",
+				"magnitude":"15.4974",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57474.8689",
+				"band":"r",
+				"e_magnitude":"0.0053",
+				"magnitude":"15.3496",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57474.8706",
+				"band":"r",
+				"e_magnitude":"0.0054",
+				"magnitude":"15.3333",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57474.8722",
+				"band":"r",
+				"e_magnitude":"0.0058",
+				"magnitude":"15.3826",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57474.8739",
+				"band":"i",
+				"e_magnitude":"0.0058",
+				"magnitude":"14.9469",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57474.8756",
+				"band":"i",
+				"e_magnitude":"0.0052",
+				"magnitude":"14.9113",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57474.8773",
+				"band":"i",
+				"e_magnitude":"0.0066",
+				"magnitude":"15.0157",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57474.8795",
+				"band":"i",
+				"e_magnitude":"0.0067",
+				"magnitude":"14.9963",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57474.8813",
+				"band":"i",
+				"e_magnitude":"0.0058",
+				"magnitude":"14.9612",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57474.8831",
+				"band":"i",
+				"e_magnitude":"0.0069",
+				"magnitude":"15.0362",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57480.9258",
+				"band":"B",
+				"e_magnitude":"0.0125",
+				"magnitude":"16.2651",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57480.9275",
+				"band":"B",
+				"e_magnitude":"0.0109",
+				"magnitude":"16.2484",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57480.9292",
+				"band":"B",
+				"e_magnitude":"0.0112",
+				"magnitude":"16.0969",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57480.9309",
+				"band":"V",
+				"e_magnitude":"0.0093",
+				"magnitude":"15.6259",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57480.9326",
+				"band":"V",
+				"e_magnitude":"0.0113",
+				"magnitude":"15.7686",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57480.9343",
+				"band":"V",
+				"e_magnitude":"0.0114",
+				"magnitude":"15.716",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57480.936",
+				"band":"r",
+				"e_magnitude":"0.0104",
+				"magnitude":"15.4669",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57480.9376",
+				"band":"r",
+				"e_magnitude":"0.0096",
+				"magnitude":"15.5189",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57480.9393",
+				"band":"r",
+				"e_magnitude":"0.0133",
+				"magnitude":"15.4785",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57480.941",
+				"band":"i",
+				"e_magnitude":"0.0143",
+				"magnitude":"15.1824",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57480.9427",
+				"band":"i",
+				"e_magnitude":"0.0094",
+				"magnitude":"15.1531",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57480.9444",
+				"band":"i",
+				"e_magnitude":"0.0097",
+				"magnitude":"15.0286",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57480.9484",
+				"band":"B",
+				"e_magnitude":"0.0124",
+				"magnitude":"16.2694",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57480.9501",
+				"band":"B",
+				"e_magnitude":"0.014",
+				"magnitude":"16.3913",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57480.9517",
+				"band":"B",
+				"e_magnitude":"0.0136",
+				"magnitude":"16.2032",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57480.9535",
+				"band":"V",
+				"e_magnitude":"0.0106",
+				"magnitude":"15.72",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57480.9551",
+				"band":"V",
+				"e_magnitude":"0.0115",
+				"magnitude":"15.748",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57480.9568",
+				"band":"V",
+				"e_magnitude":"0.0103",
+				"magnitude":"15.664",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57480.9585",
+				"band":"r",
+				"e_magnitude":"0.0074",
+				"magnitude":"15.5787",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57480.9602",
+				"band":"r",
+				"e_magnitude":"0.0084",
+				"magnitude":"15.5334",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57480.9619",
+				"band":"r",
+				"e_magnitude":"0.0077",
+				"magnitude":"15.509",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57480.9636",
+				"band":"i",
+				"e_magnitude":"0.0099",
+				"magnitude":"15.1517",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57480.9652",
+				"band":"i",
+				"e_magnitude":"0.0092",
+				"magnitude":"15.1135",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
 				"time":"57487.585",
 				"band":"G",
 				"e_magnitude":"0.0",
@@ -478,6 +1254,2238 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"3"
+			},
+			{
+				"time":"57499.9167",
+				"band":"B",
+				"e_magnitude":"0.019",
+				"magnitude":"15.9345",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9184",
+				"band":"B",
+				"e_magnitude":"0.0188",
+				"magnitude":"15.9551",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9201",
+				"band":"B",
+				"e_magnitude":"0.0191",
+				"magnitude":"15.9673",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9218",
+				"band":"V",
+				"e_magnitude":"0.0125",
+				"magnitude":"15.4524",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9235",
+				"band":"V",
+				"e_magnitude":"0.0124",
+				"magnitude":"15.4657",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9252",
+				"band":"V",
+				"e_magnitude":"0.0127",
+				"magnitude":"15.4591",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9271",
+				"band":"r",
+				"e_magnitude":"0.0087",
+				"magnitude":"15.33",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9288",
+				"band":"r",
+				"e_magnitude":"0.0088",
+				"magnitude":"15.3086",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9305",
+				"band":"r",
+				"e_magnitude":"0.0088",
+				"magnitude":"15.3302",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9322",
+				"band":"i",
+				"e_magnitude":"0.009",
+				"magnitude":"15.0065",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9339",
+				"band":"i",
+				"e_magnitude":"0.0088",
+				"magnitude":"14.9814",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9356",
+				"band":"i",
+				"e_magnitude":"0.0093",
+				"magnitude":"14.9931",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9377",
+				"band":"B",
+				"e_magnitude":"0.0209",
+				"magnitude":"16.0213",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9394",
+				"band":"B",
+				"e_magnitude":"0.0207",
+				"magnitude":"15.9849",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.941",
+				"band":"B",
+				"e_magnitude":"0.0207",
+				"magnitude":"16.0024",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9428",
+				"band":"V",
+				"e_magnitude":"0.0131",
+				"magnitude":"15.4836",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9444",
+				"band":"V",
+				"e_magnitude":"0.0127",
+				"magnitude":"15.481",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9461",
+				"band":"V",
+				"e_magnitude":"0.0132",
+				"magnitude":"15.4459",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9481",
+				"band":"r",
+				"e_magnitude":"0.0087",
+				"magnitude":"15.2695",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9498",
+				"band":"r",
+				"e_magnitude":"0.0088",
+				"magnitude":"15.3157",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9515",
+				"band":"r",
+				"e_magnitude":"0.0086",
+				"magnitude":"15.2553",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9532",
+				"band":"i",
+				"e_magnitude":"0.0087",
+				"magnitude":"15.0035",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9548",
+				"band":"i",
+				"e_magnitude":"0.0085",
+				"magnitude":"15.0046",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9565",
+				"band":"i",
+				"e_magnitude":"0.0085",
+				"magnitude":"14.9353",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9586",
+				"band":"B",
+				"e_magnitude":"0.0198",
+				"magnitude":"15.9768",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9602",
+				"band":"B",
+				"e_magnitude":"0.0208",
+				"magnitude":"16.0277",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9619",
+				"band":"B",
+				"e_magnitude":"0.0204",
+				"magnitude":"15.9758",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9636",
+				"band":"V",
+				"e_magnitude":"0.0124",
+				"magnitude":"15.4387",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9653",
+				"band":"V",
+				"e_magnitude":"0.0131",
+				"magnitude":"15.4843",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.967",
+				"band":"V",
+				"e_magnitude":"0.0133",
+				"magnitude":"15.5338",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.969",
+				"band":"r",
+				"e_magnitude":"0.0087",
+				"magnitude":"15.2875",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9707",
+				"band":"r",
+				"e_magnitude":"0.0091",
+				"magnitude":"15.3352",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9723",
+				"band":"r",
+				"e_magnitude":"0.0087",
+				"magnitude":"15.3394",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.974",
+				"band":"i",
+				"e_magnitude":"0.0087",
+				"magnitude":"14.9799",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9757",
+				"band":"i",
+				"e_magnitude":"0.0086",
+				"magnitude":"14.9747",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9774",
+				"band":"i",
+				"e_magnitude":"0.0088",
+				"magnitude":"14.9624",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9805",
+				"band":"B",
+				"e_magnitude":"0.0211",
+				"magnitude":"15.9329",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9821",
+				"band":"B",
+				"e_magnitude":"0.022",
+				"magnitude":"16.033",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9838",
+				"band":"B",
+				"e_magnitude":"0.0255",
+				"magnitude":"15.9991",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9855",
+				"band":"V",
+				"e_magnitude":"0.0147",
+				"magnitude":"15.5014",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9872",
+				"band":"V",
+				"e_magnitude":"0.0144",
+				"magnitude":"15.4131",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9889",
+				"band":"V",
+				"e_magnitude":"0.0142",
+				"magnitude":"15.4344",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9909",
+				"band":"r",
+				"e_magnitude":"0.0099",
+				"magnitude":"15.3001",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9926",
+				"band":"r",
+				"e_magnitude":"0.0099",
+				"magnitude":"15.33",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9942",
+				"band":"r",
+				"e_magnitude":"0.0099",
+				"magnitude":"15.3007",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9959",
+				"band":"i",
+				"e_magnitude":"0.0096",
+				"magnitude":"14.9997",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9976",
+				"band":"i",
+				"e_magnitude":"0.0101",
+				"magnitude":"14.9827",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.9993",
+				"band":"i",
+				"e_magnitude":"0.0097",
+				"magnitude":"15.0347",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57500.0029",
+				"band":"B",
+				"e_magnitude":"0.0226",
+				"magnitude":"15.9447",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57500.0046",
+				"band":"B",
+				"e_magnitude":"0.0235",
+				"magnitude":"15.9781",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57500.0063",
+				"band":"B",
+				"e_magnitude":"0.0233",
+				"magnitude":"15.9175",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57500.008",
+				"band":"V",
+				"e_magnitude":"0.0149",
+				"magnitude":"15.4712",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57500.0097",
+				"band":"V",
+				"e_magnitude":"0.0142",
+				"magnitude":"15.4205",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57500.0113",
+				"band":"V",
+				"e_magnitude":"0.0144",
+				"magnitude":"15.4673",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57500.0133",
+				"band":"r",
+				"e_magnitude":"0.01",
+				"magnitude":"15.3165",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57500.015",
+				"band":"r",
+				"e_magnitude":"0.0105",
+				"magnitude":"15.3219",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57500.0167",
+				"band":"r",
+				"e_magnitude":"0.0104",
+				"magnitude":"15.2757",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57500.0184",
+				"band":"i",
+				"e_magnitude":"0.0103",
+				"magnitude":"14.999",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57500.0201",
+				"band":"i",
+				"e_magnitude":"0.0102",
+				"magnitude":"14.9753",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57500.0217",
+				"band":"i",
+				"e_magnitude":"0.0104",
+				"magnitude":"14.9571",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57500.0252",
+				"band":"B",
+				"e_magnitude":"0.0268",
+				"magnitude":"16.0497",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57500.0269",
+				"band":"B",
+				"e_magnitude":"0.0271",
+				"magnitude":"16.0592",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57500.0286",
+				"band":"B",
+				"e_magnitude":"0.0265",
+				"magnitude":"16.0638",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57500.0303",
+				"band":"V",
+				"e_magnitude":"0.0167",
+				"magnitude":"15.4934",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57500.032",
+				"band":"V",
+				"e_magnitude":"0.0163",
+				"magnitude":"15.4597",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57500.0337",
+				"band":"V",
+				"e_magnitude":"0.0161",
+				"magnitude":"15.4814",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57500.0357",
+				"band":"r",
+				"e_magnitude":"0.011",
+				"magnitude":"15.2751",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57500.0373",
+				"band":"r",
+				"e_magnitude":"0.0112",
+				"magnitude":"15.3218",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57500.039",
+				"band":"r",
+				"e_magnitude":"0.0112",
+				"magnitude":"15.3238",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57500.0407",
+				"band":"i",
+				"e_magnitude":"0.0104",
+				"magnitude":"14.9866",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57500.0424",
+				"band":"i",
+				"e_magnitude":"0.0107",
+				"magnitude":"15.0402",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57500.0441",
+				"band":"i",
+				"e_magnitude":"0.0104",
+				"magnitude":"15.04",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.8127",
+				"band":"r",
+				"e_magnitude":"0.0044",
+				"magnitude":"15.2158",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.815",
+				"band":"B",
+				"e_magnitude":"0.009",
+				"magnitude":"15.9046",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.8166",
+				"band":"B",
+				"e_magnitude":"0.0081",
+				"magnitude":"15.8705",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.8183",
+				"band":"B",
+				"e_magnitude":"0.0084",
+				"magnitude":"15.8792",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.8201",
+				"band":"V",
+				"e_magnitude":"0.0058",
+				"magnitude":"15.3723",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.8217",
+				"band":"V",
+				"e_magnitude":"0.0062",
+				"magnitude":"15.3402",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.8234",
+				"band":"V",
+				"e_magnitude":"0.0069",
+				"magnitude":"15.3168",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.8254",
+				"band":"r",
+				"e_magnitude":"0.0043",
+				"magnitude":"15.2092",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.8271",
+				"band":"r",
+				"e_magnitude":"0.0048",
+				"magnitude":"15.1925",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.8287",
+				"band":"r",
+				"e_magnitude":"0.0048",
+				"magnitude":"15.1945",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.8304",
+				"band":"i",
+				"e_magnitude":"0.0051",
+				"magnitude":"14.8704",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.8321",
+				"band":"i",
+				"e_magnitude":"0.0046",
+				"magnitude":"14.8079",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.8338",
+				"band":"i",
+				"e_magnitude":"0.0055",
+				"magnitude":"14.8854",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.8362",
+				"band":"B",
+				"e_magnitude":"0.0087",
+				"magnitude":"15.84",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.8976",
+				"band":"B",
+				"e_magnitude":"0.0075",
+				"magnitude":"15.8602",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.8993",
+				"band":"B",
+				"e_magnitude":"0.0078",
+				"magnitude":"15.921",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.9009",
+				"band":"B",
+				"e_magnitude":"0.0074",
+				"magnitude":"15.8531",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.9027",
+				"band":"V",
+				"e_magnitude":"0.006",
+				"magnitude":"15.3195",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.9043",
+				"band":"V",
+				"e_magnitude":"0.0057",
+				"magnitude":"15.3324",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.906",
+				"band":"V",
+				"e_magnitude":"0.0057",
+				"magnitude":"15.2636",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.908",
+				"band":"r",
+				"e_magnitude":"0.0048",
+				"magnitude":"15.2031",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.9097",
+				"band":"r",
+				"e_magnitude":"0.0057",
+				"magnitude":"15.2244",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.9113",
+				"band":"r",
+				"e_magnitude":"0.0048",
+				"magnitude":"15.1732",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.913",
+				"band":"i",
+				"e_magnitude":"0.0047",
+				"magnitude":"14.811",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.9147",
+				"band":"i",
+				"e_magnitude":"0.0051",
+				"magnitude":"14.8169",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.9164",
+				"band":"i",
+				"e_magnitude":"0.0047",
+				"magnitude":"14.8573",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.9184",
+				"band":"B",
+				"e_magnitude":"0.0072",
+				"magnitude":"15.8221",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.9201",
+				"band":"B",
+				"e_magnitude":"0.0079",
+				"magnitude":"15.86",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.9218",
+				"band":"B",
+				"e_magnitude":"0.0085",
+				"magnitude":"15.8494",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.9235",
+				"band":"V",
+				"e_magnitude":"0.0057",
+				"magnitude":"15.3062",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.9252",
+				"band":"V",
+				"e_magnitude":"0.0058",
+				"magnitude":"15.3518",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.9269",
+				"band":"V",
+				"e_magnitude":"0.0063",
+				"magnitude":"15.3288",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.9289",
+				"band":"r",
+				"e_magnitude":"0.0041",
+				"magnitude":"15.2103",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.9305",
+				"band":"r",
+				"e_magnitude":"0.0049",
+				"magnitude":"15.159",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.9322",
+				"band":"r",
+				"e_magnitude":"0.0046",
+				"magnitude":"15.1878",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.9339",
+				"band":"i",
+				"e_magnitude":"0.0054",
+				"magnitude":"14.8389",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.9356",
+				"band":"i",
+				"e_magnitude":"0.0048",
+				"magnitude":"14.833",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57503.9373",
+				"band":"i",
+				"e_magnitude":"0.005",
+				"magnitude":"14.8419",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57507.8365",
+				"band":"B",
+				"e_magnitude":"0.0088",
+				"magnitude":"16.2228",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57507.8382",
+				"band":"B",
+				"e_magnitude":"0.009",
+				"magnitude":"16.2062",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57507.8398",
+				"band":"B",
+				"e_magnitude":"0.0088",
+				"magnitude":"16.2111",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57507.8415",
+				"band":"V",
+				"e_magnitude":"0.008",
+				"magnitude":"15.6366",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57507.8432",
+				"band":"V",
+				"e_magnitude":"0.0068",
+				"magnitude":"15.6073",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57507.8449",
+				"band":"V",
+				"e_magnitude":"0.007",
+				"magnitude":"15.629",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57507.8466",
+				"band":"r",
+				"e_magnitude":"0.0056",
+				"magnitude":"15.4581",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57507.8483",
+				"band":"r",
+				"e_magnitude":"0.0057",
+				"magnitude":"15.455",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57507.85",
+				"band":"r",
+				"e_magnitude":"0.0058",
+				"magnitude":"15.4492",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57507.8516",
+				"band":"i",
+				"e_magnitude":"0.0069",
+				"magnitude":"15.127",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57507.8533",
+				"band":"i",
+				"e_magnitude":"0.0063",
+				"magnitude":"15.1008",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57507.855",
+				"band":"i",
+				"e_magnitude":"0.0079",
+				"magnitude":"15.1115",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57507.9094",
+				"band":"B",
+				"e_magnitude":"0.0081",
+				"magnitude":"16.2682",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57507.9114",
+				"band":"B",
+				"e_magnitude":"0.0089",
+				"magnitude":"16.1892",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57507.9135",
+				"band":"V",
+				"e_magnitude":"0.0063",
+				"magnitude":"15.6429",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57507.9155",
+				"band":"V",
+				"e_magnitude":"0.006",
+				"magnitude":"15.6189",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57507.9176",
+				"band":"r",
+				"e_magnitude":"0.005",
+				"magnitude":"15.4886",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57507.9196",
+				"band":"r",
+				"e_magnitude":"0.0049",
+				"magnitude":"15.4678",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57507.9217",
+				"band":"i",
+				"e_magnitude":"0.005",
+				"magnitude":"15.1244",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57507.9237",
+				"band":"i",
+				"e_magnitude":"0.0054",
+				"magnitude":"15.1426",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57513.8418",
+				"band":"B",
+				"e_magnitude":"0.0133",
+				"magnitude":"16.6265",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57513.8435",
+				"band":"B",
+				"e_magnitude":"0.0126",
+				"magnitude":"16.4227",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57513.8452",
+				"band":"V",
+				"e_magnitude":"0.0079",
+				"magnitude":"15.9417",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57513.8469",
+				"band":"V",
+				"e_magnitude":"0.0087",
+				"magnitude":"15.9335",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57513.8486",
+				"band":"r",
+				"e_magnitude":"0.0072",
+				"magnitude":"15.8253",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57513.8502",
+				"band":"r",
+				"e_magnitude":"0.0064",
+				"magnitude":"15.7029",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57513.8519",
+				"band":"i",
+				"e_magnitude":"0.008",
+				"magnitude":"15.4054",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57513.8536",
+				"band":"i",
+				"e_magnitude":"0.0077",
+				"magnitude":"15.4556",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57513.8574",
+				"band":"B",
+				"e_magnitude":"0.0115",
+				"magnitude":"16.517",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57513.8591",
+				"band":"B",
+				"e_magnitude":"0.0118",
+				"magnitude":"16.5521",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57513.8608",
+				"band":"V",
+				"e_magnitude":"0.007",
+				"magnitude":"15.932",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57513.8625",
+				"band":"V",
+				"e_magnitude":"0.0087",
+				"magnitude":"15.9436",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57513.8642",
+				"band":"r",
+				"e_magnitude":"0.0071",
+				"magnitude":"15.8087",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57513.8676",
+				"band":"i",
+				"e_magnitude":"0.0084",
+				"magnitude":"15.4843",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57513.8693",
+				"band":"i",
+				"e_magnitude":"0.0072",
+				"magnitude":"15.4872",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57514.8623",
+				"band":"B",
+				"e_magnitude":"0.0105",
+				"magnitude":"16.4398",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57514.864",
+				"band":"B",
+				"e_magnitude":"0.0109",
+				"magnitude":"16.5013",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57514.8657",
+				"band":"B",
+				"e_magnitude":"0.0109",
+				"magnitude":"16.4435",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57514.8674",
+				"band":"V",
+				"e_magnitude":"0.0075",
+				"magnitude":"15.8832",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57514.8691",
+				"band":"V",
+				"e_magnitude":"0.0073",
+				"magnitude":"15.8725",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57514.8708",
+				"band":"V",
+				"e_magnitude":"0.0073",
+				"magnitude":"15.9059",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57514.8725",
+				"band":"r",
+				"e_magnitude":"0.0064",
+				"magnitude":"15.7649",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57514.8741",
+				"band":"r",
+				"e_magnitude":"0.0066",
+				"magnitude":"15.7668",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57514.8758",
+				"band":"r",
+				"e_magnitude":"0.0072",
+				"magnitude":"15.7425",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57514.8775",
+				"band":"i",
+				"e_magnitude":"0.0073",
+				"magnitude":"15.3661",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57514.8792",
+				"band":"i",
+				"e_magnitude":"0.008",
+				"magnitude":"15.3721",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57514.8809",
+				"band":"i",
+				"e_magnitude":"0.0079",
+				"magnitude":"15.4016",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57514.883",
+				"band":"B",
+				"e_magnitude":"0.0097",
+				"magnitude":"16.4367",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57514.8847",
+				"band":"B",
+				"e_magnitude":"0.009",
+				"magnitude":"16.4687",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57514.8864",
+				"band":"B",
+				"e_magnitude":"0.01",
+				"magnitude":"16.4395",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57514.8881",
+				"band":"V",
+				"e_magnitude":"0.0077",
+				"magnitude":"15.8978",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57514.8898",
+				"band":"V",
+				"e_magnitude":"0.0076",
+				"magnitude":"15.8916",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57514.8915",
+				"band":"V",
+				"e_magnitude":"0.0075",
+				"magnitude":"15.8997",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57514.8932",
+				"band":"r",
+				"e_magnitude":"0.0057",
+				"magnitude":"15.7091",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57514.8948",
+				"band":"r",
+				"e_magnitude":"0.0067",
+				"magnitude":"15.748",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57514.8965",
+				"band":"r",
+				"e_magnitude":"0.0062",
+				"magnitude":"15.764",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57514.8982",
+				"band":"i",
+				"e_magnitude":"0.0078",
+				"magnitude":"15.4219",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57514.8999",
+				"band":"i",
+				"e_magnitude":"0.0071",
+				"magnitude":"15.3628",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57514.9016",
+				"band":"i",
+				"e_magnitude":"0.0077",
+				"magnitude":"15.3782",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57515.8638",
+				"band":"B",
+				"e_magnitude":"0.0106",
+				"magnitude":"16.4127",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57515.8655",
+				"band":"B",
+				"e_magnitude":"0.0085",
+				"magnitude":"16.4198",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57515.8672",
+				"band":"B",
+				"e_magnitude":"0.0096",
+				"magnitude":"16.4569",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57515.8689",
+				"band":"V",
+				"e_magnitude":"0.0071",
+				"magnitude":"15.8387",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57515.8706",
+				"band":"V",
+				"e_magnitude":"0.0069",
+				"magnitude":"15.8759",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57515.8723",
+				"band":"V",
+				"e_magnitude":"0.0077",
+				"magnitude":"15.8495",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57515.874",
+				"band":"r",
+				"e_magnitude":"0.0061",
+				"magnitude":"15.7336",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57515.8756",
+				"band":"r",
+				"e_magnitude":"0.0057",
+				"magnitude":"15.7067",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57515.8773",
+				"band":"r",
+				"e_magnitude":"0.005",
+				"magnitude":"15.7263",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57515.879",
+				"band":"i",
+				"e_magnitude":"0.0075",
+				"magnitude":"15.3754",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57515.8807",
+				"band":"i",
+				"e_magnitude":"0.0065",
+				"magnitude":"15.391",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57515.8824",
+				"band":"i",
+				"e_magnitude":"0.0063",
+				"magnitude":"15.369",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57515.8849",
+				"band":"B",
+				"e_magnitude":"0.01",
+				"magnitude":"16.4284",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57515.8866",
+				"band":"B",
+				"e_magnitude":"0.0094",
+				"magnitude":"16.4508",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57515.8882",
+				"band":"B",
+				"e_magnitude":"0.0113",
+				"magnitude":"16.4421",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57515.89",
+				"band":"V",
+				"e_magnitude":"0.0074",
+				"magnitude":"15.8303",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57515.8916",
+				"band":"V",
+				"e_magnitude":"0.0059",
+				"magnitude":"15.8566",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57515.8933",
+				"band":"V",
+				"e_magnitude":"0.007",
+				"magnitude":"15.8364",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57515.895",
+				"band":"r",
+				"e_magnitude":"0.0064",
+				"magnitude":"15.721",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57515.8967",
+				"band":"r",
+				"e_magnitude":"0.0055",
+				"magnitude":"15.7473",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57515.8984",
+				"band":"r",
+				"e_magnitude":"0.0061",
+				"magnitude":"15.7045",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57515.9001",
+				"band":"i",
+				"e_magnitude":"0.007",
+				"magnitude":"15.3582",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57515.9017",
+				"band":"i",
+				"e_magnitude":"0.0065",
+				"magnitude":"15.4152",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57515.9034",
+				"band":"i",
+				"e_magnitude":"0.0068",
+				"magnitude":"15.3785",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57519.8692",
+				"band":"B",
+				"e_magnitude":"0.0119",
+				"magnitude":"16.6444",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57519.8712",
+				"band":"B",
+				"e_magnitude":"0.0114",
+				"magnitude":"16.5449",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57519.8753",
+				"band":"V",
+				"e_magnitude":"0.0088",
+				"magnitude":"16.0418",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57519.8773",
+				"band":"V",
+				"e_magnitude":"0.0083",
+				"magnitude":"16.0537",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57519.8794",
+				"band":"V",
+				"e_magnitude":"0.0095",
+				"magnitude":"16.0388",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57519.8814",
+				"band":"r",
+				"e_magnitude":"0.0073",
+				"magnitude":"15.9327",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57519.8834",
+				"band":"r",
+				"e_magnitude":"0.007",
+				"magnitude":"15.9073",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57519.8854",
+				"band":"r",
+				"e_magnitude":"0.0069",
+				"magnitude":"15.9069",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57519.8875",
+				"band":"i",
+				"e_magnitude":"0.0078",
+				"magnitude":"15.6056",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57519.8895",
+				"band":"i",
+				"e_magnitude":"0.0078",
+				"magnitude":"15.6172",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57519.8915",
+				"band":"i",
+				"e_magnitude":"0.007",
+				"magnitude":"15.6073",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57519.8945",
+				"band":"B",
+				"e_magnitude":"0.0121",
+				"magnitude":"16.617",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57519.8965",
+				"band":"B",
+				"e_magnitude":"0.0127",
+				"magnitude":"16.6487",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57519.8985",
+				"band":"B",
+				"e_magnitude":"0.0135",
+				"magnitude":"16.598",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57519.9006",
+				"band":"V",
+				"e_magnitude":"0.009",
+				"magnitude":"16.0194",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57519.9026",
+				"band":"V",
+				"e_magnitude":"0.0085",
+				"magnitude":"16.0361",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57519.9046",
+				"band":"V",
+				"e_magnitude":"0.0092",
+				"magnitude":"16.0836",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57519.9067",
+				"band":"r",
+				"e_magnitude":"0.0068",
+				"magnitude":"15.8999",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57519.9087",
+				"band":"r",
+				"e_magnitude":"0.0061",
+				"magnitude":"15.9153",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57519.9108",
+				"band":"r",
+				"e_magnitude":"0.0068",
+				"magnitude":"15.883",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57519.9128",
+				"band":"i",
+				"e_magnitude":"0.0075",
+				"magnitude":"15.587",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57519.9148",
+				"band":"i",
+				"e_magnitude":"0.0072",
+				"magnitude":"15.5711",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57519.9169",
+				"band":"i",
+				"e_magnitude":"0.0078",
+				"magnitude":"15.5036",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.8931",
+				"band":"B",
+				"e_magnitude":"0.0265",
+				"magnitude":"16.8152",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.8948",
+				"band":"B",
+				"e_magnitude":"0.0263",
+				"magnitude":"16.7706",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.8965",
+				"band":"B",
+				"e_magnitude":"0.0264",
+				"magnitude":"16.8658",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.8982",
+				"band":"V",
+				"e_magnitude":"0.0143",
+				"magnitude":"16.2196",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.8999",
+				"band":"V",
+				"e_magnitude":"0.0141",
+				"magnitude":"16.236",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.9015",
+				"band":"V",
+				"e_magnitude":"0.0139",
+				"magnitude":"16.3378",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.9089",
+				"band":"V",
+				"e_magnitude":"0.014",
+				"magnitude":"16.1631",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.9106",
+				"band":"V",
+				"e_magnitude":"0.0155",
+				"magnitude":"16.1656",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.9123",
+				"band":"V",
+				"e_magnitude":"0.0157",
+				"magnitude":"16.2763",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.914",
+				"band":"r",
+				"e_magnitude":"0.0102",
+				"magnitude":"16.1118",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.9157",
+				"band":"r",
+				"e_magnitude":"0.0109",
+				"magnitude":"16.1103",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.9173",
+				"band":"r",
+				"e_magnitude":"0.0115",
+				"magnitude":"16.1588",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.919",
+				"band":"i",
+				"e_magnitude":"0.0128",
+				"magnitude":"15.7351",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.9207",
+				"band":"i",
+				"e_magnitude":"0.0115",
+				"magnitude":"15.7318",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.9224",
+				"band":"i",
+				"e_magnitude":"0.011",
+				"magnitude":"15.7362",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.9251",
+				"band":"V",
+				"e_magnitude":"0.017",
+				"magnitude":"16.1772",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.9268",
+				"band":"V",
+				"e_magnitude":"0.0167",
+				"magnitude":"16.2478",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.9284",
+				"band":"V",
+				"e_magnitude":"0.0152",
+				"magnitude":"16.2832",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.9302",
+				"band":"r",
+				"e_magnitude":"0.0112",
+				"magnitude":"16.0971",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.9318",
+				"band":"r",
+				"e_magnitude":"0.0094",
+				"magnitude":"16.0755",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.9335",
+				"band":"r",
+				"e_magnitude":"0.011",
+				"magnitude":"16.0788",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.9352",
+				"band":"i",
+				"e_magnitude":"0.0109",
+				"magnitude":"15.7745",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.9369",
+				"band":"i",
+				"e_magnitude":"0.0127",
+				"magnitude":"15.7217",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.9393",
+				"band":"V",
+				"e_magnitude":"0.0128",
+				"magnitude":"16.2399",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.9409",
+				"band":"V",
+				"e_magnitude":"0.0155",
+				"magnitude":"16.2086",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.9426",
+				"band":"V",
+				"e_magnitude":"0.0158",
+				"magnitude":"16.2309",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.9443",
+				"band":"r",
+				"e_magnitude":"0.0126",
+				"magnitude":"16.1358",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.946",
+				"band":"r",
+				"e_magnitude":"0.011",
+				"magnitude":"16.0751",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.9477",
+				"band":"r",
+				"e_magnitude":"0.011",
+				"magnitude":"16.105",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.9494",
+				"band":"i",
+				"e_magnitude":"0.011",
+				"magnitude":"15.7309",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.951",
+				"band":"i",
+				"e_magnitude":"0.0134",
+				"magnitude":"15.7641",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57522.9527",
+				"band":"i",
+				"e_magnitude":"0.0129",
+				"magnitude":"15.7",
+				"observatory":"Bialkow, Z.Kolaczkow",
+				"u_time":"MJD",
+				"source":"4,5"
 			},
 			{
 				"time":"57562.539",

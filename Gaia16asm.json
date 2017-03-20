@@ -20,10 +20,21 @@
 				"alias":"3"
 			},
 			{
+				"name":"CPCS Alert 26290",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=26290",
+				"alias":"4"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"5"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -31,23 +42,23 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia16asm",
-				"source":"2,3,4"
+				"source":"2,3,5,6"
 			},
 			{
 				"value":"AT2016edy",
-				"source":"2,3,4"
+				"source":"2,3,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"dec":[
@@ -59,12 +70,12 @@
 			{
 				"value":"+17:46:49.69",
 				"u_value":"degrees",
-				"source":"3,4"
+				"source":"3,6"
 			},
 			{
 				"value":"+17:46:49.8",
 				"u_value":"degrees",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"discoverdate":[
@@ -80,7 +91,7 @@
 			},
 			{
 				"value":"Gaia",
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"ebv":[
@@ -88,49 +99,49 @@
 				"value":"0.2614",
 				"derived":true,
 				"e_value":"0.0091",
-				"source":"1,5"
+				"source":"1,7"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"14.58",
+				"value":"14.5",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxband":[
 			{
-				"value":"G",
+				"value":"r",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2014/10/28",
+				"value":"2016/07/03",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"14.58",
+				"value":"14.85",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"g",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2014/10/28",
+				"value":"2016/07/25",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"ra":[
@@ -142,12 +153,12 @@
 			{
 				"value":"20:02:07.304",
 				"u_value":"hours",
-				"source":"3,4"
+				"source":"3,6"
 			},
 			{
 				"value":"20:02:07.2",
 				"u_value":"hours",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"photometry":[
@@ -282,10 +293,145 @@
 				"source":"3"
 			},
 			{
+				"time":"57572.9283",
+				"band":"g",
+				"e_magnitude":"0.0009",
+				"magnitude":"15.0507",
+				"observatory":"Euler Geneva Group",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57572.9283",
+				"band":"r",
+				"e_magnitude":"0.0009",
+				"magnitude":"14.4951",
+				"observatory":"Euler Geneva Group",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57572.9283",
+				"band":"u",
+				"e_magnitude":"0.0093",
+				"magnitude":"16.7035",
+				"observatory":"Euler Geneva Group",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57573.9792",
+				"band":"g",
+				"e_magnitude":"0.0008",
+				"magnitude":"15.0539",
+				"observatory":"Mercator Geneva Grou",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57573.9792",
+				"band":"r",
+				"e_magnitude":"0.0009",
+				"magnitude":"14.5443",
+				"observatory":"Mercator Geneva Grou",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57573.9792",
+				"band":"u",
+				"e_magnitude":"0.0084",
+				"magnitude":"16.8746",
+				"observatory":"Mercator Geneva Grou",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57594.9194",
+				"band":"i",
+				"e_magnitude":"0.0047",
+				"magnitude":"14.5327",
+				"observatory":"T100,Hasan Esenoglu",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57594.9239",
+				"band":"g",
+				"e_magnitude":"0.0034",
+				"magnitude":"14.8503",
+				"observatory":"T100,Hasan Esenoglu",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57594.9254",
+				"band":"r",
+				"e_magnitude":"0.0035",
+				"magnitude":"14.6127",
+				"observatory":"T100,Hasan Esenoglu",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57594.9282",
+				"band":"i",
+				"e_magnitude":"0.0046",
+				"magnitude":"14.515",
+				"observatory":"T100,Hasan Esenoglu",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57594.933",
+				"band":"g",
+				"e_magnitude":"0.0034",
+				"magnitude":"14.8485",
+				"observatory":"T100,Hasan Esenoglu",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57594.9344",
+				"band":"r",
+				"e_magnitude":"0.0036",
+				"magnitude":"14.6399",
+				"observatory":"T100,Hasan Esenoglu",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57605.077",
+				"band":"V",
+				"e_magnitude":"0.014",
+				"magnitude":"15.9324",
+				"observatory":"K.Wiersema-Leicester",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
 				"time":"57679.475",
 				"band":"G",
 				"e_magnitude":"0.0",
 				"magnitude":"14.59",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"57827.573",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"magnitude":"16.47",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"57827.750",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"magnitude":"14.66",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"3"

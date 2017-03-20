@@ -15,10 +15,21 @@
 				"alias":"2"
 			},
 			{
+				"name":"CPCS Alert 26032",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=26032",
+				"alias":"3"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"4"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -26,47 +37,47 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia15abf",
-				"source":"2,3"
+				"source":"2,4,5"
 			},
 			{
 				"value":"CSS100610:231552+271037",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"dec":[
 			{
 				"value":"+27:10:37.3",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"value":"+27:10:37.2",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"2,4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2014/11/21",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Gaia",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"ebv":[
@@ -74,61 +85,61 @@
 				"value":"0.0771",
 				"derived":true,
 				"e_value":"0.0014",
-				"source":"1,4"
+				"source":"1,6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"15.23",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2014/11/21",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"15.23",
+				"value":"19.28",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"g",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2014/11/21",
+				"value":"2015/05/07",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"23:15:52.36",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"value":"23:15:52.32",
 				"u_value":"hours",
-				"source":"2"
+				"source":"2,4"
 			}
 		],
 		"photometry":[
@@ -275,6 +286,103 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"2"
+			},
+			{
+				"time":"57149.2186",
+				"band":"g",
+				"magnitude":"19.28",
+				"observatory":"Anna Hourihane",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57149.2186",
+				"band":"r",
+				"magnitude":"20.5018",
+				"observatory":"Anna Hourihane",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57149.2186",
+				"band":"u",
+				"magnitude":"19.5935",
+				"observatory":"Anna Hourihane",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57149.2213",
+				"band":"g",
+				"magnitude":"20.8695",
+				"observatory":"Anna Hourihane",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57149.2213",
+				"band":"r",
+				"e_magnitude":"0.0761",
+				"magnitude":"20.094",
+				"observatory":"Anna Hourihane",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57149.2213",
+				"band":"u",
+				"magnitude":"22.177",
+				"observatory":"Anna Hourihane",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57149.2256",
+				"band":"g",
+				"magnitude":"20.8857",
+				"observatory":"Anna Hourihane",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57149.2256",
+				"band":"r",
+				"magnitude":"23.9583",
+				"observatory":"Anna Hourihane",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57149.2256",
+				"band":"u",
+				"magnitude":"21.1305",
+				"observatory":"Anna Hourihane",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57149.2302",
+				"band":"g",
+				"magnitude":"20.5379",
+				"observatory":"Anna Hourihane",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57149.2302",
+				"band":"r",
+				"magnitude":"22.9457",
+				"observatory":"Anna Hourihane",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57149.2302",
+				"band":"u",
+				"magnitude":"23.7464",
+				"observatory":"Anna Hourihane",
+				"u_time":"MJD",
+				"source":"3,4"
 			},
 			{
 				"time":"57156.330",

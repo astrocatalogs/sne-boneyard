@@ -20,10 +20,21 @@
 				"alias":"3"
 			},
 			{
+				"name":"CPCS Alert 26430",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=26430",
+				"alias":"4"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"5"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -31,23 +42,23 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia16azk",
-				"source":"2,3,4"
+				"source":"2,3,5,6"
 			},
 			{
 				"value":"AT2016ewl",
-				"source":"2,3,4"
+				"source":"2,3,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"dec":[
@@ -59,12 +70,17 @@
 			{
 				"value":"+03:57:31.54",
 				"u_value":"degrees",
-				"source":"3,4"
+				"source":"3,6"
 			},
 			{
 				"value":"+03:57:31.536",
 				"u_value":"degrees",
 				"source":"3"
+			},
+			{
+				"value":"+03:57:31.5",
+				"u_value":"degrees",
+				"source":"5"
 			}
 		],
 		"discoverdate":[
@@ -80,7 +96,7 @@
 			},
 			{
 				"value":"Gaia",
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"ebv":[
@@ -88,49 +104,49 @@
 				"value":"0.2287",
 				"derived":true,
 				"e_value":"0.0136",
-				"source":"1,5"
+				"source":"1,7"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"15.35",
+				"value":"15.34",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxband":[
 			{
-				"value":"G",
+				"value":"V",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2016/08/08",
+				"value":"2016/12/09",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"15.35",
+				"value":"15.34",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"V",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2016/08/08",
+				"value":"2016/12/09",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"ra":[
@@ -142,12 +158,17 @@
 			{
 				"value":"05:32:20.960",
 				"u_value":"hours",
-				"source":"3,4"
+				"source":"3,6"
 			},
 			{
 				"value":"05:32:20.952",
 				"u_value":"hours",
 				"source":"3"
+			},
+			{
+				"value":"05:32:21",
+				"u_value":"hours",
+				"source":"5"
 			}
 		],
 		"photometry":[
@@ -208,6 +229,942 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"3"
+			},
+			{
+				"time":"57661.17",
+				"band":"r",
+				"magnitude":"22.5467",
+				"observatory":"OmicronC2PU JPRivet",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57661.1771",
+				"band":"r",
+				"magnitude":"22.4739",
+				"observatory":"OmicronC2PU JPRivet",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57661.1842",
+				"band":"r",
+				"magnitude":"22.3919",
+				"observatory":"OmicronC2PU JPRivet",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57666.1145",
+				"band":"r",
+				"magnitude":"23.3004",
+				"observatory":"OmicronC2PU JPRivet",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57666.1216",
+				"band":"r",
+				"magnitude":"22.5696",
+				"observatory":"OmicronC2PU JPRivet",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57666.1287",
+				"band":"r",
+				"magnitude":"23.1915",
+				"observatory":"OmicronC2PU JPRivet",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0405",
+				"band":"V",
+				"magnitude":"18.6716",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0419",
+				"band":"V",
+				"magnitude":"18.5693",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0434",
+				"band":"V",
+				"magnitude":"18.8159",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0448",
+				"band":"V",
+				"magnitude":"18.9263",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0462",
+				"band":"V",
+				"magnitude":"18.9335",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0477",
+				"band":"V",
+				"magnitude":"18.9383",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0491",
+				"band":"V",
+				"magnitude":"18.8766",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0506",
+				"band":"V",
+				"magnitude":"19.0186",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0535",
+				"band":"V",
+				"magnitude":"18.5946",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0549",
+				"band":"V",
+				"magnitude":"19.0377",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0563",
+				"band":"V",
+				"magnitude":"18.9955",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0578",
+				"band":"V",
+				"magnitude":"18.9167",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0592",
+				"band":"V",
+				"magnitude":"18.7347",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0607",
+				"band":"V",
+				"magnitude":"18.7671",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0621",
+				"band":"V",
+				"magnitude":"18.5822",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0636",
+				"band":"V",
+				"magnitude":"18.8644",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.065",
+				"band":"V",
+				"magnitude":"19.0052",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0664",
+				"band":"V",
+				"magnitude":"18.8463",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0679",
+				"band":"V",
+				"magnitude":"18.9045",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0693",
+				"band":"V",
+				"magnitude":"18.3626",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0722",
+				"band":"V",
+				"magnitude":"19.013",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0737",
+				"band":"V",
+				"magnitude":"18.7498",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0751",
+				"band":"V",
+				"magnitude":"18.4268",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0766",
+				"band":"V",
+				"magnitude":"19.1731",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.078",
+				"band":"V",
+				"magnitude":"18.617",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0794",
+				"band":"V",
+				"magnitude":"18.9251",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0809",
+				"band":"V",
+				"magnitude":"18.9212",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0823",
+				"band":"V",
+				"magnitude":"18.9022",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0838",
+				"band":"V",
+				"magnitude":"18.5282",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0852",
+				"band":"V",
+				"magnitude":"18.6839",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0867",
+				"band":"V",
+				"magnitude":"18.8968",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0881",
+				"band":"V",
+				"magnitude":"19.081",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0895",
+				"band":"V",
+				"magnitude":"18.9604",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0924",
+				"band":"V",
+				"magnitude":"18.9859",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0939",
+				"band":"V",
+				"magnitude":"19.1107",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0953",
+				"band":"V",
+				"magnitude":"18.747",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0968",
+				"band":"V",
+				"magnitude":"19.1409",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0982",
+				"band":"V",
+				"magnitude":"18.9372",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.0996",
+				"band":"V",
+				"magnitude":"18.9709",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.1011",
+				"band":"V",
+				"magnitude":"18.8991",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.1025",
+				"band":"V",
+				"magnitude":"18.8165",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.104",
+				"band":"V",
+				"magnitude":"18.9647",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.1054",
+				"band":"V",
+				"magnitude":"18.9338",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.1069",
+				"band":"V",
+				"magnitude":"18.8415",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.1083",
+				"band":"V",
+				"magnitude":"18.9939",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.1112",
+				"band":"V",
+				"magnitude":"19.1709",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.1126",
+				"band":"V",
+				"magnitude":"19.1872",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.1141",
+				"band":"V",
+				"magnitude":"18.6084",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.1155",
+				"band":"V",
+				"magnitude":"19.0043",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.117",
+				"band":"V",
+				"magnitude":"19.0272",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.1184",
+				"band":"V",
+				"magnitude":"19.0357",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.1198",
+				"band":"V",
+				"magnitude":"19.1785",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.1213",
+				"band":"V",
+				"magnitude":"19.052",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.1227",
+				"band":"V",
+				"magnitude":"19.2282",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.1242",
+				"band":"V",
+				"magnitude":"19.0248",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57702.1256",
+				"band":"V",
+				"magnitude":"19.0179",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57731.959",
+				"band":"V",
+				"magnitude":"15.343",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57731.9757",
+				"band":"V",
+				"magnitude":"15.5251",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57731.9772",
+				"band":"V",
+				"magnitude":"17.3891",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57731.9787",
+				"band":"V",
+				"magnitude":"17.8309",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57731.9802",
+				"band":"V",
+				"magnitude":"16.3404",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57731.9817",
+				"band":"V",
+				"magnitude":"18.1407",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57731.9847",
+				"band":"V",
+				"magnitude":"16.2232",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57731.9862",
+				"band":"V",
+				"magnitude":"17.4063",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57731.9877",
+				"band":"V",
+				"magnitude":"18.3671",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57731.9892",
+				"band":"V",
+				"magnitude":"18.9594",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57731.9907",
+				"band":"V",
+				"magnitude":"18.8117",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57731.9937",
+				"band":"V",
+				"magnitude":"18.8843",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57731.9952",
+				"band":"V",
+				"magnitude":"18.7881",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57731.9967",
+				"band":"V",
+				"magnitude":"18.8466",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57731.9982",
+				"band":"V",
+				"magnitude":"18.7663",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57731.9998",
+				"band":"V",
+				"magnitude":"18.8056",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57732.0028",
+				"band":"V",
+				"magnitude":"18.8331",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57732.0043",
+				"band":"V",
+				"magnitude":"19.0979",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57732.0058",
+				"band":"V",
+				"magnitude":"18.798",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57732.0073",
+				"band":"V",
+				"magnitude":"18.6922",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57732.0088",
+				"band":"V",
+				"magnitude":"19.0006",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57732.0118",
+				"band":"V",
+				"magnitude":"18.9436",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57732.0133",
+				"band":"V",
+				"magnitude":"18.7261",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57732.0148",
+				"band":"V",
+				"magnitude":"18.7591",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57732.0163",
+				"band":"V",
+				"magnitude":"18.7576",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57732.0178",
+				"band":"V",
+				"magnitude":"18.6862",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57732.0208",
+				"band":"V",
+				"magnitude":"18.9547",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57732.0223",
+				"band":"V",
+				"magnitude":"18.8277",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57732.0239",
+				"band":"V",
+				"magnitude":"18.7605",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57732.0254",
+				"band":"V",
+				"magnitude":"18.9144",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57732.0269",
+				"band":"V",
+				"magnitude":"19.0294",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57732.0299",
+				"band":"V",
+				"magnitude":"18.8128",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57732.0314",
+				"band":"V",
+				"magnitude":"18.9397",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57732.0329",
+				"band":"V",
+				"magnitude":"18.712",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57732.0344",
+				"band":"V",
+				"magnitude":"18.7932",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57732.0359",
+				"band":"V",
+				"magnitude":"18.9391",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57732.0389",
+				"band":"V",
+				"magnitude":"18.0804",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57732.0404",
+				"band":"V",
+				"magnitude":"18.1328",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57732.0419",
+				"band":"V",
+				"magnitude":"17.7672",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57732.0434",
+				"band":"V",
+				"magnitude":"18.4596",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57732.0449",
+				"band":"V",
+				"magnitude":"18.5451",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57732.0479",
+				"band":"V",
+				"magnitude":"18.7518",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57765.9151",
+				"band":"V",
+				"magnitude":"16.0047",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57765.9165",
+				"band":"V",
+				"magnitude":"16.1869",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57765.9208",
+				"band":"V",
+				"magnitude":"16.0422",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57765.9252",
+				"band":"V",
+				"magnitude":"17.0885",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57765.9266",
+				"band":"V",
+				"magnitude":"16.3306",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57765.9339",
+				"band":"V",
+				"magnitude":"16.4154",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57765.9353",
+				"band":"V",
+				"magnitude":"17.2452",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57765.9367",
+				"band":"V",
+				"magnitude":"17.6077",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57765.9382",
+				"band":"V",
+				"magnitude":"17.9201",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57765.9396",
+				"band":"V",
+				"magnitude":"17.5472",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57765.9469",
+				"band":"V",
+				"magnitude":"15.6094",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57765.9541",
+				"band":"V",
+				"magnitude":"16.377",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57765.9555",
+				"band":"V",
+				"magnitude":"16.4071",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
 			}
 		]
 	}

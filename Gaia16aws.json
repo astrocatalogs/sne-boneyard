@@ -15,10 +15,21 @@
 				"alias":"2"
 			},
 			{
+				"name":"CPCS Alert 26304",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=26304",
+				"alias":"3"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"4"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -26,47 +37,47 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia16aws",
-				"source":"2,3"
+				"source":"2,4,5"
 			},
 			{
 				"value":"AT2016eki",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"dec":[
 			{
 				"value":"-06:31:18.73",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"value":"-06:31:18.732",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"2,4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2016/07/26",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Gaia",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"ebv":[
@@ -74,61 +85,61 @@
 				"value":"0.4639",
 				"derived":true,
 				"e_value":"0.0148",
-				"source":"1,4"
+				"source":"1,6"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"16.15",
+				"value":"15.98",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxband":[
 			{
-				"value":"G",
+				"value":"r",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2016/07/26",
+				"value":"2016/07/29",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"16.15",
+				"value":"16.24",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"g",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2016/07/26",
+				"value":"2016/07/29",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"17:09:03.583",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"value":"17:09:03.6",
 				"u_value":"hours",
-				"source":"2"
+				"source":"2,4"
 			}
 		],
 		"photometry":[
@@ -167,6 +178,114 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"2"
+			},
+			{
+				"time":"57598.8373",
+				"band":"r",
+				"e_magnitude":"0.0045",
+				"magnitude":"16.0791",
+				"observatory":"GiuseppeAltavillaLoi",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57598.8398",
+				"band":"g",
+				"e_magnitude":"0.0056",
+				"magnitude":"16.2623",
+				"observatory":"GiuseppeAltavillaLoi",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57598.8423",
+				"band":"i",
+				"e_magnitude":"0.0078",
+				"magnitude":"16.0531",
+				"observatory":"GiuseppeAltavillaLoi",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57598.877",
+				"band":"r",
+				"e_magnitude":"0.012",
+				"magnitude":"16.0096",
+				"observatory":"OHP_MPawlak",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57598.8782",
+				"band":"r",
+				"e_magnitude":"0.0038",
+				"magnitude":"16.0421",
+				"observatory":"GiuseppeAltavillaLoi",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57598.8807",
+				"band":"g",
+				"e_magnitude":"0.0042",
+				"magnitude":"16.2404",
+				"observatory":"GiuseppeAltavillaLoi",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57598.8826",
+				"band":"B",
+				"e_magnitude":"0.0053",
+				"magnitude":"16.4614",
+				"observatory":"OHP_MPawlak",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57598.8832",
+				"band":"i",
+				"e_magnitude":"0.0081",
+				"magnitude":"16.0838",
+				"observatory":"GiuseppeAltavillaLoi",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57598.8874",
+				"band":"r",
+				"e_magnitude":"0.004",
+				"magnitude":"16.04",
+				"observatory":"GiuseppeAltavillaLoi",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57598.8898",
+				"band":"g",
+				"e_magnitude":"0.0042",
+				"magnitude":"16.2455",
+				"observatory":"GiuseppeAltavillaLoi",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57598.892",
+				"band":"r",
+				"e_magnitude":"0.0047",
+				"magnitude":"15.9841",
+				"observatory":"OHP_MPawlak",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57598.8924",
+				"band":"i",
+				"e_magnitude":"0.0075",
+				"magnitude":"16.1241",
+				"observatory":"GiuseppeAltavillaLoi",
+				"u_time":"MJD",
+				"source":"3,4"
 			},
 			{
 				"time":"57609.503",
