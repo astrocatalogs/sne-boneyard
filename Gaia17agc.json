@@ -20,10 +20,21 @@
 				"alias":"3"
 			},
 			{
+				"name":"CPCS Alert 26508",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=26508",
+				"alias":"4"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"5"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -31,35 +42,35 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia17agc",
-				"source":"2,3,4"
+				"source":"2,3,5,6"
 			},
 			{
 				"value":"AT2017pf",
-				"source":"2,3,4"
+				"source":"2,3,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"dec":[
 			{
 				"value":"+35:32:47.18",
 				"u_value":"degrees",
-				"source":"2,3,4"
+				"source":"2,3,6"
 			},
 			{
 				"value":"+35:32:47.04",
 				"u_value":"degrees",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"discoverdate":[
@@ -75,7 +86,7 @@
 			},
 			{
 				"value":"Gaia",
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"ebv":[
@@ -83,49 +94,49 @@
 				"value":"0.3498",
 				"derived":true,
 				"e_value":"0.0599",
-				"source":"1,5"
+				"source":"1,7"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16.48",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,7"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,7"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2017/01/24",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"16.48",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,7"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,7"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2017/01/24",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,7"
 			}
 		],
 		"ra":[
@@ -137,12 +148,12 @@
 			{
 				"value":"03:50:34.858",
 				"u_value":"hours",
-				"source":"3,4"
+				"source":"3,6"
 			},
 			{
 				"value":"03:50:34.848",
 				"u_value":"hours",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"photometry":[
@@ -455,6 +466,60 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"3"
+			},
+			{
+				"time":"57808.7733",
+				"band":"r",
+				"e_magnitude":"0.0326",
+				"magnitude":"18.8345",
+				"observatory":"OmicronC2PU JPRivet",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57808.7804",
+				"band":"r",
+				"e_magnitude":"0.0347",
+				"magnitude":"18.8033",
+				"observatory":"OmicronC2PU JPRivet",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57808.7875",
+				"band":"r",
+				"e_magnitude":"0.029",
+				"magnitude":"18.9127",
+				"observatory":"OmicronC2PU JPRivet",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57810.7719",
+				"band":"r",
+				"e_magnitude":"0.0308",
+				"magnitude":"18.8297",
+				"observatory":"OmicronC2PU JPRivet",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57810.779",
+				"band":"r",
+				"e_magnitude":"0.0284",
+				"magnitude":"18.8758",
+				"observatory":"OmicronC2PU JPRivet",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57810.7861",
+				"band":"r",
+				"e_magnitude":"0.0241",
+				"magnitude":"18.9136",
+				"observatory":"OmicronC2PU JPRivet",
+				"u_time":"MJD",
+				"source":"4,5"
 			},
 			{
 				"time":"57827.681",
