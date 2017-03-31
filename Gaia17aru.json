@@ -20,18 +20,29 @@
 				"alias":"3"
 			},
 			{
+				"name":"CPCS Alert 26528",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=26528",
+				"alias":"4"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"5"
+			},
+			{
 				"name":"The Open Supernova Catalog",
 				"bibcode":"2017ApJ...835...64G",
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia17aru",
-				"source":"2"
+				"source":"2,5"
 			},
 			{
 				"value":"AT2017cgd",
@@ -57,7 +68,7 @@
 			{
 				"value":"+43:41:32.64",
 				"u_value":"degrees",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"discoverdate":[
@@ -77,49 +88,49 @@
 				"value":"0.0617",
 				"derived":true,
 				"e_value":"0.0008",
-				"source":"1,4"
+				"source":"1,6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"14.38",
 				"derived":true,
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2017/03/15",
 				"derived":true,
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"14.38",
+				"value":"16.46",
 				"derived":true,
-				"source":"3,4"
+				"source":"4,5,6"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"B",
 				"derived":true,
-				"source":"3,4"
+				"source":"4,5,6"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2017/03/15",
+				"value":"2017/03/25",
 				"derived":true,
-				"source":"3,4"
+				"source":"4,5,6"
 			}
 		],
 		"ra":[
@@ -131,7 +142,7 @@
 			{
 				"value":"02:04:01.104",
 				"u_value":"hours",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"photometry":[
@@ -336,6 +347,105 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"3"
+			},
+			{
+				"time":"57837.7707",
+				"band":"B",
+				"e_magnitude":"0.0945",
+				"magnitude":"16.4623",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57837.7713",
+				"band":"g",
+				"e_magnitude":"0.0291",
+				"magnitude":"16.6987",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57837.7718",
+				"band":"r",
+				"e_magnitude":"0.0215",
+				"magnitude":"16.3397",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57837.7723",
+				"band":"i",
+				"e_magnitude":"0.0218",
+				"magnitude":"16.2695",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57837.7729",
+				"band":"B",
+				"e_magnitude":"0.0962",
+				"magnitude":"16.6802",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57837.7734",
+				"band":"g",
+				"e_magnitude":"0.0238",
+				"magnitude":"16.7317",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57837.7739",
+				"band":"r",
+				"e_magnitude":"0.0181",
+				"magnitude":"16.3815",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57837.7744",
+				"band":"i",
+				"e_magnitude":"0.0264",
+				"magnitude":"16.2453",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57837.7755",
+				"band":"V",
+				"e_magnitude":"0.0276",
+				"magnitude":"16.3545",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57837.776",
+				"band":"r",
+				"e_magnitude":"0.0199",
+				"magnitude":"16.3393",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57837.7766",
+				"band":"i",
+				"e_magnitude":"0.0226",
+				"magnitude":"16.2881",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"4,5"
 			}
 		]
 	}
