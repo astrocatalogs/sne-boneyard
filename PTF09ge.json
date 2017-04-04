@@ -22,9 +22,23 @@
 				"alias":"3"
 			},
 			{
-				"name":"Swift TOOs",
-				"url":"https://www.swift.psu.edu/secure/toop/summary.php",
+				"name":"2009PASP..121.1395L",
+				"bibcode":"2009PASP..121.1395L",
+				"reference":"Law et al. (2009)",
 				"alias":"4"
+			},
+			{
+				"name":"CBET 1820",
+				"bibcode":"2009CBET.1820....2K",
+				"reference":"Kasliwal et al. (2009)",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/001800/CBET001820.txt",
+				"alias":"5"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -32,13 +46,25 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"7"
+			},
+			{
+				"name":"SIMBAD astronomical database",
+				"bibcode":"2000A&AS..143....9W",
+				"reference":"Wenger et al. (2000)",
+				"secondary":true,
+				"url":"http://simbad.u-strasbg.fr/",
+				"alias":"8"
 			}
 		],
 		"alias":[
 			{
 				"value":"PTF09ge",
-				"source":"2"
+				"source":"2,8"
+			},
+			{
+				"value":"K0905-001",
+				"source":"5,6,8"
 			}
 		],
 		"claimedtype":[
@@ -49,16 +75,21 @@
 		],
 		"dec":[
 			{
-				"value":"+49:36:39.6",
+				"value":"+49:36:40.8",
 				"u_value":"degrees",
-				"source":"4"
+				"source":"4,5,6,8"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2009",
-				"derived":true,
-				"source":"5"
+				"value":"2009/05/17",
+				"source":"5,6"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"PTF",
+				"source":"5,6"
 			}
 		],
 		"ebv":[
@@ -66,14 +97,50 @@
 				"value":"0.0146",
 				"derived":true,
 				"e_value":"0.0006",
-				"source":"3,5"
+				"source":"3,7"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"19.4",
+				"derived":true,
+				"source":"5,6,7"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2009/05/16",
+				"derived":true,
+				"source":"5,6,7"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"19.4",
+				"derived":true,
+				"source":"5,6,7"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2009/05/16",
+				"derived":true,
+				"source":"5,6,7"
 			}
 		],
 		"ra":[
 			{
-				"value":"14:57:03.12",
+				"value":"14:57:03.10",
 				"u_value":"hours",
-				"source":"4"
+				"source":"4,5,6,8"
+			}
+		],
+		"photometry":[
+			{
+				"time":"54967.5",
+				"magnitude":"19.4",
+				"u_time":"MJD",
+				"source":"5,6"
 			}
 		]
 	}
