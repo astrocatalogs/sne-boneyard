@@ -15,10 +15,21 @@
 				"alias":"2"
 			},
 			{
+				"name":"CPCS Alert 26592",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=26592",
+				"alias":"3"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"4"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -26,47 +37,47 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia17beb",
-				"source":"2,3"
+				"source":"2,4,5"
 			},
 			{
 				"value":"AT2017dwu",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"dec":[
 			{
 				"value":"+32:27:05.87",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"value":"+32:27:05.76",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"2,4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2017/05/03",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Gaia",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"ebv":[
@@ -74,54 +85,54 @@
 				"value":"0.0841",
 				"derived":true,
 				"e_value":"0.0007",
-				"source":"1,4"
+				"source":"1,6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"15.4",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,5,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2018/04/27",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,5,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"16.04",
+				"value":"18.66",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"g",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2017/05/03",
+				"value":"2017/05/24",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"18:28:46.804",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"value":"18:28:46.8",
 				"u_value":"hours",
-				"source":"2"
+				"source":"2,4"
 			}
 		],
 		"photometry":[
@@ -146,10 +157,171 @@
 				"source":"2"
 			},
 			{
+				"time":"57895.0041",
+				"band":"B2pg",
+				"e_magnitude":"0.072971",
+				"magnitude":"19.5611",
+				"observatory":"PIRATE, OU students",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57895.0074",
+				"band":"V",
+				"e_magnitude":"0.112666",
+				"magnitude":"19.2878",
+				"observatory":"PIRATE, OU students",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57895.01",
+				"band":"B",
+				"e_magnitude":"0.276031",
+				"magnitude":"20.6131",
+				"observatory":"PIRATE, OU students",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57896.1939",
+				"band":"g",
+				"e_magnitude":"0.0743162",
+				"magnitude":"19.4021",
+				"observatory":"PIRATE, OU students",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57896.1972",
+				"band":"g",
+				"e_magnitude":"0.190269",
+				"magnitude":"20.2722",
+				"observatory":"PIRATE, OU students",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57896.1998",
+				"band":"r",
+				"e_magnitude":"0.152535",
+				"magnitude":"19.6035",
+				"observatory":"PIRATE, OU students",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57897.0878",
+				"band":"B2pg",
+				"e_magnitude":"0.0189304",
+				"magnitude":"17.9705",
+				"observatory":"PIRATE, OU students",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57897.0912",
+				"band":"g",
+				"e_magnitude":"0.0502062",
+				"magnitude":"18.6601",
+				"observatory":"PIRATE, OU students",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57897.0938",
+				"band":"r",
+				"e_magnitude":"0.0788307",
+				"magnitude":"18.734",
+				"observatory":"PIRATE, OU students",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57898.0305",
+				"band":"B",
+				"e_magnitude":"0.13327",
+				"magnitude":"20.0741",
+				"observatory":"PIRATE, OU students",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57898.0339",
+				"band":"g",
+				"magnitude":"19.5062",
+				"observatory":"PIRATE, OU students",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57898.0365",
+				"band":"r",
+				"e_magnitude":"0.199383",
+				"magnitude":"19.292",
+				"observatory":"PIRATE, OU students",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57898.0899",
+				"band":"B",
+				"e_magnitude":"0.0657457",
+				"magnitude":"19.8504",
+				"observatory":"PIRATE, OU students",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57898.0932",
+				"band":"g",
+				"e_magnitude":"0.108379",
+				"magnitude":"19.5924",
+				"observatory":"PIRATE, OU students",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57898.0958",
+				"band":"r",
+				"e_magnitude":"0.188127",
+				"magnitude":"19.7275",
+				"observatory":"PIRATE, OU students",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57899.0847",
+				"band":"B",
+				"e_magnitude":"0.146764",
+				"magnitude":"20.3673",
+				"observatory":"PIRATE, OU students",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57899.088",
+				"band":"g",
+				"e_magnitude":"0.223501",
+				"magnitude":"20.2111",
+				"observatory":"PIRATE, OU students",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57899.0906",
+				"band":"r",
+				"e_magnitude":"0.371633",
+				"magnitude":"20.0432",
+				"observatory":"PIRATE, OU students",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
 				"time":"58235.0",
 				"magnitude":"15.4",
 				"u_time":"MJD",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		]
 	}
