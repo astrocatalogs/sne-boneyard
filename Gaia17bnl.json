@@ -20,18 +20,29 @@
 				"alias":"3"
 			},
 			{
+				"name":"CPCS Alert 26620",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=26620",
+				"alias":"4"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"5"
+			},
+			{
 				"name":"The Open Supernova Catalog",
 				"bibcode":"2017ApJ...835...64G",
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia17bnl",
-				"source":"2"
+				"source":"2,5"
 			},
 			{
 				"value":"AT2017esa",
@@ -53,7 +64,7 @@
 			{
 				"value":"+44:31:49.8",
 				"u_value":"degrees",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"discoverdate":[
@@ -73,49 +84,49 @@
 				"value":"6.5621",
 				"derived":true,
 				"e_value":"1.7678",
-				"source":"1,4"
+				"source":"1,6"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"15.23",
+				"value":"14.75",
 				"derived":true,
-				"source":"3,4"
+				"source":"4,5,6"
 			}
 		],
 		"maxband":[
 			{
-				"value":"G",
+				"value":"i",
 				"derived":true,
-				"source":"3,4"
+				"source":"4,5,6"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2015/04/15",
+				"value":"2017/06/22",
 				"derived":true,
-				"source":"3,4"
+				"source":"4,5,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"15.23",
 				"derived":true,
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2015/04/15",
 				"derived":true,
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"ra":[
@@ -127,7 +138,7 @@
 			{
 				"value":"20:51:00.96",
 				"u_value":"hours",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"photometry":[
@@ -502,6 +513,24 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"3"
+			},
+			{
+				"time":"57926.0501",
+				"band":"i",
+				"e_magnitude":"0.0026",
+				"magnitude":"14.7462",
+				"observatory":"OmicronC2PU JPRivet",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57926.0572",
+				"band":"i",
+				"e_magnitude":"0.0028",
+				"magnitude":"14.7773",
+				"observatory":"OmicronC2PU JPRivet",
+				"u_time":"MJD",
+				"source":"4,5"
 			}
 		]
 	}
