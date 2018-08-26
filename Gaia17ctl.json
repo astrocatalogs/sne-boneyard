@@ -20,10 +20,21 @@
 				"alias":"3"
 			},
 			{
+				"name":"CPCS Alert 26842",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=26842",
+				"alias":"4"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"5"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -31,35 +42,39 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia17ctl",
-				"source":"2,3,4"
+				"source":"2,3,5,6"
 			},
 			{
 				"value":"AT2017hvl",
-				"source":"2,3,4"
+				"source":"2,3,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"3,4"
+				"source":"3,6"
+			},
+			{
+				"value":"ULENS",
+				"source":"3"
 			}
 		],
 		"dec":[
 			{
 				"value":"-33:36:34.99",
 				"u_value":"degrees",
-				"source":"2,3,4"
+				"source":"2,3,6"
 			},
 			{
 				"value":"-33:36:34.92",
 				"u_value":"degrees",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"discoverdate":[
@@ -75,7 +90,7 @@
 			},
 			{
 				"value":"Gaia",
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"ebv":[
@@ -83,49 +98,49 @@
 				"value":"0.4014",
 				"derived":true,
 				"e_value":"0.0061",
-				"source":"1,5"
+				"source":"1,7"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"14.39",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,7"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,7"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2017/11/01",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"14.39",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,7"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,7"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2017/11/01",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,7"
 			}
 		],
 		"ra":[
@@ -137,12 +152,12 @@
 			{
 				"value":"18:05:36.051",
 				"u_value":"hours",
-				"source":"3,4"
+				"source":"3,6"
 			},
 			{
 				"value":"18:05:36",
 				"u_value":"hours",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"photometry":[
@@ -484,6 +499,617 @@
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
 				"magnitude":"15.95",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"58177.3434",
+				"band":"J",
+				"e_magnitude":"0.2268",
+				"magnitude":"15.6883",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58177.3467",
+				"band":"G",
+				"e_magnitude":"0.0967",
+				"instrument":"Astrometric",
+				"magnitude":"17.8",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58177.3502",
+				"band":"G",
+				"e_magnitude":"0.0762",
+				"instrument":"Astrometric",
+				"magnitude":"17.7718",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58177.3535",
+				"band":"G",
+				"e_magnitude":"0.0442",
+				"instrument":"Astrometric",
+				"magnitude":"17.9169",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58181.3596",
+				"band":"G",
+				"e_magnitude":"0.0966",
+				"instrument":"Astrometric",
+				"magnitude":"18.3785",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58181.3629",
+				"band":"G",
+				"e_magnitude":"0.1348",
+				"instrument":"Astrometric",
+				"magnitude":"18.3876",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58181.3663",
+				"band":"G",
+				"e_magnitude":"0.1439",
+				"instrument":"Astrometric",
+				"magnitude":"18.4471",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58184.3467",
+				"band":"G",
+				"e_magnitude":"0.0557",
+				"instrument":"Astrometric",
+				"magnitude":"17.7118",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58184.35",
+				"band":"G",
+				"e_magnitude":"0.0583",
+				"instrument":"Astrometric",
+				"magnitude":"17.7269",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58184.3535",
+				"band":"G",
+				"e_magnitude":"0.1147",
+				"instrument":"Astrometric",
+				"magnitude":"17.7897",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58184.3568",
+				"band":"G",
+				"e_magnitude":"0.0831",
+				"instrument":"Astrometric",
+				"magnitude":"17.9753",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58192.3275",
+				"band":"G",
+				"e_magnitude":"0.0272",
+				"instrument":"Astrometric",
+				"magnitude":"17.6408",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58192.3308",
+				"band":"G",
+				"e_magnitude":"0.0305",
+				"instrument":"Astrometric",
+				"magnitude":"17.6624",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58192.3342",
+				"band":"G",
+				"e_magnitude":"0.0374",
+				"instrument":"Astrometric",
+				"magnitude":"17.8343",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58192.3375",
+				"band":"G",
+				"e_magnitude":"0.0425",
+				"instrument":"Astrometric",
+				"magnitude":"17.9134",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58194.3352",
+				"band":"G",
+				"e_magnitude":"0.0311",
+				"instrument":"Astrometric",
+				"magnitude":"17.6544",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58194.3385",
+				"band":"G",
+				"e_magnitude":"0.0285",
+				"instrument":"Astrometric",
+				"magnitude":"17.659",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58194.3419",
+				"band":"G",
+				"e_magnitude":"0.0464",
+				"instrument":"Astrometric",
+				"magnitude":"17.897",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58194.3453",
+				"band":"G",
+				"e_magnitude":"0.0456",
+				"instrument":"Astrometric",
+				"magnitude":"17.8878",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58199.3417",
+				"band":"G",
+				"e_magnitude":"0.0326",
+				"instrument":"Astrometric",
+				"magnitude":"17.6597",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58199.345",
+				"band":"G",
+				"e_magnitude":"0.033",
+				"instrument":"Astrometric",
+				"magnitude":"17.6752",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58199.3484",
+				"band":"G",
+				"e_magnitude":"0.0432",
+				"instrument":"Astrometric",
+				"magnitude":"17.9088",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58199.3518",
+				"band":"G",
+				"e_magnitude":"0.0491",
+				"instrument":"Astrometric",
+				"magnitude":"17.9286",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58202.3031",
+				"band":"G",
+				"e_magnitude":"0.1587",
+				"instrument":"Astrometric",
+				"magnitude":"18.6222",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58202.3064",
+				"band":"G",
+				"e_magnitude":"0.0298",
+				"instrument":"Astrometric",
+				"magnitude":"17.6849",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58202.3098",
+				"band":"G",
+				"e_magnitude":"0.0374",
+				"instrument":"Astrometric",
+				"magnitude":"17.8887",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58202.3132",
+				"band":"G",
+				"e_magnitude":"0.1171",
+				"instrument":"Astrometric",
+				"magnitude":"18.3201",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58206.3167",
+				"band":"G",
+				"e_magnitude":"0.1291",
+				"instrument":"Astrometric",
+				"magnitude":"18.4538",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58206.32",
+				"band":"G",
+				"e_magnitude":"0.1364",
+				"instrument":"Astrometric",
+				"magnitude":"18.4097",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58206.3234",
+				"band":"G",
+				"e_magnitude":"0.0345",
+				"instrument":"Astrometric",
+				"magnitude":"17.8602",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58206.3268",
+				"band":"G",
+				"e_magnitude":"0.0323",
+				"instrument":"Astrometric",
+				"magnitude":"17.8912",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58212.2788",
+				"band":"G",
+				"e_magnitude":"0.1276",
+				"instrument":"Astrometric",
+				"magnitude":"18.4986",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58212.2821",
+				"band":"G",
+				"e_magnitude":"0.1609",
+				"instrument":"Astrometric",
+				"magnitude":"18.4943",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58212.2855",
+				"band":"G",
+				"e_magnitude":"0.0456",
+				"instrument":"Astrometric",
+				"magnitude":"17.8231",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58212.2889",
+				"band":"G",
+				"e_magnitude":"0.0825",
+				"instrument":"Astrometric",
+				"magnitude":"18.0188",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58218.2795",
+				"band":"G",
+				"e_magnitude":"0.327",
+				"instrument":"Astrometric",
+				"magnitude":"17.937",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58218.2828",
+				"band":"G",
+				"instrument":"Astrometric",
+				"magnitude":"17.3684",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58218.2895",
+				"band":"G",
+				"e_magnitude":"0.3071",
+				"instrument":"Astrometric",
+				"magnitude":"17.9324",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58220.2457",
+				"band":"G",
+				"e_magnitude":"0.0866",
+				"instrument":"Astrometric",
+				"magnitude":"17.7271",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58220.249",
+				"band":"G",
+				"e_magnitude":"0.0259",
+				"instrument":"Astrometric",
+				"magnitude":"17.7013",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58220.2525",
+				"band":"G",
+				"e_magnitude":"0.1229",
+				"instrument":"Astrometric",
+				"magnitude":"17.8071",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58220.2558",
+				"band":"G",
+				"e_magnitude":"0.0583",
+				"instrument":"Astrometric",
+				"magnitude":"17.9725",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58222.3003",
+				"band":"G",
+				"e_magnitude":"0.0293",
+				"instrument":"Astrometric",
+				"magnitude":"17.6624",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58222.3036",
+				"band":"G",
+				"e_magnitude":"0.0327",
+				"instrument":"Astrometric",
+				"magnitude":"17.6873",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58222.307",
+				"band":"G",
+				"e_magnitude":"0.0325",
+				"instrument":"Astrometric",
+				"magnitude":"17.8701",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58222.3103",
+				"band":"G",
+				"e_magnitude":"0.0453",
+				"instrument":"Astrometric",
+				"magnitude":"17.9071",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58224.2889",
+				"band":"G",
+				"e_magnitude":"0.1675",
+				"instrument":"Astrometric",
+				"magnitude":"18.4117",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58224.2922",
+				"band":"G",
+				"e_magnitude":"0.1361",
+				"instrument":"Astrometric",
+				"magnitude":"18.4101",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58224.2957",
+				"band":"G",
+				"e_magnitude":"0.0521",
+				"instrument":"Astrometric",
+				"magnitude":"17.9447",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58224.299",
+				"band":"G",
+				"e_magnitude":"0.1216",
+				"instrument":"Astrometric",
+				"magnitude":"18.4052",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58226.2776",
+				"band":"G",
+				"e_magnitude":"0.0365",
+				"instrument":"Astrometric",
+				"magnitude":"17.6791",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58226.2809",
+				"band":"G",
+				"e_magnitude":"0.0354",
+				"instrument":"Astrometric",
+				"magnitude":"17.7061",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58226.2844",
+				"band":"G",
+				"e_magnitude":"0.0392",
+				"instrument":"Astrometric",
+				"magnitude":"17.9187",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58226.2877",
+				"band":"G",
+				"e_magnitude":"0.0476",
+				"instrument":"Astrometric",
+				"magnitude":"17.9411",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58344.124",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"19.41",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"58344.198",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"19.39",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"3"

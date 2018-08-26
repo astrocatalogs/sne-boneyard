@@ -20,10 +20,21 @@
 				"alias":"3"
 			},
 			{
+				"name":"CPCS Alert 27046",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=27046",
+				"alias":"4"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"5"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -31,23 +42,23 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia16aft",
-				"source":"2,3,4"
+				"source":"2,3,5,6"
 			},
 			{
 				"value":"AT2016dsq",
-				"source":"2,3,4"
+				"source":"2,3,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"YSO",
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"dec":[
@@ -59,12 +70,12 @@
 			{
 				"value":"+44:05:23.82",
 				"u_value":"degrees",
-				"source":"3,4"
+				"source":"3,6"
 			},
 			{
 				"value":"+44:05:24",
 				"u_value":"degrees",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"discoverdate":[
@@ -80,7 +91,7 @@
 			},
 			{
 				"value":"Gaia",
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"ebv":[
@@ -88,49 +99,49 @@
 				"value":"3.8211",
 				"derived":true,
 				"e_value":"0.0542",
-				"source":"1,5"
+				"source":"1,7"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"12.54",
+				"value":"11.68",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxband":[
 			{
-				"value":"G",
+				"value":"i",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2017/01/22",
+				"value":"2017/01/26",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"12.54",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,7"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,7"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2017/01/22",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,7"
 			}
 		],
 		"ra":[
@@ -142,12 +153,12 @@
 			{
 				"value":"20:51:26.238",
 				"u_value":"hours",
-				"source":"3,4"
+				"source":"3,6"
 			},
 			{
 				"value":"20:51:26.16",
 				"u_value":"hours",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"photometry":[
@@ -294,6 +305,114 @@
 				"source":"3"
 			},
 			{
+				"time":"57495.0404",
+				"band":"V",
+				"e_magnitude":"0.0304",
+				"magnitude":"16.4925",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57495.0423",
+				"band":"r",
+				"e_magnitude":"0.0095",
+				"magnitude":"15.3484",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57495.0442",
+				"band":"i",
+				"e_magnitude":"0.0061",
+				"magnitude":"14.3502",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57496.068",
+				"band":"V",
+				"e_magnitude":"0.0165",
+				"magnitude":"16.427",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57496.0699",
+				"band":"r",
+				"e_magnitude":"0.0076",
+				"magnitude":"15.2349",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57496.0718",
+				"band":"i",
+				"e_magnitude":"0.0041",
+				"magnitude":"14.3544",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57498.045",
+				"band":"V",
+				"e_magnitude":"0.0305",
+				"magnitude":"16.583",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57498.0469",
+				"band":"r",
+				"e_magnitude":"0.0123",
+				"magnitude":"15.3453",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57498.0488",
+				"band":"i",
+				"e_magnitude":"0.0072",
+				"magnitude":"14.4639",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.0432",
+				"band":"V",
+				"e_magnitude":"0.0505",
+				"magnitude":"16.7512",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.0451",
+				"band":"r",
+				"e_magnitude":"0.0186",
+				"magnitude":"15.463",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57499.047",
+				"band":"i",
+				"e_magnitude":"0.0106",
+				"magnitude":"14.5566",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
 				"time":"57505.114",
 				"band":"G",
 				"e_magnitude":"0.0",
@@ -302,6 +421,177 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"3"
+			},
+			{
+				"time":"57508.9648",
+				"band":"V",
+				"e_magnitude":"0.0183",
+				"magnitude":"16.6568",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57508.9667",
+				"band":"r",
+				"e_magnitude":"0.0083",
+				"magnitude":"15.33",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57508.9686",
+				"band":"i",
+				"e_magnitude":"0.004",
+				"magnitude":"14.5944",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57511.0159",
+				"band":"V",
+				"e_magnitude":"0.0172",
+				"magnitude":"16.7348",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57511.0179",
+				"band":"r",
+				"e_magnitude":"0.0083",
+				"magnitude":"15.4558",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57511.0198",
+				"band":"i",
+				"e_magnitude":"0.0044",
+				"magnitude":"14.626",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57511.9944",
+				"band":"V",
+				"e_magnitude":"0.0413",
+				"magnitude":"16.7714",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57511.9963",
+				"band":"r",
+				"e_magnitude":"0.0171",
+				"magnitude":"15.5941",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57511.9982",
+				"band":"i",
+				"e_magnitude":"0.0099",
+				"magnitude":"14.5984",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57513.9861",
+				"band":"V",
+				"e_magnitude":"0.0292",
+				"magnitude":"16.3513",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57513.988",
+				"band":"r",
+				"e_magnitude":"0.0122",
+				"magnitude":"15.269",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57513.9899",
+				"band":"i",
+				"e_magnitude":"0.0083",
+				"magnitude":"14.2652",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57523.0277",
+				"band":"V",
+				"e_magnitude":"0.0139",
+				"magnitude":"15.9693",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57523.0296",
+				"band":"r",
+				"e_magnitude":"0.0056",
+				"magnitude":"14.8515",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57523.0315",
+				"band":"i",
+				"e_magnitude":"0.0036",
+				"magnitude":"13.9089",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57525.0713",
+				"band":"V",
+				"e_magnitude":"0.0416",
+				"magnitude":"16.325",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57533.9849",
+				"band":"V",
+				"e_magnitude":"0.0451",
+				"magnitude":"16.2264",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57533.9868",
+				"band":"r",
+				"e_magnitude":"0.0268",
+				"magnitude":"14.9061",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57533.9887",
+				"band":"i",
+				"e_magnitude":"0.0108",
+				"magnitude":"14.1082",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
 			},
 			{
 				"time":"57537.850",
@@ -314,6 +604,354 @@
 				"source":"3"
 			},
 			{
+				"time":"57543.978",
+				"band":"V",
+				"magnitude":"18.8833",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57543.9799",
+				"band":"r",
+				"e_magnitude":"0.0586",
+				"magnitude":"16.1357",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57543.9818",
+				"band":"i",
+				"e_magnitude":"0.0449",
+				"magnitude":"14.8331",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57545.9375",
+				"band":"V",
+				"e_magnitude":"0.0845",
+				"magnitude":"16.7356",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57545.9395",
+				"band":"r",
+				"e_magnitude":"0.0283",
+				"magnitude":"15.6508",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57545.9414",
+				"band":"i",
+				"e_magnitude":"0.0156",
+				"magnitude":"14.6011",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57554.9458",
+				"band":"V",
+				"magnitude":"17.7816",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57554.9478",
+				"band":"r",
+				"e_magnitude":"0.0592",
+				"magnitude":"16.0388",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57554.9497",
+				"band":"i",
+				"e_magnitude":"0.0371",
+				"magnitude":"14.8385",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57572.9484",
+				"band":"V",
+				"e_magnitude":"0.096",
+				"magnitude":"16.6583",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57572.9502",
+				"band":"r",
+				"e_magnitude":"0.0423",
+				"magnitude":"15.5058",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57572.952",
+				"band":"i",
+				"e_magnitude":"0.0452",
+				"magnitude":"14.3596",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57574.9354",
+				"band":"V",
+				"magnitude":"17.4241",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57574.9372",
+				"band":"r",
+				"e_magnitude":"0.0418",
+				"magnitude":"15.568",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57574.9389",
+				"band":"i",
+				"e_magnitude":"0.0033",
+				"magnitude":"14.4605",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57577.9358",
+				"band":"V",
+				"e_magnitude":"0.0182",
+				"magnitude":"16.53",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57577.9377",
+				"band":"r",
+				"e_magnitude":"0.0079",
+				"magnitude":"15.3453",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57577.9397",
+				"band":"i",
+				"e_magnitude":"0.0041",
+				"magnitude":"14.2777",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57582.9671",
+				"band":"V",
+				"e_magnitude":"0.0241",
+				"magnitude":"16.9158",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57582.969",
+				"band":"r",
+				"e_magnitude":"0.0095",
+				"magnitude":"15.6084",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57582.9709",
+				"band":"i",
+				"e_magnitude":"0.0055",
+				"magnitude":"14.6159",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57583.9317",
+				"band":"V",
+				"e_magnitude":"0.0345",
+				"magnitude":"16.7212",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57583.9337",
+				"band":"r",
+				"e_magnitude":"0.0126",
+				"magnitude":"15.4676",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57583.9356",
+				"band":"i",
+				"e_magnitude":"0.0065",
+				"magnitude":"14.4367",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57586.9298",
+				"band":"V",
+				"e_magnitude":"0.023",
+				"magnitude":"16.2925",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57586.9318",
+				"band":"r",
+				"e_magnitude":"0.0083",
+				"magnitude":"15.1636",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57586.9337",
+				"band":"i",
+				"e_magnitude":"0.0042",
+				"magnitude":"14.0453",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57587.9344",
+				"band":"V",
+				"e_magnitude":"0.0207",
+				"magnitude":"16.3295",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57587.9363",
+				"band":"r",
+				"e_magnitude":"0.0078",
+				"magnitude":"15.1385",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57587.9382",
+				"band":"i",
+				"e_magnitude":"0.0046",
+				"magnitude":"14.0312",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57588.935",
+				"band":"V",
+				"e_magnitude":"0.0342",
+				"magnitude":"16.5429",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57588.9369",
+				"band":"r",
+				"e_magnitude":"0.013",
+				"magnitude":"15.2927",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57588.9388",
+				"band":"i",
+				"e_magnitude":"0.0066",
+				"magnitude":"14.2029",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57589.9307",
+				"band":"V",
+				"e_magnitude":"0.0269",
+				"magnitude":"16.365",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57589.9325",
+				"band":"r",
+				"e_magnitude":"0.0113",
+				"magnitude":"15.2106",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57589.9342",
+				"band":"i",
+				"e_magnitude":"0.0057",
+				"magnitude":"14.0885",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57591.9516",
+				"band":"V",
+				"e_magnitude":"0.0306",
+				"magnitude":"16.3075",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57591.9534",
+				"band":"r",
+				"e_magnitude":"0.0089",
+				"magnitude":"15.2136",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57591.9551",
+				"band":"i",
+				"e_magnitude":"0.0053",
+				"magnitude":"14.0577",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
 				"time":"57605.300",
 				"band":"G",
 				"e_magnitude":"0.0",
@@ -322,6 +960,276 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"3"
+			},
+			{
+				"time":"57609.0704",
+				"band":"V",
+				"e_magnitude":"0.008",
+				"magnitude":"15.9676",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57609.0721",
+				"band":"r",
+				"e_magnitude":"0.004",
+				"magnitude":"14.7555",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57609.0739",
+				"band":"i",
+				"e_magnitude":"0.0023",
+				"magnitude":"13.7116",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57610.019",
+				"band":"V",
+				"e_magnitude":"0.0064",
+				"magnitude":"15.7615",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57610.02",
+				"band":"r",
+				"e_magnitude":"0.0027",
+				"magnitude":"14.6577",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57610.0218",
+				"band":"i",
+				"e_magnitude":"0.0023",
+				"magnitude":"13.5508",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57611.8905",
+				"band":"V",
+				"e_magnitude":"0.0083",
+				"magnitude":"15.5719",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57611.8923",
+				"band":"r",
+				"e_magnitude":"0.0031",
+				"magnitude":"14.454",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57611.894",
+				"band":"i",
+				"e_magnitude":"0.0022",
+				"magnitude":"13.3442",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57612.9042",
+				"band":"V",
+				"e_magnitude":"0.0063",
+				"magnitude":"15.6459",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57612.906",
+				"band":"r",
+				"e_magnitude":"0.0028",
+				"magnitude":"14.5638",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57612.9077",
+				"band":"i",
+				"e_magnitude":"0.0018",
+				"magnitude":"13.4256",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57614.8674",
+				"band":"V",
+				"e_magnitude":"0.0063",
+				"magnitude":"15.4697",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57614.8692",
+				"band":"r",
+				"e_magnitude":"0.0025",
+				"magnitude":"14.3847",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57614.8709",
+				"band":"i",
+				"e_magnitude":"0.0016",
+				"magnitude":"13.2356",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57615.8878",
+				"band":"V",
+				"e_magnitude":"0.0065",
+				"magnitude":"15.0139",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57615.8896",
+				"band":"r",
+				"e_magnitude":"0.0026",
+				"magnitude":"13.994",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57615.8914",
+				"band":"i",
+				"e_magnitude":"0.0019",
+				"magnitude":"12.9271",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57616.8873",
+				"band":"V",
+				"e_magnitude":"0.0105",
+				"magnitude":"15.019",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57616.889",
+				"band":"r",
+				"e_magnitude":"0.0043",
+				"magnitude":"13.9871",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57616.8908",
+				"band":"i",
+				"e_magnitude":"0.003",
+				"magnitude":"12.9098",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57617.8425",
+				"band":"V",
+				"e_magnitude":"0.0124",
+				"magnitude":"15.0296",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57617.8442",
+				"band":"r",
+				"e_magnitude":"0.0043",
+				"magnitude":"13.9624",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57617.846",
+				"band":"i",
+				"e_magnitude":"0.0027",
+				"magnitude":"12.8922",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57618.8838",
+				"band":"V",
+				"e_magnitude":"0.0095",
+				"magnitude":"15.0181",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57618.8855",
+				"band":"r",
+				"e_magnitude":"0.0038",
+				"magnitude":"14.0066",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57618.8873",
+				"band":"i",
+				"e_magnitude":"0.0024",
+				"magnitude":"12.94",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57619.8546",
+				"band":"V",
+				"e_magnitude":"0.0073",
+				"magnitude":"15.056",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57619.8736",
+				"band":"r",
+				"e_magnitude":"0.0025",
+				"magnitude":"14.0245",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57619.8753",
+				"band":"i",
+				"e_magnitude":"0.002",
+				"magnitude":"12.9667",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
 			},
 			{
 				"time":"57620.554",
@@ -344,6 +1252,357 @@
 				"source":"3"
 			},
 			{
+				"time":"57622.8322",
+				"band":"V",
+				"e_magnitude":"0.0034",
+				"magnitude":"14.8674",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57622.8339",
+				"band":"r",
+				"e_magnitude":"0.0015",
+				"magnitude":"13.8963",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57622.8357",
+				"band":"i",
+				"e_magnitude":"0.001",
+				"magnitude":"12.8556",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57623.8341",
+				"band":"V",
+				"e_magnitude":"0.0035",
+				"magnitude":"14.8227",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57623.8359",
+				"band":"r",
+				"e_magnitude":"0.0015",
+				"magnitude":"13.8592",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57623.8376",
+				"band":"i",
+				"e_magnitude":"0.001",
+				"magnitude":"12.825",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57626.834",
+				"band":"V",
+				"e_magnitude":"0.004",
+				"magnitude":"14.8818",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57626.8357",
+				"band":"r",
+				"e_magnitude":"0.0018",
+				"magnitude":"13.901",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57626.8375",
+				"band":"i",
+				"e_magnitude":"0.0012",
+				"magnitude":"12.877",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57629.8276",
+				"band":"V",
+				"e_magnitude":"0.0041",
+				"magnitude":"14.8294",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57629.8294",
+				"band":"r",
+				"e_magnitude":"0.0018",
+				"magnitude":"13.8288",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57629.8311",
+				"band":"i",
+				"e_magnitude":"0.0012",
+				"magnitude":"12.8321",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57630.8239",
+				"band":"V",
+				"e_magnitude":"0.0045",
+				"magnitude":"14.9885",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57630.8256",
+				"band":"r",
+				"e_magnitude":"0.0018",
+				"magnitude":"13.9748",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57630.8273",
+				"band":"i",
+				"e_magnitude":"0.0011",
+				"magnitude":"12.9464",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57631.8198",
+				"band":"V",
+				"e_magnitude":"0.0036",
+				"magnitude":"14.8046",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57631.8216",
+				"band":"r",
+				"e_magnitude":"0.0016",
+				"magnitude":"13.8118",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57631.8233",
+				"band":"i",
+				"e_magnitude":"0.0015",
+				"magnitude":"12.8055",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57638.8161",
+				"band":"V",
+				"e_magnitude":"0.0057",
+				"magnitude":"14.5004",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57638.8179",
+				"band":"r",
+				"e_magnitude":"0.0023",
+				"magnitude":"13.6417",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57638.8196",
+				"band":"i",
+				"e_magnitude":"0.0021",
+				"magnitude":"12.7147",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57639.852",
+				"band":"V",
+				"e_magnitude":"0.0029",
+				"magnitude":"14.4982",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57639.8537",
+				"band":"r",
+				"e_magnitude":"0.0014",
+				"magnitude":"13.6212",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57639.8555",
+				"band":"i",
+				"e_magnitude":"0.0011",
+				"magnitude":"12.708",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57640.8571",
+				"band":"V",
+				"e_magnitude":"0.0021",
+				"magnitude":"14.4229",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57640.8588",
+				"band":"r",
+				"e_magnitude":"0.0011",
+				"magnitude":"13.537",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57640.8606",
+				"band":"i",
+				"e_magnitude":"0.0008",
+				"magnitude":"12.6385",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57644.8452",
+				"band":"V",
+				"e_magnitude":"0.0044",
+				"magnitude":"14.5948",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57644.8469",
+				"band":"r",
+				"e_magnitude":"0.0018",
+				"magnitude":"13.7208",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57644.8487",
+				"band":"i",
+				"e_magnitude":"0.0012",
+				"magnitude":"12.7961",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57656.8363",
+				"band":"V",
+				"e_magnitude":"0.0036",
+				"magnitude":"15.0762",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57656.8381",
+				"band":"r",
+				"e_magnitude":"0.0017",
+				"magnitude":"14.1279",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57656.8398",
+				"band":"i",
+				"e_magnitude":"0.0011",
+				"magnitude":"13.1459",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57661.8823",
+				"band":"V",
+				"e_magnitude":"0.0062",
+				"magnitude":"15.6954",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57661.884",
+				"band":"r",
+				"e_magnitude":"0.0029",
+				"magnitude":"14.6781",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57661.8858",
+				"band":"i",
+				"e_magnitude":"0.0022",
+				"magnitude":"13.6889",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57662.7885",
+				"band":"V",
+				"e_magnitude":"0.0056",
+				"magnitude":"15.5543",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57662.7902",
+				"band":"r",
+				"e_magnitude":"0.0026",
+				"magnitude":"14.599",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57662.792",
+				"band":"i",
+				"e_magnitude":"0.0018",
+				"magnitude":"13.6236",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
 				"time":"57663.246",
 				"band":"G",
 				"e_magnitude":"0.0",
@@ -364,6 +1623,177 @@
 				"source":"3"
 			},
 			{
+				"time":"57663.8302",
+				"band":"V",
+				"e_magnitude":"0.0067",
+				"magnitude":"15.3904",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57663.8319",
+				"band":"r",
+				"e_magnitude":"0.0029",
+				"magnitude":"14.4165",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57663.8337",
+				"band":"i",
+				"e_magnitude":"0.0019",
+				"magnitude":"13.4593",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57664.8144",
+				"band":"V",
+				"e_magnitude":"0.0084",
+				"magnitude":"15.3505",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57664.8161",
+				"band":"r",
+				"e_magnitude":"0.0036",
+				"magnitude":"14.3925",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57664.8179",
+				"band":"i",
+				"e_magnitude":"0.0031",
+				"magnitude":"13.4349",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57665.8473",
+				"band":"V",
+				"e_magnitude":"0.0068",
+				"magnitude":"15.3112",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57665.8491",
+				"band":"r",
+				"e_magnitude":"0.0029",
+				"magnitude":"14.3697",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57665.8508",
+				"band":"i",
+				"e_magnitude":"0.0019",
+				"magnitude":"13.3908",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57666.811",
+				"band":"V",
+				"e_magnitude":"0.0053",
+				"magnitude":"15.1503",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57666.8128",
+				"band":"r",
+				"e_magnitude":"0.0022",
+				"magnitude":"14.232",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57666.8145",
+				"band":"i",
+				"e_magnitude":"0.0015",
+				"magnitude":"13.2799",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57678.7952",
+				"band":"V",
+				"e_magnitude":"0.0088",
+				"magnitude":"15.3166",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57678.797",
+				"band":"r",
+				"e_magnitude":"0.0036",
+				"magnitude":"14.34",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57678.7987",
+				"band":"i",
+				"e_magnitude":"0.0026",
+				"magnitude":"13.3522",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57679.7924",
+				"band":"V",
+				"e_magnitude":"0.0064",
+				"magnitude":"15.2413",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57679.7942",
+				"band":"r",
+				"e_magnitude":"0.0028",
+				"magnitude":"14.3308",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57679.7959",
+				"band":"i",
+				"e_magnitude":"0.0019",
+				"magnitude":"13.3189",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57681.7455",
+				"band":"V",
+				"e_magnitude":"0.0051",
+				"magnitude":"15.1598",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
 				"time":"57681.746",
 				"band":"G",
 				"e_magnitude":"0.0",
@@ -372,6 +1802,348 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"3"
+			},
+			{
+				"time":"57681.7472",
+				"band":"r",
+				"e_magnitude":"0.0024",
+				"magnitude":"14.2596",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57681.749",
+				"band":"i",
+				"e_magnitude":"0.0016",
+				"magnitude":"13.2832",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57687.7692",
+				"band":"V",
+				"e_magnitude":"0.0032",
+				"magnitude":"14.728",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57687.771",
+				"band":"r",
+				"e_magnitude":"0.0016",
+				"magnitude":"13.819",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57687.7727",
+				"band":"i",
+				"e_magnitude":"0.0011",
+				"magnitude":"12.8565",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57690.7371",
+				"band":"V",
+				"e_magnitude":"0.004",
+				"magnitude":"14.748",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57690.7386",
+				"band":"r",
+				"e_magnitude":"0.0018",
+				"magnitude":"13.8646",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57690.7404",
+				"band":"i",
+				"e_magnitude":"0.0013",
+				"magnitude":"12.8748",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57692.7357",
+				"band":"V",
+				"e_magnitude":"0.0041",
+				"magnitude":"14.7695",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57692.7375",
+				"band":"r",
+				"e_magnitude":"0.0018",
+				"magnitude":"13.8522",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57692.7392",
+				"band":"i",
+				"e_magnitude":"0.0013",
+				"magnitude":"12.8847",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57694.73",
+				"band":"V",
+				"e_magnitude":"0.0043",
+				"magnitude":"14.8088",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57694.7318",
+				"band":"r",
+				"e_magnitude":"0.002",
+				"magnitude":"13.8934",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57694.7336",
+				"band":"i",
+				"e_magnitude":"0.0016",
+				"magnitude":"12.915",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57697.9014",
+				"band":"V",
+				"e_magnitude":"0.0046",
+				"magnitude":"14.5319",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57697.9031",
+				"band":"r",
+				"e_magnitude":"0.002",
+				"magnitude":"13.6544",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57697.9049",
+				"band":"i",
+				"e_magnitude":"0.0015",
+				"magnitude":"12.7052",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57699.7261",
+				"band":"V",
+				"e_magnitude":"0.004",
+				"magnitude":"14.8051",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57699.7544",
+				"band":"r",
+				"e_magnitude":"0.0019",
+				"magnitude":"13.8719",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57699.7561",
+				"band":"i",
+				"e_magnitude":"0.0012",
+				"magnitude":"12.8751",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57703.7203",
+				"band":"V",
+				"e_magnitude":"0.0054",
+				"magnitude":"14.8309",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57703.7221",
+				"band":"r",
+				"e_magnitude":"0.0021",
+				"magnitude":"13.9232",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57703.7238",
+				"band":"i",
+				"e_magnitude":"0.0016",
+				"magnitude":"12.9025",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57710.7141",
+				"band":"V",
+				"e_magnitude":"0.0034",
+				"magnitude":"14.2299",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57710.7159",
+				"band":"r",
+				"e_magnitude":"0.0019",
+				"magnitude":"13.4016",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57710.7176",
+				"band":"i",
+				"e_magnitude":"0.0013",
+				"magnitude":"12.433",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57713.7148",
+				"band":"V",
+				"e_magnitude":"0.0037",
+				"magnitude":"14.1886",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57713.7312",
+				"band":"r",
+				"e_magnitude":"0.0017",
+				"magnitude":"13.306",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57713.733",
+				"band":"i",
+				"e_magnitude":"0.0013",
+				"magnitude":"12.3917",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57714.7232",
+				"band":"V",
+				"e_magnitude":"0.0034",
+				"magnitude":"14.1596",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57714.725",
+				"band":"r",
+				"e_magnitude":"0.0015",
+				"magnitude":"13.2982",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57714.7267",
+				"band":"i",
+				"e_magnitude":"0.0012",
+				"magnitude":"12.3623",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57716.7216",
+				"band":"V",
+				"e_magnitude":"0.0033",
+				"magnitude":"14.2917",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57716.7233",
+				"band":"r",
+				"e_magnitude":"0.0016",
+				"magnitude":"13.4097",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57716.7251",
+				"band":"i",
+				"e_magnitude":"0.0014",
+				"magnitude":"12.4631",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57717.712",
+				"band":"V",
+				"e_magnitude":"0.0026",
+				"magnitude":"14.3012",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57717.7138",
+				"band":"r",
+				"e_magnitude":"0.0012",
+				"magnitude":"13.4304",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57717.7155",
+				"band":"i",
+				"e_magnitude":"0.0009",
+				"magnitude":"12.4812",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
 			},
 			{
 				"time":"57717.960",
@@ -394,6 +2166,177 @@
 				"source":"3"
 			},
 			{
+				"time":"57720.7123",
+				"band":"r",
+				"e_magnitude":"0.001",
+				"magnitude":"13.219",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57720.7141",
+				"band":"i",
+				"e_magnitude":"0.0007",
+				"magnitude":"12.294",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57721.864",
+				"band":"r",
+				"e_magnitude":"0.0014",
+				"magnitude":"13.1771",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57721.8657",
+				"band":"i",
+				"e_magnitude":"0.001",
+				"magnitude":"12.2518",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57722.717",
+				"band":"V",
+				"e_magnitude":"0.0021",
+				"magnitude":"14.1033",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57722.7187",
+				"band":"r",
+				"e_magnitude":"0.001",
+				"magnitude":"13.215",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57722.7205",
+				"band":"i",
+				"e_magnitude":"0.0007",
+				"magnitude":"12.2855",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57723.7091",
+				"band":"V",
+				"e_magnitude":"0.003",
+				"magnitude":"14.1433",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57723.7108",
+				"band":"r",
+				"e_magnitude":"0.0012",
+				"magnitude":"13.264",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57723.7126",
+				"band":"i",
+				"e_magnitude":"0.001",
+				"magnitude":"12.315",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57725.7033",
+				"band":"V",
+				"e_magnitude":"0.0021",
+				"magnitude":"14.0398",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57725.705",
+				"band":"r",
+				"e_magnitude":"0.0009",
+				"magnitude":"13.1834",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57725.7068",
+				"band":"i",
+				"e_magnitude":"0.0007",
+				"magnitude":"12.262",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57736.7126",
+				"band":"V",
+				"e_magnitude":"0.0028",
+				"magnitude":"13.8638",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57736.7144",
+				"band":"r",
+				"e_magnitude":"0.0011",
+				"magnitude":"13.0135",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57736.7161",
+				"band":"i",
+				"e_magnitude":"0.0008",
+				"magnitude":"12.0652",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57737.7072",
+				"band":"V",
+				"e_magnitude":"0.0034",
+				"magnitude":"14.0532",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57737.7089",
+				"band":"r",
+				"e_magnitude":"0.0014",
+				"magnitude":"13.1719",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57737.7107",
+				"band":"i",
+				"e_magnitude":"0.001",
+				"magnitude":"12.2253",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
 				"time":"57748.268",
 				"band":"G",
 				"e_magnitude":"0.0",
@@ -402,6 +2345,168 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"3"
+			},
+			{
+				"time":"57758.7153",
+				"band":"V",
+				"e_magnitude":"0.0041",
+				"magnitude":"13.7757",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57758.717",
+				"band":"r",
+				"e_magnitude":"0.0015",
+				"magnitude":"12.8527",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57758.7188",
+				"band":"i",
+				"e_magnitude":"0.0011",
+				"magnitude":"11.9716",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57767.7319",
+				"band":"V",
+				"e_magnitude":"0.0021",
+				"magnitude":"13.6622",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57767.7337",
+				"band":"r",
+				"e_magnitude":"0.0009",
+				"magnitude":"12.8402",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57767.7355",
+				"band":"i",
+				"e_magnitude":"0.0008",
+				"magnitude":"11.944",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57770.7334",
+				"band":"V",
+				"e_magnitude":"0.0048",
+				"magnitude":"13.6606",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57770.7352",
+				"band":"r",
+				"e_magnitude":"0.0019",
+				"magnitude":"12.8416",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57770.7369",
+				"band":"i",
+				"e_magnitude":"0.0014",
+				"magnitude":"11.9179",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57771.7394",
+				"band":"V",
+				"e_magnitude":"0.0023",
+				"magnitude":"13.5857",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57771.7412",
+				"band":"r",
+				"e_magnitude":"0.0009",
+				"magnitude":"12.7604",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57771.7429",
+				"band":"i",
+				"e_magnitude":"0.0008",
+				"magnitude":"11.9217",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57773.7382",
+				"band":"V",
+				"e_magnitude":"0.0016",
+				"magnitude":"13.4475",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57773.74",
+				"band":"r",
+				"e_magnitude":"0.0007",
+				"magnitude":"12.6371",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57773.7417",
+				"band":"i",
+				"e_magnitude":"0.0005",
+				"magnitude":"11.7807",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57774.7392",
+				"band":"V",
+				"e_magnitude":"0.0028",
+				"magnitude":"13.7823",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57774.741",
+				"band":"r",
+				"e_magnitude":"0.0011",
+				"magnitude":"12.9262",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57774.7427",
+				"band":"i",
+				"e_magnitude":"0.0008",
+				"magnitude":"11.9822",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
 			},
 			{
 				"time":"57775.689",
@@ -424,6 +2529,195 @@
 				"source":"3"
 			},
 			{
+				"time":"57776.7409",
+				"band":"V",
+				"e_magnitude":"0.0055",
+				"magnitude":"13.4913",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57776.7427",
+				"band":"r",
+				"e_magnitude":"0.0018",
+				"magnitude":"12.6175",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57776.7445",
+				"band":"i",
+				"e_magnitude":"0.0014",
+				"magnitude":"11.7799",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57777.7406",
+				"band":"V",
+				"e_magnitude":"0.0026",
+				"magnitude":"13.361",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57777.7423",
+				"band":"r",
+				"e_magnitude":"0.001",
+				"magnitude":"12.545",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57777.7441",
+				"band":"i",
+				"e_magnitude":"0.0008",
+				"magnitude":"11.6987",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57779.7469",
+				"band":"V",
+				"e_magnitude":"0.0044",
+				"magnitude":"13.2922",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57779.7486",
+				"band":"r",
+				"e_magnitude":"0.0017",
+				"magnitude":"12.45",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57779.7504",
+				"band":"i",
+				"e_magnitude":"0.001",
+				"magnitude":"11.6817",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57781.7497",
+				"band":"V",
+				"e_magnitude":"0.002",
+				"magnitude":"13.4394",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57781.7514",
+				"band":"r",
+				"e_magnitude":"0.0009",
+				"magnitude":"12.6315",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57781.7532",
+				"band":"i",
+				"e_magnitude":"0.0006",
+				"magnitude":"11.7616",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57803.2117",
+				"band":"V",
+				"e_magnitude":"0.0204",
+				"magnitude":"13.526",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57803.2135",
+				"band":"r",
+				"e_magnitude":"0.0075",
+				"magnitude":"12.7537",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57803.2152",
+				"band":"i",
+				"e_magnitude":"0.005",
+				"magnitude":"11.9015",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57817.1473",
+				"band":"V",
+				"e_magnitude":"0.0039",
+				"magnitude":"13.4839",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57817.149",
+				"band":"r",
+				"e_magnitude":"0.0018",
+				"magnitude":"12.6844",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57817.1508",
+				"band":"i",
+				"e_magnitude":"0.0018",
+				"magnitude":"11.8858",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57819.1417",
+				"band":"V",
+				"e_magnitude":"0.0399",
+				"magnitude":"13.7365",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57819.1434",
+				"band":"r",
+				"e_magnitude":"0.01",
+				"magnitude":"12.9165",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57819.1452",
+				"band":"i",
+				"e_magnitude":"0.0069",
+				"magnitude":"12.0775",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
 				"time":"57819.804",
 				"band":"G",
 				"e_magnitude":"0.0",
@@ -442,6 +2736,141 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"3"
+			},
+			{
+				"time":"57828.1564",
+				"band":"V",
+				"e_magnitude":"0.018",
+				"magnitude":"14.0068",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57828.1582",
+				"band":"r",
+				"e_magnitude":"0.0084",
+				"magnitude":"13.1703",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57828.1599",
+				"band":"i",
+				"e_magnitude":"0.0071",
+				"magnitude":"12.3518",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57833.1025",
+				"band":"V",
+				"e_magnitude":"0.0086",
+				"magnitude":"14.4691",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57833.1042",
+				"band":"r",
+				"e_magnitude":"0.0036",
+				"magnitude":"13.616",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57833.106",
+				"band":"i",
+				"e_magnitude":"0.0024",
+				"magnitude":"12.7691",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57834.1056",
+				"band":"V",
+				"e_magnitude":"0.0057",
+				"magnitude":"14.5596",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57834.1073",
+				"band":"r",
+				"e_magnitude":"0.0025",
+				"magnitude":"13.6976",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57834.1091",
+				"band":"i",
+				"e_magnitude":"0.0018",
+				"magnitude":"12.826",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57837.1291",
+				"band":"V",
+				"e_magnitude":"0.0171",
+				"magnitude":"14.8666",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57837.1309",
+				"band":"r",
+				"e_magnitude":"0.0073",
+				"magnitude":"13.9584",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57837.1326",
+				"band":"i",
+				"e_magnitude":"0.004",
+				"magnitude":"13.0648",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57838.1476",
+				"band":"V",
+				"e_magnitude":"0.0049",
+				"magnitude":"14.3691",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57838.1493",
+				"band":"r",
+				"e_magnitude":"0.002",
+				"magnitude":"13.5185",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57838.1511",
+				"band":"i",
+				"e_magnitude":"0.0017",
+				"magnitude":"12.6564",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
 			},
 			{
 				"time":"57844.734",
@@ -464,6 +2893,212 @@
 				"source":"3"
 			},
 			{
+				"time":"57845.126",
+				"band":"V",
+				"magnitude":"15.615",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57845.1278",
+				"band":"r",
+				"e_magnitude":"0.0581",
+				"magnitude":"13.7155",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57845.1295",
+				"band":"i",
+				"e_magnitude":"0.058",
+				"magnitude":"12.6045",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57850.1155",
+				"band":"V",
+				"e_magnitude":"0.0067",
+				"magnitude":"14.1242",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57850.1172",
+				"band":"r",
+				"e_magnitude":"0.0027",
+				"magnitude":"13.3116",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57850.119",
+				"band":"i",
+				"e_magnitude":"0.0018",
+				"magnitude":"12.4502",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57851.0882",
+				"band":"V",
+				"e_magnitude":"0.0667",
+				"magnitude":"14.0939",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57851.0917",
+				"band":"i",
+				"e_magnitude":"0.0188",
+				"magnitude":"12.4661",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57852.088",
+				"band":"V",
+				"e_magnitude":"0.0419",
+				"magnitude":"14.3737",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57852.0894",
+				"band":"r",
+				"e_magnitude":"0.0162",
+				"magnitude":"13.4849",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57852.0912",
+				"band":"i",
+				"e_magnitude":"0.0129",
+				"magnitude":"12.6292",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57855.0823",
+				"band":"V",
+				"e_magnitude":"0.0068",
+				"magnitude":"14.2479",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57855.084",
+				"band":"r",
+				"e_magnitude":"0.0028",
+				"magnitude":"13.4381",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57855.0858",
+				"band":"i",
+				"e_magnitude":"0.002",
+				"magnitude":"12.5416",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57863.008",
+				"band":"V",
+				"e_magnitude":"0.0064",
+				"magnitude":"14.4909",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57863.0098",
+				"band":"r",
+				"e_magnitude":"0.0024",
+				"magnitude":"13.5576",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57863.0115",
+				"band":"i",
+				"e_magnitude":"0.0017",
+				"magnitude":"12.7017",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57870.0653",
+				"band":"V",
+				"e_magnitude":"0.0075",
+				"magnitude":"14.658",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57870.067",
+				"band":"r",
+				"e_magnitude":"0.0026",
+				"magnitude":"13.7147",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57870.0688",
+				"band":"i",
+				"e_magnitude":"0.0018",
+				"magnitude":"12.8108",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57875.0247",
+				"band":"V",
+				"e_magnitude":"0.0116",
+				"magnitude":"14.3644",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57875.0264",
+				"band":"r",
+				"e_magnitude":"0.0044",
+				"magnitude":"13.4812",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57875.0282",
+				"band":"i",
+				"e_magnitude":"0.0034",
+				"magnitude":"12.5582",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
 				"time":"57882.293",
 				"band":"G",
 				"e_magnitude":"0.0",
@@ -472,6 +3107,402 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"3"
+			},
+			{
+				"time":"57883.0058",
+				"band":"V",
+				"e_magnitude":"0.0264",
+				"magnitude":"14.8153",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57883.0076",
+				"band":"r",
+				"e_magnitude":"0.0091",
+				"magnitude":"13.8903",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57883.0093",
+				"band":"i",
+				"e_magnitude":"0.0066",
+				"magnitude":"12.971",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57884.0466",
+				"band":"r",
+				"e_magnitude":"0.0075",
+				"magnitude":"13.739",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57884.0484",
+				"band":"i",
+				"e_magnitude":"0.0049",
+				"magnitude":"12.8664",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57888.0023",
+				"band":"V",
+				"e_magnitude":"0.0167",
+				"magnitude":"14.7656",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57888.0037",
+				"band":"r",
+				"e_magnitude":"0.0069",
+				"magnitude":"13.8964",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57888.0055",
+				"band":"i",
+				"e_magnitude":"0.0052",
+				"magnitude":"12.9789",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57892.9642",
+				"band":"V",
+				"e_magnitude":"0.0182",
+				"magnitude":"14.7622",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57892.966",
+				"band":"r",
+				"e_magnitude":"0.0064",
+				"magnitude":"13.8222",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57892.9677",
+				"band":"i",
+				"e_magnitude":"0.0043",
+				"magnitude":"12.9431",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57896.9697",
+				"band":"V",
+				"e_magnitude":"0.0226",
+				"magnitude":"15.1346",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57896.9714",
+				"band":"r",
+				"e_magnitude":"0.0085",
+				"magnitude":"14.2208",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57896.9732",
+				"band":"i",
+				"e_magnitude":"0.005",
+				"magnitude":"13.2702",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57897.9751",
+				"band":"V",
+				"e_magnitude":"0.0171",
+				"magnitude":"15.1072",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57897.9766",
+				"band":"r",
+				"e_magnitude":"0.0061",
+				"magnitude":"14.2023",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57897.9784",
+				"band":"i",
+				"e_magnitude":"0.0034",
+				"magnitude":"13.2614",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57898.9773",
+				"band":"V",
+				"e_magnitude":"0.0116",
+				"magnitude":"15.0964",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57898.979",
+				"band":"r",
+				"e_magnitude":"0.0043",
+				"magnitude":"14.0666",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57898.9808",
+				"band":"i",
+				"e_magnitude":"0.0028",
+				"magnitude":"13.1376",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57899.9799",
+				"band":"V",
+				"e_magnitude":"0.0098",
+				"magnitude":"14.8759",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57899.9816",
+				"band":"r",
+				"e_magnitude":"0.0041",
+				"magnitude":"13.886",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57899.9834",
+				"band":"i",
+				"e_magnitude":"0.0029",
+				"magnitude":"13.0109",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57901.0416",
+				"band":"V",
+				"e_magnitude":"0.0173",
+				"magnitude":"14.8139",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57901.0434",
+				"band":"r",
+				"e_magnitude":"0.0069",
+				"magnitude":"13.8694",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57901.0451",
+				"band":"i",
+				"e_magnitude":"0.0073",
+				"magnitude":"13.0301",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57903.981",
+				"band":"V",
+				"e_magnitude":"0.0089",
+				"magnitude":"14.9195",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57903.9828",
+				"band":"r",
+				"e_magnitude":"0.0038",
+				"magnitude":"14.0213",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57903.9845",
+				"band":"i",
+				"e_magnitude":"0.0024",
+				"magnitude":"13.1246",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57904.9813",
+				"band":"V",
+				"e_magnitude":"0.0128",
+				"magnitude":"14.8971",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57904.9831",
+				"band":"r",
+				"e_magnitude":"0.0048",
+				"magnitude":"14.0561",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57904.9849",
+				"band":"i",
+				"e_magnitude":"0.0038",
+				"magnitude":"13.1915",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57905.9596",
+				"band":"V",
+				"e_magnitude":"0.0145",
+				"magnitude":"15.0555",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57905.9614",
+				"band":"r",
+				"e_magnitude":"0.0056",
+				"magnitude":"14.2316",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57905.9631",
+				"band":"i",
+				"e_magnitude":"0.0043",
+				"magnitude":"13.2608",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57910.9925",
+				"band":"V",
+				"e_magnitude":"0.0217",
+				"magnitude":"15.9668",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57910.9943",
+				"band":"r",
+				"e_magnitude":"0.0087",
+				"magnitude":"14.9157",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57910.9961",
+				"band":"i",
+				"e_magnitude":"0.0047",
+				"magnitude":"13.9879",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57914.9701",
+				"band":"V",
+				"e_magnitude":"0.0387",
+				"magnitude":"16.4542",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57914.9718",
+				"band":"r",
+				"e_magnitude":"0.0174",
+				"magnitude":"15.406",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57914.9736",
+				"band":"i",
+				"e_magnitude":"0.0098",
+				"magnitude":"14.5041",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57915.9699",
+				"band":"V",
+				"e_magnitude":"0.0478",
+				"magnitude":"16.652",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57915.9717",
+				"band":"r",
+				"e_magnitude":"0.0209",
+				"magnitude":"15.5836",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57915.9734",
+				"band":"i",
+				"e_magnitude":"0.0119",
+				"magnitude":"14.6177",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
 			},
 			{
 				"time":"57916.949",
@@ -484,6 +3515,33 @@
 				"source":"3"
 			},
 			{
+				"time":"57916.9987",
+				"band":"V",
+				"e_magnitude":"0.0291",
+				"magnitude":"16.8178",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57917.0005",
+				"band":"r",
+				"e_magnitude":"0.0134",
+				"magnitude":"15.7259",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57917.0022",
+				"band":"i",
+				"e_magnitude":"0.0077",
+				"magnitude":"14.8521",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
 				"time":"57917.023",
 				"band":"G",
 				"e_magnitude":"0.0",
@@ -494,6 +3552,623 @@
 				"source":"3"
 			},
 			{
+				"time":"57917.9485",
+				"band":"V",
+				"e_magnitude":"0.0257",
+				"magnitude":"16.8953",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57917.9503",
+				"band":"r",
+				"e_magnitude":"0.0126",
+				"magnitude":"15.6046",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57917.952",
+				"band":"i",
+				"e_magnitude":"0.007",
+				"magnitude":"14.9846",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57918.9668",
+				"band":"V",
+				"e_magnitude":"0.0581",
+				"magnitude":"16.9294",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57918.9685",
+				"band":"r",
+				"e_magnitude":"0.0248",
+				"magnitude":"15.9548",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57918.9703",
+				"band":"i",
+				"e_magnitude":"0.0145",
+				"magnitude":"14.9506",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57919.9622",
+				"band":"V",
+				"e_magnitude":"0.0201",
+				"magnitude":"16.9856",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57919.964",
+				"band":"r",
+				"e_magnitude":"0.0097",
+				"magnitude":"15.712",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57919.9763",
+				"band":"i",
+				"e_magnitude":"0.0054",
+				"magnitude":"15.0446",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57921.0093",
+				"band":"V",
+				"e_magnitude":"0.0222",
+				"magnitude":"17.0263",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57921.011",
+				"band":"r",
+				"e_magnitude":"0.0121",
+				"magnitude":"15.9481",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57921.0128",
+				"band":"i",
+				"e_magnitude":"0.0068",
+				"magnitude":"15.0774",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57921.9538",
+				"band":"V",
+				"e_magnitude":"0.0306",
+				"magnitude":"17.0599",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57921.9555",
+				"band":"r",
+				"e_magnitude":"0.0129",
+				"magnitude":"15.8995",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57921.9573",
+				"band":"i",
+				"e_magnitude":"0.0077",
+				"magnitude":"15.1255",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57922.9525",
+				"band":"V",
+				"e_magnitude":"0.0174",
+				"magnitude":"16.5679",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57922.9542",
+				"band":"r",
+				"e_magnitude":"0.0088",
+				"magnitude":"15.3259",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57922.956",
+				"band":"i",
+				"e_magnitude":"0.0043",
+				"magnitude":"14.5823",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57923.9632",
+				"band":"V",
+				"e_magnitude":"0.0409",
+				"magnitude":"16.5566",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57923.9649",
+				"band":"r",
+				"e_magnitude":"0.0157",
+				"magnitude":"15.5771",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57923.9667",
+				"band":"i",
+				"e_magnitude":"0.009",
+				"magnitude":"14.5578",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57924.9519",
+				"band":"V",
+				"e_magnitude":"0.0784",
+				"magnitude":"16.8346",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57924.9536",
+				"band":"r",
+				"e_magnitude":"0.0293",
+				"magnitude":"15.6543",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57924.9554",
+				"band":"i",
+				"e_magnitude":"0.0149",
+				"magnitude":"14.6232",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57925.9549",
+				"band":"V",
+				"e_magnitude":"0.0335",
+				"magnitude":"16.9128",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57925.9566",
+				"band":"r",
+				"e_magnitude":"0.0139",
+				"magnitude":"15.6163",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57925.9584",
+				"band":"i",
+				"e_magnitude":"0.0065",
+				"magnitude":"14.6701",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57927.9266",
+				"band":"V",
+				"e_magnitude":"0.0276",
+				"magnitude":"16.7099",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57927.9283",
+				"band":"r",
+				"e_magnitude":"0.0115",
+				"magnitude":"15.6287",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57927.9301",
+				"band":"i",
+				"e_magnitude":"0.0073",
+				"magnitude":"14.6396",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57933.9716",
+				"band":"V",
+				"e_magnitude":"0.0752",
+				"magnitude":"16.7622",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57933.9733",
+				"band":"r",
+				"e_magnitude":"0.0342",
+				"magnitude":"15.8069",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57933.9751",
+				"band":"i",
+				"e_magnitude":"0.0306",
+				"magnitude":"14.6923",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57936.963",
+				"band":"V",
+				"magnitude":"19.3475",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57936.9648",
+				"band":"r",
+				"e_magnitude":"0.0483",
+				"magnitude":"16.3036",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57936.9665",
+				"band":"i",
+				"e_magnitude":"0.0308",
+				"magnitude":"15.3319",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57937.9041",
+				"band":"V",
+				"e_magnitude":"0.0951",
+				"magnitude":"17.7135",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57937.9059",
+				"band":"r",
+				"e_magnitude":"0.0295",
+				"magnitude":"16.0634",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57937.9076",
+				"band":"i",
+				"e_magnitude":"0.0155",
+				"magnitude":"15.3181",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57939.0498",
+				"band":"V",
+				"magnitude":"19.4942",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57939.0515",
+				"band":"r",
+				"e_magnitude":"0.0427",
+				"magnitude":"16.4854",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57939.0533",
+				"band":"i",
+				"e_magnitude":"0.0207",
+				"magnitude":"15.5121",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57939.9747",
+				"band":"V",
+				"magnitude":"18.1813",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57939.9765",
+				"band":"r",
+				"e_magnitude":"0.0599",
+				"magnitude":"16.1701",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57939.9782",
+				"band":"i",
+				"e_magnitude":"0.035",
+				"magnitude":"15.486",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57941.0107",
+				"band":"V",
+				"magnitude":"19.2242",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57941.0124",
+				"band":"r",
+				"e_magnitude":"0.041",
+				"magnitude":"16.1996",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57941.0142",
+				"band":"i",
+				"e_magnitude":"0.0181",
+				"magnitude":"15.4232",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57946.9511",
+				"band":"r",
+				"e_magnitude":"0.0191",
+				"magnitude":"16.7492",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57946.9526",
+				"band":"r",
+				"e_magnitude":"0.0202",
+				"magnitude":"16.3862",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57946.9543",
+				"band":"i",
+				"e_magnitude":"0.0112",
+				"magnitude":"15.6244",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57954.9763",
+				"band":"V",
+				"e_magnitude":"0.0225",
+				"magnitude":"16.718",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57954.978",
+				"band":"r",
+				"e_magnitude":"0.0077",
+				"magnitude":"15.4431",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57954.9798",
+				"band":"i",
+				"e_magnitude":"0.0046",
+				"magnitude":"14.4537",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57959.8842",
+				"band":"V",
+				"e_magnitude":"0.0381",
+				"magnitude":"16.9989",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57959.8878",
+				"band":"r",
+				"e_magnitude":"0.0121",
+				"magnitude":"15.828",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57959.8896",
+				"band":"i",
+				"e_magnitude":"0.0062",
+				"magnitude":"14.7214",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57961.9894",
+				"band":"V",
+				"e_magnitude":"0.0411",
+				"magnitude":"17.6063",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57961.9912",
+				"band":"r",
+				"e_magnitude":"0.0159",
+				"magnitude":"16.0309",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57961.9929",
+				"band":"i",
+				"e_magnitude":"0.0081",
+				"magnitude":"15.2114",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57964.9215",
+				"band":"V",
+				"e_magnitude":"0.0509",
+				"magnitude":"17.873",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57964.9232",
+				"band":"r",
+				"e_magnitude":"0.0172",
+				"magnitude":"15.9489",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57964.925",
+				"band":"i",
+				"e_magnitude":"0.0082",
+				"magnitude":"15.3194",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57965.9172",
+				"band":"V",
+				"e_magnitude":"0.0557",
+				"magnitude":"17.7483",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57965.919",
+				"band":"r",
+				"e_magnitude":"0.0174",
+				"magnitude":"16.1933",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57965.9207",
+				"band":"i",
+				"e_magnitude":"0.0077",
+				"magnitude":"15.1638",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57980.94",
+				"band":"V",
+				"e_magnitude":"0.0061",
+				"magnitude":"15.3573",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57980.9417",
+				"band":"r",
+				"e_magnitude":"0.0024",
+				"magnitude":"14.2733",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57980.9435",
+				"band":"i",
+				"e_magnitude":"0.0014",
+				"magnitude":"13.1914",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
 				"time":"57982.897",
 				"band":"G",
 				"e_magnitude":"0.0",
@@ -502,6 +4177,168 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"3"
+			},
+			{
+				"time":"57983.8429",
+				"band":"V",
+				"e_magnitude":"0.011",
+				"magnitude":"15.8278",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57983.85",
+				"band":"r",
+				"e_magnitude":"0.0048",
+				"magnitude":"14.5938",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57983.8518",
+				"band":"i",
+				"e_magnitude":"0.0026",
+				"magnitude":"13.4055",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57984.8433",
+				"band":"V",
+				"e_magnitude":"0.0056",
+				"magnitude":"15.9129",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57984.8458",
+				"band":"r",
+				"e_magnitude":"0.0029",
+				"magnitude":"14.6514",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57984.8476",
+				"band":"i",
+				"e_magnitude":"0.0013",
+				"magnitude":"13.5151",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57989.8423",
+				"band":"V",
+				"e_magnitude":"0.0067",
+				"magnitude":"15.1168",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57989.8448",
+				"band":"r",
+				"e_magnitude":"0.0029",
+				"magnitude":"14.0206",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57989.8466",
+				"band":"i",
+				"e_magnitude":"0.002",
+				"magnitude":"12.9708",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57990.8407",
+				"band":"V",
+				"e_magnitude":"0.0035",
+				"magnitude":"14.9043",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57990.8432",
+				"band":"r",
+				"e_magnitude":"0.0017",
+				"magnitude":"13.9326",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57990.845",
+				"band":"i",
+				"e_magnitude":"0.001",
+				"magnitude":"12.8372",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57992.8352",
+				"band":"V",
+				"e_magnitude":"0.0037",
+				"magnitude":"15.0027",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57992.8377",
+				"band":"r",
+				"e_magnitude":"0.0018",
+				"magnitude":"13.9774",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57992.8395",
+				"band":"i",
+				"e_magnitude":"0.001",
+				"magnitude":"12.9134",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57993.8394",
+				"band":"V",
+				"e_magnitude":"0.0027",
+				"magnitude":"15.0222",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57993.8419",
+				"band":"r",
+				"e_magnitude":"0.0015",
+				"magnitude":"13.9128",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57993.8437",
+				"band":"i",
+				"e_magnitude":"0.0008",
+				"magnitude":"12.8664",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
 			},
 			{
 				"time":"57997.401",
@@ -522,6 +4359,1831 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"3"
+			},
+			{
+				"time":"58001.9965",
+				"band":"V",
+				"e_magnitude":"0.0072",
+				"magnitude":"15.1803",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58001.9983",
+				"band":"r",
+				"e_magnitude":"0.0027",
+				"magnitude":"14.0853",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58002.0318",
+				"band":"i",
+				"e_magnitude":"0.0018",
+				"magnitude":"13.0007",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58006.9881",
+				"band":"V",
+				"e_magnitude":"0.0107",
+				"magnitude":"15.8366",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58006.9898",
+				"band":"r",
+				"e_magnitude":"0.0041",
+				"magnitude":"14.5794",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58006.9916",
+				"band":"i",
+				"e_magnitude":"0.0021",
+				"magnitude":"13.4619",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58007.9557",
+				"band":"V",
+				"e_magnitude":"0.0107",
+				"magnitude":"16.1451",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58007.9574",
+				"band":"r",
+				"e_magnitude":"0.0045",
+				"magnitude":"14.8318",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58007.9592",
+				"band":"i",
+				"e_magnitude":"0.0022",
+				"magnitude":"13.6955",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58009.848",
+				"band":"V",
+				"e_magnitude":"0.012",
+				"magnitude":"16.2024",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58009.8497",
+				"band":"r",
+				"e_magnitude":"0.0043",
+				"magnitude":"14.9455",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58009.8514",
+				"band":"i",
+				"e_magnitude":"0.0023",
+				"magnitude":"13.7483",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58010.916",
+				"band":"V",
+				"e_magnitude":"0.0092",
+				"magnitude":"16.0418",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58010.9178",
+				"band":"r",
+				"e_magnitude":"0.0034",
+				"magnitude":"14.8023",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58010.9195",
+				"band":"i",
+				"e_magnitude":"0.0019",
+				"magnitude":"13.6491",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58013.9034",
+				"band":"V",
+				"e_magnitude":"0.0061",
+				"magnitude":"15.4811",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58013.9052",
+				"band":"r",
+				"e_magnitude":"0.0023",
+				"magnitude":"14.348",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58013.9069",
+				"band":"i",
+				"e_magnitude":"0.0015",
+				"magnitude":"13.2348",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58015.8358",
+				"band":"V",
+				"e_magnitude":"0.0101",
+				"magnitude":"15.8467",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58015.8375",
+				"band":"r",
+				"e_magnitude":"0.0034",
+				"magnitude":"14.7026",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58015.8393",
+				"band":"i",
+				"e_magnitude":"0.0022",
+				"magnitude":"13.6326",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58018.789",
+				"band":"V",
+				"e_magnitude":"0.0133",
+				"magnitude":"16.5307",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58018.7926",
+				"band":"r",
+				"e_magnitude":"0.0056",
+				"magnitude":"15.3369",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58018.7943",
+				"band":"i",
+				"e_magnitude":"0.003",
+				"magnitude":"14.2388",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58024.7939",
+				"band":"V",
+				"e_magnitude":"0.0207",
+				"magnitude":"16.4512",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58024.7956",
+				"band":"r",
+				"e_magnitude":"0.0077",
+				"magnitude":"15.3483",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58024.7974",
+				"band":"i",
+				"e_magnitude":"0.0043",
+				"magnitude":"14.3021",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58028.9413",
+				"band":"V",
+				"e_magnitude":"0.0219",
+				"magnitude":"16.6129",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58028.943",
+				"band":"r",
+				"e_magnitude":"0.01",
+				"magnitude":"15.4262",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58028.9448",
+				"band":"i",
+				"e_magnitude":"0.0055",
+				"magnitude":"14.4198",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58030.8559",
+				"band":"V",
+				"e_magnitude":"0.0341",
+				"magnitude":"16.5144",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58030.8576",
+				"band":"r",
+				"e_magnitude":"0.0139",
+				"magnitude":"15.3004",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58030.8594",
+				"band":"i",
+				"e_magnitude":"0.0073",
+				"magnitude":"14.3278",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58032.8672",
+				"band":"V",
+				"e_magnitude":"0.0333",
+				"magnitude":"16.5592",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58032.869",
+				"band":"r",
+				"e_magnitude":"0.0132",
+				"magnitude":"15.3124",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58032.8707",
+				"band":"i",
+				"e_magnitude":"0.0079",
+				"magnitude":"14.2703",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58037.9131",
+				"band":"V",
+				"e_magnitude":"0.0126",
+				"magnitude":"16.2443",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58037.9149",
+				"band":"r",
+				"e_magnitude":"0.006",
+				"magnitude":"15.0221",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58037.9166",
+				"band":"i",
+				"e_magnitude":"0.0033",
+				"magnitude":"14.1348",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58038.7618",
+				"band":"V",
+				"e_magnitude":"0.0142",
+				"magnitude":"16.2742",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58038.7635",
+				"band":"r",
+				"e_magnitude":"0.0062",
+				"magnitude":"15.2141",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58038.7653",
+				"band":"i",
+				"e_magnitude":"0.0032",
+				"magnitude":"14.1787",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58039.928",
+				"band":"V",
+				"e_magnitude":"0.0403",
+				"magnitude":"16.7201",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58039.9298",
+				"band":"r",
+				"e_magnitude":"0.017",
+				"magnitude":"15.5864",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58039.9316",
+				"band":"i",
+				"e_magnitude":"0.0127",
+				"magnitude":"14.5113",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58042.8929",
+				"band":"r",
+				"e_magnitude":"0.0301",
+				"magnitude":"15.8977",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58042.8947",
+				"band":"i",
+				"e_magnitude":"0.0141",
+				"magnitude":"14.9251",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58042.8964",
+				"band":"V",
+				"e_magnitude":"0.0806",
+				"magnitude":"17.1101",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58048.8483",
+				"band":"V",
+				"e_magnitude":"0.0305",
+				"magnitude":"17.6553",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58048.85",
+				"band":"r",
+				"e_magnitude":"0.0146",
+				"magnitude":"16.1298",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58048.8518",
+				"band":"i",
+				"e_magnitude":"0.0082",
+				"magnitude":"15.4501",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58053.8277",
+				"band":"V",
+				"e_magnitude":"0.0304",
+				"magnitude":"17.4433",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58053.8295",
+				"band":"r",
+				"e_magnitude":"0.0163",
+				"magnitude":"16.1399",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58053.8312",
+				"band":"i",
+				"e_magnitude":"0.0081",
+				"magnitude":"15.2805",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58054.7917",
+				"band":"V",
+				"e_magnitude":"0.0454",
+				"magnitude":"17.3236",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58054.7934",
+				"band":"r",
+				"e_magnitude":"0.0186",
+				"magnitude":"16.0154",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58054.7952",
+				"band":"i",
+				"e_magnitude":"0.012",
+				"magnitude":"15.2225",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58055.776",
+				"band":"V",
+				"e_magnitude":"0.0365",
+				"magnitude":"17.4223",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58055.7785",
+				"band":"r",
+				"e_magnitude":"0.0178",
+				"magnitude":"15.9697",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58055.7803",
+				"band":"i",
+				"e_magnitude":"0.009",
+				"magnitude":"15.1588",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58056.7771",
+				"band":"V",
+				"e_magnitude":"0.0248",
+				"magnitude":"17.311",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58056.7788",
+				"band":"r",
+				"e_magnitude":"0.0136",
+				"magnitude":"15.9829",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58056.7806",
+				"band":"i",
+				"e_magnitude":"0.0065",
+				"magnitude":"14.9496",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58058.8865",
+				"band":"V",
+				"e_magnitude":"0.0533",
+				"magnitude":"17.3812",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58058.8883",
+				"band":"r",
+				"e_magnitude":"0.0183",
+				"magnitude":"15.998",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58058.89",
+				"band":"i",
+				"e_magnitude":"0.0084",
+				"magnitude":"15.0292",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58062.7562",
+				"band":"V",
+				"e_magnitude":"0.0389",
+				"magnitude":"17.0412",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58062.7579",
+				"band":"r",
+				"e_magnitude":"0.014",
+				"magnitude":"15.783",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58062.7597",
+				"band":"i",
+				"e_magnitude":"0.0092",
+				"magnitude":"14.6144",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58063.7755",
+				"band":"V",
+				"e_magnitude":"0.0294",
+				"magnitude":"17.1004",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58063.7772",
+				"band":"r",
+				"e_magnitude":"0.0111",
+				"magnitude":"15.7868",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58063.779",
+				"band":"i",
+				"e_magnitude":"0.0051",
+				"magnitude":"14.6288",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58070.7684",
+				"band":"V",
+				"e_magnitude":"0.0267",
+				"magnitude":"16.9442",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58070.7701",
+				"band":"r",
+				"e_magnitude":"0.0089",
+				"magnitude":"15.5502",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58070.7719",
+				"band":"i",
+				"e_magnitude":"0.0039",
+				"magnitude":"14.4334",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58074.8354",
+				"band":"V",
+				"e_magnitude":"0.0292",
+				"magnitude":"16.9533",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58074.8371",
+				"band":"r",
+				"e_magnitude":"0.0112",
+				"magnitude":"15.669",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58074.8389",
+				"band":"i",
+				"e_magnitude":"0.0049",
+				"magnitude":"14.4823",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58080.7148",
+				"band":"V",
+				"e_magnitude":"0.0319",
+				"magnitude":"16.7512",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58080.7165",
+				"band":"r",
+				"e_magnitude":"0.0131",
+				"magnitude":"15.4588",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58080.7183",
+				"band":"i",
+				"e_magnitude":"0.0055",
+				"magnitude":"14.2172",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58081.7706",
+				"band":"V",
+				"e_magnitude":"0.0315",
+				"magnitude":"16.91",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58081.7724",
+				"band":"r",
+				"e_magnitude":"0.0101",
+				"magnitude":"15.5279",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58081.7741",
+				"band":"i",
+				"e_magnitude":"0.0052",
+				"magnitude":"14.4618",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58082.7933",
+				"band":"V",
+				"e_magnitude":"0.0301",
+				"magnitude":"17.0602",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58082.7951",
+				"band":"r",
+				"e_magnitude":"0.0106",
+				"magnitude":"15.6926",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58082.7968",
+				"band":"i",
+				"e_magnitude":"0.0044",
+				"magnitude":"14.5148",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58083.7077",
+				"band":"V",
+				"e_magnitude":"0.0294",
+				"magnitude":"17.0281",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58083.7095",
+				"band":"r",
+				"e_magnitude":"0.01",
+				"magnitude":"15.6884",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58083.7112",
+				"band":"i",
+				"e_magnitude":"0.0049",
+				"magnitude":"14.5547",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58085.7242",
+				"band":"V",
+				"e_magnitude":"0.0584",
+				"magnitude":"16.9437",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58085.7259",
+				"band":"r",
+				"e_magnitude":"0.0213",
+				"magnitude":"15.5818",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58085.7277",
+				"band":"i",
+				"e_magnitude":"0.0159",
+				"magnitude":"14.4904",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58094.8437",
+				"band":"V",
+				"e_magnitude":"0.0222",
+				"magnitude":"16.3441",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58094.8454",
+				"band":"r",
+				"e_magnitude":"0.008",
+				"magnitude":"15.1505",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58094.8472",
+				"band":"i",
+				"e_magnitude":"0.0038",
+				"magnitude":"14.0233",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58095.7499",
+				"band":"V",
+				"e_magnitude":"0.0164",
+				"magnitude":"16.2579",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58095.7517",
+				"band":"r",
+				"e_magnitude":"0.0065",
+				"magnitude":"15.027",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58095.7534",
+				"band":"i",
+				"e_magnitude":"0.0034",
+				"magnitude":"14.0007",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58099.7522",
+				"band":"V",
+				"e_magnitude":"0.0654",
+				"magnitude":"16.8145",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58099.7539",
+				"band":"r",
+				"e_magnitude":"0.0279",
+				"magnitude":"15.4624",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58099.7557",
+				"band":"i",
+				"e_magnitude":"0.016",
+				"magnitude":"14.2347",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58101.7444",
+				"band":"V",
+				"e_magnitude":"0.0192",
+				"magnitude":"16.5241",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58101.7462",
+				"band":"r",
+				"e_magnitude":"0.0067",
+				"magnitude":"15.3224",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58101.7479",
+				"band":"i",
+				"e_magnitude":"0.0033",
+				"magnitude":"14.1605",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58105.7674",
+				"band":"V",
+				"e_magnitude":"0.0146",
+				"magnitude":"15.9349",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58105.7691",
+				"band":"r",
+				"e_magnitude":"0.005",
+				"magnitude":"14.8267",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58105.7709",
+				"band":"i",
+				"e_magnitude":"0.003",
+				"magnitude":"13.6856",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58153.369",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"14.38",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"58172.1413",
+				"band":"V",
+				"e_magnitude":"0.0256",
+				"magnitude":"16.5566",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58172.143",
+				"band":"r",
+				"e_magnitude":"0.009",
+				"magnitude":"15.1951",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58172.1448",
+				"band":"i",
+				"e_magnitude":"0.0035",
+				"magnitude":"14.0424",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58173.1804",
+				"band":"V",
+				"e_magnitude":"0.0193",
+				"magnitude":"16.4248",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58173.1822",
+				"band":"r",
+				"e_magnitude":"0.0069",
+				"magnitude":"15.2304",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58173.1839",
+				"band":"i",
+				"e_magnitude":"0.0028",
+				"magnitude":"14.0261",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58198.1398",
+				"band":"V",
+				"e_magnitude":"0.0174",
+				"magnitude":"14.6935",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58198.1416",
+				"band":"r",
+				"e_magnitude":"0.0076",
+				"magnitude":"13.8056",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58198.1433",
+				"band":"i",
+				"e_magnitude":"0.0038",
+				"magnitude":"12.8054",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58198.279",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"13.54",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"58198.353",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"13.58",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"58214.113",
+				"band":"V",
+				"e_magnitude":"0.0132",
+				"magnitude":"15.6688",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58214.1148",
+				"band":"r",
+				"e_magnitude":"0.0054",
+				"magnitude":"14.6021",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58214.1165",
+				"band":"i",
+				"e_magnitude":"0.0024",
+				"magnitude":"13.4649",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58225.030",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"14.46",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"58226.0828",
+				"band":"V",
+				"e_magnitude":"0.0094",
+				"magnitude":"15.8298",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58226.0841",
+				"band":"r",
+				"e_magnitude":"0.0034",
+				"magnitude":"14.6705",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58226.0859",
+				"band":"i",
+				"e_magnitude":"0.0019",
+				"magnitude":"13.5374",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58228.0878",
+				"band":"V",
+				"e_magnitude":"0.0103",
+				"magnitude":"16.096",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58228.0896",
+				"band":"r",
+				"e_magnitude":"0.0038",
+				"magnitude":"14.8594",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58228.0913",
+				"band":"i",
+				"e_magnitude":"0.002",
+				"magnitude":"13.6948",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58231.0854",
+				"band":"V",
+				"e_magnitude":"0.0113",
+				"magnitude":"16.3813",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58231.0871",
+				"band":"r",
+				"e_magnitude":"0.0041",
+				"magnitude":"15.1459",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58231.0889",
+				"band":"i",
+				"e_magnitude":"0.0021",
+				"magnitude":"13.9471",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58234.1113",
+				"band":"V",
+				"e_magnitude":"0.0241",
+				"magnitude":"16.3252",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58234.1131",
+				"band":"r",
+				"e_magnitude":"0.0077",
+				"magnitude":"15.0474",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58234.1148",
+				"band":"i",
+				"e_magnitude":"0.0043",
+				"magnitude":"13.8779",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58243.0479",
+				"band":"V",
+				"e_magnitude":"0.0133",
+				"magnitude":"15.8078",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58243.0505",
+				"band":"r",
+				"e_magnitude":"0.0049",
+				"magnitude":"14.7068",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58243.0523",
+				"band":"i",
+				"e_magnitude":"0.0027",
+				"magnitude":"13.4953",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58246.0007",
+				"band":"V",
+				"e_magnitude":"0.0086",
+				"magnitude":"15.4584",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58246.0032",
+				"band":"r",
+				"e_magnitude":"0.0035",
+				"magnitude":"14.3906",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58246.005",
+				"band":"i",
+				"e_magnitude":"0.0019",
+				"magnitude":"13.3342",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58249.017",
+				"band":"V",
+				"e_magnitude":"0.0079",
+				"magnitude":"15.1009",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58249.0188",
+				"band":"r",
+				"e_magnitude":"0.0029",
+				"magnitude":"14.1404",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58249.0205",
+				"band":"i",
+				"e_magnitude":"0.0018",
+				"magnitude":"13.108",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58251.9675",
+				"band":"V",
+				"e_magnitude":"0.0088",
+				"magnitude":"14.8851",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58251.9693",
+				"band":"r",
+				"e_magnitude":"0.0031",
+				"magnitude":"13.9618",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58251.9711",
+				"band":"i",
+				"e_magnitude":"0.0019",
+				"magnitude":"12.9707",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58253.9726",
+				"band":"V",
+				"e_magnitude":"0.0181",
+				"magnitude":"14.8574",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58253.9743",
+				"band":"r",
+				"e_magnitude":"0.0059",
+				"magnitude":"13.7917",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58253.9761",
+				"band":"i",
+				"e_magnitude":"0.0029",
+				"magnitude":"12.9624",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58259.517",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"14.81",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"58271.9814",
+				"band":"V",
+				"e_magnitude":"0.0114",
+				"magnitude":"15.7539",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58271.9832",
+				"band":"r",
+				"e_magnitude":"0.0041",
+				"magnitude":"14.7615",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58271.9849",
+				"band":"i",
+				"e_magnitude":"0.0025",
+				"magnitude":"13.6471",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58272.9433",
+				"band":"V",
+				"e_magnitude":"0.027",
+				"magnitude":"15.7996",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58272.9451",
+				"band":"r",
+				"e_magnitude":"0.0102",
+				"magnitude":"14.7708",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58272.9469",
+				"band":"i",
+				"e_magnitude":"0.0055",
+				"magnitude":"13.6537",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58276.9498",
+				"band":"V",
+				"e_magnitude":"0.0189",
+				"magnitude":"15.9492",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58276.9515",
+				"band":"r",
+				"e_magnitude":"0.0066",
+				"magnitude":"14.906",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58276.9533",
+				"band":"i",
+				"e_magnitude":"0.0033",
+				"magnitude":"13.7913",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58277.9309",
+				"band":"V",
+				"e_magnitude":"0.0287",
+				"magnitude":"16.407",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58277.9327",
+				"band":"r",
+				"e_magnitude":"0.0116",
+				"magnitude":"15.1959",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58277.9344",
+				"band":"i",
+				"e_magnitude":"0.0055",
+				"magnitude":"13.9901",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58294.9096",
+				"band":"V",
+				"e_magnitude":"0.0248",
+				"magnitude":"16.3993",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58294.9114",
+				"band":"r",
+				"e_magnitude":"0.0072",
+				"magnitude":"15.2272",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58294.9131",
+				"band":"i",
+				"e_magnitude":"0.0036",
+				"magnitude":"14.0207",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58296.065",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"15.27",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"58297.9508",
+				"band":"V",
+				"e_magnitude":"0.05",
+				"magnitude":"17.0395",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58297.9525",
+				"band":"r",
+				"e_magnitude":"0.0172",
+				"magnitude":"15.759",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58297.9543",
+				"band":"i",
+				"e_magnitude":"0.0073",
+				"magnitude":"14.5321",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58300.9184",
+				"band":"V",
+				"e_magnitude":"0.0403",
+				"magnitude":"17.073",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58300.9202",
+				"band":"r",
+				"e_magnitude":"0.0139",
+				"magnitude":"15.8185",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58300.9219",
+				"band":"i",
+				"e_magnitude":"0.006",
+				"magnitude":"14.6629",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58303.9111",
+				"band":"V",
+				"e_magnitude":"0.0191",
+				"magnitude":"17.011",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58303.9137",
+				"band":"r",
+				"e_magnitude":"0.0079",
+				"magnitude":"15.7555",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58303.9155",
+				"band":"i",
+				"e_magnitude":"0.0038",
+				"magnitude":"14.4767",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58305.9277",
+				"band":"V",
+				"e_magnitude":"0.0539",
+				"magnitude":"16.9522",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58305.9294",
+				"band":"r",
+				"e_magnitude":"0.0145",
+				"magnitude":"15.632",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58305.9312",
+				"band":"i",
+				"e_magnitude":"0.0062",
+				"magnitude":"14.3376",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58313.0659",
+				"band":"V",
+				"e_magnitude":"0.0236",
+				"magnitude":"16.2691",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58313.0677",
+				"band":"r",
+				"e_magnitude":"0.0062",
+				"magnitude":"14.9436",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58313.0694",
+				"band":"i",
+				"e_magnitude":"0.0042",
+				"magnitude":"13.7588",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58315.9082",
+				"band":"V",
+				"e_magnitude":"0.0048",
+				"magnitude":"15.6603",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58315.9107",
+				"band":"r",
+				"e_magnitude":"0.0026",
+				"magnitude":"14.5025",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58315.9125",
+				"band":"i",
+				"e_magnitude":"0.0014",
+				"magnitude":"13.3195",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58317.241",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"14.16",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"58318.002",
+				"band":"V",
+				"e_magnitude":"0.0077",
+				"magnitude":"15.5708",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58318.0037",
+				"band":"r",
+				"e_magnitude":"0.0024",
+				"magnitude":"14.4415",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58318.0055",
+				"band":"i",
+				"e_magnitude":"0.0016",
+				"magnitude":"13.2902",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58321.9307",
+				"band":"V",
+				"e_magnitude":"0.006",
+				"magnitude":"15.3622",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58321.9324",
+				"band":"r",
+				"e_magnitude":"0.0022",
+				"magnitude":"14.2743",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58321.9342",
+				"band":"i",
+				"e_magnitude":"0.0012",
+				"magnitude":"13.1123",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58324.9281",
+				"band":"V",
+				"e_magnitude":"0.01",
+				"magnitude":"15.1141",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58324.9306",
+				"band":"r",
+				"e_magnitude":"0.0034",
+				"magnitude":"13.9492",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58324.9324",
+				"band":"i",
+				"e_magnitude":"0.0018",
+				"magnitude":"12.8436",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58325.9517",
+				"band":"V",
+				"e_magnitude":"0.0089",
+				"magnitude":"15.1165",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58325.9542",
+				"band":"r",
+				"e_magnitude":"0.0034",
+				"magnitude":"14.0285",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58325.9561",
+				"band":"i",
+				"e_magnitude":"0.0019",
+				"magnitude":"12.8953",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58332.0401",
+				"band":"V",
+				"e_magnitude":"0.0078",
+				"magnitude":"15.7486",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58332.0426",
+				"band":"r",
+				"e_magnitude":"0.0036",
+				"magnitude":"14.6004",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58332.0444",
+				"band":"i",
+				"e_magnitude":"0.0021",
+				"magnitude":"13.4416",
+				"observatory":"Beacon17 Dirk Froebr",
+				"u_time":"MJD",
+				"source":"4,5"
 			}
 		]
 	}
