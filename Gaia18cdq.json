@@ -20,18 +20,29 @@
 				"alias":"3"
 			},
 			{
+				"name":"CPCS Alert 27084",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=27084",
+				"alias":"4"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"5"
+			},
+			{
 				"name":"The Open Supernova Catalog",
 				"bibcode":"2017ApJ...835...64G",
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia18cdq",
-				"source":"2"
+				"source":"2,5"
 			},
 			{
 				"value":"AT2018fbo",
@@ -54,6 +65,11 @@
 				"value":"+05:18:19.836",
 				"u_value":"degrees",
 				"source":"3"
+			},
+			{
+				"value":"+05:18:19.8",
+				"u_value":"degrees",
+				"source":"5"
 			}
 		],
 		"discoverdate":[
@@ -73,49 +89,49 @@
 				"value":"0.2527",
 				"derived":true,
 				"e_value":"0.0044",
-				"source":"1,4"
+				"source":"1,6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"18.08",
 				"derived":true,
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2018/08/12",
 				"derived":true,
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"18.08",
+				"value":"18.66",
 				"derived":true,
-				"source":"3,4"
+				"source":"4,5,6"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"B",
 				"derived":true,
-				"source":"3,4"
+				"source":"4,5,6"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2018/08/12",
+				"value":"2018/09/01",
 				"derived":true,
-				"source":"3,4"
+				"source":"4,5,6"
 			}
 		],
 		"ra":[
@@ -127,7 +143,7 @@
 			{
 				"value":"04:26:36.6",
 				"u_value":"hours",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"photometry":[
@@ -402,6 +418,30 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"3"
+			},
+			{
+				"time":"58362.1957",
+				"band":"B",
+				"magnitude":"18.6645",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58362.2157",
+				"band":"V",
+				"magnitude":"18.9475",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58362.2202",
+				"band":"r",
+				"magnitude":"18.989",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
 			}
 		]
 	}
