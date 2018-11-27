@@ -10,26 +10,31 @@
 				"alias":"1"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"2"
+			},
+			{
 				"name":"Gaia Photometric Science Alerts",
 				"url":"http://gaia.ac.uk/selected-gaia-science-alerts",
-				"alias":"2"
+				"alias":"3"
 			},
 			{
 				"name":"CPCS Alert 26363",
 				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=26363",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"Cambridge Photometric Calibration Server",
 				"secondary":true,
 				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"5"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -37,47 +42,51 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"6"
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia16bhk",
-				"source":"2,4,5"
+				"source":"2,3,5,6"
 			},
 			{
 				"value":"AT2016ghv",
-				"source":"2,5"
+				"source":"2,3,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"2,5"
+				"source":"3,6"
 			}
 		],
 		"dec":[
 			{
 				"value":"+06:17:07.80",
 				"u_value":"degrees",
-				"source":"2,5"
+				"source":"2,3,6"
 			},
 			{
 				"value":"+06:17:07.8",
 				"u_value":"degrees",
-				"source":"2,4"
+				"source":"3,5"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2016/09/14",
-				"source":"2,5"
+				"value":"2016/09/14.85",
+				"source":"2"
 			}
 		],
 		"discoverer":[
 			{
+				"value":"GaiaAlerts",
+				"source":"2"
+			},
+			{
 				"value":"Gaia",
-				"source":"2,5"
+				"source":"3,6"
 			}
 		],
 		"ebv":[
@@ -85,69 +94,90 @@
 				"value":"0.1052",
 				"derived":true,
 				"e_value":"0.0051",
-				"source":"1,6"
+				"source":"1,7"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16.65",
 				"derived":true,
-				"source":"2,6"
+				"source":"3,7"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"2,6"
+				"source":"3,7"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2016/09/14",
 				"derived":true,
-				"source":"2,6"
+				"source":"3,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"17.56",
 				"derived":true,
-				"source":"3,4,6"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"3,4,6"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2016/09/19",
 				"derived":true,
-				"source":"3,4,6"
+				"source":"4,5,7"
 			}
 		],
 		"ra":[
 			{
+				"value":"05:05:15.00",
+				"u_value":"hours",
+				"source":"2"
+			},
+			{
 				"value":"05:05:15.000",
 				"u_value":"hours",
-				"source":"2,5"
+				"source":"3,6"
 			},
 			{
 				"value":"05:05:15",
 				"u_value":"hours",
-				"source":"2,4"
+				"source":"3,5"
 			}
 		],
 		"photometry":[
 			{
-				"time":"57644.5",
-				"magnitude":"16.8",
+				"time":"57609.3709954",
+				"band":"G",
+				"instrument":"Astrometric",
+				"magnitude":"21.5",
+				"observer":"Robot",
+				"telescope":"Gaia",
 				"u_time":"MJD",
-				"source":"2,5"
+				"upperlimit":true,
+				"source":"2"
+			},
+			{
+				"time":"57645.35",
+				"band":"G",
+				"e_magnitude":"0.2",
+				"instrument":"Astrometric",
+				"magnitude":"16.75",
+				"observer":"Robot",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"2"
 			},
 			{
 				"time":"57645.851",
@@ -157,7 +187,7 @@
 				"magnitude":"16.65",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57645.925",
@@ -167,7 +197,7 @@
 				"magnitude":"16.66",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57650.1795",
@@ -176,7 +206,7 @@
 				"magnitude":"17.5642",
 				"observatory":"Mercator Geneva Grou",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"57651.193",
@@ -185,7 +215,7 @@
 				"magnitude":"17.6626",
 				"observatory":"Mercator Geneva Grou",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"57651.193",
@@ -194,7 +224,7 @@
 				"magnitude":"17.8367",
 				"observatory":"Mercator Geneva Grou",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"57661.1473",
@@ -203,7 +233,7 @@
 				"magnitude":"18.7928",
 				"observatory":"OmicronC2PU JPRivet",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"57661.1544",
@@ -212,7 +242,7 @@
 				"magnitude":"18.7097",
 				"observatory":"OmicronC2PU JPRivet",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"57661.1615",
@@ -221,7 +251,7 @@
 				"magnitude":"18.6283",
 				"observatory":"OmicronC2PU JPRivet",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"57666.0916",
@@ -230,7 +260,7 @@
 				"magnitude":"18.861",
 				"observatory":"OmicronC2PU JPRivet",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"57666.0987",
@@ -239,7 +269,7 @@
 				"magnitude":"19.0376",
 				"observatory":"OmicronC2PU JPRivet",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"57666.1058",
@@ -248,7 +278,7 @@
 				"magnitude":"18.9698",
 				"observatory":"OmicronC2PU JPRivet",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			}
 		]
 	}
