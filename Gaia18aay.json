@@ -20,25 +20,35 @@
 				"alias":"3"
 			},
 			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"4"
+			},
+			{
 				"name":"The Open Supernova Catalog",
 				"bibcode":"2017ApJ...835...64G",
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia18aay",
-				"source":"2"
+				"source":"2,3,4"
 			},
 			{
 				"value":"AT2017jyd",
-				"source":"2,3"
+				"source":"2,3,4"
 			}
 		],
 		"claimedtype":[
+			{
+				"value":"QSO",
+				"source":"3,4"
+			},
 			{
 				"value":"AGN",
 				"source":"3"
@@ -48,7 +58,7 @@
 			{
 				"value":"-27:58:21.29",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"2,3,4"
 			},
 			{
 				"value":"-27:58:21.36",
@@ -66,6 +76,10 @@
 			{
 				"value":"GaiaAlerts",
 				"source":"2"
+			},
+			{
+				"value":"Gaia",
+				"source":"3,4"
 			}
 		],
 		"ebv":[
@@ -73,49 +87,79 @@
 				"value":"0.0285",
 				"derived":true,
 				"e_value":"0.0005",
-				"source":"1,4"
+				"source":"1,5"
+			}
+		],
+		"host":[
+			{
+				"value":"IC RF J225805.9-275821",
+				"source":"3,4"
+			}
+		],
+		"hostdec":[
+			{
+				"value":"-27:58:21",
+				"derived":true,
+				"u_value":"degrees",
+				"source":"5"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"0.8461",
+				"derived":true,
+				"u_value":"arcseconds",
+				"source":"2,3,4,5"
+			}
+		],
+		"hostra":[
+			{
+				"value":"22:58:05.9",
+				"derived":true,
+				"u_value":"hours",
+				"source":"5"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16.2",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2017/12/29",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"16.2",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2017/12/29",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"ra":[
@@ -123,6 +167,11 @@
 				"value":"22:58:05.960",
 				"u_value":"hours",
 				"source":"2"
+			},
+			{
+				"value":"22:58:05.962",
+				"u_value":"hours",
+				"source":"3,4"
 			},
 			{
 				"value":"22:58:06",

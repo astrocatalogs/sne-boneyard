@@ -16,8 +16,14 @@
 			},
 			{
 				"name":"Gaia Photometric Science Alerts",
-				"url":"http://gsaweb.ast.cam.ac.uk/alerts/alertsindex",
+				"url":"https://gsaweb.ast.cam.ac.uk/alerts/alert/Gaia16bwn",
 				"alias":"3"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -25,20 +31,24 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia16bwn",
-				"source":"2"
+				"source":"2,3,4"
 			},
 			{
 				"value":"AT2016ihw",
-				"source":"2,3"
+				"source":"2,3,4"
 			}
 		],
 		"claimedtype":[
+			{
+				"value":"Blazer",
+				"source":"3,4"
+			},
 			{
 				"value":"QSO",
 				"source":"3"
@@ -48,7 +58,7 @@
 			{
 				"value":"-01:58:04.55",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"2,3,4"
 			},
 			{
 				"value":"-01:58:04.548",
@@ -66,6 +76,10 @@
 			{
 				"value":"GaiaAlerts",
 				"source":"2"
+			},
+			{
+				"value":"Gaia",
+				"source":"3,4"
 			}
 		],
 		"ebv":[
@@ -73,49 +87,49 @@
 				"value":"0.0521",
 				"derived":true,
 				"e_value":"0.0008",
-				"source":"1,4"
+				"source":"1,5"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16.7",
 				"derived":true,
-				"source":"3,4"
+				"source":"3,5"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"3,4"
+				"source":"3,5"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2018/07/09",
 				"derived":true,
-				"source":"3,4"
+				"source":"3,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"16.7",
 				"derived":true,
-				"source":"3,4"
+				"source":"3,5"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"3,4"
+				"source":"3,5"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2018/07/09",
 				"derived":true,
-				"source":"3,4"
+				"source":"3,5"
 			}
 		],
 		"ra":[
@@ -123,6 +137,11 @@
 				"value":"23:01:07.990",
 				"u_value":"hours",
 				"source":"2"
+			},
+			{
+				"value":"23:01:07.992",
+				"u_value":"hours",
+				"source":"3,4"
 			},
 			{
 				"value":"23:01:07.92",

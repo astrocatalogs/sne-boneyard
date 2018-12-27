@@ -25,35 +25,41 @@
 				"alias":"4"
 			},
 			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"5"
+			},
+			{
 				"name":"The Open Supernova Catalog",
 				"bibcode":"2017ApJ...835...64G",
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia18deb",
-				"source":"1,4"
+				"source":"1,2,4,5"
 			},
 			{
 				"value":"AT2018hos",
-				"source":"1,2"
+				"source":"1,2,5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"YSO",
-				"source":"2"
+				"source":"2,5"
 			}
 		],
 		"dec":[
 			{
 				"value":"+43:44:22.85",
 				"u_value":"degrees",
-				"source":"1"
+				"source":"1,2,5"
 			},
 			{
 				"value":"+43:44:22.92",
@@ -71,48 +77,82 @@
 			{
 				"value":"GaiaAlerts",
 				"source":"1"
+			},
+			{
+				"value":"Gaia",
+				"source":"2,5"
+			}
+		],
+		"host":[
+			{
+				"value":"2MASS J20531564+4344227",
+				"source":"2,5"
+			}
+		],
+		"hostdec":[
+			{
+				"value":"+43:44:22.7",
+				"derived":true,
+				"u_value":"degrees",
+				"source":"6"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"0.15",
+				"derived":true,
+				"u_value":"arcseconds",
+				"source":"1,2,5,6"
+			}
+		],
+		"hostra":[
+			{
+				"value":"20:53:15.64",
+				"derived":true,
+				"u_value":"hours",
+				"source":"6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"14.57",
 				"derived":true,
-				"source":"3,4,5"
+				"source":"3,4,6"
 			}
 		],
 		"maxband":[
 			{
 				"value":"i",
 				"derived":true,
-				"source":"3,4,5"
+				"source":"3,4,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2018/11/04",
 				"derived":true,
-				"source":"3,4,5"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"16",
 				"derived":true,
-				"source":"3,4,5"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"B",
 				"derived":true,
-				"source":"3,4,5"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2018/11/04",
 				"derived":true,
-				"source":"3,4,5"
+				"source":"3,4,6"
 			}
 		],
 		"ra":[
@@ -120,6 +160,11 @@
 				"value":"20:53:15.640",
 				"u_value":"hours",
 				"source":"1"
+			},
+			{
+				"value":"20:53:15.634",
+				"u_value":"hours",
+				"source":"2,5"
 			},
 			{
 				"value":"20:53:15.6",
