@@ -10,26 +10,31 @@
 				"alias":"1"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"2"
+			},
+			{
 				"name":"Gaia Photometric Science Alerts",
 				"url":"http://gsaweb.ast.cam.ac.uk/alerts/alertsindex",
-				"alias":"2"
+				"alias":"3"
 			},
 			{
 				"name":"CPCS Alert 26845",
 				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=26845",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"Cambridge Photometric Calibration Server",
 				"secondary":true,
 				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"5"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -37,47 +42,51 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"6"
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia17cuh",
-				"source":"2,4,5"
+				"source":"2,3,5,6"
 			},
 			{
 				"value":"AT2017hwz",
-				"source":"2,5"
+				"source":"2,3,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"2,5"
+				"source":"3,6"
 			}
 		],
 		"dec":[
 			{
 				"value":"+10:02:13.38",
 				"u_value":"degrees",
-				"source":"2,5"
+				"source":"2,3,6"
 			},
 			{
 				"value":"+10:02:13.56",
 				"u_value":"degrees",
-				"source":"2,4"
+				"source":"3,5"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2017/11/02",
-				"source":"2,5"
+				"value":"2017/11/02.312998",
+				"source":"2"
 			}
 		],
 		"discoverer":[
 			{
+				"value":"GaiaAlerts",
+				"source":"2"
+			},
+			{
 				"value":"Gaia",
-				"source":"2,5"
+				"source":"3,6"
 			}
 		],
 		"ebv":[
@@ -85,61 +94,66 @@
 				"value":"0.5535",
 				"derived":true,
 				"e_value":"0.0199",
-				"source":"1,6"
+				"source":"1,7"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"15.3",
 				"derived":true,
-				"source":"3,4,6"
+				"source":"4,5,7"
 			}
 		],
 		"maxband":[
 			{
 				"value":"i",
 				"derived":true,
-				"source":"3,4,6"
+				"source":"4,5,7"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2018/11/24",
 				"derived":true,
-				"source":"3,4,6"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"16.13",
 				"derived":true,
-				"source":"3,4,6"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"B",
 				"derived":true,
-				"source":"3,4,6"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2018/11/23",
 				"derived":true,
-				"source":"3,4,6"
+				"source":"4,5,7"
 			}
 		],
 		"ra":[
 			{
+				"value":"19:34:36.960",
+				"u_value":"hours",
+				"source":"2"
+			},
+			{
 				"value":"19:34:36.965",
 				"u_value":"hours",
-				"source":"2,5"
+				"source":"3,6"
 			},
 			{
 				"value":"19:34:36.96",
 				"u_value":"hours",
-				"source":"2,4"
+				"source":"3,5"
 			}
 		],
 		"photometry":[
@@ -151,7 +165,7 @@
 				"magnitude":"18.72",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57077.852",
@@ -161,7 +175,7 @@
 				"magnitude":"18.87",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57093.860",
@@ -171,7 +185,7 @@
 				"magnitude":"18.88",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57129.918",
@@ -181,7 +195,7 @@
 				"magnitude":"19.27",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57280.181",
@@ -191,7 +205,7 @@
 				"magnitude":"19.15",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57280.255",
@@ -201,7 +215,7 @@
 				"magnitude":"18.85",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57300.179",
@@ -211,7 +225,7 @@
 				"magnitude":"19.29",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57300.253",
@@ -221,7 +235,7 @@
 				"magnitude":"19.23",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57332.407",
@@ -231,7 +245,7 @@
 				"magnitude":"19.71",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57332.481",
@@ -241,7 +255,7 @@
 				"magnitude":"19.41",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57452.401",
@@ -251,7 +265,7 @@
 				"magnitude":"19.07",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57452.475",
@@ -261,7 +275,7 @@
 				"magnitude":"18.9",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57474.978",
@@ -270,6 +284,28 @@
 				"instrument":"Astrometric",
 				"magnitude":"19.04",
 				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"58031.0769907",
+				"band":"G",
+				"instrument":"Astrometric",
+				"magnitude":"21.5",
+				"observer":"Robot",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"2"
+			},
+			{
+				"time":"58059.3129977",
+				"band":"G",
+				"e_magnitude":"0.2",
+				"instrument":"Astrometric",
+				"magnitude":"15.48",
+				"observer":"Robot",
+				"telescope":"Gaia",
 				"u_time":"MJD",
 				"source":"2"
 			},
@@ -281,7 +317,7 @@
 				"magnitude":"15.59",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58059.388",
@@ -291,7 +327,7 @@
 				"magnitude":"15.6",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58074.7276",
@@ -300,7 +336,7 @@
 				"magnitude":"18.1112",
 				"observatory":"Terskol, Ukraine-Vir",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58074.7298",
@@ -309,7 +345,7 @@
 				"magnitude":"18.7964",
 				"observatory":"Terskol, Ukraine-Vir",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58074.7319",
@@ -318,7 +354,7 @@
 				"magnitude":"19.8319",
 				"observatory":"Terskol, Ukraine-Vir",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58074.7341",
@@ -327,7 +363,7 @@
 				"magnitude":"17.5294",
 				"observatory":"Terskol, Ukraine-Vir",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58075.6926",
@@ -336,7 +372,7 @@
 				"magnitude":"19.447",
 				"observatory":"Terskol, Ukraine-Vir",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58075.6934",
@@ -345,7 +381,7 @@
 				"magnitude":"19.1022",
 				"observatory":"Terskol, Ukraine-Vir",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58075.695",
@@ -354,7 +390,7 @@
 				"magnitude":"19.4397",
 				"observatory":"Terskol, Ukraine-Vir",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58075.6958",
@@ -363,7 +399,7 @@
 				"magnitude":"17.8486",
 				"observatory":"Terskol, Ukraine-Vir",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58084.134",
@@ -373,7 +409,7 @@
 				"magnitude":"19.29",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58203.881",
@@ -383,7 +419,7 @@
 				"magnitude":"19.29",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58204.057",
@@ -393,7 +429,7 @@
 				"magnitude":"19.24",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58234.869",
@@ -403,7 +439,7 @@
 				"magnitude":"19.12",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58257.544",
@@ -413,7 +449,7 @@
 				"magnitude":"15.8",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58257.618",
@@ -423,7 +459,7 @@
 				"magnitude":"15.77",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58357.910",
@@ -433,7 +469,7 @@
 				"magnitude":"19.36",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58366.664",
@@ -443,7 +479,7 @@
 				"magnitude":"19.18",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58366.738",
@@ -453,7 +489,7 @@
 				"magnitude":"19.21",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58433.6653",
@@ -462,7 +498,7 @@
 				"magnitude":"18.7998",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58439.428",
@@ -472,7 +508,7 @@
 				"magnitude":"18.9",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58439.604",
@@ -482,7 +518,7 @@
 				"magnitude":"18.69",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58439.7382",
@@ -491,7 +527,7 @@
 				"magnitude":"18.5697",
 				"observatory":"Lisnyky, Andrii Simo",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58441.6811",
@@ -500,7 +536,7 @@
 				"magnitude":"18.0682",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58441.6817",
@@ -509,7 +545,7 @@
 				"magnitude":"16.9441",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58441.6822",
@@ -518,7 +554,7 @@
 				"magnitude":"17.1994",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58441.6827",
@@ -527,7 +563,7 @@
 				"magnitude":"17.3689",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58443.6876",
@@ -536,7 +572,7 @@
 				"magnitude":"16.2202",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58443.6882",
@@ -545,7 +581,7 @@
 				"magnitude":"15.5798",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58443.6888",
@@ -554,7 +590,7 @@
 				"magnitude":"15.7242",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58443.6893",
@@ -563,7 +599,7 @@
 				"magnitude":"15.5497",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58444.6983",
@@ -572,7 +608,7 @@
 				"magnitude":"16.2493",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58444.699",
@@ -581,7 +617,7 @@
 				"magnitude":"15.3599",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58444.6999",
@@ -590,7 +626,7 @@
 				"magnitude":"15.6173",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58444.6999",
@@ -599,7 +635,7 @@
 				"magnitude":"15.5445",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58444.7045",
@@ -608,7 +644,7 @@
 				"magnitude":"15.4562",
 				"observatory":"Lisnyky, Andrii Simo",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58444.7052",
@@ -617,7 +653,7 @@
 				"magnitude":"15.5511",
 				"observatory":"Lisnyky, Andrii Simo",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58444.7057",
@@ -626,7 +662,7 @@
 				"magnitude":"15.5586",
 				"observatory":"Lisnyky, Andrii Simo",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58444.7059",
@@ -635,7 +671,7 @@
 				"magnitude":"16.1705",
 				"observatory":"Lisnyky, Andrii Simo",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58444.7068",
@@ -644,7 +680,7 @@
 				"magnitude":"15.4469",
 				"observatory":"Lisnyky, Andrii Simo",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58445.6634",
@@ -653,7 +689,7 @@
 				"magnitude":"15.4613",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58445.6672",
@@ -662,7 +698,7 @@
 				"magnitude":"16.1278",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58445.6697",
@@ -671,7 +707,7 @@
 				"magnitude":"15.5793",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58445.6712",
@@ -680,7 +716,7 @@
 				"magnitude":"15.443",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58446.6868",
@@ -689,7 +725,7 @@
 				"magnitude":"16.2388",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58446.6875",
@@ -698,7 +734,7 @@
 				"magnitude":"15.2985",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58446.6876",
@@ -707,7 +743,7 @@
 				"magnitude":"15.4773",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58446.6884",
@@ -716,7 +752,7 @@
 				"magnitude":"15.4636",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58448.6729",
@@ -725,7 +761,7 @@
 				"magnitude":"15.6173",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58448.6733",
@@ -734,7 +770,7 @@
 				"magnitude":"16.2493",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58448.6738",
@@ -743,7 +779,7 @@
 				"magnitude":"15.3599",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58448.6743",
@@ -752,7 +788,7 @@
 				"magnitude":"15.5445",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58451.6637",
@@ -761,7 +797,7 @@
 				"magnitude":"17.4523",
 				"observatory":"Lisnyky, Andrii Simo",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58451.6643",
@@ -770,7 +806,7 @@
 				"magnitude":"17.7812",
 				"observatory":"Lisnyky, Andrii Simo",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58451.6649",
@@ -779,7 +815,7 @@
 				"magnitude":"17.9666",
 				"observatory":"Lisnyky, Andrii Simo",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58451.6655",
@@ -788,7 +824,7 @@
 				"magnitude":"18.7146",
 				"observatory":"Lisnyky, Andrii Simo",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58451.6698",
@@ -797,7 +833,7 @@
 				"magnitude":"17.4996",
 				"observatory":"Lisnyky, Andrii Simo",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58459.181",
@@ -807,7 +843,7 @@
 				"magnitude":"18.84",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58461.6683",
@@ -815,7 +851,7 @@
 				"magnitude":"21.7365",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58461.6689",
@@ -824,7 +860,7 @@
 				"magnitude":"18.1303",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58461.6694",
@@ -833,7 +869,7 @@
 				"magnitude":"18.9062",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58461.6699",
@@ -842,7 +878,7 @@
 				"magnitude":"22.7278",
 				"observatory":"Terskol-2,Vira Godun",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			}
 		]
 	}

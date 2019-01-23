@@ -10,26 +10,31 @@
 				"alias":"1"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"2"
+			},
+			{
 				"name":"Gaia Photometric Science Alerts",
 				"url":"http://gsaweb.ast.cam.ac.uk/alerts/alertsindex",
-				"alias":"2"
+				"alias":"3"
 			},
 			{
 				"name":"CPCS Alert 27137",
 				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=27137",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"Cambridge Photometric Calibration Server",
 				"secondary":true,
 				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"5"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -37,47 +42,51 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"6"
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia18cnz",
-				"source":"2,4,5"
+				"source":"2,3,5,6"
 			},
 			{
 				"value":"AT2018gde",
-				"source":"2,5"
+				"source":"2,3,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"2,5"
+				"source":"3,6"
 			}
 		],
 		"dec":[
 			{
 				"value":"+01:28:06.17",
 				"u_value":"degrees",
-				"source":"2,5"
+				"source":"2,3,6"
 			},
 			{
 				"value":"+01:28:06.168",
 				"u_value":"degrees",
-				"source":"2,4"
+				"source":"3,5"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2018/09/06",
-				"source":"2,5"
+				"value":"2018/09/06.476991",
+				"source":"2"
 			}
 		],
 		"discoverer":[
 			{
+				"value":"GaiaAlerts",
+				"source":"2"
+			},
+			{
 				"value":"Gaia",
-				"source":"2,5"
+				"source":"3,6"
 			}
 		],
 		"ebv":[
@@ -85,61 +94,61 @@
 				"value":"2.5129",
 				"derived":true,
 				"e_value":"0.0687",
-				"source":"1,6"
+				"source":"1,7"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"14.7",
 				"derived":true,
-				"source":"3,4,6"
+				"source":"4,5,7"
 			}
 		],
 		"maxband":[
 			{
 				"value":"i",
 				"derived":true,
-				"source":"3,4,6"
+				"source":"4,5,7"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2018/10/04",
 				"derived":true,
-				"source":"3,4,6"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"19.25",
 				"derived":true,
-				"source":"3,4,6"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"B",
 				"derived":true,
-				"source":"3,4,6"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2018/09/11",
 				"derived":true,
-				"source":"3,4,6"
+				"source":"4,5,7"
 			}
 		],
 		"ra":[
 			{
 				"value":"18:47:09.440",
 				"u_value":"hours",
-				"source":"2,5"
+				"source":"2,3,6"
 			},
 			{
 				"value":"18:47:09.36",
 				"u_value":"hours",
-				"source":"2,4"
+				"source":"3,5"
 			}
 		],
 		"photometry":[
@@ -151,7 +160,7 @@
 				"magnitude":"18.35",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57076.436",
@@ -161,7 +170,7 @@
 				"magnitude":"18.35",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57076.612",
@@ -171,7 +180,7 @@
 				"magnitude":"18.41",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57098.865",
@@ -181,7 +190,7 @@
 				"magnitude":"17.96",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57276.176",
@@ -191,7 +200,7 @@
 				"magnitude":"17.96",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57276.250",
@@ -201,7 +210,7 @@
 				"magnitude":"17.95",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57451.661",
@@ -211,7 +220,7 @@
 				"magnitude":"17.81",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57451.735",
@@ -221,7 +230,7 @@
 				"magnitude":"17.8",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57478.730",
@@ -231,7 +240,7 @@
 				"magnitude":"18.17",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57504.402",
@@ -241,7 +250,7 @@
 				"magnitude":"17.7",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58061.555",
@@ -251,7 +260,7 @@
 				"magnitude":"17.63",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58061.629",
@@ -261,7 +270,7 @@
 				"magnitude":"17.59",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58078.633",
@@ -271,6 +280,17 @@
 				"magnitude":"17.89",
 				"telescope":"GAIA",
 				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"58203.3159954",
+				"band":"G",
+				"instrument":"Astrometric",
+				"magnitude":"21.5",
+				"observer":"Robot",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2"
 			},
 			{
@@ -281,7 +301,7 @@
 				"magnitude":"16.82",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58254.124",
@@ -291,7 +311,7 @@
 				"magnitude":"17.09",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58254.300",
@@ -301,7 +321,7 @@
 				"magnitude":"17.1",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58352.725",
@@ -311,7 +331,7 @@
 				"magnitude":"16.36",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58352.901",
@@ -320,6 +340,17 @@
 				"instrument":"Astrometric",
 				"magnitude":"16.37",
 				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"58367.4769907",
+				"band":"G",
+				"e_magnitude":"0.2",
+				"instrument":"Astrometric",
+				"magnitude":"16.16",
+				"observer":"Robot",
+				"telescope":"Gaia",
 				"u_time":"MJD",
 				"source":"2"
 			},
@@ -331,7 +362,7 @@
 				"magnitude":"16.16",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58367.654",
@@ -341,7 +372,7 @@
 				"magnitude":"16.18",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58372.7716",
@@ -349,7 +380,7 @@
 				"magnitude":"18.7154",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58372.7723",
@@ -357,7 +388,7 @@
 				"magnitude":"18.795",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58372.7744",
@@ -365,7 +396,7 @@
 				"magnitude":"19.2491",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58372.7778",
@@ -374,7 +405,7 @@
 				"magnitude":"14.7777",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58374.8807",
@@ -383,7 +414,7 @@
 				"magnitude":"20.3594",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58374.8843",
@@ -392,7 +423,7 @@
 				"magnitude":"20.6545",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58374.9065",
@@ -401,7 +432,7 @@
 				"magnitude":"14.9343",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58374.9101",
@@ -410,7 +441,7 @@
 				"magnitude":"14.9876",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58374.9137",
@@ -419,7 +450,7 @@
 				"magnitude":"17.7376",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58374.9172",
@@ -428,7 +459,7 @@
 				"magnitude":"17.6464",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58386.7554",
@@ -436,7 +467,7 @@
 				"magnitude":"19.9436",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58386.7566",
@@ -444,7 +475,7 @@
 				"magnitude":"19.9583",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58386.7587",
@@ -452,7 +483,7 @@
 				"magnitude":"19.714",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58386.7619",
@@ -461,7 +492,7 @@
 				"magnitude":"14.7103",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58394.8169",
@@ -470,7 +501,7 @@
 				"magnitude":"14.8804",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58394.8204",
@@ -479,7 +510,7 @@
 				"magnitude":"14.9628",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58394.824",
@@ -488,7 +519,7 @@
 				"magnitude":"14.8859",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58394.8467",
@@ -497,7 +528,7 @@
 				"magnitude":"17.801",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58394.8503",
@@ -506,7 +537,7 @@
 				"magnitude":"17.9186",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58394.854",
@@ -514,7 +545,7 @@
 				"magnitude":"22.0944",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58394.8575",
@@ -522,7 +553,7 @@
 				"magnitude":"22.2058",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58395.7356",
@@ -530,7 +561,7 @@
 				"magnitude":"19.9416",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58395.7368",
@@ -538,7 +569,7 @@
 				"magnitude":"19.9922",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58395.7382",
@@ -546,7 +577,7 @@
 				"magnitude":"19.6956",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58395.7418",
@@ -555,7 +586,7 @@
 				"magnitude":"14.7009",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58395.8097",
@@ -563,7 +594,7 @@
 				"magnitude":"22.6037",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58395.8132",
@@ -571,7 +602,7 @@
 				"magnitude":"22.2825",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58395.8441",
@@ -580,7 +611,7 @@
 				"magnitude":"14.9531",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58395.8476",
@@ -589,7 +620,7 @@
 				"magnitude":"15.0045",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58395.8512",
@@ -598,7 +629,7 @@
 				"magnitude":"17.8499",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58395.8548",
@@ -607,7 +638,7 @@
 				"magnitude":"18.0558",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58396.8048",
@@ -616,7 +647,7 @@
 				"magnitude":"14.9928",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58396.8083",
@@ -625,7 +656,7 @@
 				"magnitude":"15.0284",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58396.8118",
@@ -634,7 +665,7 @@
 				"magnitude":"14.972",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58396.8155",
@@ -642,7 +673,7 @@
 				"magnitude":"22.3499",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58399.8255",
@@ -650,7 +681,7 @@
 				"magnitude":"22.2629",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58399.829",
@@ -658,7 +689,7 @@
 				"magnitude":"21.4261",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58402.7596",
@@ -666,7 +697,7 @@
 				"magnitude":"20.3956",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58402.7608",
@@ -674,7 +705,7 @@
 				"magnitude":"20.2101",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58402.7629",
@@ -682,7 +713,7 @@
 				"magnitude":"20.435",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58402.766",
@@ -691,7 +722,7 @@
 				"magnitude":"14.7397",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58403.448",
@@ -701,7 +732,7 @@
 				"magnitude":"16.22",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58412.7276",
@@ -709,7 +740,7 @@
 				"magnitude":"19.9053",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58412.7285",
@@ -717,7 +748,7 @@
 				"magnitude":"19.8202",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58412.7306",
@@ -725,7 +756,7 @@
 				"magnitude":"19.5707",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58412.7338",
@@ -734,7 +765,7 @@
 				"magnitude":"14.9074",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58413.8067",
@@ -742,7 +773,7 @@
 				"magnitude":"21.0122",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58413.8103",
@@ -750,7 +781,7 @@
 				"magnitude":"21.45",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58413.814",
@@ -759,7 +790,7 @@
 				"magnitude":"18.8575",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58413.8175",
@@ -768,7 +799,7 @@
 				"magnitude":"18.7982",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58413.8214",
@@ -777,7 +808,7 @@
 				"magnitude":"15.1404",
 				"observatory":"ObsMontsec-Umut Burg",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58413.825",
@@ -788,7 +819,7 @@
 				"observatory":"ObsMontsec-Umut Burg",
 				"telescope":"Gaia",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58428.7",
@@ -796,7 +827,7 @@
 				"magnitude":"20.115",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58428.7012",
@@ -804,7 +835,7 @@
 				"magnitude":"19.999",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58428.7033",
@@ -812,7 +843,7 @@
 				"magnitude":"19.7836",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58428.7064",
@@ -820,7 +851,7 @@
 				"magnitude":"19.5915",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58433.6986",
@@ -828,7 +859,7 @@
 				"magnitude":"20.2513",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58433.6998",
@@ -836,7 +867,7 @@
 				"magnitude":"20.0873",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58433.7019",
@@ -844,7 +875,7 @@
 				"magnitude":"19.812",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"58433.705",
@@ -852,7 +883,7 @@
 				"magnitude":"18.6109",
 				"observatory":"OndrejovD50, Martin",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			}
 		]
 	}
