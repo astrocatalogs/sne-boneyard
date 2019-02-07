@@ -20,10 +20,21 @@
 				"alias":"3"
 			},
 			{
+				"name":"CPCS Alert 27369",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=27369",
+				"alias":"4"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"5"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -31,17 +42,17 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia18awg",
-				"source":"2,3,4"
+				"source":"2,3,5,6"
 			},
 			{
 				"value":"AT2018asi",
-				"source":"2,3,4"
+				"source":"2,3,6"
 			},
 			{
 				"value":"ASASSN-16le",
@@ -51,19 +62,19 @@
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"dec":[
 			{
 				"value":"+54:33:25.42",
 				"u_value":"degrees",
-				"source":"2,3,4"
+				"source":"2,3,6"
 			},
 			{
 				"value":"+54:33:25.56",
 				"u_value":"degrees",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"discoverdate":[
@@ -79,7 +90,7 @@
 			},
 			{
 				"value":"Gaia",
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"ebv":[
@@ -87,49 +98,49 @@
 				"value":"0.3226",
 				"derived":true,
 				"e_value":"0.0146",
-				"source":"1,5"
+				"source":"1,7"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"14.89",
+				"value":"14.42",
 				"derived":true,
-				"source":"2,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxband":[
 			{
-				"value":"G",
+				"value":"B2pg",
 				"derived":true,
-				"source":"2,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2018/04/04",
+				"value":"2019/01/19",
 				"derived":true,
-				"source":"2,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"14.89",
+				"value":"15.38",
 				"derived":true,
-				"source":"2,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"B",
 				"derived":true,
-				"source":"2,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2018/04/04",
+				"value":"2019/01/19",
 				"derived":true,
-				"source":"2,5"
+				"source":"4,5,7"
 			}
 		],
 		"ra":[
@@ -141,12 +152,12 @@
 			{
 				"value":"23:34:35.571",
 				"u_value":"hours",
-				"source":"3,4"
+				"source":"3,6"
 			},
 			{
 				"value":"23:34:35.52",
 				"u_value":"hours",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"photometry":[
@@ -821,6 +832,177 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"3"
+			},
+			{
+				"time":"58502.7867",
+				"band":"i",
+				"e_magnitude":"0.0246",
+				"magnitude":"15.4026",
+				"observatory":"Lisnyky, Andrii Simo",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58502.7871",
+				"band":"V",
+				"e_magnitude":"0.0221",
+				"magnitude":"15.1359",
+				"observatory":"Lisnyky, Andrii Simo",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58502.7875",
+				"band":"r",
+				"e_magnitude":"0.0189",
+				"magnitude":"15.308",
+				"observatory":"Lisnyky, Andrii Simo",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58502.7876",
+				"band":"B",
+				"e_magnitude":"0.0196",
+				"magnitude":"15.378",
+				"observatory":"Lisnyky, Andrii Simo",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58502.7882",
+				"band":"B2pg",
+				"e_magnitude":"0.0357",
+				"magnitude":"14.4214",
+				"observatory":"Lisnyky, Andrii Simo",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58504.923",
+				"band":"i",
+				"e_magnitude":"0.0356",
+				"magnitude":"15.5382",
+				"observatory":"Lisnyky, Andrii Simo",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58504.9233",
+				"band":"r",
+				"e_magnitude":"0.0278",
+				"magnitude":"15.3902",
+				"observatory":"Lisnyky, Andrii Simo",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58504.9237",
+				"band":"V",
+				"e_magnitude":"0.0365",
+				"magnitude":"15.2672",
+				"observatory":"Lisnyky, Andrii Simo",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58504.9242",
+				"band":"B",
+				"e_magnitude":"0.0351",
+				"magnitude":"15.4614",
+				"observatory":"Lisnyky, Andrii Simo",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58504.9248",
+				"band":"B2pg",
+				"e_magnitude":"0.0629",
+				"magnitude":"14.6296",
+				"observatory":"Lisnyky, Andrii Simo",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58506.7943",
+				"band":"B",
+				"e_magnitude":"0.0353",
+				"magnitude":"15.784",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58506.7947",
+				"band":"i",
+				"e_magnitude":"0.0625",
+				"magnitude":"15.6572",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58506.7954",
+				"band":"r",
+				"e_magnitude":"0.0457",
+				"magnitude":"15.5865",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58506.7958",
+				"band":"V",
+				"e_magnitude":"0.0293",
+				"magnitude":"15.384",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58507.7382",
+				"band":"i",
+				"e_magnitude":"0.035",
+				"magnitude":"15.8735",
+				"observatory":"Lisnyky, Andrii Simo",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58507.7385",
+				"band":"r",
+				"e_magnitude":"0.0265",
+				"magnitude":"15.7233",
+				"observatory":"Lisnyky, Andrii Simo",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58507.7389",
+				"band":"V",
+				"e_magnitude":"0.0324",
+				"magnitude":"15.5886",
+				"observatory":"Lisnyky, Andrii Simo",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58507.7394",
+				"band":"B",
+				"e_magnitude":"0.0275",
+				"magnitude":"15.789",
+				"observatory":"Lisnyky, Andrii Simo",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58507.74",
+				"band":"B2pg",
+				"e_magnitude":"0.0485",
+				"magnitude":"14.7124",
+				"observatory":"Lisnyky, Andrii Simo",
+				"u_time":"MJD",
+				"source":"4,5"
 			}
 		]
 	}
