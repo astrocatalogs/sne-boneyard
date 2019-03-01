@@ -14,10 +14,21 @@
 				"alias":"2"
 			},
 			{
+				"name":"CPCS Alert 27396",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=27396",
+				"alias":"3"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"4"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -25,35 +36,35 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia19aik",
-				"source":"1,2,3"
+				"source":"1,2,4,5"
 			},
 			{
 				"value":"AT2019aha",
-				"source":"1,2,3"
+				"source":"1,2,5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"dec":[
 			{
 				"value":"+40:15:26.71",
 				"u_value":"degrees",
-				"source":"1,2,3"
+				"source":"1,2,5"
 			},
 			{
 				"value":"+40:15:26.64",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"2,4"
 			}
 		],
 		"discoverdate":[
@@ -69,49 +80,49 @@
 			},
 			{
 				"value":"Gaia",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"15.18",
+				"value":"14.13",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxband":[
 			{
-				"value":"G",
+				"value":"I",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2019/01/27",
+				"value":"2019/02/24",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"15.18",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2019/01/27",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"ra":[
@@ -123,12 +134,12 @@
 			{
 				"value":"20:14:45.594",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"value":"20:14:45.6",
 				"u_value":"hours",
-				"source":"2"
+				"source":"2,4"
 			}
 		],
 		"photometry":[
@@ -623,6 +634,87 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"2"
+			},
+			{
+				"time":"58538.1881",
+				"band":"r",
+				"e_magnitude":"0.0051",
+				"magnitude":"15.5352",
+				"observatory":"ObsMontsec-Umut Burg",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58538.1902",
+				"band":"R",
+				"e_magnitude":"0.0045",
+				"magnitude":"15.178",
+				"observatory":"ObsMontsec-Umut Burg",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58538.1923",
+				"band":"R",
+				"e_magnitude":"0.0044",
+				"magnitude":"15.1843",
+				"observatory":"ObsMontsec-Umut Burg",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58538.1946",
+				"band":"V",
+				"e_magnitude":"0.0077",
+				"magnitude":"16.0637",
+				"observatory":"ObsMontsec-Umut Burg",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58538.1967",
+				"band":"V",
+				"e_magnitude":"0.0071",
+				"magnitude":"16.066",
+				"observatory":"ObsMontsec-Umut Burg",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58538.1989",
+				"band":"V",
+				"e_magnitude":"0.0072",
+				"magnitude":"16.0643",
+				"observatory":"ObsMontsec-Umut Burg",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58538.2012",
+				"band":"I",
+				"e_magnitude":"0.003",
+				"magnitude":"14.1579",
+				"observatory":"ObsMontsec-Umut Burg",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58538.2033",
+				"band":"I",
+				"e_magnitude":"0.0028",
+				"magnitude":"14.1756",
+				"observatory":"ObsMontsec-Umut Burg",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58538.2054",
+				"band":"I",
+				"e_magnitude":"0.0029",
+				"magnitude":"14.1333",
+				"observatory":"ObsMontsec-Umut Burg",
+				"u_time":"MJD",
+				"source":"3,4"
 			}
 		]
 	}
