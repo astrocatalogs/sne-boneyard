@@ -14,10 +14,21 @@
 				"alias":"2"
 			},
 			{
+				"name":"CPCS Alert 27424",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=27424",
+				"alias":"3"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"4"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -25,23 +36,23 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia18dvy",
-				"source":"1,2,3"
+				"source":"1,2,4,5"
 			},
 			{
 				"value":"AT2018kfj",
-				"source":"1,2,3"
+				"source":"1,2,5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"dec":[
@@ -53,12 +64,12 @@
 			{
 				"value":"+36:29:13.53",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"value":"+36:29:13.56",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"2,4"
 			}
 		],
 		"discoverdate":[
@@ -74,49 +85,49 @@
 			},
 			{
 				"value":"Gaia",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"15.82",
+				"value":"14.67",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxband":[
 			{
-				"value":"G",
+				"value":"i",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2019/02/19",
+				"value":"2019/02/28",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"15.82",
+				"value":"18.74",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"B",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2019/02/19",
+				"value":"2019/02/28",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"ra":[
@@ -128,12 +139,12 @@
 			{
 				"value":"20:05:06.017",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"value":"20:05:06",
 				"u_value":"hours",
-				"source":"2"
+				"source":"2,4"
 			}
 		],
 		"photometry":[
@@ -818,6 +829,221 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"2"
+			},
+			{
+				"time":"58542.1624",
+				"band":"B",
+				"e_magnitude":"0.1223",
+				"magnitude":"18.843",
+				"observatory":"Bialkow, P.Mikolajcz",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58542.1644",
+				"band":"B",
+				"e_magnitude":"0.1162",
+				"magnitude":"18.7384",
+				"observatory":"Bialkow, P.Mikolajcz",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58542.1664",
+				"band":"B",
+				"e_magnitude":"0.1451",
+				"magnitude":"18.9432",
+				"observatory":"Bialkow, P.Mikolajcz",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58542.1683",
+				"band":"V",
+				"e_magnitude":"0.0329",
+				"magnitude":"17.0363",
+				"observatory":"Bialkow, P.Mikolajcz",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58542.17",
+				"band":"V",
+				"e_magnitude":"0.0326",
+				"magnitude":"16.9796",
+				"observatory":"Bialkow, P.Mikolajcz",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58542.1717",
+				"band":"V",
+				"e_magnitude":"0.0356",
+				"magnitude":"17.1172",
+				"observatory":"Bialkow, P.Mikolajcz",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58542.1733",
+				"band":"r",
+				"e_magnitude":"0.0113",
+				"magnitude":"15.8918",
+				"observatory":"Bialkow, P.Mikolajcz",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58542.1747",
+				"band":"r",
+				"e_magnitude":"0.009",
+				"magnitude":"15.897",
+				"observatory":"Bialkow, P.Mikolajcz",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58542.1762",
+				"band":"r",
+				"e_magnitude":"0.0113",
+				"magnitude":"15.9014",
+				"observatory":"Bialkow, P.Mikolajcz",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58542.1776",
+				"band":"i",
+				"e_magnitude":"0.0079",
+				"magnitude":"14.6802",
+				"observatory":"Bialkow, P.Mikolajcz",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58542.1791",
+				"band":"i",
+				"e_magnitude":"0.0069",
+				"magnitude":"14.705",
+				"observatory":"Bialkow, P.Mikolajcz",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58542.1805",
+				"band":"i",
+				"e_magnitude":"0.0071",
+				"magnitude":"14.6693",
+				"observatory":"Bialkow, P.Mikolajcz",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58542.1835",
+				"band":"B",
+				"e_magnitude":"0.205",
+				"magnitude":"18.7938",
+				"observatory":"Bialkow, P.Mikolajcz",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58542.1855",
+				"band":"B",
+				"e_magnitude":"0.2144",
+				"magnitude":"18.803",
+				"observatory":"Bialkow, P.Mikolajcz",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58542.1876",
+				"band":"B",
+				"magnitude":"19.4039",
+				"observatory":"Bialkow, P.Mikolajcz",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58542.1894",
+				"band":"V",
+				"e_magnitude":"0.0377",
+				"magnitude":"17.0812",
+				"observatory":"Bialkow, P.Mikolajcz",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58542.1911",
+				"band":"V",
+				"e_magnitude":"0.0533",
+				"magnitude":"17.0331",
+				"observatory":"Bialkow, P.Mikolajcz",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58542.1928",
+				"band":"V",
+				"e_magnitude":"0.0584",
+				"magnitude":"17.0124",
+				"observatory":"Bialkow, P.Mikolajcz",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58542.1944",
+				"band":"r",
+				"e_magnitude":"0.0191",
+				"magnitude":"15.8974",
+				"observatory":"Bialkow, P.Mikolajcz",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58542.1958",
+				"band":"r",
+				"e_magnitude":"0.0228",
+				"magnitude":"15.9122",
+				"observatory":"Bialkow, P.Mikolajcz",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58542.1973",
+				"band":"r",
+				"e_magnitude":"0.0212",
+				"magnitude":"15.8961",
+				"observatory":"Bialkow, P.Mikolajcz",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58542.1987",
+				"band":"i",
+				"e_magnitude":"0.0126",
+				"magnitude":"14.6988",
+				"observatory":"Bialkow, P.Mikolajcz",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58542.2002",
+				"band":"i",
+				"e_magnitude":"0.0144",
+				"magnitude":"14.7002",
+				"observatory":"Bialkow, P.Mikolajcz",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58542.2016",
+				"band":"i",
+				"e_magnitude":"0.0172",
+				"magnitude":"14.7143",
+				"observatory":"Bialkow, P.Mikolajcz",
+				"u_time":"MJD",
+				"source":"3,4"
 			}
 		]
 	}

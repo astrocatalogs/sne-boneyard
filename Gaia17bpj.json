@@ -20,10 +20,21 @@
 				"alias":"3"
 			},
 			{
+				"name":"CPCS Alert 27196",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=27196",
+				"alias":"4"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"5"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -31,23 +42,23 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia17bpj",
-				"source":"2,3,4"
+				"source":"2,3,5,6"
 			},
 			{
 				"value":"AT2017exd",
-				"source":"2,3,4"
+				"source":"2,3,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"QSO",
-				"source":"3,4"
+				"source":"3,6"
 			},
 			{
 				"value":"BL Lac",
@@ -58,7 +69,7 @@
 			{
 				"value":"+09:29:46.68",
 				"u_value":"degrees",
-				"source":"2,3,4"
+				"source":"2,3,5,6"
 			}
 		],
 		"discoverdate":[
@@ -74,7 +85,7 @@
 			},
 			{
 				"value":"Gaia",
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"ebv":[
@@ -82,49 +93,49 @@
 				"value":"0.0606",
 				"derived":true,
 				"e_value":"0.0021",
-				"source":"1,5"
+				"source":"1,7"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"17.43",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,7"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,7"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2017/06/21",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"17.43",
+				"value":"18.83",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"g",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2017/06/21",
+				"value":"2017/07/25",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"ra":[
@@ -136,12 +147,12 @@
 			{
 				"value":"21:47:10.161",
 				"u_value":"hours",
-				"source":"3,4"
+				"source":"3,6"
 			},
 			{
 				"value":"21:47:10.08",
 				"u_value":"hours",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"photometry":[
@@ -596,6 +607,85 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"3"
+			},
+			{
+				"time":"57959.0704",
+				"band":"r",
+				"e_magnitude":"0.1746",
+				"magnitude":"18.4366",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57959.0732",
+				"band":"g",
+				"magnitude":"20.8834",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57959.0761",
+				"band":"V",
+				"e_magnitude":"0.1241",
+				"magnitude":"18.7244",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57959.079",
+				"band":"r",
+				"e_magnitude":"0.1424",
+				"magnitude":"18.3975",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57959.0819",
+				"band":"g",
+				"magnitude":"21.0147",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57959.0848",
+				"band":"V",
+				"e_magnitude":"0.1253",
+				"magnitude":"18.7128",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57959.0877",
+				"band":"r",
+				"e_magnitude":"0.2217",
+				"magnitude":"18.7411",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57959.0906",
+				"band":"g",
+				"e_magnitude":"0.1202",
+				"magnitude":"18.834",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57959.0935",
+				"band":"V",
+				"e_magnitude":"0.1236",
+				"magnitude":"18.7182",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
 			},
 			{
 				"time":"58038.321",
