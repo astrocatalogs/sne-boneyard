@@ -20,10 +20,21 @@
 				"alias":"3"
 			},
 			{
+				"name":"CPCS Alert 27011",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=27011",
+				"alias":"4"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"5"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -31,35 +42,35 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia18apf",
-				"source":"2,3,4"
+				"source":"2,3,5,6"
 			},
 			{
 				"value":"AT2018afn",
-				"source":"2,3,4"
+				"source":"2,3,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"dec":[
 			{
 				"value":"-32:53:10.07",
 				"u_value":"degrees",
-				"source":"2,3,4"
+				"source":"2,3,6"
 			},
 			{
 				"value":"-32:53:09.96",
 				"u_value":"degrees",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"discoverdate":[
@@ -75,7 +86,7 @@
 			},
 			{
 				"value":"Gaia",
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"ebv":[
@@ -83,49 +94,49 @@
 				"value":"0.008",
 				"derived":true,
 				"e_value":"0.0005",
-				"source":"1,5"
+				"source":"1,7"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"14.51",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,7"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,7"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2018/03/12",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"14.51",
+				"value":"19.28",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"B",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2018/03/12",
+				"value":"2018/08/26",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"ra":[
@@ -137,12 +148,12 @@
 			{
 				"value":"03:36:14.791",
 				"u_value":"hours",
-				"source":"3,4"
+				"source":"3,6"
 			},
 			{
 				"value":"03:36:14.784",
 				"u_value":"hours",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"photometry":[
@@ -297,6 +308,438 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"3"
+			},
+			{
+				"time":"58355.2102",
+				"band":"r",
+				"magnitude":"20.3738",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58355.2138",
+				"band":"V",
+				"magnitude":"20.374",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58355.2174",
+				"band":"B",
+				"magnitude":"20.8348",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58355.221",
+				"band":"r",
+				"magnitude":"20.4447",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58355.2247",
+				"band":"V",
+				"magnitude":"20.5158",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58355.2284",
+				"band":"B",
+				"magnitude":"20.8906",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58355.232",
+				"band":"r",
+				"magnitude":"20.7",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58355.2357",
+				"band":"V",
+				"magnitude":"20.7623",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58355.2393",
+				"band":"B",
+				"magnitude":"20.2377",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58356.2133",
+				"band":"r",
+				"magnitude":"19.8026",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58356.217",
+				"band":"V",
+				"magnitude":"19.7122",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58356.2206",
+				"band":"B",
+				"magnitude":"19.809",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58356.2243",
+				"band":"r",
+				"magnitude":"19.7506",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58356.2279",
+				"band":"V",
+				"magnitude":"19.5039",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58356.2316",
+				"band":"B",
+				"magnitude":"19.7121",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58356.2353",
+				"band":"r",
+				"magnitude":"20.0014",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58356.2389",
+				"band":"V",
+				"magnitude":"19.685",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58356.2426",
+				"band":"B",
+				"magnitude":"19.2819",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58357.2113",
+				"band":"r",
+				"magnitude":"19.4684",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58357.2149",
+				"band":"V",
+				"magnitude":"19.5244",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58357.2186",
+				"band":"B",
+				"magnitude":"19.61",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58357.2222",
+				"band":"r",
+				"magnitude":"19.3464",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58357.2258",
+				"band":"V",
+				"magnitude":"19.3639",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58357.2295",
+				"band":"B",
+				"magnitude":"19.6159",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58357.2331",
+				"band":"r",
+				"magnitude":"19.6343",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58357.2368",
+				"band":"V",
+				"magnitude":"19.2902",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58357.2404",
+				"band":"B",
+				"magnitude":"19.3853",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58358.2032",
+				"band":"r",
+				"magnitude":"20.3202",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58358.2068",
+				"band":"V",
+				"magnitude":"19.5303",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58358.2105",
+				"band":"B",
+				"magnitude":"19.7528",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58358.2141",
+				"band":"r",
+				"magnitude":"19.8204",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58358.2178",
+				"band":"V",
+				"magnitude":"19.7641",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58358.2215",
+				"band":"B",
+				"magnitude":"19.7617",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58358.2251",
+				"band":"r",
+				"magnitude":"19.9323",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58358.2288",
+				"band":"V",
+				"magnitude":"19.7444",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58358.2324",
+				"band":"B",
+				"magnitude":"19.7978",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58361.1964",
+				"band":"r",
+				"magnitude":"20.0977",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58361.2",
+				"band":"V",
+				"magnitude":"19.8245",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58361.2037",
+				"band":"B",
+				"magnitude":"19.9607",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58361.2073",
+				"band":"r",
+				"magnitude":"19.7864",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58361.211",
+				"band":"V",
+				"magnitude":"20.1351",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58361.2147",
+				"band":"B",
+				"magnitude":"20.0182",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58361.2183",
+				"band":"r",
+				"magnitude":"20.1272",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58361.222",
+				"band":"V",
+				"magnitude":"19.9396",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58361.2256",
+				"band":"B",
+				"magnitude":"19.9878",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58362.1943",
+				"band":"r",
+				"magnitude":"19.5656",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58362.1979",
+				"band":"V",
+				"magnitude":"19.6746",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58362.2016",
+				"band":"B",
+				"magnitude":"20.082",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58362.2053",
+				"band":"r",
+				"magnitude":"19.9592",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58362.2089",
+				"band":"V",
+				"magnitude":"19.7877",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58362.2126",
+				"band":"B",
+				"magnitude":"19.8257",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58362.2163",
+				"band":"r",
+				"magnitude":"19.8429",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58362.22",
+				"band":"V",
+				"magnitude":"19.762",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58362.2236",
+				"band":"B",
+				"magnitude":"20.0145",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
 			}
 		]
 	}
