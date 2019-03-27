@@ -14,10 +14,21 @@
 				"alias":"2"
 			},
 			{
+				"name":"CPCS Alert 27437",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=27437",
+				"alias":"3"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"4"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -25,23 +36,23 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia18eaz",
-				"source":"1,2,3"
+				"source":"1,2,4,5"
 			},
 			{
 				"value":"AT2018lck",
-				"source":"1,2,3"
+				"source":"1,2,5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"dec":[
@@ -53,12 +64,12 @@
 			{
 				"value":"-67:16:43.71",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"value":"-67:16:43.68",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"2,4"
 			}
 		],
 		"discoverdate":[
@@ -74,49 +85,49 @@
 			},
 			{
 				"value":"Gaia",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"15.77",
+				"value":"15.78",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2019/01/12",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"15.77",
+				"value":"18.28",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"g",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2019/01/12",
+				"value":"2019/02/07",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"ra":[
@@ -128,12 +139,12 @@
 			{
 				"value":"14:37:30.196",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"value":"14:37:30.24",
 				"u_value":"hours",
-				"source":"2"
+				"source":"2,4"
 			}
 		],
 		"photometry":[
@@ -1004,7 +1015,7 @@
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
-				"magnitude":"17.48",
+				"magnitude":"17.52",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"2"
@@ -1014,7 +1025,7 @@
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
-				"magnitude":"15.77",
+				"magnitude":"15.78",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"2"
@@ -1024,7 +1035,1102 @@
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
-				"magnitude":"15.77",
+				"magnitude":"15.78",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58519.1679",
+				"band":"i",
+				"e_magnitude":"0.0613",
+				"magnitude":"17.0594",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58519.1708",
+				"band":"g",
+				"e_magnitude":"0.1098",
+				"magnitude":"18.4709",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58519.1708",
+				"band":"i",
+				"e_magnitude":"0.063",
+				"magnitude":"17.082",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58519.1737",
+				"band":"i",
+				"e_magnitude":"0.097",
+				"magnitude":"17.2489",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58519.1766",
+				"band":"g",
+				"e_magnitude":"0.1502",
+				"magnitude":"18.7702",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58519.1766",
+				"band":"i",
+				"e_magnitude":"0.0665",
+				"magnitude":"17.1236",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58519.1795",
+				"band":"g",
+				"magnitude":"23.3028",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58519.1795",
+				"band":"i",
+				"e_magnitude":"0.0727",
+				"magnitude":"17.2965",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58519.2928",
+				"band":"i",
+				"e_magnitude":"0.0436",
+				"magnitude":"17.2048",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58519.2958",
+				"band":"g",
+				"e_magnitude":"0.1102",
+				"magnitude":"18.6227",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58519.2958",
+				"band":"i",
+				"e_magnitude":"0.0457",
+				"magnitude":"17.2537",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58519.2987",
+				"band":"g",
+				"e_magnitude":"0.1013",
+				"magnitude":"18.5281",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58519.2987",
+				"band":"i",
+				"e_magnitude":"0.045",
+				"magnitude":"17.2615",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58519.3016",
+				"band":"g",
+				"e_magnitude":"0.0836",
+				"magnitude":"18.3963",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58519.3016",
+				"band":"i",
+				"e_magnitude":"0.0531",
+				"magnitude":"17.3213",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58519.3045",
+				"band":"g",
+				"e_magnitude":"0.1062",
+				"magnitude":"18.5744",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58519.3045",
+				"band":"i",
+				"e_magnitude":"0.0489",
+				"magnitude":"17.2665",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58520.1679",
+				"band":"i",
+				"e_magnitude":"0.0927",
+				"magnitude":"17.1399",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58520.1737",
+				"band":"g",
+				"e_magnitude":"0.1285",
+				"magnitude":"18.5085",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58520.1737",
+				"band":"i",
+				"e_magnitude":"0.0741",
+				"magnitude":"17.198",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58520.1766",
+				"band":"g",
+				"e_magnitude":"0.1206",
+				"magnitude":"18.5328",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58520.1795",
+				"band":"g",
+				"e_magnitude":"0.1568",
+				"magnitude":"18.4992",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58520.1795",
+				"band":"i",
+				"e_magnitude":"0.096",
+				"magnitude":"17.3816",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58520.3402",
+				"band":"g",
+				"e_magnitude":"0.1408",
+				"magnitude":"18.5089",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58520.3431",
+				"band":"i",
+				"e_magnitude":"0.0676",
+				"magnitude":"17.2393",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58520.346",
+				"band":"g",
+				"e_magnitude":"0.1251",
+				"magnitude":"18.6118",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58520.349",
+				"band":"i",
+				"e_magnitude":"0.0456",
+				"magnitude":"17.1104",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58520.3519",
+				"band":"g",
+				"e_magnitude":"0.0952",
+				"magnitude":"18.4041",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58520.3519",
+				"band":"i",
+				"e_magnitude":"0.0585",
+				"magnitude":"17.264",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58520.7355",
+				"band":"i",
+				"e_magnitude":"0.0154",
+				"magnitude":"17.5234",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58520.7371",
+				"band":"i",
+				"e_magnitude":"0.0183",
+				"magnitude":"17.5247",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58520.739",
+				"band":"V",
+				"e_magnitude":"0.0348",
+				"magnitude":"18.2827",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58520.7405",
+				"band":"V",
+				"e_magnitude":"0.0444",
+				"magnitude":"18.1546",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.1679",
+				"band":"g",
+				"e_magnitude":"0.1026",
+				"magnitude":"18.6106",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.1679",
+				"band":"i",
+				"e_magnitude":"0.0594",
+				"magnitude":"17.3636",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.1708",
+				"band":"i",
+				"e_magnitude":"0.0526",
+				"magnitude":"17.2233",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.1737",
+				"band":"g",
+				"e_magnitude":"0.1205",
+				"magnitude":"18.5843",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.1737",
+				"band":"i",
+				"e_magnitude":"0.0684",
+				"magnitude":"17.2384",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.1737",
+				"band":"r",
+				"e_magnitude":"0.0755",
+				"magnitude":"18.0009",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.1766",
+				"band":"i",
+				"e_magnitude":"0.2641",
+				"magnitude":"16.2081",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.1795",
+				"band":"i",
+				"magnitude":"16.2098",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.3665",
+				"band":"g",
+				"e_magnitude":"0.1422",
+				"magnitude":"18.5583",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.3665",
+				"band":"i",
+				"e_magnitude":"0.082",
+				"magnitude":"17.345",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.3665",
+				"band":"r",
+				"e_magnitude":"0.1093",
+				"magnitude":"17.775",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.3694",
+				"band":"g",
+				"e_magnitude":"0.1227",
+				"magnitude":"18.3376",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.3694",
+				"band":"i",
+				"e_magnitude":"0.0724",
+				"magnitude":"17.137",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.3723",
+				"band":"g",
+				"e_magnitude":"0.1074",
+				"magnitude":"18.2848",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.3723",
+				"band":"i",
+				"e_magnitude":"0.0596",
+				"magnitude":"17.1112",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.3723",
+				"band":"r",
+				"e_magnitude":"0.1327",
+				"magnitude":"17.8049",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.3752",
+				"band":"g",
+				"e_magnitude":"0.2069",
+				"magnitude":"18.6095",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.3752",
+				"band":"i",
+				"e_magnitude":"0.1077",
+				"magnitude":"17.2336",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.3752",
+				"band":"r",
+				"e_magnitude":"0.2803",
+				"magnitude":"17.9321",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.3781",
+				"band":"g",
+				"magnitude":"19.0371",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.3781",
+				"band":"i",
+				"magnitude":"18.3009",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.3781",
+				"band":"r",
+				"magnitude":"18.868",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.7138",
+				"band":"i",
+				"e_magnitude":"0.0061",
+				"magnitude":"17.5328",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.7154",
+				"band":"i",
+				"e_magnitude":"0.0075",
+				"magnitude":"17.548",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.7175",
+				"band":"V",
+				"e_magnitude":"0.0095",
+				"magnitude":"18.2228",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.7451",
+				"band":"i",
+				"e_magnitude":"0.006",
+				"magnitude":"17.5585",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.7467",
+				"band":"i",
+				"e_magnitude":"0.0067",
+				"magnitude":"17.5618",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.7488",
+				"band":"V",
+				"e_magnitude":"0.0119",
+				"magnitude":"18.2337",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58521.7503",
+				"band":"V",
+				"e_magnitude":"0.011",
+				"magnitude":"18.2349",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58522.168",
+				"band":"g",
+				"e_magnitude":"0.1922",
+				"magnitude":"18.4339",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58522.168",
+				"band":"r",
+				"e_magnitude":"0.1347",
+				"magnitude":"17.9691",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58522.1709",
+				"band":"g",
+				"e_magnitude":"0.1296",
+				"magnitude":"18.5872",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58522.1709",
+				"band":"i",
+				"e_magnitude":"0.0667",
+				"magnitude":"17.4547",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58522.1709",
+				"band":"r",
+				"e_magnitude":"0.0715",
+				"magnitude":"17.8595",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58522.1738",
+				"band":"g",
+				"e_magnitude":"0.1133",
+				"magnitude":"18.6678",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58522.1738",
+				"band":"i",
+				"e_magnitude":"0.075",
+				"magnitude":"17.3923",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58522.1768",
+				"band":"g",
+				"e_magnitude":"0.1188",
+				"magnitude":"18.5854",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58522.1768",
+				"band":"i",
+				"e_magnitude":"0.0641",
+				"magnitude":"17.2086",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58522.1797",
+				"band":"g",
+				"e_magnitude":"0.1561",
+				"magnitude":"18.9118",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58522.1797",
+				"band":"i",
+				"e_magnitude":"0.0647",
+				"magnitude":"17.3967",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58522.3027",
+				"band":"g",
+				"e_magnitude":"0.1162",
+				"magnitude":"18.6753",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58522.3027",
+				"band":"i",
+				"e_magnitude":"0.0742",
+				"magnitude":"17.0363",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58522.3056",
+				"band":"g",
+				"e_magnitude":"0.1274",
+				"magnitude":"18.7514",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58522.3056",
+				"band":"i",
+				"e_magnitude":"0.0762",
+				"magnitude":"17.4081",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58522.3085",
+				"band":"g",
+				"e_magnitude":"0.1019",
+				"magnitude":"18.5277",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58522.3085",
+				"band":"i",
+				"e_magnitude":"0.1109",
+				"magnitude":"17.5411",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58522.3114",
+				"band":"g",
+				"e_magnitude":"0.1358",
+				"magnitude":"18.699",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58522.3114",
+				"band":"i",
+				"e_magnitude":"0.1038",
+				"magnitude":"17.4982",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58522.3114",
+				"band":"r",
+				"e_magnitude":"0.0746",
+				"magnitude":"17.7769",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58522.3143",
+				"band":"g",
+				"e_magnitude":"0.2635",
+				"magnitude":"18.8098",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58522.3143",
+				"band":"i",
+				"e_magnitude":"0.1591",
+				"magnitude":"17.394",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58522.3143",
+				"band":"r",
+				"e_magnitude":"0.1261",
+				"magnitude":"17.7668",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58523.3284",
+				"band":"g",
+				"e_magnitude":"0.1342",
+				"magnitude":"18.8043",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58523.3284",
+				"band":"i",
+				"e_magnitude":"0.0659",
+				"magnitude":"16.9608",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58523.3314",
+				"band":"g",
+				"e_magnitude":"0.1348",
+				"magnitude":"18.9911",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58523.3314",
+				"band":"i",
+				"e_magnitude":"0.0836",
+				"magnitude":"17.1251",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58523.3343",
+				"band":"g",
+				"e_magnitude":"0.1428",
+				"magnitude":"18.9793",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58523.3343",
+				"band":"i",
+				"e_magnitude":"0.0806",
+				"magnitude":"17.1507",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58523.3372",
+				"band":"r",
+				"e_magnitude":"0.0771",
+				"magnitude":"17.9225",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58523.6342",
+				"band":"i",
+				"e_magnitude":"0.0145",
+				"magnitude":"17.646",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58523.6358",
+				"band":"i",
+				"e_magnitude":"0.014",
+				"magnitude":"17.62",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58524.168",
+				"band":"i",
+				"e_magnitude":"0.0635",
+				"magnitude":"17.3086",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58524.1709",
+				"band":"i",
+				"e_magnitude":"0.0884",
+				"magnitude":"17.469",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58524.1738",
+				"band":"g",
+				"e_magnitude":"0.153",
+				"magnitude":"18.606",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58524.1738",
+				"band":"i",
+				"e_magnitude":"0.0729",
+				"magnitude":"17.5251",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58524.1767",
+				"band":"i",
+				"e_magnitude":"0.0647",
+				"magnitude":"17.4152",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58524.1796",
+				"band":"i",
+				"e_magnitude":"0.0781",
+				"magnitude":"17.4752",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58524.3476",
+				"band":"g",
+				"e_magnitude":"0.0929",
+				"magnitude":"18.5283",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58524.3476",
+				"band":"i",
+				"e_magnitude":"0.0796",
+				"magnitude":"17.4982",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58524.3505",
+				"band":"i",
+				"e_magnitude":"0.0584",
+				"magnitude":"17.301",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58524.3505",
+				"band":"r",
+				"e_magnitude":"0.0635",
+				"magnitude":"17.6946",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58524.3534",
+				"band":"i",
+				"e_magnitude":"0.0588",
+				"magnitude":"17.2669",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58524.3563",
+				"band":"i",
+				"e_magnitude":"0.054",
+				"magnitude":"17.2416",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58524.3593",
+				"band":"g",
+				"e_magnitude":"0.1358",
+				"magnitude":"18.9542",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58524.3593",
+				"band":"i",
+				"e_magnitude":"0.0648",
+				"magnitude":"17.2729",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58524.6434",
+				"band":"i",
+				"e_magnitude":"0.0064",
+				"magnitude":"17.6536",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58524.645",
+				"band":"i",
+				"e_magnitude":"0.0067",
+				"magnitude":"17.6436",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58524.6471",
+				"band":"V",
+				"e_magnitude":"0.0109",
+				"magnitude":"18.305",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58524.6487",
+				"band":"V",
+				"e_magnitude":"0.0114",
+				"magnitude":"18.3287",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58525.628",
+				"band":"i",
+				"e_magnitude":"0.0074",
+				"magnitude":"17.68",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58525.6296",
+				"band":"i",
+				"e_magnitude":"0.0061",
+				"magnitude":"17.6768",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58525.6317",
+				"band":"V",
+				"e_magnitude":"0.0092",
+				"magnitude":"18.3591",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58525.6332",
+				"band":"V",
+				"e_magnitude":"0.0086",
+				"magnitude":"18.3919",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58526.691",
+				"band":"i",
+				"e_magnitude":"0.0138",
+				"magnitude":"17.7104",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58526.6926",
+				"band":"i",
+				"e_magnitude":"0.0161",
+				"magnitude":"17.7196",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58526.6946",
+				"band":"V",
+				"e_magnitude":"0.0342",
+				"magnitude":"18.3988",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58526.6962",
+				"band":"V",
+				"e_magnitude":"0.0327",
+				"magnitude":"18.4878",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58563.925",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"18.61",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58563.999",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"18.66",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"2"

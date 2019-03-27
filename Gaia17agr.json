@@ -20,10 +20,21 @@
 				"alias":"3"
 			},
 			{
+				"name":"CPCS Alert 27442",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=27442",
+				"alias":"4"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"5"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -31,23 +42,23 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia17agr",
-				"source":"2,3,4"
+				"source":"2,3,5,6"
 			},
 			{
 				"value":"AT2017yp",
-				"source":"2,3,4"
+				"source":"2,3,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"dec":[
@@ -59,12 +70,12 @@
 			{
 				"value":"+64:05:12.29",
 				"u_value":"degrees",
-				"source":"3,4"
+				"source":"3,6"
 			},
 			{
 				"value":"+64:05:12.12",
 				"u_value":"degrees",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"discoverdate":[
@@ -80,7 +91,7 @@
 			},
 			{
 				"value":"Gaia",
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"ebv":[
@@ -88,49 +99,49 @@
 				"value":"0.478",
 				"derived":true,
 				"e_value":"0.0185",
-				"source":"1,5"
+				"source":"1,7"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"15.04",
 				"derived":true,
-				"source":"2,5"
+				"source":"2,7"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"2,5"
+				"source":"2,7"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2017/01/26",
 				"derived":true,
-				"source":"2,5"
+				"source":"2,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"15.04",
+				"value":"19.06",
 				"derived":true,
-				"source":"2,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"B",
 				"derived":true,
-				"source":"2,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2017/01/26",
+				"value":"2017/03/07",
 				"derived":true,
-				"source":"2,5"
+				"source":"4,5,7"
 			}
 		],
 		"ra":[
@@ -142,12 +153,12 @@
 			{
 				"value":"21:40:10.284",
 				"u_value":"hours",
-				"source":"3,4"
+				"source":"3,6"
 			},
 			{
 				"value":"21:40:10.32",
 				"u_value":"hours",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"photometry":[
@@ -464,6 +475,105 @@
 				"source":"3"
 			},
 			{
+				"time":"57812.8553",
+				"band":"r",
+				"e_magnitude":"0.1266",
+				"magnitude":"18.1928",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57812.8575",
+				"band":"i",
+				"e_magnitude":"0.1667",
+				"magnitude":"17.8188",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57817.8546",
+				"band":"i",
+				"e_magnitude":"0.1667",
+				"magnitude":"18.2189",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57817.8546",
+				"band":"r",
+				"e_magnitude":"0.1075",
+				"magnitude":"18.9895",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57818.7529",
+				"band":"r",
+				"e_magnitude":"0.084",
+				"magnitude":"17.908",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57818.7546",
+				"band":"V",
+				"e_magnitude":"0.1786",
+				"magnitude":"18.4026",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57818.7557",
+				"band":"i",
+				"e_magnitude":"0.1111",
+				"magnitude":"17.2156",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57819.7677",
+				"band":"r",
+				"e_magnitude":"0.082",
+				"magnitude":"18.2689",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57819.7686",
+				"band":"B",
+				"e_magnitude":"0.1389",
+				"magnitude":"19.0585",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57819.7694",
+				"band":"V",
+				"e_magnitude":"0.1408",
+				"magnitude":"18.0568",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57819.7704",
+				"band":"i",
+				"e_magnitude":"0.102",
+				"magnitude":"17.5823",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
 				"time":"57841.219",
 				"band":"G",
 				"e_magnitude":"0.0",
@@ -694,6 +804,87 @@
 				"source":"3"
 			},
 			{
+				"time":"58458.6518",
+				"band":"i",
+				"e_magnitude":"0.1449",
+				"magnitude":"18.0297",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58458.6523",
+				"band":"r",
+				"e_magnitude":"0.1064",
+				"magnitude":"18.5264",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58458.6528",
+				"band":"V",
+				"e_magnitude":"0.1351",
+				"magnitude":"19.1338",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58461.7786",
+				"band":"i",
+				"e_magnitude":"0.1176",
+				"magnitude":"18.048",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58461.7791",
+				"band":"V",
+				"e_magnitude":"0.1429",
+				"magnitude":"19.6322",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58461.7791",
+				"band":"r",
+				"e_magnitude":"0.125",
+				"magnitude":"18.7827",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58470.798",
+				"band":"i",
+				"e_magnitude":"0.125",
+				"magnitude":"17.9089",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58470.7985",
+				"band":"r",
+				"e_magnitude":"0.1316",
+				"magnitude":"18.6661",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58470.799",
+				"band":"V",
+				"e_magnitude":"0.1333",
+				"magnitude":"18.6254",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
 				"time":"58475.859",
 				"band":"G",
 				"e_magnitude":"0.0",
@@ -722,6 +913,68 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"3"
+			},
+			{
+				"time":"58505.778",
+				"band":"i",
+				"magnitude":"20.5155",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58507.1304",
+				"band":"i",
+				"e_magnitude":"0.1515",
+				"magnitude":"17.5072",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58507.131",
+				"band":"r",
+				"e_magnitude":"0.1266",
+				"magnitude":"17.8215",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58545.7369",
+				"band":"r",
+				"e_magnitude":"0.1235",
+				"magnitude":"18.3516",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58545.7484",
+				"band":"i",
+				"e_magnitude":"0.1471",
+				"magnitude":"17.6944",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58562.854",
+				"band":"i",
+				"e_magnitude":"0.1351",
+				"magnitude":"17.6253",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58562.8546",
+				"band":"r",
+				"e_magnitude":"0.1449",
+				"magnitude":"18.3191",
+				"observatory":"Terskol-2,Vira Godun",
+				"u_time":"MJD",
+				"source":"4,5"
 			}
 		]
 	}
