@@ -14,10 +14,21 @@
 				"alias":"2"
 			},
 			{
+				"name":"CPCS Alert 27488",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=27488",
+				"alias":"3"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"4"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -25,35 +36,40 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia18dvu",
-				"source":"1,2,3"
+				"source":"1,2,4,5"
 			},
 			{
 				"value":"AT2018kew",
-				"source":"1,2,3"
+				"source":"1,2,5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"dec":[
 			{
 				"value":"+28:29:11.72",
 				"u_value":"degrees",
-				"source":"1,2,3"
+				"source":"1,2,5"
 			},
 			{
 				"value":"+28:29:11.76",
 				"u_value":"degrees",
 				"source":"2"
+			},
+			{
+				"value":"+28:29:24",
+				"u_value":"degrees",
+				"source":"4"
 			}
 		],
 		"discoverdate":[
@@ -69,49 +85,49 @@
 			},
 			{
 				"value":"Gaia",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"17.61",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2019/02/04",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"17.61",
+				"value":"23.59",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"B",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2019/02/04",
+				"value":"2019/03/10",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"ra":[
@@ -123,12 +139,17 @@
 			{
 				"value":"19:52:27.487",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"value":"19:52:27.6",
 				"u_value":"hours",
 				"source":"2"
+			},
+			{
+				"value":"19:52:24",
+				"u_value":"hours",
+				"source":"4"
 			}
 		],
 		"photometry":[
@@ -1063,6 +1084,54 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"2"
+			},
+			{
+				"time":"58552.1258",
+				"band":"B",
+				"magnitude":"23.6884",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58552.1282",
+				"band":"V",
+				"magnitude":"23.1587",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58552.1306",
+				"band":"i",
+				"magnitude":"21.8129",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58552.133",
+				"band":"i",
+				"magnitude":"21.6714",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58552.1353",
+				"band":"B",
+				"magnitude":"23.5883",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58552.1377",
+				"band":"V",
+				"magnitude":"21.4775",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"3,4"
 			}
 		]
 	}
