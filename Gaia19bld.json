@@ -14,10 +14,21 @@
 				"alias":"2"
 			},
 			{
+				"name":"CPCS Alert 27570",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=27570",
+				"alias":"3"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"4"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -25,23 +36,23 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia19bld",
-				"source":"1,2,3"
+				"source":"1,2,4,5"
 			},
 			{
 				"value":"AT2019dqb",
-				"source":"1,2,3"
+				"source":"1,2,5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"dec":[
@@ -53,12 +64,12 @@
 			{
 				"value":"-66:06:40.89",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"value":"-66:06:41.04",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"2,4"
 			}
 		],
 		"discoverdate":[
@@ -74,49 +85,49 @@
 			},
 			{
 				"value":"Gaia",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"14.43",
+				"value":"13.47",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxband":[
 			{
-				"value":"G",
+				"value":"i",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2019/04/18",
+				"value":"2019/05/12",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"14.43",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2019/04/18",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"ra":[
@@ -128,12 +139,12 @@
 			{
 				"value":"12:37:32.558",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"value":"12:37:32.64",
 				"u_value":"hours",
-				"source":"2"
+				"source":"2,4"
 			}
 		],
 		"photometry":[
@@ -778,6 +789,60 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"2"
+			},
+			{
+				"time":"58615.8366",
+				"band":"V",
+				"e_magnitude":"0.0815993",
+				"magnitude":"15.2504",
+				"observatory":"F.Lewis LCOGT04",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58615.8371",
+				"band":"r",
+				"e_magnitude":"0.0395827",
+				"magnitude":"14.438",
+				"observatory":"F.Lewis LCOGT04",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58615.8377",
+				"band":"i",
+				"e_magnitude":"0.0321662",
+				"magnitude":"13.4682",
+				"observatory":"F.Lewis LCOGT04",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58615.9469",
+				"band":"V",
+				"e_magnitude":"0.0190485",
+				"magnitude":"15.465",
+				"observatory":"F.Lewis LCOGT04",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58615.9474",
+				"band":"r",
+				"e_magnitude":"0.0100959",
+				"magnitude":"14.5949",
+				"observatory":"F.Lewis LCOGT04",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58615.948",
+				"band":"i",
+				"e_magnitude":"0.00892775",
+				"magnitude":"13.5215",
+				"observatory":"F.Lewis LCOGT04",
+				"u_time":"MJD",
+				"source":"3,4"
 			}
 		]
 	}
