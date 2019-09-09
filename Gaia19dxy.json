@@ -1,7 +1,7 @@
 {
-	"Gaia19dtw":{
+	"Gaia19dxy":{
 		"schema":"https://github.com/astrocatalogs/supernovae/blob/d3ef5fc/SCHEMA.md",
-		"name":"Gaia19dtw",
+		"name":"Gaia19dxy",
 		"sources":[
 			{
 				"name":"Transient Name Server",
@@ -14,21 +14,10 @@
 				"alias":"2"
 			},
 			{
-				"name":"CPCS Alert 27853",
-				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=27853",
-				"alias":"3"
-			},
-			{
-				"name":"Cambridge Photometric Calibration Server",
-				"secondary":true,
-				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
-				"alias":"4"
-			},
-			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"5"
+				"alias":"3"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -36,45 +25,40 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"6"
+				"alias":"4"
 			}
 		],
 		"alias":[
 			{
-				"value":"Gaia19dtw",
-				"source":"1,2,4,5"
+				"value":"Gaia19dxy",
+				"source":"1,2,3"
 			},
 			{
-				"value":"AT2019ovc",
-				"source":"1,2,5"
+				"value":"AT2019pqr",
+				"source":"1,2,3"
 			}
 		],
 		"claimedtype":[
 			{
-				"value":"CV",
-				"source":"2,5"
+				"value":"Blazar",
+				"source":"2,3"
 			}
 		],
 		"dec":[
 			{
-				"value":"+26:13:07.72",
+				"value":"-61:49:33.67",
 				"u_value":"degrees",
-				"source":"1"
+				"source":"1,2,3"
 			},
 			{
-				"value":"+26:13:07.71",
+				"value":"-61:49:33.6",
 				"u_value":"degrees",
-				"source":"2,5"
-			},
-			{
-				"value":"+26:13:07.68",
-				"u_value":"degrees",
-				"source":"2,4"
+				"source":"2"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2019/08/25.97",
+				"value":"2019/09/04.808993",
 				"source":"1"
 			}
 		],
@@ -85,91 +69,111 @@
 			},
 			{
 				"value":"Gaia",
-				"source":"2,5"
+				"source":"2,3"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"18.02",
+				"value":"18.8",
 				"derived":true,
-				"source":"2,6"
+				"source":"2,4"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"2,6"
+				"source":"2,4"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2019/08/26",
+				"value":"2019/09/04",
 				"derived":true,
-				"source":"2,6"
+				"source":"2,4"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"19.58",
+				"value":"18.8",
 				"derived":true,
-				"source":"3,4,6"
+				"source":"2,4"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"B",
+				"value":"G",
 				"derived":true,
-				"source":"3,4,6"
+				"source":"2,4"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2019/09/03",
+				"value":"2019/09/04",
 				"derived":true,
-				"source":"3,4,6"
+				"source":"2,4"
 			}
 		],
 		"ra":[
 			{
-				"value":"06:56:10.810",
+				"value":"02:14:16.210",
 				"u_value":"hours",
 				"source":"1"
 			},
 			{
-				"value":"06:56:10.806",
+				"value":"02:14:16.209",
 				"u_value":"hours",
-				"source":"2,5"
+				"source":"2,3"
 			},
 			{
-				"value":"06:56:10.8",
+				"value":"02:14:16.2",
 				"u_value":"hours",
-				"source":"2,4"
+				"source":"2"
 			}
 		],
 		"photometry":[
 			{
-				"time":"58071.995",
+				"time":"56895.986",
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
-				"magnitude":"20.68",
+				"magnitude":"19.98",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"2"
 			},
 			{
-				"time":"58255.938",
+				"time":"56970.035",
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
-				"magnitude":"19.96",
+				"magnitude":"19.65",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"2"
 			},
 			{
-				"time":"58256.188",
+				"time":"56970.109",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"19.64",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"57035.060",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"19.95",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"57055.234",
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
@@ -179,77 +183,47 @@
 				"source":"2"
 			},
 			{
-				"time":"58350.998",
+				"time":"57055.308",
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
-				"magnitude":"18.04",
+				"magnitude":"20.54",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"2"
 			},
 			{
-				"time":"58351.072",
+				"time":"57113.007",
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
-				"magnitude":"18.67",
+				"magnitude":"20.82",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"2"
 			},
 			{
-				"time":"58351.248",
+				"time":"57431.599",
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
-				"magnitude":"18.86",
+				"magnitude":"20.91",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"2"
 			},
 			{
-				"time":"58351.322",
+				"time":"57557.930",
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
-				"magnitude":"18.94",
+				"magnitude":"20.64",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"2"
 			},
 			{
-				"time":"58360.003",
-				"band":"G",
-				"e_magnitude":"0.0",
-				"instrument":"Astrometric",
-				"magnitude":"19.68",
-				"telescope":"GAIA",
-				"u_time":"MJD",
-				"source":"2"
-			},
-			{
-				"time":"58360.253",
-				"band":"G",
-				"e_magnitude":"0.0",
-				"instrument":"Astrometric",
-				"magnitude":"19.91",
-				"telescope":"GAIA",
-				"u_time":"MJD",
-				"source":"2"
-			},
-			{
-				"time":"58360.327",
-				"band":"G",
-				"e_magnitude":"0.0",
-				"instrument":"Astrometric",
-				"magnitude":"19.85",
-				"telescope":"GAIA",
-				"u_time":"MJD",
-				"source":"2"
-			},
-			{
-				"time":"58439.960",
+				"time":"57558.004",
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
@@ -259,87 +233,27 @@
 				"source":"2"
 			},
 			{
-				"time":"58440.034",
+				"time":"57790.066",
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
-				"magnitude":"20.62",
+				"magnitude":"20.51",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"2"
 			},
 			{
-				"time":"58440.284",
+				"time":"57808.123",
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
-				"magnitude":"20.71",
+				"magnitude":"20.46",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"2"
 			},
 			{
-				"time":"58440.460",
-				"band":"G",
-				"e_magnitude":"0.0",
-				"instrument":"Astrometric",
-				"magnitude":"19.83",
-				"telescope":"GAIA",
-				"u_time":"MJD",
-				"source":"2"
-			},
-			{
-				"time":"58440.534",
-				"band":"G",
-				"e_magnitude":"0.0",
-				"instrument":"Astrometric",
-				"magnitude":"19.83",
-				"telescope":"GAIA",
-				"u_time":"MJD",
-				"source":"2"
-			},
-			{
-				"time":"58440.710",
-				"band":"G",
-				"e_magnitude":"0.0",
-				"instrument":"Astrometric",
-				"magnitude":"20.5",
-				"telescope":"GAIA",
-				"u_time":"MJD",
-				"source":"2"
-			},
-			{
-				"time":"58441.035",
-				"band":"G",
-				"e_magnitude":"0.0",
-				"instrument":"Astrometric",
-				"magnitude":"20.69",
-				"telescope":"GAIA",
-				"u_time":"MJD",
-				"source":"2"
-			},
-			{
-				"time":"58441.785",
-				"band":"G",
-				"e_magnitude":"0.0",
-				"instrument":"Astrometric",
-				"magnitude":"20.37",
-				"telescope":"GAIA",
-				"u_time":"MJD",
-				"source":"2"
-			},
-			{
-				"time":"58441.961",
-				"band":"G",
-				"e_magnitude":"0.0",
-				"instrument":"Astrometric",
-				"magnitude":"20.28",
-				"telescope":"GAIA",
-				"u_time":"MJD",
-				"source":"2"
-			},
-			{
-				"time":"58442.035",
+				"time":"57808.197",
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
@@ -349,37 +263,207 @@
 				"source":"2"
 			},
 			{
-				"time":"58442.462",
+				"time":"57868.896",
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
-				"magnitude":"18.95",
+				"magnitude":"20.82",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"2"
 			},
 			{
-				"time":"58535.030",
+				"time":"57906.116",
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
-				"magnitude":"20.63",
+				"magnitude":"20.42",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"2"
 			},
 			{
-				"time":"58549.607",
+				"time":"57937.532",
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
-				"magnitude":"20.09",
+				"magnitude":"20.01",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"2"
 			},
 			{
-				"time":"58583.8309954",
+				"time":"57937.606",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"20.01",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"57968.775",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"20.42",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58283.413",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"19.08",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58347.397",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"20.64",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58449.361",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"20.28",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58483.582",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"19.96",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58505.253",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"19.97",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58505.327",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"19.95",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58544.027",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"19.72",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58544.204",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"19.74",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58561.955",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"19.43",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58562.029",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"19.33",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58601.410",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"20.5",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58625.980",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"20.54",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58660.960",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"20.11",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58661.136",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"20.14",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58689.958",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"18.83",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58726.8389931",
 				"band":"G",
 				"instrument":"Astrometric",
 				"magnitude":"21.5",
@@ -390,43 +474,35 @@
 				"source":"1"
 			},
 			{
-				"time":"58720.97",
+				"time":"58730.8089931",
 				"band":"G",
 				"e_magnitude":"0.2",
 				"instrument":"Astrometric",
-				"magnitude":"18.14",
+				"magnitude":"18.8",
 				"observer":"Robot",
 				"telescope":"Gaia",
 				"u_time":"MJD",
 				"source":"1"
 			},
 			{
-				"time":"58720.971",
+				"time":"58730.810",
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
-				"magnitude":"18.14",
+				"magnitude":"18.8",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"2"
 			},
 			{
-				"time":"58721.045",
+				"time":"58730.884",
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
-				"magnitude":"18.02",
+				"magnitude":"18.81",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"2"
-			},
-			{
-				"time":"58729.2355",
-				"band":"B",
-				"magnitude":"19.5753",
-				"observatory":"Liam Hardy pt5m",
-				"u_time":"MJD",
-				"source":"3,4"
 			}
 		]
 	}
