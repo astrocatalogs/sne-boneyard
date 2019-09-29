@@ -10,31 +10,26 @@
 				"alias":"1"
 			},
 			{
-				"name":"Transient Name Server",
-				"url":"https://wis-tns.weizmann.ac.il/",
-				"alias":"2"
-			},
-			{
 				"name":"Gaia Photometric Science Alerts",
 				"url":"https://gsaweb.ast.cam.ac.uk/alerts/alert/Gaia17asc",
-				"alias":"3"
+				"alias":"2"
 			},
 			{
 				"name":"CPCS Alert 26524",
 				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=26524",
-				"alias":"4"
+				"alias":"3"
 			},
 			{
 				"name":"Cambridge Photometric Calibration Server",
 				"secondary":true,
 				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
-				"alias":"5"
+				"alias":"4"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"6"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -42,56 +37,47 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"7"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia17asc",
-				"source":"2,3,5,6"
+				"source":"2,4,5"
 			},
 			{
 				"value":"AT2017chp",
-				"source":"2,3,6"
+				"source":"2,5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"3,6"
+				"source":"2,5"
 			}
 		],
 		"dec":[
 			{
-				"value":"+22:10:20.53",
-				"u_value":"degrees",
-				"source":"2"
-			},
-			{
 				"value":"+22:10:20.54",
 				"u_value":"degrees",
-				"source":"3,6"
+				"source":"2,5"
 			},
 			{
 				"value":"+22:10:20.64",
 				"u_value":"degrees",
-				"source":"3,5"
+				"source":"2,4"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2017/03/15.493993",
-				"source":"2"
+				"value":"2017/03/15",
+				"source":"2,5"
 			}
 		],
 		"discoverer":[
 			{
-				"value":"GaiaAlerts",
-				"source":"2"
-			},
-			{
 				"value":"Gaia",
-				"source":"3,6"
+				"source":"2,5"
 			}
 		],
 		"ebv":[
@@ -99,86 +85,64 @@
 				"value":"0.3319",
 				"derived":true,
 				"e_value":"0.0088",
-				"source":"1,7"
+				"source":"1,6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"15.29",
 				"derived":true,
-				"source":"3,7"
+				"source":"2,6"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"3,7"
+				"source":"2,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2017/03/15",
 				"derived":true,
-				"source":"3,7"
+				"source":"2,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"17.48",
 				"derived":true,
-				"source":"4,5,7"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"B",
 				"derived":true,
-				"source":"4,5,7"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2017/03/25",
 				"derived":true,
-				"source":"4,5,7"
+				"source":"3,4,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"20:20:51.240",
 				"u_value":"hours",
-				"source":"2,3,6"
+				"source":"2,5"
 			},
 			{
 				"value":"20:20:51.36",
 				"u_value":"hours",
-				"source":"3,5"
+				"source":"2,4"
 			}
 		],
 		"photometry":[
-			{
-				"time":"57765.0129977",
-				"band":"G",
-				"instrument":"Astrometric",
-				"magnitude":"21.5",
-				"observer":"Robot",
-				"telescope":"Gaia",
-				"u_time":"MJD",
-				"upperlimit":true,
-				"source":"2"
-			},
-			{
-				"time":"57827.4939931",
-				"band":"G",
-				"e_magnitude":"0.2",
-				"instrument":"Astrometric",
-				"magnitude":"15.41",
-				"observer":"Robot",
-				"telescope":"Gaia",
-				"u_time":"MJD",
-				"source":"2"
-			},
 			{
 				"time":"57827.495",
 				"band":"G",
@@ -187,7 +151,7 @@
 				"magnitude":"15.32",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"3"
+				"source":"2"
 			},
 			{
 				"time":"57827.569",
@@ -197,7 +161,7 @@
 				"magnitude":"15.29",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"3"
+				"source":"2"
 			},
 			{
 				"time":"57827.745",
@@ -207,7 +171,7 @@
 				"magnitude":"15.38",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"3"
+				"source":"2"
 			},
 			{
 				"time":"57837.1067",
@@ -216,7 +180,7 @@
 				"magnitude":"17.4847",
 				"observatory":"ASV1.4 Goran Damljan",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57837.1083",
@@ -225,7 +189,7 @@
 				"magnitude":"17.1447",
 				"observatory":"ASV1.4 Goran Damljan",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57837.1099",
@@ -234,7 +198,7 @@
 				"magnitude":"17.1797",
 				"observatory":"ASV1.4 Goran Damljan",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57837.1114",
@@ -243,7 +207,7 @@
 				"magnitude":"17.1621",
 				"observatory":"ASV1.4 Goran Damljan",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57837.113",
@@ -252,7 +216,7 @@
 				"magnitude":"18.611",
 				"observatory":"ASV1.4 Goran Damljan",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57837.1146",
@@ -261,7 +225,7 @@
 				"magnitude":"17.214",
 				"observatory":"ASV1.4 Goran Damljan",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57837.1162",
@@ -270,7 +234,7 @@
 				"magnitude":"17.2593",
 				"observatory":"ASV1.4 Goran Damljan",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57837.1177",
@@ -279,7 +243,7 @@
 				"magnitude":"16.9223",
 				"observatory":"ASV1.4 Goran Damljan",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57837.1194",
@@ -288,7 +252,7 @@
 				"magnitude":"17.5045",
 				"observatory":"ASV1.4 Goran Damljan",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57837.1209",
@@ -297,7 +261,7 @@
 				"magnitude":"17.2314",
 				"observatory":"ASV1.4 Goran Damljan",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57837.1225",
@@ -306,7 +270,7 @@
 				"magnitude":"17.1876",
 				"observatory":"ASV1.4 Goran Damljan",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57837.1241",
@@ -315,7 +279,7 @@
 				"magnitude":"16.7374",
 				"observatory":"ASV1.4 Goran Damljan",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57840.1165",
@@ -324,7 +288,7 @@
 				"magnitude":"17.6236",
 				"observatory":"BAS NAO Rozhen 50/70",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57840.1179",
@@ -333,7 +297,7 @@
 				"magnitude":"17.6116",
 				"observatory":"BAS NAO Rozhen 50/70",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57840.1188",
@@ -342,7 +306,7 @@
 				"magnitude":"17.8779",
 				"observatory":"BAS NAO Rozhen 50/70",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57840.1196",
@@ -351,7 +315,7 @@
 				"magnitude":"18.0467",
 				"observatory":"BAS NAO Rozhen 50/70",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57840.1204",
@@ -360,7 +324,7 @@
 				"magnitude":"17.4691",
 				"observatory":"BAS NAO Rozhen 50/70",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57840.1213",
@@ -369,7 +333,7 @@
 				"magnitude":"17.3802",
 				"observatory":"BAS NAO Rozhen 50/70",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57840.1221",
@@ -378,7 +342,7 @@
 				"magnitude":"17.5184",
 				"observatory":"BAS NAO Rozhen 50/70",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57840.1229",
@@ -387,7 +351,7 @@
 				"magnitude":"18.2044",
 				"observatory":"BAS NAO Rozhen 50/70",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57840.1237",
@@ -396,7 +360,7 @@
 				"magnitude":"17.7126",
 				"observatory":"BAS NAO Rozhen 50/70",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57840.1245",
@@ -405,7 +369,7 @@
 				"magnitude":"17.6346",
 				"observatory":"BAS NAO Rozhen 50/70",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57840.1253",
@@ -413,7 +377,7 @@
 				"magnitude":"18.2724",
 				"observatory":"BAS NAO Rozhen 50/70",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57840.1261",
@@ -422,7 +386,7 @@
 				"magnitude":"17.8985",
 				"observatory":"BAS NAO Rozhen 50/70",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57850.499",
@@ -432,7 +396,7 @@
 				"magnitude":"17.73",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"3"
+				"source":"2"
 			},
 			{
 				"time":"57850.573",
@@ -442,7 +406,7 @@
 				"magnitude":"17.84",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"3"
+				"source":"2"
 			}
 		]
 	}

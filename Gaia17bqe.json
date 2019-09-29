@@ -10,31 +10,26 @@
 				"alias":"1"
 			},
 			{
-				"name":"Transient Name Server",
-				"url":"https://wis-tns.weizmann.ac.il/",
-				"alias":"2"
-			},
-			{
 				"name":"Gaia Photometric Science Alerts",
 				"url":"https://gsaweb.ast.cam.ac.uk/alerts/alert/Gaia17bqe",
-				"alias":"3"
+				"alias":"2"
 			},
 			{
 				"name":"CPCS Alert 26629",
 				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=26629",
-				"alias":"4"
+				"alias":"3"
 			},
 			{
 				"name":"Cambridge Photometric Calibration Server",
 				"secondary":true,
 				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
-				"alias":"5"
+				"alias":"4"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"6"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -42,60 +37,51 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"7"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia17bqe",
-				"source":"2,3,5,6"
+				"source":"2,4,5"
 			},
 			{
 				"value":"AT2017fah",
-				"source":"2,3,6"
+				"source":"2,5"
 			},
 			{
 				"value":"ASASSN-17ic",
-				"source":"3"
+				"source":"2"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"3,6"
+				"source":"2,5"
 			}
 		],
 		"dec":[
 			{
-				"value":"+36:38:46.90",
-				"u_value":"degrees",
-				"source":"2"
-			},
-			{
 				"value":"+36:38:46.89",
 				"u_value":"degrees",
-				"source":"3,6"
+				"source":"2,5"
 			},
 			{
 				"value":"+36:38:47.04",
 				"u_value":"degrees",
-				"source":"3,5"
+				"source":"2,4"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2017/06/27.673993",
-				"source":"2"
+				"value":"2017/06/27",
+				"source":"2,5"
 			}
 		],
 		"discoverer":[
 			{
-				"value":"GaiaAlerts",
-				"source":"2"
-			},
-			{
 				"value":"Gaia",
-				"source":"3,6"
+				"source":"2,5"
 			}
 		],
 		"ebv":[
@@ -103,100 +89,73 @@
 				"value":"0.0313",
 				"derived":true,
 				"e_value":"0.0006",
-				"source":"1,7"
+				"source":"1,6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16.5",
 				"derived":true,
-				"source":"3,7"
+				"source":"2,6"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"3,7"
+				"source":"2,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2017/06/27",
 				"derived":true,
-				"source":"3,7"
+				"source":"2,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"17.07",
 				"derived":true,
-				"source":"4,5,7"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"4,5,7"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2017/06/29",
 				"derived":true,
-				"source":"4,5,7"
+				"source":"3,4,6"
 			}
 		],
 		"ra":[
 			{
-				"value":"17:13:13.140",
-				"u_value":"hours",
-				"source":"2"
-			},
-			{
 				"value":"17:13:13.144",
 				"u_value":"hours",
-				"source":"3,6"
+				"source":"2,5"
 			},
 			{
 				"value":"17:13:13.2",
 				"u_value":"hours",
-				"source":"3,5"
+				"source":"2,4"
 			}
 		],
 		"photometry":[
-			{
-				"time":"57915.6709954",
-				"band":"G",
-				"instrument":"Astrometric",
-				"magnitude":"21.5",
-				"observer":"Robot",
-				"telescope":"Gaia",
-				"u_time":"MJD",
-				"upperlimit":true,
-				"source":"2"
-			},
-			{
-				"time":"57931.6739931",
-				"band":"G",
-				"e_magnitude":"0.2",
-				"instrument":"Astrometric",
-				"magnitude":"16.59",
-				"observer":"Robot",
-				"telescope":"Gaia",
-				"u_time":"MJD",
-				"source":"2"
-			},
 			{
 				"time":"57931.675",
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
-				"magnitude":"16.5",
+				"magnitude":"16.50",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"3"
+				"source":"2"
 			},
 			{
 				"time":"57931.749",
@@ -206,7 +165,7 @@
 				"magnitude":"16.52",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"3"
+				"source":"2"
 			},
 			{
 				"time":"57933.9236",
@@ -215,7 +174,7 @@
 				"magnitude":"17.2054",
 				"observatory":"Loiano, Felice Cusan",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57933.9275",
@@ -224,7 +183,7 @@
 				"magnitude":"17.3956",
 				"observatory":"Loiano, Felice Cusan",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57933.9314",
@@ -233,7 +192,7 @@
 				"magnitude":"17.0713",
 				"observatory":"Loiano, Felice Cusan",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57953.0046",
@@ -241,7 +200,7 @@
 				"magnitude":"20.2167",
 				"observatory":"PIRATE Meredith Morr",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57953.0066",
@@ -249,7 +208,7 @@
 				"magnitude":"20.3621",
 				"observatory":"PIRATE Meredith Morr",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57953.0087",
@@ -257,7 +216,7 @@
 				"magnitude":"20.2532",
 				"observatory":"PIRATE Meredith Morr",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57953.0108",
@@ -265,7 +224,7 @@
 				"magnitude":"20.3377",
 				"observatory":"PIRATE Meredith Morr",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57953.0128",
@@ -273,7 +232,7 @@
 				"magnitude":"20.3972",
 				"observatory":"PIRATE Meredith Morr",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57953.0148",
@@ -281,7 +240,7 @@
 				"magnitude":"20.3546",
 				"observatory":"PIRATE Meredith Morr",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57953.0169",
@@ -289,7 +248,7 @@
 				"magnitude":"20.5199",
 				"observatory":"PIRATE Meredith Morr",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57953.0189",
@@ -297,7 +256,7 @@
 				"magnitude":"20.4601",
 				"observatory":"PIRATE Meredith Morr",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57953.021",
@@ -305,7 +264,7 @@
 				"magnitude":"20.61",
 				"observatory":"PIRATE Meredith Morr",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57956.1106",
@@ -313,7 +272,7 @@
 				"magnitude":"20.8129",
 				"observatory":"PIRATE Meredith Morr",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57956.1126",
@@ -321,7 +280,7 @@
 				"magnitude":"20.2348",
 				"observatory":"PIRATE Meredith Morr",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57956.1146",
@@ -329,7 +288,7 @@
 				"magnitude":"20.5661",
 				"observatory":"PIRATE Meredith Morr",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57956.1166",
@@ -337,7 +296,7 @@
 				"magnitude":"20.4857",
 				"observatory":"PIRATE Meredith Morr",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57956.1186",
@@ -345,7 +304,7 @@
 				"magnitude":"20.3082",
 				"observatory":"PIRATE Meredith Morr",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57956.1206",
@@ -353,7 +312,7 @@
 				"magnitude":"20.4793",
 				"observatory":"PIRATE Meredith Morr",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57956.1227",
@@ -361,7 +320,7 @@
 				"magnitude":"20.3918",
 				"observatory":"PIRATE Meredith Morr",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57956.1246",
@@ -369,7 +328,7 @@
 				"magnitude":"20.2602",
 				"observatory":"PIRATE Meredith Morr",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			},
 			{
 				"time":"57956.1267",
@@ -377,7 +336,7 @@
 				"magnitude":"20.4247",
 				"observatory":"PIRATE Meredith Morr",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"3,4"
 			}
 		]
 	}

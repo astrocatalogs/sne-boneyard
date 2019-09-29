@@ -10,20 +10,15 @@
 				"alias":"1"
 			},
 			{
-				"name":"Transient Name Server",
-				"url":"https://wis-tns.weizmann.ac.il/",
-				"alias":"2"
-			},
-			{
 				"name":"ATel 10080",
 				"url":"http://www.astronomerstelegram.org/?read=10080",
-				"alias":"3"
+				"alias":"2"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"3"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -31,23 +26,23 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"4"
 			}
 		],
 		"alias":[
 			{
 				"value":"iPTF17bao",
-				"source":"2,3,4"
+				"source":"2,3"
 			},
 			{
 				"value":"AT2017bao",
-				"source":"2,3,4"
+				"source":"2,3"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"QSO",
-				"source":"3,4"
+				"source":"2,3"
 			}
 		],
 		"comovingdist":[
@@ -55,36 +50,32 @@
 				"value":"230",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,3,4,5"
+				"source":"1,2,3,4"
 			}
 		],
 		"dec":[
 			{
 				"value":"+00:51:11.31",
 				"u_value":"degrees",
-				"source":"2,3,4"
+				"source":"2,3"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2017/02/21.341991",
-				"source":"2"
+				"value":"2017/02/21",
+				"source":"2,3"
 			}
 		],
 		"discoverer":[
 			{
-				"value":"iPTF",
-				"source":"2"
-			},
-			{
 				"value":"PTF",
-				"source":"3,4"
+				"source":"2,3"
 			}
 		],
 		"host":[
 			{
 				"value":"2MASX J08555426+0051110",
-				"source":"3,4"
+				"source":"2,3"
 			}
 		],
 		"hostdec":[
@@ -92,7 +83,7 @@
 				"value":"+00:51:11.0",
 				"derived":true,
 				"u_value":"degrees",
-				"source":"5"
+				"source":"4"
 			}
 		],
 		"hostoffsetang":[
@@ -100,13 +91,13 @@
 				"value":"0.8812",
 				"derived":true,
 				"u_value":"arcseconds",
-				"source":"2,3,4,5"
+				"source":"2,3,4"
 			}
 		],
 		"hostoffsetdist":[
 			{
 				"value":"0.934",
-				"source":"1,2,3,4,5"
+				"source":"1,2,3,4"
 			}
 		],
 		"hostra":[
@@ -114,7 +105,7 @@
 				"value":"08:55:54.26",
 				"derived":true,
 				"u_value":"hours",
-				"source":"5"
+				"source":"4"
 			}
 		],
 		"lumdist":[
@@ -122,106 +113,77 @@
 				"value":"239",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,3,4,5"
+				"source":"1,2,3,4"
 			}
 		],
 		"maxabsmag":[
 			{
-				"value":"-17.6",
+				"value":"-17.5",
 				"derived":true,
-				"source":"1,3,4,5"
+				"source":"1,2,3,4"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"19.28",
+				"value":"19.3",
 				"derived":true,
-				"source":"2,5"
-			}
-		],
-		"maxband":[
-			{
-				"value":"R",
-				"derived":true,
-				"source":"2,5"
+				"source":"2,3,4"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2017/02/21",
 				"derived":true,
-				"source":"2,5"
+				"source":"2,3,4"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-17.6",
 				"derived":true,
-				"source":"1,3,4,5"
+				"source":"1,2,3,4"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"19.28",
+				"value":"19.3",
 				"derived":true,
-				"source":"2,5"
-			}
-		],
-		"maxvisualband":[
-			{
-				"value":"R",
-				"derived":true,
-				"source":"2,5"
+				"source":"2,3,4"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2017/02/21",
 				"derived":true,
-				"source":"2,5"
+				"source":"2,3,4"
 			}
 		],
 		"ra":[
 			{
 				"value":"08:55:54.315",
 				"u_value":"hours",
-				"source":"2,3,4"
+				"source":"2,3"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.052",
-				"source":"3,4"
+				"source":"2,3"
 			}
 		],
 		"velocity":[
 			{
 				"value":"15000",
 				"u_value":"km/s",
-				"source":"5"
+				"source":"4"
 			}
 		],
 		"photometry":[
 			{
-				"time":"54832.0",
-				"band":"R",
-				"instrument":"CFH12k",
-				"magnitude":"21.5",
-				"observer":"iPTF",
-				"telescope":"P48",
+				"time":"57805.0",
+				"magnitude":"19.3",
 				"u_time":"MJD",
-				"upperlimit":true,
-				"source":"2"
-			},
-			{
-				"time":"57805.3419907",
-				"band":"R",
-				"instrument":"CFH12k",
-				"magnitude":"19.282",
-				"observer":"iPTF",
-				"telescope":"P48",
-				"u_time":"MJD",
-				"source":"2"
+				"source":"2,3"
 			}
 		]
 	}
