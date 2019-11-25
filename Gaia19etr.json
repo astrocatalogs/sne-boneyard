@@ -20,27 +20,42 @@
 				"alias":"3"
 			},
 			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"4"
+			},
+			{
 				"name":"The Open Supernova Catalog",
 				"bibcode":"2017ApJ...835...64G",
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia19etr",
-				"source":"1,3"
+				"source":"1,3,4"
+			},
+			{
+				"value":"AT2019tic",
+				"source":"1,4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"QSO",
-				"source":"1"
+				"source":"1,4"
 			}
 		],
 		"dec":[
+			{
+				"value":"+55:54:53.36",
+				"u_value":"degrees",
+				"source":"1,4"
+			},
 			{
 				"value":"+55:54:53.28",
 				"u_value":"degrees",
@@ -49,8 +64,13 @@
 		],
 		"discoverdate":[
 			{
-				"value":"2015/03/10",
-				"derived":true,
+				"value":"2019/10/24",
+				"source":"1,4"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"Gaia",
 				"source":"1,4"
 			}
 		],
@@ -58,45 +78,50 @@
 			{
 				"value":"16.96",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,3,5"
 			}
 		],
 		"maxband":[
 			{
 				"value":"R",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,3,5"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2019/11/18",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,3,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"17.83",
 				"derived":true,
-				"source":"1,4"
+				"source":"1,5"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"1,4"
+				"source":"1,5"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2019/10/24",
 				"derived":true,
-				"source":"1,4"
+				"source":"1,5"
 			}
 		],
 		"ra":[
+			{
+				"value":"09:42:49.053",
+				"u_value":"hours",
+				"source":"1,4"
+			},
 			{
 				"value":"09:42:48.96",
 				"u_value":"hours",
@@ -929,6 +954,24 @@
 				"band":"R",
 				"e_magnitude":"0.0945007",
 				"magnitude":"16.9563",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58809.1085",
+				"band":"V",
+				"e_magnitude":"0.0461267",
+				"magnitude":"17.8856",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58809.1291",
+				"band":"R",
+				"e_magnitude":"0.0421404",
+				"magnitude":"17.8032",
 				"observatory":"Liam Hardy pt5m",
 				"u_time":"MJD",
 				"source":"2,3"
