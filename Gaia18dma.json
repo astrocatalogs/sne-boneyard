@@ -9,10 +9,21 @@
 				"alias":"1"
 			},
 			{
+				"name":"CPCS Alert 27285",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=27285",
+				"alias":"2"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"3"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -20,101 +31,101 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia18dma",
-				"source":"1,2"
+				"source":"1,3,4"
 			},
 			{
 				"value":"AT2018ipy",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"dec":[
 			{
 				"value":"+13:52:21.47",
 				"u_value":"degrees",
-				"source":"1,2"
+				"source":"1,4"
 			},
 			{
 				"value":"+13:52:21.36",
 				"u_value":"degrees",
-				"source":"1"
+				"source":"1,3"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2018/11/17",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Gaia",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"18.1",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2018/11/17",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"18.1",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2018/11/17",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"ra":[
 			{
 				"value":"19:41:25.808",
 				"u_value":"hours",
-				"source":"1,2"
+				"source":"1,4"
 			},
 			{
 				"value":"19:41:25.92",
 				"u_value":"hours",
-				"source":"1"
+				"source":"1,3"
 			}
 		],
 		"photometry":[
@@ -489,7 +500,72 @@
 				"source":"1"
 			},
 			{
+				"time":"58633.0124",
+				"band":"r",
+				"e_magnitude":"0.1101",
+				"magnitude":"18.405",
+				"observatory":"Jena GSH STK, P.Ziel",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58633.0143",
+				"band":"i",
+				"e_magnitude":"0.1874",
+				"magnitude":"18.3698",
+				"observatory":"Jena GSH STK, P.Ziel",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58633.0151",
+				"band":"i",
+				"e_magnitude":"0.1562",
+				"magnitude":"18.2567",
+				"observatory":"Jena GSH STK, P.Ziel",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58633.0165",
+				"band":"V",
+				"e_magnitude":"0.1426",
+				"magnitude":"18.8738",
+				"observatory":"Jena GSH STK, P.Ziel",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58633.0181",
+				"band":"V",
+				"e_magnitude":"0.1896",
+				"magnitude":"19.1488",
+				"observatory":"Jena GSH STK, P.Ziel",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
 				"time":"58800.345",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"20.29",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58818.793",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"20.20",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58818.867",
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
