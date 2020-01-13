@@ -9,10 +9,21 @@
 				"alias":"1"
 			},
 			{
+				"name":"CPCS Alert 28087",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=28087",
+				"alias":"2"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"3"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -20,101 +31,101 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia19cnm",
-				"source":"1,2"
+				"source":"1,3,4"
 			},
 			{
 				"value":"AT2019hyr",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"dec":[
 			{
 				"value":"-57:03:25.55",
 				"u_value":"degrees",
-				"source":"1,2"
+				"source":"1,4"
 			},
 			{
 				"value":"-57:03:25.56",
 				"u_value":"degrees",
-				"source":"1"
+				"source":"1,3"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2019/06/20",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Gaia",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"17.76",
+				"value":"16.47",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxband":[
 			{
-				"value":"G",
+				"value":"i",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2019/06/21",
+				"value":"2020/01/05",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"17.76",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2019/06/21",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"ra":[
 			{
 				"value":"15:11:44.838",
 				"u_value":"hours",
-				"source":"1,2"
+				"source":"1,4"
 			},
 			{
 				"value":"15:11:44.88",
 				"u_value":"hours",
-				"source":"1"
+				"source":"1,3"
 			}
 		],
 		"photometry":[
@@ -1009,6 +1020,24 @@
 				"source":"1"
 			},
 			{
+				"time":"58837.351",
+				"band":"i",
+				"e_magnitude":"0.1005",
+				"magnitude":"16.9926",
+				"observatory":"PROMPT-MO-0.4, Stasz",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58837.3515",
+				"band":"i",
+				"e_magnitude":"0.0947",
+				"magnitude":"16.866",
+				"observatory":"PROMPT-MO-0.4, Stasz",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
 				"time":"58838.553",
 				"band":"G",
 				"e_magnitude":"0.0",
@@ -1069,6 +1098,15 @@
 				"source":"1"
 			},
 			{
+				"time":"58839.3539",
+				"band":"i",
+				"e_magnitude":"0.0927",
+				"magnitude":"17.1261",
+				"observatory":"PROMPT5-0.4, Staszek",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
 				"time":"58839.480",
 				"band":"G",
 				"e_magnitude":"0.0",
@@ -1087,6 +1125,156 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"1"
+			},
+			{
+				"time":"58844.773",
+				"band":"i",
+				"e_magnitude":"0.1027",
+				"magnitude":"16.8965",
+				"observatory":"PROMPT-MO-0.4, Stasz",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58844.7737",
+				"band":"i",
+				"e_magnitude":"0.0921",
+				"magnitude":"16.8002",
+				"observatory":"PROMPT-MO-0.4, Stasz",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58845.3559",
+				"band":"i",
+				"e_magnitude":"0.239",
+				"magnitude":"17.0723",
+				"observatory":"PROMPT5-0.4, Staszek",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58845.985",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"17.81",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58846.235",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"17.87",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58846.309",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"17.83",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58846.559",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"17.82",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58846.736",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"17.85",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58846.810",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"17.80",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58850.8285",
+				"band":"i",
+				"e_magnitude":"0.0546",
+				"magnitude":"16.6798",
+				"observatory":"PROMPT-MO-0.4, Stasz",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58851.0285",
+				"band":"i",
+				"e_magnitude":"0.0546",
+				"magnitude":"16.6798",
+				"observatory":"PROMPT-MO-0.4, Stasz",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58853.83",
+				"band":"i",
+				"e_magnitude":"0.063",
+				"magnitude":"16.4743",
+				"observatory":"PROMPT-MO-0.4, Stasz",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58854.8308",
+				"band":"i",
+				"e_magnitude":"0.0414",
+				"magnitude":"16.6924",
+				"observatory":"PROMPT-MO-0.4, Stasz",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58856.3585",
+				"band":"i",
+				"e_magnitude":"0.0755",
+				"magnitude":"16.7754",
+				"observatory":"PROMPT5-0.4, Staszek",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58856.8326",
+				"band":"i",
+				"e_magnitude":"0.0545",
+				"magnitude":"16.7963",
+				"observatory":"PROMPT-MO-0.4, Stasz",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58860.3475",
+				"band":"i",
+				"e_magnitude":"0.0998",
+				"magnitude":"16.6467",
+				"observatory":"PROMPT5-0.4, Staszek",
+				"u_time":"MJD",
+				"source":"2,3"
 			}
 		]
 	}
