@@ -9,10 +9,21 @@
 				"alias":"1"
 			},
 			{
+				"name":"CPCS Alert 28150",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=28150",
+				"alias":"2"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"3"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -20,101 +31,111 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia19ejl",
-				"source":"1,2"
+				"source":"1,3,4"
 			},
 			{
 				"value":"AT2019rna",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"dec":[
 			{
 				"value":"-64:19:31.50",
 				"u_value":"degrees",
-				"source":"1,2"
+				"source":"1,4"
 			},
 			{
 				"value":"-64:19:31.44",
 				"u_value":"degrees",
 				"source":"1"
+			},
+			{
+				"value":"-64:19:32.16",
+				"u_value":"degrees",
+				"source":"3"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2019/09/29",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Gaia",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16.75",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2019/09/29",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"16.75",
+				"value":"20.34",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"g",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2019/09/29",
+				"value":"2019/12/02",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"ra":[
 			{
 				"value":"12:32:58.789",
 				"u_value":"hours",
-				"source":"1,2"
+				"source":"1,4"
 			},
 			{
 				"value":"12:32:58.8",
 				"u_value":"hours",
 				"source":"1"
+			},
+			{
+				"value":"12:32:59.04",
+				"u_value":"hours",
+				"source":"3"
 			}
 		],
 		"photometry":[
@@ -1069,6 +1090,79 @@
 				"source":"1"
 			},
 			{
+				"time":"58815.343",
+				"band":"g",
+				"magnitude":"21.8659",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58815.3451",
+				"band":"g",
+				"magnitude":"21.8504",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58815.3472",
+				"band":"i",
+				"magnitude":"19.6929",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58815.3492",
+				"band":"i",
+				"magnitude":"19.9518",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58818.0853",
+				"band":"i",
+				"magnitude":"20.1896",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58819.0783",
+				"band":"g",
+				"magnitude":"22.1995",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58819.0803",
+				"band":"g",
+				"e_magnitude":"0.0647",
+				"magnitude":"20.3422",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58819.0825",
+				"band":"i",
+				"magnitude":"20.0257",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58819.0845",
+				"band":"i",
+				"magnitude":"19.9827",
+				"observatory":"LCOGT1m, Kris Rybick",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
 				"time":"58827.217",
 				"band":"G",
 				"e_magnitude":"0.0",
@@ -1087,6 +1181,39 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"1"
+			},
+			{
+				"time":"58868.5975",
+				"band":"g",
+				"e_magnitude":"0.1414",
+				"magnitude":"20.6696",
+				"observatory":"LCOGT1m, N.Ihanec",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58868.6006",
+				"band":"g",
+				"magnitude":"21.6923",
+				"observatory":"LCOGT1m, N.Ihanec",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58868.6038",
+				"band":"i",
+				"magnitude":"20.5209",
+				"observatory":"LCOGT1m, N.Ihanec",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58868.6131",
+				"band":"r",
+				"magnitude":"21.3952",
+				"observatory":"LCOGT1m, N.Ihanec",
+				"u_time":"MJD",
+				"source":"2,3"
 			}
 		]
 	}

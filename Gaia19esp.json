@@ -9,10 +9,21 @@
 				"alias":"1"
 			},
 			{
+				"name":"CPCS Alert 28166",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=28166",
+				"alias":"2"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"3"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -20,101 +31,101 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia19esp",
-				"source":"1,2"
+				"source":"1,3,4"
 			},
 			{
 				"value":"AT2019tgd",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"dec":[
 			{
 				"value":"-63:48:47.27",
 				"u_value":"degrees",
-				"source":"1,2"
+				"source":"1,4"
 			},
 			{
 				"value":"-63:48:47.16",
 				"u_value":"degrees",
-				"source":"1"
+				"source":"1,3"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2019/10/21",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Gaia",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"16.41",
+				"value":"15.01",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxband":[
 			{
-				"value":"G",
+				"value":"i",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2020/01/04",
+				"value":"2020/01/21",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"16.41",
+				"value":"18.65",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"g",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2020/01/04",
+				"value":"2020/01/21",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"ra":[
 			{
 				"value":"12:56:59.100",
 				"u_value":"hours",
-				"source":"1,2"
+				"source":"1,4"
 			},
 			{
 				"value":"12:56:59.04",
 				"u_value":"hours",
-				"source":"1"
+				"source":"1,3"
 			}
 		],
 		"photometry":[
@@ -1067,6 +1078,114 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"1"
+			},
+			{
+				"time":"58869.2373",
+				"band":"g",
+				"e_magnitude":"0.028",
+				"magnitude":"18.6522",
+				"observatory":"LCOGT1m, N.Ihanec",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58869.2383",
+				"band":"g",
+				"e_magnitude":"0.0283",
+				"magnitude":"18.6808",
+				"observatory":"LCOGT1m, N.Ihanec",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58869.2394",
+				"band":"i",
+				"e_magnitude":"0.0075",
+				"magnitude":"15.0133",
+				"observatory":"LCOGT1m, N.Ihanec",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58869.2404",
+				"band":"i",
+				"e_magnitude":"0.0066",
+				"magnitude":"15.0193",
+				"observatory":"LCOGT1m, N.Ihanec",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58869.2415",
+				"band":"r",
+				"e_magnitude":"0.0081",
+				"magnitude":"16.3092",
+				"observatory":"LCOGT1m, N.Ihanec",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58869.2425",
+				"band":"r",
+				"e_magnitude":"0.0087",
+				"magnitude":"16.3125",
+				"observatory":"LCOGT1m, N.Ihanec",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58875.5947",
+				"band":"g",
+				"e_magnitude":"0.052",
+				"magnitude":"18.7772",
+				"observatory":"LCOGT1m, N.Ihanec",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58875.5957",
+				"band":"g",
+				"e_magnitude":"0.0411",
+				"magnitude":"18.8048",
+				"observatory":"LCOGT1m, N.Ihanec",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58875.5967",
+				"band":"i",
+				"e_magnitude":"0.0059",
+				"magnitude":"15.1429",
+				"observatory":"LCOGT1m, N.Ihanec",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58875.5977",
+				"band":"i",
+				"e_magnitude":"0.0072",
+				"magnitude":"15.125",
+				"observatory":"LCOGT1m, N.Ihanec",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58875.5988",
+				"band":"r",
+				"e_magnitude":"0.0096",
+				"magnitude":"16.4208",
+				"observatory":"LCOGT1m, N.Ihanec",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58875.5998",
+				"band":"r",
+				"e_magnitude":"0.0105",
+				"magnitude":"16.4415",
+				"observatory":"LCOGT1m, N.Ihanec",
+				"u_time":"MJD",
+				"source":"2,3"
 			}
 		]
 	}
