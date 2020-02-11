@@ -9,10 +9,21 @@
 				"alias":"1"
 			},
 			{
+				"name":"CPCS Alert 28236",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=28236",
+				"alias":"2"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"3"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -20,101 +31,101 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia19fms",
-				"source":"1,2"
+				"source":"1,3,4"
 			},
 			{
 				"value":"AT2019wkh",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"dec":[
 			{
 				"value":"+59:38:17.12",
 				"u_value":"degrees",
-				"source":"1,2"
+				"source":"1,4"
 			},
 			{
 				"value":"+59:38:17.16",
 				"u_value":"degrees",
-				"source":"1"
+				"source":"1,3"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2019/12/09",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Gaia",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"13.78",
+				"value":"13.58",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxband":[
 			{
-				"value":"G",
+				"value":"i",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2019/12/09",
+				"value":"2020/02/05",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"13.78",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2019/12/09",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"ra":[
 			{
 				"value":"23:48:53.693",
 				"u_value":"hours",
-				"source":"1,2"
+				"source":"1,4"
 			},
 			{
 				"value":"23:48:53.76",
 				"u_value":"hours",
-				"source":"1"
+				"source":"1,3"
 			}
 		],
 		"photometry":[
@@ -947,6 +958,241 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"1"
+			},
+			{
+				"time":"58882.931",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"13.88",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58883.005",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"13.88",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58884.7196",
+				"band":"V",
+				"e_magnitude":"0.0054",
+				"magnitude":"14.0722",
+				"observatory":"Moletai0.35 Kotryna",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58884.7232",
+				"band":"r",
+				"e_magnitude":"0.0049",
+				"magnitude":"13.8369",
+				"observatory":"Moletai0.35 Kotryna",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58884.7268",
+				"band":"i",
+				"e_magnitude":"0.005",
+				"magnitude":"13.5822",
+				"observatory":"Moletai0.35 Kotryna",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58884.7304",
+				"band":"V",
+				"e_magnitude":"0.0051",
+				"magnitude":"14.0809",
+				"observatory":"Moletai0.35 Kotryna",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58884.7339",
+				"band":"r",
+				"e_magnitude":"0.005",
+				"magnitude":"13.8338",
+				"observatory":"Moletai0.35 Kotryna",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58884.7376",
+				"band":"V",
+				"magnitude":"17.9089",
+				"observatory":"Moletai0.35 Kotryna",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58884.7376",
+				"band":"i",
+				"e_magnitude":"0.005",
+				"magnitude":"13.5798",
+				"observatory":"Moletai0.35 Kotryna",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58884.7911",
+				"band":"V",
+				"e_magnitude":"0.008",
+				"magnitude":"14.0079",
+				"observatory":"Moletai0.35 Kotryna",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58884.7947",
+				"band":"r",
+				"e_magnitude":"0.0072",
+				"magnitude":"13.7343",
+				"observatory":"Moletai0.35 Kotryna",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58884.7983",
+				"band":"i",
+				"e_magnitude":"0.0078",
+				"magnitude":"13.5954",
+				"observatory":"Moletai0.35 Kotryna",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58884.8019",
+				"band":"V",
+				"e_magnitude":"0.0105",
+				"magnitude":"14.0299",
+				"observatory":"Moletai0.35 Kotryna",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58884.8091",
+				"band":"i",
+				"e_magnitude":"0.0395",
+				"magnitude":"13.5994",
+				"observatory":"Moletai0.35 Kotryna",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58885.496",
+				"band":"V",
+				"e_magnitude":"0.0062",
+				"magnitude":"14.0528",
+				"observatory":"Moletai0.35 Kotryna",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58885.7041",
+				"band":"V",
+				"e_magnitude":"0.0053",
+				"magnitude":"14.0784",
+				"observatory":"Moletai0.35 Kotryna",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58885.7077",
+				"band":"r",
+				"e_magnitude":"0.0051",
+				"magnitude":"13.8343",
+				"observatory":"Moletai0.35 Kotryna",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58885.7113",
+				"band":"i",
+				"e_magnitude":"0.0054",
+				"magnitude":"13.6167",
+				"observatory":"Moletai0.35 Kotryna",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58885.7149",
+				"band":"V",
+				"e_magnitude":"0.0055",
+				"magnitude":"14.0818",
+				"observatory":"Moletai0.35 Kotryna",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58885.7184",
+				"band":"r",
+				"e_magnitude":"0.0052",
+				"magnitude":"13.8539",
+				"observatory":"Moletai0.35 Kotryna",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58885.722",
+				"band":"i",
+				"e_magnitude":"0.0053",
+				"magnitude":"13.6014",
+				"observatory":"Moletai0.35 Kotryna",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58885.7532",
+				"band":"r",
+				"e_magnitude":"0.0055",
+				"magnitude":"13.8532",
+				"observatory":"Moletai0.35 Kotryna",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58885.7568",
+				"band":"i",
+				"e_magnitude":"0.0054",
+				"magnitude":"13.5906",
+				"observatory":"Moletai0.35 Kotryna",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58885.7604",
+				"band":"V",
+				"e_magnitude":"0.0061",
+				"magnitude":"14.0509",
+				"observatory":"Moletai0.35 Kotryna",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58885.7639",
+				"band":"r",
+				"e_magnitude":"0.0058",
+				"magnitude":"13.8235",
+				"observatory":"Moletai0.35 Kotryna",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58885.7676",
+				"band":"i",
+				"e_magnitude":"0.0056",
+				"magnitude":"13.601",
+				"observatory":"Moletai0.35 Kotryna",
+				"u_time":"MJD",
+				"source":"2,3"
 			}
 		]
 	}
