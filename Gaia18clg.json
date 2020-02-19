@@ -15,10 +15,21 @@
 				"alias":"2"
 			},
 			{
+				"name":"CPCS Alert 27230",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=27230",
+				"alias":"3"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"4"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -26,47 +37,47 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia18clg",
-				"source":"2,3"
+				"source":"2,4,5"
 			},
 			{
 				"value":"AT2018fqv",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"dec":[
 			{
 				"value":"-64:33:01.52",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"value":"-64:33:01.44",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"2,4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2018/08/29",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Gaia",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"ebv":[
@@ -74,61 +85,61 @@
 				"value":"0.3478",
 				"derived":true,
 				"e_value":"0.0193",
-				"source":"1,4"
+				"source":"1,6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"17.99",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2018/09/19",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"17.99",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2018/09/19",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"10:22:19.776",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"value":"10:22:19.68",
 				"u_value":"hours",
-				"source":"2"
+				"source":"2,4"
 			}
 		],
 		"photometry":[
@@ -403,6 +414,60 @@
 				"source":"2"
 			},
 			{
+				"time":"58417.3714",
+				"band":"i",
+				"e_magnitude":"0.0482",
+				"magnitude":"18.3013",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58417.3739",
+				"band":"i",
+				"e_magnitude":"0.0458",
+				"magnitude":"18.2323",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58417.3768",
+				"band":"V",
+				"e_magnitude":"0.122",
+				"magnitude":"19.313",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58419.3384",
+				"band":"i",
+				"e_magnitude":"0.0464",
+				"magnitude":"18.3606",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58419.3413",
+				"band":"V",
+				"e_magnitude":"0.0662",
+				"magnitude":"19.3236",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58419.3441",
+				"band":"V",
+				"e_magnitude":"0.062",
+				"magnitude":"19.2537",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
 				"time":"58420.844",
 				"band":"G",
 				"e_magnitude":"0.0",
@@ -423,6 +488,834 @@
 				"source":"2"
 			},
 			{
+				"time":"58423.3491",
+				"band":"i",
+				"e_magnitude":"0.0266",
+				"magnitude":"18.373",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58423.3516",
+				"band":"i",
+				"e_magnitude":"0.0282",
+				"magnitude":"18.4143",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58423.3544",
+				"band":"V",
+				"e_magnitude":"0.0396",
+				"magnitude":"19.4086",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58423.3573",
+				"band":"V",
+				"e_magnitude":"0.0457",
+				"magnitude":"19.4281",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58425.3464",
+				"band":"i",
+				"e_magnitude":"0.0274",
+				"magnitude":"18.3884",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58425.3489",
+				"band":"i",
+				"e_magnitude":"0.0241",
+				"magnitude":"18.3733",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58425.3517",
+				"band":"V",
+				"e_magnitude":"0.0367",
+				"magnitude":"19.4738",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58425.3546",
+				"band":"V",
+				"e_magnitude":"0.0364",
+				"magnitude":"19.4513",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58427.3312",
+				"band":"i",
+				"e_magnitude":"0.0266",
+				"magnitude":"18.3912",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58427.3337",
+				"band":"i",
+				"e_magnitude":"0.025",
+				"magnitude":"18.4121",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58427.3365",
+				"band":"V",
+				"e_magnitude":"0.0339",
+				"magnitude":"19.4194",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58427.3394",
+				"band":"V",
+				"e_magnitude":"0.0379",
+				"magnitude":"19.4117",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58427.3423",
+				"band":"i",
+				"e_magnitude":"0.0328",
+				"magnitude":"18.4722",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58427.3448",
+				"band":"i",
+				"e_magnitude":"0.0273",
+				"magnitude":"18.4632",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58427.3476",
+				"band":"V",
+				"e_magnitude":"0.0412",
+				"magnitude":"19.4263",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58427.3504",
+				"band":"V",
+				"e_magnitude":"0.0359",
+				"magnitude":"19.4725",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58429.3404",
+				"band":"i",
+				"e_magnitude":"0.0286",
+				"magnitude":"18.4162",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58429.3429",
+				"band":"i",
+				"e_magnitude":"0.0306",
+				"magnitude":"18.4774",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58429.3458",
+				"band":"V",
+				"e_magnitude":"0.0389",
+				"magnitude":"19.4638",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58429.3486",
+				"band":"V",
+				"e_magnitude":"0.0453",
+				"magnitude":"19.5415",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58431.3276",
+				"band":"i",
+				"e_magnitude":"0.0272",
+				"magnitude":"18.4514",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58431.3301",
+				"band":"i",
+				"e_magnitude":"0.0232",
+				"magnitude":"18.4765",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58431.3329",
+				"band":"V",
+				"e_magnitude":"0.034",
+				"magnitude":"19.5528",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58431.3358",
+				"band":"V",
+				"e_magnitude":"0.0351",
+				"magnitude":"19.485",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58433.3555",
+				"band":"i",
+				"e_magnitude":"0.0636",
+				"magnitude":"18.5157",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58433.3583",
+				"band":"V",
+				"e_magnitude":"0.1071",
+				"magnitude":"19.6655",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58435.3285",
+				"band":"i",
+				"e_magnitude":"0.052",
+				"magnitude":"18.5228",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58435.331",
+				"band":"i",
+				"e_magnitude":"0.0335",
+				"magnitude":"18.4604",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58435.3338",
+				"band":"V",
+				"e_magnitude":"0.0544",
+				"magnitude":"19.5069",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58435.3367",
+				"band":"V",
+				"e_magnitude":"0.0556",
+				"magnitude":"19.5338",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58437.32",
+				"band":"i",
+				"e_magnitude":"0.0244",
+				"magnitude":"18.5084",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58437.3225",
+				"band":"i",
+				"e_magnitude":"0.0239",
+				"magnitude":"18.5103",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58437.3253",
+				"band":"V",
+				"e_magnitude":"0.0349",
+				"magnitude":"19.5427",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58437.3282",
+				"band":"V",
+				"e_magnitude":"0.0292",
+				"magnitude":"19.4847",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58439.3408",
+				"band":"i",
+				"e_magnitude":"0.0269",
+				"magnitude":"18.5559",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58439.3433",
+				"band":"i",
+				"e_magnitude":"0.0246",
+				"magnitude":"18.5204",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58439.3461",
+				"band":"V",
+				"e_magnitude":"0.0351",
+				"magnitude":"19.5974",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58439.349",
+				"band":"V",
+				"e_magnitude":"0.0391",
+				"magnitude":"19.6384",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58439.3519",
+				"band":"i",
+				"e_magnitude":"0.0299",
+				"magnitude":"18.5314",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58439.3544",
+				"band":"i",
+				"e_magnitude":"0.0297",
+				"magnitude":"18.4864",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58439.3572",
+				"band":"V",
+				"e_magnitude":"0.0472",
+				"magnitude":"19.6056",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58439.3601",
+				"band":"V",
+				"e_magnitude":"0.0647",
+				"magnitude":"19.577",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58441.3323",
+				"band":"i",
+				"e_magnitude":"0.0208",
+				"magnitude":"18.5603",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58441.3348",
+				"band":"i",
+				"e_magnitude":"0.0232",
+				"magnitude":"18.6288",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58441.3376",
+				"band":"V",
+				"e_magnitude":"0.0264",
+				"magnitude":"19.6168",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58441.3405",
+				"band":"V",
+				"e_magnitude":"0.0288",
+				"magnitude":"19.6426",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58443.3473",
+				"band":"i",
+				"e_magnitude":"0.0267",
+				"magnitude":"18.6208",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58443.3498",
+				"band":"i",
+				"e_magnitude":"0.0318",
+				"magnitude":"18.5936",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58443.3526",
+				"band":"V",
+				"e_magnitude":"0.0637",
+				"magnitude":"19.6163",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58443.3554",
+				"band":"V",
+				"e_magnitude":"0.0525",
+				"magnitude":"19.5844",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58446.3293",
+				"band":"i",
+				"e_magnitude":"0.0372",
+				"magnitude":"18.64",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58446.3318",
+				"band":"i",
+				"e_magnitude":"0.0344",
+				"magnitude":"18.5807",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58446.3347",
+				"band":"V",
+				"e_magnitude":"0.0865",
+				"magnitude":"19.5644",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58446.3375",
+				"band":"V",
+				"e_magnitude":"0.0876",
+				"magnitude":"19.5921",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58448.3432",
+				"band":"i",
+				"e_magnitude":"0.0317",
+				"magnitude":"18.6535",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58448.3457",
+				"band":"i",
+				"e_magnitude":"0.0327",
+				"magnitude":"18.6198",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58448.3485",
+				"band":"V",
+				"e_magnitude":"0.0614",
+				"magnitude":"19.6693",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58448.3513",
+				"band":"V",
+				"e_magnitude":"0.066",
+				"magnitude":"19.611",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58450.3296",
+				"band":"i",
+				"e_magnitude":"0.0209",
+				"magnitude":"18.7281",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58450.3335",
+				"band":"i",
+				"e_magnitude":"0.0225",
+				"magnitude":"18.6985",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58450.3375",
+				"band":"V",
+				"e_magnitude":"0.0331",
+				"magnitude":"19.6265",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58450.3414",
+				"band":"V",
+				"e_magnitude":"0.0329",
+				"magnitude":"19.6909",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58453.3171",
+				"band":"i",
+				"e_magnitude":"0.0242",
+				"magnitude":"18.6819",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58453.325",
+				"band":"V",
+				"e_magnitude":"0.0324",
+				"magnitude":"19.6146",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58453.3289",
+				"band":"V",
+				"e_magnitude":"0.0287",
+				"magnitude":"19.7193",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58456.2944",
+				"band":"i",
+				"e_magnitude":"0.1614",
+				"magnitude":"18.5719",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58456.2983",
+				"band":"i",
+				"e_magnitude":"0.0308",
+				"magnitude":"18.6702",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58456.3023",
+				"band":"V",
+				"e_magnitude":"0.0678",
+				"magnitude":"19.8136",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58459.3098",
+				"band":"i",
+				"e_magnitude":"0.024",
+				"magnitude":"18.7026",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58459.3137",
+				"band":"i",
+				"e_magnitude":"0.0247",
+				"magnitude":"18.7105",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58459.3177",
+				"band":"V",
+				"e_magnitude":"0.0343",
+				"magnitude":"19.7291",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58459.3216",
+				"band":"V",
+				"e_magnitude":"0.0359",
+				"magnitude":"19.7289",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58462.3036",
+				"band":"i",
+				"e_magnitude":"0.0233",
+				"magnitude":"18.7604",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58462.3075",
+				"band":"i",
+				"e_magnitude":"0.0211",
+				"magnitude":"18.77",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58462.3115",
+				"band":"V",
+				"e_magnitude":"0.0339",
+				"magnitude":"19.7581",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58462.3154",
+				"band":"V",
+				"e_magnitude":"0.0392",
+				"magnitude":"19.764",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58465.2965",
+				"band":"i",
+				"e_magnitude":"0.0303",
+				"magnitude":"18.7718",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58465.3004",
+				"band":"i",
+				"e_magnitude":"0.0284",
+				"magnitude":"18.8752",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58465.3044",
+				"band":"V",
+				"e_magnitude":"0.0345",
+				"magnitude":"19.8278",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58465.3083",
+				"band":"V",
+				"e_magnitude":"0.0401",
+				"magnitude":"19.7798",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58468.3129",
+				"band":"i",
+				"e_magnitude":"0.0236",
+				"magnitude":"18.7709",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58468.3168",
+				"band":"i",
+				"e_magnitude":"0.0261",
+				"magnitude":"18.7863",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58468.3208",
+				"band":"V",
+				"e_magnitude":"0.0388",
+				"magnitude":"19.8154",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58468.3247",
+				"band":"V",
+				"e_magnitude":"0.0327",
+				"magnitude":"19.8476",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58471.2865",
+				"band":"i",
+				"e_magnitude":"0.0322",
+				"magnitude":"18.8715",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58471.2904",
+				"band":"i",
+				"e_magnitude":"0.0305",
+				"magnitude":"18.8118",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58471.2944",
+				"band":"V",
+				"e_magnitude":"0.0421",
+				"magnitude":"19.7804",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58471.2983",
+				"band":"V",
+				"e_magnitude":"0.0452",
+				"magnitude":"19.8106",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58474.2722",
+				"band":"i",
+				"e_magnitude":"0.0377",
+				"magnitude":"18.9069",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58474.276",
+				"band":"i",
+				"e_magnitude":"0.0423",
+				"magnitude":"18.9532",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58474.2801",
+				"band":"V",
+				"e_magnitude":"0.0914",
+				"magnitude":"19.9034",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58474.284",
+				"band":"V",
+				"e_magnitude":"0.09",
+				"magnitude":"19.9114",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
 				"time":"58476.053",
 				"band":"G",
 				"e_magnitude":"0.0",
@@ -431,6 +1324,321 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"2"
+			},
+			{
+				"time":"58479.3005",
+				"band":"V",
+				"e_magnitude":"0.0528",
+				"magnitude":"20.0494",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58479.3044",
+				"band":"V",
+				"e_magnitude":"0.0393",
+				"magnitude":"19.8632",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58484.2825",
+				"band":"i",
+				"e_magnitude":"0.0252",
+				"magnitude":"18.9044",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58484.2864",
+				"band":"i",
+				"e_magnitude":"0.0256",
+				"magnitude":"18.8972",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58484.2904",
+				"band":"V",
+				"e_magnitude":"0.0368",
+				"magnitude":"20.0826",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58484.2943",
+				"band":"V",
+				"e_magnitude":"0.0361",
+				"magnitude":"20.0329",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58487.3054",
+				"band":"i",
+				"e_magnitude":"0.0285",
+				"magnitude":"18.9981",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58487.3093",
+				"band":"i",
+				"e_magnitude":"0.0233",
+				"magnitude":"18.9868",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58487.3133",
+				"band":"V",
+				"e_magnitude":"0.0327",
+				"magnitude":"19.9454",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58487.3172",
+				"band":"V",
+				"e_magnitude":"0.0314",
+				"magnitude":"19.9618",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58490.2533",
+				"band":"i",
+				"e_magnitude":"0.0365",
+				"magnitude":"19.0091",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58490.2572",
+				"band":"i",
+				"e_magnitude":"0.0341",
+				"magnitude":"18.9805",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58490.2612",
+				"band":"V",
+				"e_magnitude":"0.0494",
+				"magnitude":"20.0104",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58490.2651",
+				"band":"V",
+				"e_magnitude":"0.0524",
+				"magnitude":"20.062",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58493.2913",
+				"band":"i",
+				"e_magnitude":"0.0229",
+				"magnitude":"19.0154",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58493.2952",
+				"band":"i",
+				"e_magnitude":"0.0295",
+				"magnitude":"18.9732",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58493.2993",
+				"band":"V",
+				"e_magnitude":"0.0399",
+				"magnitude":"19.9985",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58493.3032",
+				"band":"V",
+				"e_magnitude":"0.0349",
+				"magnitude":"20.0512",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58497.2832",
+				"band":"i",
+				"e_magnitude":"0.1575",
+				"magnitude":"18.3102",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58497.2871",
+				"band":"i",
+				"e_magnitude":"0.1798",
+				"magnitude":"18.5536",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58497.2912",
+				"band":"V",
+				"e_magnitude":"0.1729",
+				"magnitude":"20.0468",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58497.2951",
+				"band":"V",
+				"e_magnitude":"0.0918",
+				"magnitude":"20.1589",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58500.2568",
+				"band":"i",
+				"e_magnitude":"0.0524",
+				"magnitude":"19.1087",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58500.2607",
+				"band":"i",
+				"e_magnitude":"0.0413",
+				"magnitude":"19.0973",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58500.2647",
+				"band":"V",
+				"e_magnitude":"0.0588",
+				"magnitude":"20.2213",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58500.2686",
+				"band":"V",
+				"e_magnitude":"0.0689",
+				"magnitude":"20.2828",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58504.2493",
+				"band":"i",
+				"e_magnitude":"0.0243",
+				"magnitude":"19.1031",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58504.2532",
+				"band":"i",
+				"e_magnitude":"0.0234",
+				"magnitude":"19.1347",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58504.2572",
+				"band":"V",
+				"e_magnitude":"0.0372",
+				"magnitude":"20.2241",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58504.2611",
+				"band":"V",
+				"e_magnitude":"0.0404",
+				"magnitude":"20.1778",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58504.2653",
+				"band":"i",
+				"e_magnitude":"0.0267",
+				"magnitude":"19.1359",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58504.2692",
+				"band":"i",
+				"e_magnitude":"0.0315",
+				"magnitude":"19.171",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58506.2741",
+				"band":"i",
+				"e_magnitude":"0.0339",
+				"magnitude":"19.2726",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58506.282",
+				"band":"V",
+				"e_magnitude":"0.0799",
+				"magnitude":"20.1786",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"58506.2859",
+				"band":"V",
+				"e_magnitude":"0.0822",
+				"magnitude":"20.2795",
+				"observatory":"SMARTS1.3 P.Zielinsk",
+				"u_time":"MJD",
+				"source":"3,4"
 			},
 			{
 				"time":"58570.441",
