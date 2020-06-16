@@ -9,87 +9,128 @@
 				"alias":"1"
 			},
 			{
+				"name":"CPCS Alert 28306",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=28306",
+				"alias":"2"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"3"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"4"
+			},
+			{
 				"name":"The Open Supernova Catalog",
 				"bibcode":"2017ApJ...835...64G",
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"2"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia20avs",
-				"source":"1"
+				"source":"1,3,4"
+			},
+			{
+				"value":"AT2020cur",
+				"source":"1,4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"QSO",
-				"source":"1"
+				"source":"1,4"
 			}
 		],
 		"dec":[
 			{
+				"value":"+22:14:05.75",
+				"u_value":"degrees",
+				"source":"1,4"
+			},
+			{
 				"value":"+22:14:05.64",
 				"u_value":"degrees",
-				"source":"1"
+				"source":"1,3"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2015/01/16",
-				"derived":true,
-				"source":"1,2"
+				"value":"2020/02/16",
+				"source":"1,4"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"Gaia",
+				"source":"1,4"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"17.68",
+				"value":"15.92",
 				"derived":true,
-				"source":"1,2"
+				"source":"2,3,5"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"1,2"
+				"source":"2,3,5"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2020/02/16",
+				"value":"2020/03/14",
 				"derived":true,
-				"source":"1,2"
+				"source":"2,3,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"17.68",
+				"value":"17.1",
 				"derived":true,
-				"source":"1,2"
+				"source":"2,3,5"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"g",
 				"derived":true,
-				"source":"1,2"
+				"source":"2,3,5"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2020/02/16",
+				"value":"2020/03/14",
 				"derived":true,
-				"source":"1,2"
+				"source":"2,3,5"
 			}
 		],
 		"ra":[
 			{
+				"value":"14:13:28.673",
+				"u_value":"hours",
+				"source":"1,4"
+			},
+			{
 				"value":"14:13:28.56",
 				"u_value":"hours",
 				"source":"1"
+			},
+			{
+				"value":"14:13:28.8",
+				"u_value":"hours",
+				"source":"3"
 			}
 		],
 		"photometry":[
@@ -672,6 +713,76 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"1"
+			},
+			{
+				"time":"58912.1604",
+				"band":"V",
+				"e_magnitude":"0.0481761",
+				"magnitude":"17.8279",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58912.1642",
+				"band":"R",
+				"e_magnitude":"0.042215",
+				"magnitude":"17.7967",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58913.1857",
+				"band":"V",
+				"e_magnitude":"0.0633782",
+				"magnitude":"18.11",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58913.1887",
+				"band":"R",
+				"e_magnitude":"0.055224",
+				"magnitude":"17.7081",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58922.0632",
+				"band":"z",
+				"magnitude":"16.2605",
+				"observatory":"IST60,Tolga Guver",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58922.0713",
+				"band":"G",
+				"instrument":"Astrometric",
+				"magnitude":"15.9173",
+				"observatory":"IST60,Tolga Guver",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58922.0728",
+				"band":"g",
+				"magnitude":"17.0968",
+				"observatory":"IST60,Tolga Guver",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58938.9959",
+				"band":"V",
+				"magnitude":"16.8282",
+				"observatory":"IST60,Tolga Guver",
+				"u_time":"MJD",
+				"source":"2,3"
 			}
 		]
 	}

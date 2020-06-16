@@ -9,10 +9,21 @@
 				"alias":"1"
 			},
 			{
+				"name":"CPCS Alert 28330",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=28330",
+				"alias":"2"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"3"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -20,101 +31,106 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia20aun",
-				"source":"1,2"
+				"source":"1,3,4"
 			},
 			{
 				"value":"AT2020cmm",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"QSO",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"dec":[
 			{
 				"value":"+00:59:00.89",
 				"u_value":"degrees",
-				"source":"1,2"
+				"source":"1,4"
 			},
 			{
 				"value":"+00:59:00.888",
 				"u_value":"degrees",
 				"source":"1"
+			},
+			{
+				"value":"+00:59:00.8988",
+				"u_value":"degrees",
+				"source":"3"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2020/02/13",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Gaia",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"18.4",
+				"value":"18.36",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxband":[
 			{
-				"value":"G",
+				"value":"R",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2020/02/13",
+				"value":"2020/03/06",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"18.4",
+				"value":"19.38",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"B",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2020/02/13",
+				"value":"2020/03/06",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"ra":[
 			{
 				"value":"14:14:03.125",
 				"u_value":"hours",
-				"source":"1,2"
+				"source":"1,4"
 			},
 			{
 				"value":"14:14:03.12",
 				"u_value":"hours",
-				"source":"1"
+				"source":"1,3"
 			}
 		],
 		"photometry":[
@@ -917,6 +933,32 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"1"
+			},
+			{
+				"time":"58914.1475",
+				"band":"B",
+				"magnitude":"19.3796",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58914.152",
+				"band":"V",
+				"e_magnitude":"0.120243",
+				"magnitude":"18.7267",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58914.1566",
+				"band":"R",
+				"e_magnitude":"0.0751331",
+				"magnitude":"18.355",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"2,3"
 			}
 		]
 	}

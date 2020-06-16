@@ -9,10 +9,21 @@
 				"alias":"1"
 			},
 			{
+				"name":"CPCS Alert 28315",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=28315",
+				"alias":"2"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"3"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -20,101 +31,101 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia19ecq",
-				"source":"1,2"
+				"source":"1,3,4"
 			},
 			{
 				"value":"AT2019qea",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"ulens?",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"dec":[
 			{
 				"value":"-24:12:35.89",
 				"u_value":"degrees",
-				"source":"1,2"
+				"source":"1,4"
 			},
 			{
 				"value":"-24:12:36",
 				"u_value":"degrees",
-				"source":"1"
+				"source":"1,3"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2019/09/14",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Gaia",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"17.7",
+				"value":"16.75",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxband":[
 			{
-				"value":"G",
+				"value":"i",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2019/09/14",
+				"value":"2020/02/21",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"17.7",
+				"value":"21.09",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"g",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2019/09/14",
+				"value":"2020/02/20",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"ra":[
 			{
 				"value":"17:30:44.955",
 				"u_value":"hours",
-				"source":"1,2"
+				"source":"1,4"
 			},
 			{
 				"value":"17:30:44.88",
 				"u_value":"hours",
-				"source":"1"
+				"source":"1,3"
 			}
 		],
 		"photometry":[
@@ -473,7 +484,7 @@
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
-				"magnitude":"17.74",
+				"magnitude":"17.73",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"1"
@@ -487,6 +498,24 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"1"
+			},
+			{
+				"time":"58893.7384",
+				"band":"i",
+				"e_magnitude":"0.0111",
+				"magnitude":"17.9987",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58893.742",
+				"band":"i",
+				"e_magnitude":"0.01",
+				"magnitude":"17.9955",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
 			},
 			{
 				"time":"58899.311",
@@ -503,7 +532,226 @@
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
-				"magnitude":"18.66",
+				"magnitude":"18.67",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58899.3892",
+				"band":"i",
+				"e_magnitude":"0.0226",
+				"magnitude":"18.0233",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58899.3926",
+				"band":"g",
+				"e_magnitude":"0.1737",
+				"magnitude":"21.4291",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58899.7223",
+				"band":"i",
+				"e_magnitude":"0.0294",
+				"magnitude":"18.0746",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58899.7258",
+				"band":"g",
+				"magnitude":"22.7496",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58899.7707",
+				"band":"i",
+				"e_magnitude":"0.0185",
+				"magnitude":"18.0516",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58899.7741",
+				"band":"g",
+				"e_magnitude":"0.0773",
+				"magnitude":"21.0887",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58900.3196",
+				"band":"i",
+				"e_magnitude":"0.0226",
+				"magnitude":"18.0092",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58900.3229",
+				"band":"g",
+				"e_magnitude":"0.1009",
+				"magnitude":"21.2276",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58900.7142",
+				"band":"i",
+				"e_magnitude":"0.1808",
+				"magnitude":"16.7523",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58903.7321",
+				"band":"i",
+				"e_magnitude":"0.0279",
+				"magnitude":"18.1134",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58903.7385",
+				"band":"i",
+				"e_magnitude":"0.0225",
+				"magnitude":"18.0455",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58903.7419",
+				"band":"g",
+				"e_magnitude":"0.1126",
+				"magnitude":"21.257",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58904.3758",
+				"band":"i",
+				"e_magnitude":"0.0269",
+				"magnitude":"18.037",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58905.333",
+				"band":"i",
+				"e_magnitude":"0.0242",
+				"magnitude":"18.0421",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58905.3793",
+				"band":"i",
+				"e_magnitude":"0.0198",
+				"magnitude":"18.0365",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58905.7451",
+				"band":"i",
+				"e_magnitude":"0.024",
+				"magnitude":"18.0405",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58905.7815",
+				"band":"i",
+				"e_magnitude":"0.0192",
+				"magnitude":"18.0198",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58906.3087",
+				"band":"i",
+				"e_magnitude":"0.0223",
+				"magnitude":"18.0541",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58906.3754",
+				"band":"i",
+				"e_magnitude":"0.022",
+				"magnitude":"18.0",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58906.7648",
+				"band":"i",
+				"e_magnitude":"0.0336",
+				"magnitude":"17.8455",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58926.108",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"18.72",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58926.182",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"18.70",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58950.220",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"18.69",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58950.396",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"18.71",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"1"
