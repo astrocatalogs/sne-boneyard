@@ -9,10 +9,21 @@
 				"alias":"1"
 			},
 			{
+				"name":"CPCS Alert 28637",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=28637",
+				"alias":"2"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"3"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -20,101 +31,101 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia20det",
-				"source":"1,2"
+				"source":"1,3,4"
 			},
 			{
 				"value":"AT2020ojm",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"dec":[
 			{
 				"value":"+51:17:18.78",
 				"u_value":"degrees",
-				"source":"1,2"
+				"source":"1,4"
 			},
 			{
 				"value":"+51:17:18.96",
 				"u_value":"degrees",
-				"source":"1"
+				"source":"1,3"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2020/07/10",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Gaia",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"18.96",
+				"value":"18.93",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2020/06/07",
+				"value":"2020/08/20",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"18.96",
+				"value":"18.93",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2020/06/07",
+				"value":"2020/08/20",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"ra":[
 			{
 				"value":"16:58:40.885",
 				"u_value":"hours",
-				"source":"1,2"
+				"source":"1,4"
 			},
 			{
 				"value":"16:58:40.8",
 				"u_value":"hours",
-				"source":"1"
+				"source":"1,3"
 			}
 		],
 		"photometry":[
@@ -463,7 +474,7 @@
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
-				"magnitude":"19.63",
+				"magnitude":"19.62",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"1"
@@ -853,7 +864,7 @@
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
-				"magnitude":"19.04",
+				"magnitude":"19.05",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"1"
@@ -894,6 +905,89 @@
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
 				"magnitude":"18.96",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"59047.8568",
+				"band":"V",
+				"e_magnitude":"0.0498",
+				"magnitude":"19.3437",
+				"observatory":"Loiano, Felice Cusan",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59048.8534",
+				"band":"V",
+				"e_magnitude":"0.0379",
+				"magnitude":"19.1361",
+				"observatory":"Loiano, Felice Cusan",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59048.8559",
+				"band":"r",
+				"e_magnitude":"0.0322",
+				"magnitude":"19.073",
+				"observatory":"Loiano, Felice Cusan",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59048.8684",
+				"band":"V",
+				"e_magnitude":"0.0398",
+				"magnitude":"19.1867",
+				"observatory":"Loiano, Felice Cusan",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59048.8709",
+				"band":"r",
+				"e_magnitude":"0.0283",
+				"magnitude":"18.9748",
+				"observatory":"Loiano, Felice Cusan",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59048.8759",
+				"band":"V",
+				"e_magnitude":"0.036",
+				"magnitude":"19.1129",
+				"observatory":"Loiano, Felice Cusan",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59048.8783",
+				"band":"r",
+				"e_magnitude":"0.0315",
+				"magnitude":"19.0425",
+				"observatory":"Loiano, Felice Cusan",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59081.932",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"18.93",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"59082.006",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"18.99",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"1"
