@@ -9,10 +9,21 @@
 				"alias":"1"
 			},
 			{
+				"name":"CPCS Alert 28776",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=28776",
+				"alias":"2"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"3"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -20,101 +31,105 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia20avm",
-				"source":"1,2"
+				"source":"1,3,4"
 			},
 			{
 				"value":"AT2020cul",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"1,2"
+				"source":"1,4"
+			},
+			{
+				"value":"Variable Star",
+				"source":"1"
 			}
 		],
 		"dec":[
 			{
 				"value":"-47:33:14.29",
 				"u_value":"degrees",
-				"source":"1,2"
+				"source":"1,4"
 			},
 			{
 				"value":"-47:33:14.4",
 				"u_value":"degrees",
-				"source":"1"
+				"source":"1,3"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2020/02/14",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Gaia",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"12.16",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2020/07/18",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"12.16",
+				"value":"12.52",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"g",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2020/07/18",
+				"value":"2020/03/22",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"ra":[
 			{
 				"value":"16:45:01.586",
 				"u_value":"hours",
-				"source":"1,2"
+				"source":"1,4"
 			},
 			{
 				"value":"16:45:01.68",
 				"u_value":"hours",
-				"source":"1"
+				"source":"1,3"
 			}
 		],
 		"photometry":[
@@ -527,6 +542,51 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"1"
+			},
+			{
+				"time":"58929.3438",
+				"band":"g",
+				"e_magnitude":"0.0079",
+				"magnitude":"12.5291",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58930.3622",
+				"band":"g",
+				"e_magnitude":"0.0079",
+				"magnitude":"12.5183",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58930.3645",
+				"band":"g",
+				"e_magnitude":"0.0052",
+				"magnitude":"12.5905",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58930.3657",
+				"band":"g",
+				"e_magnitude":"0.0061",
+				"magnitude":"12.5617",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58930.3669",
+				"band":"g",
+				"e_magnitude":"0.0061",
+				"magnitude":"12.5578",
+				"observatory":"REM Pawel Zielinski",
+				"u_time":"MJD",
+				"source":"2,3"
 			},
 			{
 				"time":"58945.154",
