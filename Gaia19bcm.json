@@ -9,10 +9,21 @@
 				"alias":"1"
 			},
 			{
+				"name":"CPCS Alert 28870",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=28870",
+				"alias":"2"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"3"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -20,101 +31,101 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia19bcm",
-				"source":"1,2"
+				"source":"1,3,4"
 			},
 			{
 				"value":"AT2019cli",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"dec":[
 			{
 				"value":"-71:42:03.45",
 				"u_value":"degrees",
-				"source":"1,2"
+				"source":"1,4"
 			},
 			{
 				"value":"-71:42:03.6",
 				"u_value":"degrees",
-				"source":"1"
+				"source":"1,3"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2019/03/25",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Gaia",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"13.68",
+				"value":"13.35",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxband":[
 			{
-				"value":"G",
+				"value":"i",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2019/02/20",
+				"value":"2019/04/03",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"13.68",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2019/02/20",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"ra":[
 			{
 				"value":"10:27:34.764",
 				"u_value":"hours",
-				"source":"1,2"
+				"source":"1,4"
 			},
 			{
 				"value":"10:27:34.8",
 				"u_value":"hours",
-				"source":"1"
+				"source":"1,3"
 			}
 		],
 		"photometry":[
@@ -659,6 +670,366 @@
 				"source":"1"
 			},
 			{
+				"time":"58575.389",
+				"band":"V",
+				"e_magnitude":"0.0236",
+				"magnitude":"14.2202",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58575.3898",
+				"band":"i",
+				"e_magnitude":"0.0054",
+				"magnitude":"13.4553",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58576.3881",
+				"band":"V",
+				"e_magnitude":"0.0221",
+				"magnitude":"14.1341",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58576.3889",
+				"band":"i",
+				"e_magnitude":"0.0081",
+				"magnitude":"13.3542",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58577.3872",
+				"band":"V",
+				"e_magnitude":"0.0152",
+				"magnitude":"14.3233",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58577.3881",
+				"band":"i",
+				"e_magnitude":"0.0049",
+				"magnitude":"13.5035",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58578.3858",
+				"band":"V",
+				"e_magnitude":"0.0217",
+				"magnitude":"14.3393",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58578.3867",
+				"band":"i",
+				"e_magnitude":"0.0062",
+				"magnitude":"13.5272",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58579.3859",
+				"band":"V",
+				"e_magnitude":"0.0274",
+				"magnitude":"14.3069",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58579.3867",
+				"band":"i",
+				"e_magnitude":"0.01",
+				"magnitude":"13.369",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58580.4267",
+				"band":"V",
+				"e_magnitude":"0.0221",
+				"magnitude":"14.0698",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58580.4275",
+				"band":"i",
+				"e_magnitude":"0.0087",
+				"magnitude":"13.3996",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58581.4259",
+				"band":"V",
+				"e_magnitude":"0.0267",
+				"magnitude":"14.3992",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58581.4268",
+				"band":"i",
+				"e_magnitude":"0.0112",
+				"magnitude":"13.47",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58582.4762",
+				"band":"V",
+				"e_magnitude":"0.0228",
+				"magnitude":"14.3689",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58582.4774",
+				"band":"i",
+				"e_magnitude":"0.0066",
+				"magnitude":"13.6069",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58584.5767",
+				"band":"V",
+				"e_magnitude":"0.0264",
+				"magnitude":"14.4449",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58584.5776",
+				"band":"i",
+				"e_magnitude":"0.0087",
+				"magnitude":"13.6023",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58585.4226",
+				"band":"V",
+				"e_magnitude":"0.0299",
+				"magnitude":"14.4798",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58585.4234",
+				"band":"i",
+				"e_magnitude":"0.0087",
+				"magnitude":"13.622",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58586.4219",
+				"band":"V",
+				"e_magnitude":"0.0304",
+				"magnitude":"14.3869",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58586.4227",
+				"band":"i",
+				"e_magnitude":"0.0101",
+				"magnitude":"13.6015",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58587.422",
+				"band":"i",
+				"e_magnitude":"0.0411",
+				"magnitude":"13.6957",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58588.4206",
+				"band":"V",
+				"e_magnitude":"0.0259",
+				"magnitude":"14.4533",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58588.4215",
+				"band":"i",
+				"e_magnitude":"0.0073",
+				"magnitude":"13.7002",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58589.5807",
+				"band":"V",
+				"e_magnitude":"0.0241",
+				"magnitude":"14.5488",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58589.5815",
+				"band":"i",
+				"e_magnitude":"0.0073",
+				"magnitude":"13.6959",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58590.4189",
+				"band":"V",
+				"e_magnitude":"0.0304",
+				"magnitude":"14.4162",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58590.4198",
+				"band":"i",
+				"e_magnitude":"0.0112",
+				"magnitude":"13.542",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58591.4172",
+				"band":"V",
+				"e_magnitude":"0.0322",
+				"magnitude":"14.5313",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58591.418",
+				"band":"i",
+				"e_magnitude":"0.0109",
+				"magnitude":"13.6395",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58592.418",
+				"band":"V",
+				"e_magnitude":"0.0309",
+				"magnitude":"14.4876",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58592.4189",
+				"band":"i",
+				"e_magnitude":"0.0092",
+				"magnitude":"13.7185",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58593.416",
+				"band":"V",
+				"e_magnitude":"0.0247",
+				"magnitude":"14.4762",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58593.4168",
+				"band":"i",
+				"e_magnitude":"0.0083",
+				"magnitude":"13.6878",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58594.416",
+				"band":"V",
+				"e_magnitude":"0.0469",
+				"magnitude":"14.7285",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58594.4168",
+				"band":"i",
+				"e_magnitude":"0.028",
+				"magnitude":"13.7129",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58595.4156",
+				"band":"V",
+				"e_magnitude":"0.0304",
+				"magnitude":"14.5584",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58595.4165",
+				"band":"i",
+				"e_magnitude":"0.0119",
+				"magnitude":"13.7283",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58596.4156",
+				"band":"i",
+				"e_magnitude":"0.0123",
+				"magnitude":"13.5551",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
 				"time":"58596.937",
 				"band":"G",
 				"e_magnitude":"0.0",
@@ -679,6 +1050,461 @@
 				"source":"1"
 			},
 			{
+				"time":"58597.5039",
+				"band":"V",
+				"e_magnitude":"0.0222",
+				"magnitude":"14.5406",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58597.5083",
+				"band":"i",
+				"e_magnitude":"0.0078",
+				"magnitude":"13.7664",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58598.5679",
+				"band":"V",
+				"e_magnitude":"0.03",
+				"magnitude":"14.6113",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58598.5687",
+				"band":"i",
+				"e_magnitude":"0.009",
+				"magnitude":"13.7545",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58599.4132",
+				"band":"V",
+				"e_magnitude":"0.0168",
+				"magnitude":"14.5796",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58599.4143",
+				"band":"i",
+				"e_magnitude":"0.0061",
+				"magnitude":"13.7473",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58600.4166",
+				"band":"i",
+				"e_magnitude":"0.0162",
+				"magnitude":"13.7316",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58601.417",
+				"band":"V",
+				"e_magnitude":"0.0277",
+				"magnitude":"14.4789",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58601.4179",
+				"band":"i",
+				"e_magnitude":"0.0085",
+				"magnitude":"13.7331",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58602.411",
+				"band":"V",
+				"e_magnitude":"0.0269",
+				"magnitude":"14.3411",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58602.4119",
+				"band":"i",
+				"e_magnitude":"0.0104",
+				"magnitude":"13.6178",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58603.5338",
+				"band":"V",
+				"e_magnitude":"0.0386",
+				"magnitude":"15.0864",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58603.5382",
+				"band":"i",
+				"e_magnitude":"0.0126",
+				"magnitude":"13.8137",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58605.5131",
+				"band":"V",
+				"e_magnitude":"0.0412",
+				"magnitude":"14.6507",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58605.5176",
+				"band":"i",
+				"e_magnitude":"0.0217",
+				"magnitude":"13.7512",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58607.4083",
+				"band":"V",
+				"e_magnitude":"0.0234",
+				"magnitude":"14.58",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58607.4092",
+				"band":"i",
+				"e_magnitude":"0.0068",
+				"magnitude":"13.8001",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58608.4966",
+				"band":"V",
+				"e_magnitude":"0.0314",
+				"magnitude":"14.6539",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58608.5011",
+				"band":"i",
+				"e_magnitude":"0.0092",
+				"magnitude":"13.7899",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58610.4073",
+				"band":"V",
+				"e_magnitude":"0.0211",
+				"magnitude":"14.6324",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58610.4082",
+				"band":"i",
+				"e_magnitude":"0.0056",
+				"magnitude":"13.8154",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58611.4166",
+				"band":"V",
+				"e_magnitude":"0.0288",
+				"magnitude":"14.5766",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58611.4174",
+				"band":"i",
+				"e_magnitude":"0.0111",
+				"magnitude":"13.6728",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58612.406",
+				"band":"V",
+				"e_magnitude":"0.0285",
+				"magnitude":"14.6873",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58612.4069",
+				"band":"i",
+				"e_magnitude":"0.0104",
+				"magnitude":"13.7851",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58613.5299",
+				"band":"V",
+				"e_magnitude":"0.0323",
+				"magnitude":"14.6326",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58613.5355",
+				"band":"i",
+				"e_magnitude":"0.0341",
+				"magnitude":"13.9528",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58614.4057",
+				"band":"i",
+				"e_magnitude":"0.0169",
+				"magnitude":"13.6592",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58615.4047",
+				"band":"V",
+				"magnitude":"17.9498",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58615.4056",
+				"band":"i",
+				"e_magnitude":"0.0141",
+				"magnitude":"13.6477",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58616.4612",
+				"band":"V",
+				"magnitude":"16.8863",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58616.4656",
+				"band":"i",
+				"magnitude":"16.1919",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58617.4036",
+				"band":"V",
+				"e_magnitude":"0.035",
+				"magnitude":"14.6372",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58617.4044",
+				"band":"i",
+				"e_magnitude":"0.0114",
+				"magnitude":"13.7912",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58618.4457",
+				"band":"V",
+				"magnitude":"17.8611",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58618.4466",
+				"band":"i",
+				"e_magnitude":"0.0137",
+				"magnitude":"13.7622",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58627.3599",
+				"band":"i",
+				"e_magnitude":"0.032",
+				"magnitude":"13.8519",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58628.3588",
+				"band":"V",
+				"e_magnitude":"0.031",
+				"magnitude":"14.5917",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58628.3597",
+				"band":"i",
+				"e_magnitude":"0.0123",
+				"magnitude":"13.6995",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58629.3584",
+				"band":"V",
+				"e_magnitude":"0.0269",
+				"magnitude":"14.3395",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58629.3593",
+				"band":"i",
+				"e_magnitude":"0.0118",
+				"magnitude":"13.6346",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58630.3779",
+				"band":"V",
+				"e_magnitude":"0.0262",
+				"magnitude":"14.6905",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58630.3828",
+				"band":"i",
+				"e_magnitude":"0.0074",
+				"magnitude":"13.864",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58631.3584",
+				"band":"V",
+				"e_magnitude":"0.021",
+				"magnitude":"14.7369",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58631.3592",
+				"band":"i",
+				"e_magnitude":"0.0079",
+				"magnitude":"13.8634",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58632.4099",
+				"band":"V",
+				"e_magnitude":"0.023",
+				"magnitude":"14.6308",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58632.4143",
+				"band":"i",
+				"e_magnitude":"0.0128",
+				"magnitude":"13.8384",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58633.3576",
+				"band":"V",
+				"e_magnitude":"0.0258",
+				"magnitude":"14.686",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58633.3584",
+				"band":"i",
+				"e_magnitude":"0.0086",
+				"magnitude":"13.835",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58635.5005",
+				"band":"V",
+				"e_magnitude":"0.0356",
+				"magnitude":"14.7705",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58635.5049",
+				"band":"i",
+				"e_magnitude":"0.0108",
+				"magnitude":"13.824",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
 				"time":"58637.171",
 				"band":"G",
 				"e_magnitude":"0.0",
@@ -697,6 +1523,265 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"1"
+			},
+			{
+				"time":"58638.3577",
+				"band":"V",
+				"e_magnitude":"0.025",
+				"magnitude":"14.6627",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58638.3627",
+				"band":"i",
+				"e_magnitude":"0.0163",
+				"magnitude":"13.8619",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58639.368",
+				"band":"V",
+				"e_magnitude":"0.0304",
+				"magnitude":"14.6951",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58639.3724",
+				"band":"i",
+				"e_magnitude":"0.0108",
+				"magnitude":"13.8371",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58645.4599",
+				"band":"V",
+				"e_magnitude":"0.035",
+				"magnitude":"14.6703",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58645.4607",
+				"band":"i",
+				"e_magnitude":"0.0121",
+				"magnitude":"13.787",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58646.4337",
+				"band":"i",
+				"magnitude":"15.4902",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58649.3569",
+				"band":"V",
+				"magnitude":"17.7871",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58649.3613",
+				"band":"i",
+				"e_magnitude":"0.0154",
+				"magnitude":"13.7879",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58651.3577",
+				"band":"V",
+				"e_magnitude":"0.034",
+				"magnitude":"14.5345",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58651.3622",
+				"band":"i",
+				"e_magnitude":"0.0135",
+				"magnitude":"13.7711",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58652.3573",
+				"band":"V",
+				"e_magnitude":"0.0352",
+				"magnitude":"14.687",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58652.3617",
+				"band":"i",
+				"e_magnitude":"0.0129",
+				"magnitude":"13.8334",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58653.362",
+				"band":"i",
+				"e_magnitude":"0.0114",
+				"magnitude":"13.8011",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58654.3608",
+				"band":"V",
+				"e_magnitude":"0.0316",
+				"magnitude":"14.6382",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58654.3617",
+				"band":"i",
+				"e_magnitude":"0.013",
+				"magnitude":"13.7747",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58655.3612",
+				"band":"V",
+				"e_magnitude":"0.0327",
+				"magnitude":"15.1739",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58655.362",
+				"band":"i",
+				"e_magnitude":"0.0117",
+				"magnitude":"13.7737",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58657.3703",
+				"band":"V",
+				"e_magnitude":"0.0356",
+				"magnitude":"14.7226",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58657.3711",
+				"band":"i",
+				"e_magnitude":"0.0107",
+				"magnitude":"13.8283",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58658.3626",
+				"band":"V",
+				"e_magnitude":"0.0367",
+				"magnitude":"14.79",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58658.3634",
+				"band":"i",
+				"e_magnitude":"0.01",
+				"magnitude":"13.8441",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58659.4789",
+				"band":"V",
+				"e_magnitude":"0.0366",
+				"magnitude":"14.7508",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58659.4797",
+				"band":"i",
+				"e_magnitude":"0.0119",
+				"magnitude":"13.7982",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58660.3619",
+				"band":"V",
+				"e_magnitude":"0.0303",
+				"magnitude":"14.7306",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58660.3628",
+				"band":"i",
+				"e_magnitude":"0.0091",
+				"magnitude":"13.8821",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58661.3675",
+				"band":"i",
+				"e_magnitude":"0.022",
+				"magnitude":"14.3429",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58663.3824",
+				"band":"V",
+				"e_magnitude":"0.0329",
+				"magnitude":"14.7398",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"58663.3835",
+				"band":"i",
+				"e_magnitude":"0.0103",
+				"magnitude":"13.8925",
+				"observatory":"TRT-SBO0.7 Supachai",
+				"u_time":"MJD",
+				"source":"2,3"
 			},
 			{
 				"time":"58668.413",
