@@ -9,10 +9,21 @@
 				"alias":"1"
 			},
 			{
+				"name":"CPCS Alert 28893",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=28893",
+				"alias":"2"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"3"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -20,96 +31,96 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia19ceq",
-				"source":"1,2"
+				"source":"1,3,4"
 			},
 			{
 				"value":"AT2019hdl",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"QSO",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"dec":[
 			{
 				"value":"+24:03:38.52",
 				"u_value":"degrees",
-				"source":"1,2"
+				"source":"1,3,4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2019/05/16",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Gaia",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"18.27",
+				"value":"17.76",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxband":[
 			{
-				"value":"G",
+				"value":"i",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2019/11/18",
+				"value":"2020/11/22",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"18.27",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2019/11/18",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"ra":[
 			{
 				"value":"09:26:08.913",
 				"u_value":"hours",
-				"source":"1,2"
+				"source":"1,4"
 			},
 			{
 				"value":"09:26:08.88",
 				"u_value":"hours",
-				"source":"1"
+				"source":"1,3"
 			}
 		],
 		"photometry":[
@@ -778,7 +789,7 @@
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
-				"magnitude":"18.48",
+				"magnitude":"18.46",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"1"
@@ -788,13 +799,159 @@
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
-				"magnitude":"18.53",
+				"magnitude":"18.51",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"1"
 			},
 			{
 				"time":"59161.210",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"18.51",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"59172.0992",
+				"band":"V",
+				"e_magnitude":"0.0184",
+				"magnitude":"18.8965",
+				"observatory":"Loiano, Alessia Garo",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59172.1044",
+				"band":"r",
+				"e_magnitude":"0.013",
+				"magnitude":"18.5498",
+				"observatory":"Loiano, Alessia Garo",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59172.1083",
+				"band":"i",
+				"e_magnitude":"0.0116",
+				"magnitude":"17.8732",
+				"observatory":"Loiano, Alessia Garo",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59172.1122",
+				"band":"V",
+				"e_magnitude":"0.0202",
+				"magnitude":"19.02",
+				"observatory":"Loiano, Alessia Garo",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59172.1175",
+				"band":"r",
+				"e_magnitude":"0.0138",
+				"magnitude":"18.5588",
+				"observatory":"Loiano, Alessia Garo",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59172.1213",
+				"band":"i",
+				"e_magnitude":"0.0116",
+				"magnitude":"17.8562",
+				"observatory":"Loiano, Alessia Garo",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59172.1252",
+				"band":"V",
+				"e_magnitude":"0.0197",
+				"magnitude":"18.9798",
+				"observatory":"Loiano, Alessia Garo",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59172.1305",
+				"band":"r",
+				"e_magnitude":"0.0134",
+				"magnitude":"18.542",
+				"observatory":"Loiano, Alessia Garo",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59172.1344",
+				"band":"i",
+				"e_magnitude":"0.0108",
+				"magnitude":"17.8463",
+				"observatory":"Loiano, Alessia Garo",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59175.1107",
+				"band":"r",
+				"e_magnitude":"0.029",
+				"magnitude":"18.687",
+				"observatory":"Loiano, Alessia Garo",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59175.1181",
+				"band":"i",
+				"e_magnitude":"0.0233",
+				"magnitude":"17.8059",
+				"observatory":"Loiano, Alessia Garo",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59175.1307",
+				"band":"i",
+				"e_magnitude":"0.024",
+				"magnitude":"17.7631",
+				"observatory":"Loiano, Alessia Garo",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59175.136",
+				"band":"r",
+				"e_magnitude":"0.0263",
+				"magnitude":"18.7681",
+				"observatory":"Loiano, Alessia Garo",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59175.1433",
+				"band":"i",
+				"e_magnitude":"0.022",
+				"magnitude":"17.8265",
+				"observatory":"Loiano, Alessia Garo",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59185.956",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"18.50",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"59186.030",
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
