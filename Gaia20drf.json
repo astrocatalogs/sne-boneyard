@@ -9,10 +9,21 @@
 				"alias":"1"
 			},
 			{
+				"name":"CPCS Alert 29202",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=29202",
+				"alias":"2"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"3"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -20,101 +31,101 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia20drf",
-				"source":"1,2"
+				"source":"1,3,4"
 			},
 			{
 				"value":"AT2020rbh",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"CV",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"dec":[
 			{
 				"value":"-44:31:13.47",
 				"u_value":"degrees",
-				"source":"1,2"
+				"source":"1,4"
 			},
 			{
 				"value":"-44:31:13.44",
 				"u_value":"degrees",
-				"source":"1"
+				"source":"1,3"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2020/08/08",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Gaia",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"16.49",
+				"value":"14.15",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxband":[
 			{
-				"value":"G",
+				"value":"i",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2020/10/01",
+				"value":"2020/08/31",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"16.49",
+				"value":"17.67",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"g",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2020/10/01",
+				"value":"2021/03/08",
 				"derived":true,
-				"source":"1,3"
+				"source":"2,3,5"
 			}
 		],
 		"ra":[
 			{
 				"value":"17:05:08.242",
 				"u_value":"hours",
-				"source":"1,2"
+				"source":"1,4"
 			},
 			{
 				"value":"17:05:08.16",
 				"u_value":"hours",
-				"source":"1"
+				"source":"1,3"
 			}
 		],
 		"photometry":[
@@ -449,6 +460,167 @@
 				"source":"1"
 			},
 			{
+				"time":"59074.4141",
+				"band":"i",
+				"e_magnitude":"0.0107",
+				"magnitude":"16.2796",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59074.5042",
+				"band":"i",
+				"e_magnitude":"0.0107",
+				"magnitude":"16.2772",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59074.5051",
+				"band":"g",
+				"e_magnitude":"0.0127",
+				"magnitude":"18.4892",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59077.7191",
+				"band":"i",
+				"e_magnitude":"0.0145",
+				"magnitude":"16.2539",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59077.7199",
+				"band":"g",
+				"e_magnitude":"0.0243",
+				"magnitude":"18.4316",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59080.7361",
+				"band":"i",
+				"e_magnitude":"0.0116",
+				"magnitude":"16.2249",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59080.737",
+				"band":"g",
+				"e_magnitude":"0.0166",
+				"magnitude":"18.421",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59082.8882",
+				"band":"i",
+				"e_magnitude":"0.0119",
+				"magnitude":"16.1873",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59082.8892",
+				"band":"g",
+				"e_magnitude":"0.0162",
+				"magnitude":"18.3939",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59085.7633",
+				"band":"i",
+				"e_magnitude":"0.0094",
+				"magnitude":"16.1609",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59085.7643",
+				"band":"g",
+				"e_magnitude":"0.0182",
+				"magnitude":"18.3676",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59090.4114",
+				"band":"i",
+				"e_magnitude":"0.012",
+				"magnitude":"16.147",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59090.4162",
+				"band":"i",
+				"e_magnitude":"0.0125",
+				"magnitude":"16.1274",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59090.417",
+				"band":"g",
+				"e_magnitude":"0.0278",
+				"magnitude":"18.3441",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59092.8939",
+				"band":"i",
+				"magnitude":"14.1514",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59093.4098",
+				"band":"i",
+				"e_magnitude":"0.0111",
+				"magnitude":"16.0974",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59093.4106",
+				"band":"g",
+				"e_magnitude":"0.0275",
+				"magnitude":"18.3",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59094.5086",
+				"band":"i",
+				"e_magnitude":"0.0205",
+				"magnitude":"16.0707",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
 				"time":"59095.114",
 				"band":"G",
 				"e_magnitude":"0.0",
@@ -457,6 +629,96 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"1"
+			},
+			{
+				"time":"59095.8891",
+				"band":"i",
+				"e_magnitude":"0.0167",
+				"magnitude":"16.1032",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59095.8903",
+				"band":"g",
+				"e_magnitude":"0.1468",
+				"magnitude":"18.2143",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59099.7328",
+				"band":"i",
+				"e_magnitude":"0.0103",
+				"magnitude":"16.039",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59101.7605",
+				"band":"i",
+				"e_magnitude":"0.0102",
+				"magnitude":"16.0251",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59101.7615",
+				"band":"g",
+				"e_magnitude":"0.0138",
+				"magnitude":"18.2008",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59107.4899",
+				"band":"i",
+				"e_magnitude":"0.0102",
+				"magnitude":"15.9731",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59107.4907",
+				"band":"g",
+				"e_magnitude":"0.0155",
+				"magnitude":"18.1844",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59109.4901",
+				"band":"i",
+				"e_magnitude":"0.0109",
+				"magnitude":"15.9562",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59109.4909",
+				"band":"g",
+				"e_magnitude":"0.0152",
+				"magnitude":"18.1586",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59111.844",
+				"band":"i",
+				"e_magnitude":"0.0183",
+				"magnitude":"15.9535",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
 			},
 			{
 				"time":"59123.101",
@@ -469,6 +731,231 @@
 				"source":"1"
 			},
 			{
+				"time":"59130.7715",
+				"band":"i",
+				"e_magnitude":"0.0084",
+				"magnitude":"15.7565",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59137.7606",
+				"band":"i",
+				"e_magnitude":"0.0059",
+				"magnitude":"15.6966",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59138.7502",
+				"band":"i",
+				"e_magnitude":"0.0057",
+				"magnitude":"15.6866",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59138.752",
+				"band":"g",
+				"e_magnitude":"0.009",
+				"magnitude":"17.8668",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59140.7572",
+				"band":"i",
+				"e_magnitude":"0.0065",
+				"magnitude":"15.6616",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59243.3613",
+				"band":"i",
+				"e_magnitude":"0.0085",
+				"magnitude":"15.5313",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59243.3621",
+				"band":"g",
+				"e_magnitude":"0.0249",
+				"magnitude":"17.71",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59244.1162",
+				"band":"i",
+				"e_magnitude":"0.0111",
+				"magnitude":"15.5502",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59246.365",
+				"band":"i",
+				"e_magnitude":"0.0089",
+				"magnitude":"15.5732",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59248.0956",
+				"band":"i",
+				"e_magnitude":"0.0099",
+				"magnitude":"15.5963",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59248.7392",
+				"band":"i",
+				"e_magnitude":"0.0088",
+				"magnitude":"15.6255",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59248.74",
+				"band":"g",
+				"e_magnitude":"0.0213",
+				"magnitude":"17.7799",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59250.3842",
+				"band":"i",
+				"e_magnitude":"0.0095",
+				"magnitude":"15.6527",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59250.3851",
+				"band":"g",
+				"e_magnitude":"0.0231",
+				"magnitude":"17.839",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59254.3304",
+				"band":"i",
+				"e_magnitude":"0.0074",
+				"magnitude":"15.697",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59256.1282",
+				"band":"i",
+				"e_magnitude":"0.0189",
+				"magnitude":"15.7619",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59256.129",
+				"band":"g",
+				"e_magnitude":"0.0314",
+				"magnitude":"17.9804",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59257.3264",
+				"band":"i",
+				"e_magnitude":"0.008",
+				"magnitude":"15.7631",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59257.3273",
+				"band":"g",
+				"e_magnitude":"0.013",
+				"magnitude":"17.9299",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59257.3754",
+				"band":"i",
+				"e_magnitude":"0.0085",
+				"magnitude":"15.7478",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59259.3432",
+				"band":"i",
+				"e_magnitude":"0.008",
+				"magnitude":"15.7835",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59259.344",
+				"band":"g",
+				"e_magnitude":"0.0104",
+				"magnitude":"17.9904",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59261.1368",
+				"band":"i",
+				"e_magnitude":"0.0189",
+				"magnitude":"15.8465",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59262.1145",
+				"band":"i",
+				"e_magnitude":"0.0091",
+				"magnitude":"15.8171",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59262.1153",
+				"band":"g",
+				"e_magnitude":"0.0147",
+				"magnitude":"18.0239",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
 				"time":"59262.664",
 				"band":"G",
 				"e_magnitude":"0.0",
@@ -477,6 +964,211 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"1"
+			},
+			{
+				"time":"59263.0572",
+				"band":"i",
+				"e_magnitude":"0.0099",
+				"magnitude":"15.8333",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59264.3032",
+				"band":"i",
+				"e_magnitude":"0.0092",
+				"magnitude":"15.852",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59264.3041",
+				"band":"g",
+				"e_magnitude":"0.0139",
+				"magnitude":"18.0496",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59266.0867",
+				"band":"i",
+				"e_magnitude":"0.0115",
+				"magnitude":"15.887",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59266.3119",
+				"band":"i",
+				"e_magnitude":"0.0084",
+				"magnitude":"15.8745",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59266.3127",
+				"band":"g",
+				"e_magnitude":"0.0114",
+				"magnitude":"18.1001",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59268.0383",
+				"band":"i",
+				"e_magnitude":"0.0116",
+				"magnitude":"15.9452",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59270.3962",
+				"band":"i",
+				"e_magnitude":"0.0114",
+				"magnitude":"15.9619",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59272.7053",
+				"band":"i",
+				"e_magnitude":"0.0081",
+				"magnitude":"15.9958",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59272.7077",
+				"band":"g",
+				"e_magnitude":"0.024",
+				"magnitude":"18.213",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59276.1253",
+				"band":"i",
+				"e_magnitude":"0.0092",
+				"magnitude":"16.0533",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59276.1277",
+				"band":"g",
+				"e_magnitude":"0.0281",
+				"magnitude":"18.2686",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59277.6634",
+				"band":"i",
+				"e_magnitude":"0.0064",
+				"magnitude":"16.0901",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59277.6659",
+				"band":"g",
+				"e_magnitude":"0.0179",
+				"magnitude":"18.2781",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59281.0559",
+				"band":"i",
+				"e_magnitude":"0.0826",
+				"magnitude":"16.0995",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59281.0587",
+				"band":"g",
+				"magnitude":"17.6673",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59281.0679",
+				"band":"i",
+				"magnitude":"15.4983",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59285.6729",
+				"band":"i",
+				"e_magnitude":"0.0061",
+				"magnitude":"16.2106",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59285.6757",
+				"band":"g",
+				"e_magnitude":"0.0091",
+				"magnitude":"18.4174",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59286.3116",
+				"band":"i",
+				"e_magnitude":"0.0054",
+				"magnitude":"16.2185",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59287.3499",
+				"band":"i",
+				"e_magnitude":"0.0058",
+				"magnitude":"16.2291",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59287.353",
+				"band":"g",
+				"e_magnitude":"0.0086",
+				"magnitude":"18.4334",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59288.7835",
+				"band":"i",
+				"e_magnitude":"0.0052",
+				"magnitude":"16.258",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
 			},
 			{
 				"time":"59288.907",
@@ -499,6 +1191,150 @@
 				"source":"1"
 			},
 			{
+				"time":"59290.305",
+				"band":"i",
+				"e_magnitude":"0.0055",
+				"magnitude":"16.2799",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59293.3676",
+				"band":"i",
+				"e_magnitude":"0.0061",
+				"magnitude":"16.3046",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59293.3707",
+				"band":"g",
+				"e_magnitude":"0.0088",
+				"magnitude":"18.522",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59294.9909",
+				"band":"i",
+				"e_magnitude":"0.0135",
+				"magnitude":"16.3038",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59295.2187",
+				"band":"i",
+				"e_magnitude":"0.0122",
+				"magnitude":"16.3126",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59295.2195",
+				"band":"g",
+				"e_magnitude":"0.0212",
+				"magnitude":"18.5042",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59297.3197",
+				"band":"i",
+				"e_magnitude":"0.0295",
+				"magnitude":"16.3893",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59297.3202",
+				"band":"i",
+				"e_magnitude":"0.0111",
+				"magnitude":"16.3638",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59297.321",
+				"band":"g",
+				"e_magnitude":"0.0178",
+				"magnitude":"18.5695",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59297.3996",
+				"band":"i",
+				"e_magnitude":"0.0106",
+				"magnitude":"16.3443",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59298.6181",
+				"band":"i",
+				"e_magnitude":"0.0146",
+				"magnitude":"16.3271",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59298.6189",
+				"band":"g",
+				"e_magnitude":"0.0471",
+				"magnitude":"18.6302",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59301.3893",
+				"band":"i",
+				"e_magnitude":"0.0122",
+				"magnitude":"16.3685",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59301.3901",
+				"band":"g",
+				"e_magnitude":"0.0403",
+				"magnitude":"18.5975",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59311.9228",
+				"band":"i",
+				"e_magnitude":"0.0077",
+				"magnitude":"16.4546",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59313.5831",
+				"band":"i",
+				"e_magnitude":"0.008",
+				"magnitude":"16.4952",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
 				"time":"59314.655",
 				"band":"G",
 				"e_magnitude":"0.0",
@@ -507,6 +1343,78 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"1"
+			},
+			{
+				"time":"59315.556",
+				"band":"i",
+				"e_magnitude":"0.0079",
+				"magnitude":"16.4871",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59315.5584",
+				"band":"g",
+				"e_magnitude":"0.0076",
+				"magnitude":"18.7403",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59315.9371",
+				"band":"i",
+				"e_magnitude":"0.0125",
+				"magnitude":"16.4645",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59317.5557",
+				"band":"i",
+				"e_magnitude":"0.0063",
+				"magnitude":"16.4957",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59317.5581",
+				"band":"g",
+				"e_magnitude":"0.0075",
+				"magnitude":"18.7516",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59318.1148",
+				"band":"i",
+				"e_magnitude":"0.0077",
+				"magnitude":"16.485",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59319.351",
+				"band":"i",
+				"e_magnitude":"0.0068",
+				"magnitude":"16.5142",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
+			{
+				"time":"59319.3534",
+				"band":"g",
+				"e_magnitude":"0.0067",
+				"magnitude":"18.7756",
+				"observatory":"LCOGT1m, Etienne Bac",
+				"u_time":"MJD",
+				"source":"2,3"
 			}
 		]
 	}
