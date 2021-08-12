@@ -20,27 +20,42 @@
 				"alias":"3"
 			},
 			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"4"
+			},
+			{
 				"name":"The Open Supernova Catalog",
 				"bibcode":"2017ApJ...835...64G",
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia21byr",
-				"source":"1,3"
+				"source":"1,3,4"
+			},
+			{
+				"value":"AT2021kir",
+				"source":"1,4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"AGN",
-				"source":"1"
+				"source":"1,4"
 			}
 		],
 		"dec":[
+			{
+				"value":"+23:06:32.15",
+				"u_value":"degrees",
+				"source":"1,4"
+			},
 			{
 				"value":"+23:06:32.04",
 				"u_value":"degrees",
@@ -49,8 +64,19 @@
 		],
 		"discoverdate":[
 			{
-				"value":"2015/05/29",
-				"derived":true,
+				"value":"2021/04/20",
+				"source":"1,4"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"Gaia",
+				"source":"1,4"
+			}
+		],
+		"host":[
+			{
+				"value":"MRK 716",
 				"source":"1,4"
 			}
 		],
@@ -58,45 +84,50 @@
 			{
 				"value":"16.52",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,3,5"
 			}
 		],
 		"maxband":[
 			{
 				"value":"V",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,3,5"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2021/05/03",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,3,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"17.37",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,3,5"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"B",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,3,5"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2021/05/08",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,3,5"
 			}
 		],
 		"ra":[
+			{
+				"value":"10:10:14.575",
+				"u_value":"hours",
+				"source":"1,4"
+			},
 			{
 				"value":"10:10:14.64",
 				"u_value":"hours",
@@ -474,6 +505,16 @@
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
 				"magnitude":"17.42",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"59377.48326",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"17.41",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"1"
