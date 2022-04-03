@@ -4,15 +4,21 @@
 		"name":"AT2019kx",
 		"sources":[
 			{
+				"name":"2016A&A...594A..13P",
+				"bibcode":"2016A&A...594A..13P",
+				"reference":"Planck Collaboration et al. (2016)",
+				"alias":"1"
+			},
+			{
 				"name":"Transient Name Server",
 				"url":"https://www.wis-tns.org/search",
-				"alias":"1"
+				"alias":"2"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2"
+				"alias":"3"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -20,77 +26,120 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"4"
 			}
 		],
 		"alias":[
 			{
 				"value":"AT2019kx",
-				"source":"1,2"
+				"source":"2,3"
 			},
 			{
 				"value":"ZTF19aaaphbd",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"claimedtype":[
 			{
-				"value":"CV",
-				"source":"1,2"
+				"value":"QSO",
+				"source":"2,3"
+			}
+		],
+		"comovingdist":[
+			{
+				"value":"1049",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,3,4"
 			}
 		],
 		"dec":[
 			{
 				"value":"-10:15:25.10",
 				"u_value":"degrees",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2019/01/08",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ZTF",
-				"source":"1,2"
+				"source":"2,3"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"1313.7",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,3,4"
+			}
+		],
+		"maxabsmag":[
+			{
+				"value":"-24.048",
+				"derived":true,
+				"source":"1,2,3,4"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16.3",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"2,3,4"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2019/02/02",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"2,3,4"
+			}
+		],
+		"maxvisualabsmag":[
+			{
+				"value":"-24.292",
+				"derived":true,
+				"source":"1,2,3,4"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"16.3",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"2,3,4"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2019/02/02",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"2,3,4"
 			}
 		],
 		"ra":[
 			{
 				"value":"12:32:15.853",
 				"u_value":"hours",
-				"source":"1,2"
+				"source":"2,3"
+			}
+		],
+		"redshift":[
+			{
+				"value":"0.2523",
+				"source":"2,3"
+			}
+		],
+		"velocity":[
+			{
+				"value":"66330",
+				"u_value":"km/s",
+				"source":"4"
 			}
 		],
 		"photometry":[
@@ -98,7 +147,7 @@
 				"time":"58516.0",
 				"magnitude":"16.3",
 				"u_time":"MJD",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		]
 	}
